@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+            <w2:dataCollection baseNode="map">
+            	<w2:dataMap baseNode="map" id="dc_popupMain">
+            		<w2:keyInfo>
+            			<w2:key id="LWST_GNRL_CODE" name="코드" dataType="number"></w2:key>
+            			<w2:key id="BSNS_NM" name="사업명" dataType="text"></w2:key>
+            			<w2:key id="INCDNT_NM" name="사건명" dataType="text"></w2:key>
+            			<w2:key id="LWST_ISS_SUMRY" name="사건개요" dataType="text"></w2:key>
+            		</w2:keyInfo>
+            	</w2:dataMap>
+            	<w2:dataMap baseNode="map" id="dc_popupSub">
+            		<w2:keyInfo>
+            			<w2:key id="chk-detail" name="디테일상태" dataType="text"></w2:key>
+            			<w2:key id="ACUSR_NAME" name="이름" dataType="text"></w2:key>
+            			<w2:key id="GNRL_ADRES" name="주소" dataType="text"></w2:key>
+            			<w2:key id="EMAIL" name="이메일" dataType="text"></w2:key>
+            			<w2:key id="LWST_ACUSR_CODE" name="소송원고코드" dataType="text"></w2:key>
+            		</w2:keyInfo>
+            	</w2:dataMap>
+            </w2:dataCollection>
+            <w2:workflowCollection>
+            </w2:workflowCollection>
+        </xf:model>
+         <script type="text/javascript" lazy="false"><![CDATA[
+        
+	//부모 컴포넌트에서 options로 넘긴 JSON데이터를 가져와 해당 컴포넌트의 데이터 컬렉션에 넣음과 동시에 input에 바인딩
+	scwin.onpageload = function() {
+		let paramData = $p.getParameter("param");
+		dc_popupMain.setJSON(paramData.main);
+		dc_popupSub.setJSON(paramData.sub);
+	};
+	
+	scwin.onpageunload = function() {
+		
+	};
+	
+	]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    	<xf:group tagname="table" style="width:100%;" id="" class="w2tb">
+    		<w2:attributes>
+    			<w2:summary></w2:summary>
+    		</w2:attributes>
+    		<xf:group tagname="caption"></xf:group>
+    		<xf:group tagname="colgroup">
+    			<xf:group tagname="col" style="width:50.00%;"></xf:group>
+    			<xf:group tagname="col" style="width:50.00%"></xf:group>
+    		</xf:group>
+    		<xf:group tagname="tr" style="">
+    			<xf:group tagname="th" style="" class="w2tb_th">
+    				코드
+    				<w2:attributes>
+    					<w2:scope>row</w2:scope>
+    				</w2:attributes>
+    			</xf:group>
+    			<xf:group tagname="td" style="" class="w2tb_td">
+    				<xf:input adjustMaxLength="false" id="" style="width: 100%;height: 21px;" ref="data:dc_popupMain.LWST_GNRL_CODE"
+    					maxByteLength="" dataType="number">
+    				</xf:input>
+    			</xf:group>
+    		</xf:group>
+    		<xf:group tagname="tr" style="">
+    			<xf:group tagname="th" style="" class="w2tb_th">
+    				사업명
+    				<w2:attributes>
+    					<w2:scope>row</w2:scope>
+    				</w2:attributes>
+    			</xf:group>
+    			<xf:group tagname="td" style="" class="w2tb_td">
+    				<xf:input adjustMaxLength="false" id="" style="width: 100%;height: 21px;" ref="data:dc_popupMain.BSNS_NM"
+    					maxByteLength="" dataType="text">
+    				</xf:input>
+    			</xf:group>
+    		</xf:group>
+    		<xf:group tagname="tr" style="">
+    			<xf:group tagname="th" class="w2tb_th">
+    				사건명
+    				<w2:attributes>
+    					<w2:scope>row</w2:scope>
+    				</w2:attributes>
+    			</xf:group>
+    			<xf:group tagname="td" class="w2tb_td">
+    				<w2:attributes></w2:attributes>
+    				<xf:input adjustMaxLength="false" id="" style="width: 100%;height: 21px;" ref="data:dc_popupMain.INCDNT_NM"
+    					maxByteLength="" dataType="text">
+    				</xf:input>
+    			</xf:group>
+    		</xf:group>
+    		<xf:group tagname="tr" style="">
+    			<xf:group tagname="th" class="w2tb_th">
+    				사건개요
+    				<w2:attributes>
+    					<w2:scope>row</w2:scope>
+    				</w2:attributes>
+    			</xf:group>
+    			<xf:group tagname="td" class="w2tb_td">
+    				<w2:attributes></w2:attributes>
+    				<xf:input adjustMaxLength="false" id="" style="width: 100%;height: 21px;" ref="data:dc_popupMain.LWST_ISS_SUMRY"
+    					maxByteLength="" dataType="text">
+    				</xf:input>
+    			</xf:group>
+    		</xf:group>
+    	</xf:group>
+    	<xf:group tagname="table" style="width:100%;margin-top: 20px;" id="" class="w2tb">
+    		<w2:attributes>
+    			<w2:summary></w2:summary>
+    		</w2:attributes>
+    		<xf:group tagname="caption"></xf:group>
+    		<xf:group tagname="colgroup">
+    			<xf:group tagname="col" style="width:50.00%;"></xf:group>
+    			<xf:group tagname="col" style="width:50.00%"></xf:group>
+    		</xf:group>
+    		<xf:group tagname="tr" style="">
+    			<xf:group tagname="th" style="" class="w2tb_th">
+    				디테일상태
+    				<w2:attributes>
+    					<w2:scope>row</w2:scope>
+    				</w2:attributes>
+    			</xf:group>
+    			<xf:group tagname="td" style="" class="w2tb_td">
+    				<xf:input adjustMaxLength="false" id="" style="width: 100%;height: 21px;" ref="data:dc_popupSub.chk-detail"
+    					maxByteLength="" dataType="text">
+    				</xf:input>
+    			</xf:group>
+    		</xf:group>
+    		<xf:group tagname="tr">
+    			<xf:group tagname="th" style="" class="w2tb_th">
+    				이름
+    				<w2:attributes>
+    					<w2:scope>row</w2:scope>
+    				</w2:attributes>
+    			</xf:group>
+    			<xf:group tagname="td" style="" class="w2tb_td">
+    				<xf:input adjustMaxLength="false" id="" style="width: 100%;height: 21px;" ref="data:dc_popupSub.ACUSR_NAME"
+    					maxByteLength="" dataType="text">
+    				</xf:input>
+    			</xf:group>
+    		</xf:group>
+    		<xf:group tagname="tr">
+    			<xf:group tagname="th" style="" class="w2tb_th">
+    				주소
+    				<w2:attributes>
+    					<w2:scope>row</w2:scope>
+    				</w2:attributes>
+    			</xf:group>
+    			<xf:group tagname="td" style="" class="w2tb_td">
+    				<xf:input adjustMaxLength="false" id="" style="width: 100%;height: 21px;" ref="data:dc_popupSub.GNRL_ADRES"
+    					maxByteLength="" dataType="text">
+    				</xf:input>
+    			</xf:group>
+    		</xf:group>
+    		<xf:group tagname="tr">
+    			<xf:group tagname="th" style="" class="w2tb_th">
+    				이메일
+    				<w2:attributes>
+    					<w2:scope>row</w2:scope>
+    				</w2:attributes>
+    			</xf:group>
+    			<xf:group tagname="td" style="" class="w2tb_td">
+    				<xf:input adjustMaxLength="false" id="" style="width: 100%;height: 21px;" ref="data:dc_popupSub.EMAIL" maxByteLength=""
+    					dataType="text">
+    				</xf:input>
+    			</xf:group>
+    		</xf:group>
+    		<xf:group tagname="tr">
+    			<xf:group tagname="th" style="" class="w2tb_th">
+    				소송원고코드
+    				<w2:attributes>
+    					<w2:scope>row</w2:scope>
+    				</w2:attributes>
+    			</xf:group>
+    			<xf:group tagname="td" style="" class="w2tb_td">
+    				<xf:input adjustMaxLength="false" id="" style="width: 100%;height: 21px;" ref="data:dc_popupSub.LWST_ACUSR_CODE"
+    					maxByteLength="" dataType="text">
+    				</xf:input>
+    			</xf:group>
+    		</xf:group>
+    	</xf:group>
+    </body>
+</html>

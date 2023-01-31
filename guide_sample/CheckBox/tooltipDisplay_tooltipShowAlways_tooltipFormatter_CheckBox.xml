@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+            <w2:dataCollection baseNode="map">
+            	<w2:dataList baseNode="list" repeatNode="map" id="dataList1" saveRemovedData="true">
+            		<w2:columnInfo>
+            			<w2:column id="country" name="country" dataType="text"></w2:column>
+            			<w2:column id="city" name="city" dataType="text"></w2:column>
+            		</w2:columnInfo>
+            		<w2:data use="true">
+            			<w2:row>
+
+            				<country><![CDATA[Korea]]></country>
+            				<city><![CDATA[Seoul]]></city>
+            			</w2:row>
+            			<w2:row>
+
+            				<country><![CDATA[China]]></country>
+            				<city><![CDATA[Beijing]]></city>
+            			</w2:row>
+            			<w2:row>
+
+            				<country><![CDATA[Vietnam]]></country>
+            				<city><![CDATA[Hanoi]]></city>
+            			</w2:row>
+            			<w2:row>
+
+            				<country><![CDATA[Russian]]></country>
+            				<city><![CDATA[Vladivostok]]></city>
+            			</w2:row>
+            			<w2:row>
+
+            				<country><![CDATA[The Netherlands]]></country>
+            				<city><![CDATA[Amsterdam]]></city>
+            			</w2:row>
+            			<w2:row>
+
+            				<country><![CDATA[Indonesia]]></country>
+            				<city><![CDATA[Jakarta]]></city>
+            			</w2:row>
+            		</w2:data>
+            	</w2:dataList>
+            </w2:dataCollection>
+            <w2:workflowCollection>
+            </w2:workflowCollection>
+        </xf:model>
+        <style>
+        
+
+        	table {
+				table-layout:fixed;
+			}
+			
+        table td {
+				width:30px;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+			</style>
+         <script type="text/javascript" lazy="false"><![CDATA[
+        
+	scwin.onpageload = function() {
+		
+	};
+	
+	scwin.onpageunload = function() {
+		
+	};
+	
+	scwin.tooltip = function(label, index) {		
+		var data = dataList1.getDataRow(index);
+		var value = data.country;
+		return label + ", " + value;
+	};
+	]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    	<xf:select selectedindex="-1" id="checkbox1" appearance="full"
+    		style="margin: 50px;margin-left: 100px;width:150px;height:50px;text-overflow:ellipsis;" cols="2" rows="" ref="" tooltipDisplay="true"
+    		tooltipTime="0" tooltipShowAlways="true" tooltipFormatter="scwin.tooltip" tooltipItemLabel="tooltip">
+    		<xf:choices>
+    			<xf:itemset nodeset="data:dataList1">
+    				<xf:label ref="city"></xf:label>
+    				<xf:value ref="country"></xf:value>
+    			</xf:itemset>
+    		</xf:choices>
+    	</xf:select>
+    </body>
+</html>

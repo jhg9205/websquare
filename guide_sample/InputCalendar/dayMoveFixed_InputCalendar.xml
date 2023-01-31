@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+        <w2:type>COMPONENT</w2:type>
+        <w2:buildDate/>
+        <w2:MSA/>
+        <xf:model>
+            <w2:dataCollection baseNode="map"/>
+            <w2:workflowCollection/>
+        </xf:model>
+        <w2:layoutInfo/>
+        <w2:publicInfo method=""/>
+        <script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function() {
+	
+};
+]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload">
+    <xf:group id="" style="padding-left: 200px;padding-top: 50px;"><w2:textbox style="width: 170px;height: 23px;line-height:32px;margin-bottom: 20px;padding:5px;background-color:#C0C0C0;font-size: :15px;font-family: monospace;" id="" label='dayMoveFixed="true"'></w2:textbox><w2:inputCalendar footerDiv="false" rightAlign="false" focusOnDateSelect="false" style="width: 180px;height: 30px;" id="" renderDiv="true" calendarValueType="yearMonthDate" monthNames="1,2,3,4,5,6,7,8,9,10,11,12" monthNamesForYearMonthType="1,2,3,4,5,6,7,8,9,10,11,12" showToday="false" yearSuffix="Y" dayMoveFixed="true">
+    	</w2:inputCalendar></xf:group></body>
+</html>

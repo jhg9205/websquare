@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+        <w2:type>COMPONENT</w2:type>
+        <w2:buildDate/>
+        <w2:MSA/>
+        <xf:model>
+            <w2:dataCollection baseNode="map">
+            	<w2:dataList baseNode="list" repeatNode="map" id="dataList1" saveRemovedData="true">
+            		<w2:columnInfo>
+            			<w2:column id="C_Code" name="name1" dataType="text"></w2:column>
+            			<w2:column id="City" name="name2" dataType="text"></w2:column>
+            			<w2:column id="Country" name="name3" dataType="text"></w2:column>
+            			<w2:column id="Airport" name="name4" dataType="text"></w2:column>
+            			<w2:column id="A_Code" name="name5" dataType="text"></w2:column>
+            		</w2:columnInfo>
+            	</w2:dataList>
+            </w2:dataCollection>
+            <w2:workflowCollection/>
+        </xf:model>
+        <w2:layoutInfo/>
+        <w2:publicInfo method=""/>
+        <script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function() {
+	var json = [{
+			"C_Code" : "PAR",
+			"Airport" : "ORLY",
+			"Country" : "FRANCE",
+			"City" : "PARIS",
+			"A_Code" : "ORY"
+		}, {
+			"C_Code" : "PDX",
+			"Airport" : "PORTLAND INT’L",
+			"Country" : "U.S.A.",
+			"City" : "PORTLAND",
+			"A_Code" : "PDX"
+		}, {
+			"C_Code" : "PEK",
+			"Airport" : "CAPITAL",
+			"Country" : "CHINA",
+			"City" : "BEIJING",
+			"A_Code" : "PEK"
+		}, {
+			"C_Code" : "PER",
+			"Airport" : "PERTH",
+			"Country" : "AUSTRALIA",
+			"City" : "PERTH",
+			"A_Code" : "PER"
+		}, {
+			"C_Code" : "PHL",
+			"Airport" : "PHILADELPHIA INT’L",
+			"Country" : "U.S.A.",
+			"City" : "PHILADELPHIA",
+			"A_Code" : "PHL"
+		}, {
+			"C_Code" : "PHX",
+			"Airport" : "SKY HARBOR ",
+			"Country" : "U.S.A.",
+			"City" : "PHOENIX",
+			"A_Code" : "PHX"
+		}, {
+			"C_Code" : "PIT",
+			"Airport" : "PITTSBURGH INT’L",
+			"Country" : "U.S.A.",
+			"City" : "PITTSBURGH",
+			"A_Code" : "PIT"
+		}, {
+			"C_Code" : "PNH",
+			"Airport" : "POCHENTONG",
+			"Country" : "CAMBODIA",
+			"City" : "PHNOMPENH",
+			"A_Code" : "PNH"
+		}, {
+			"C_Code" : "PUS",
+			"Airport" : "KIMHAE",
+			"Country" : "KOREA",
+			"City" : "PUSAN",
+			"A_Code" : "PUS"
+		}];
+		dataList1.setJSON(json);
+
+};
+]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload">
+    	
+    	
+
+    <xf:group id="" style="padding: 30px;"><xf:group tagname="table" style="width:80%;" id="" class="w2tb">
+    		<w2:attributes>
+    			<w2:summary></w2:summary>
+    		</w2:attributes>
+    		<xf:group tagname="caption"></xf:group>
+    		<xf:group tagname="colgroup">
+    			<xf:group tagname="col" style="width:50.00%;"></xf:group>
+    			<xf:group tagname="col" style="width:50.00%;"></xf:group>
+    		</xf:group>
+    		<xf:group tagname="tr" style="">
+    			<xf:group tagname="th" style="font-size:17px;font-family:monospace;" class="w2tb_th">displayModeSync=&quot;false&quot;<w2:attributes>
+    					<w2:scope>col</w2:scope>
+    				</w2:attributes></xf:group>
+    			<xf:group tagname="th" style="font-size:17px;font-family:monospace;" class="w2tb_th">displayModeSync=&quot;true&quot;<w2:attributes>
+    					<w2:scope>col</w2:scope>
+    				</w2:attributes></xf:group>
+    		</xf:group>
+    		<xf:group tagname="tr" style="height: 50px;">
+    			<xf:group tagname="td" style="" class="w2tb_td">
+    				<w2:autoComplete submenuSize="auto" chooseOption="" useKeywordHighlight="true" allOption="" searchTarget="both" displayMode="label delim value" search="contain" ref="" displayModeSync="false" delimiter=" --- " editType="select" style="width: 200px;height: 21px;" id="autoComplete1" useLocale="false">
+    					<w2:choices>
+    						<w2:itemset nodeset="data:dataList1">
+    							<w2:label ref="Country"></w2:label>
+    							<w2:value ref="City"></w2:value>
+    						</w2:itemset>
+    					</w2:choices>
+    				</w2:autoComplete>
+    			</xf:group>
+    			<xf:group tagname="td" style="" class="w2tb_td">
+    				<w2:autoComplete submenuSize="auto" chooseOption="" useKeywordHighlight="true" allOption="" searchTarget="both" displayMode="label delim value" displayModeSync="true" ref="" search="contain" delimiter=" --- " editType="select" style="width: 200px;height: 21px;" id="autoComplete2" useLocale="false">
+    					<w2:choices>
+    						<w2:itemset nodeset="data:dataList1">
+    							<w2:label ref="Country"></w2:label>
+    							<w2:value ref="City"></w2:value>
+    						</w2:itemset>
+    					</w2:choices>
+    				</w2:autoComplete>
+    			</xf:group>
+    		</xf:group>
+    	</xf:group></xf:group></body>
+</html>

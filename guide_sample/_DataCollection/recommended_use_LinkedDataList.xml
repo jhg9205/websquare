@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+            <w2:dataCollection baseNode="map">
+            	<w2:dataList baseNode="list" repeatNode="map" id="dataList1" saveRemovedData="true">
+            		<w2:columnInfo>
+            			<w2:column id="Country" name="Country" dataType="text"></w2:column>
+            			<w2:column id="City" name="City" dataType="text"></w2:column>
+            			<w2:column id="Airport" name="Airport" dataType="text"></w2:column>
+            			<w2:column id="A_Code" name="A_Code" dataType="text"></w2:column>
+            			<w2:column id="C_Code" name="C_Code" dataType="text"></w2:column>
+            		</w2:columnInfo>
+            	</w2:dataList>
+            	<w2:linkedDataList bind="dataList1" id="linkedDataList1">
+            		<w2:condition type="filter"><![CDATA[Country=="U.S.A."]]></w2:condition>
+            		<w2:condition type="sort"><![CDATA[]]></w2:condition>
+            	</w2:linkedDataList>
+            	<w2:linkedDataList bind="dataList1" id="linkedDataList2">
+            		<w2:condition type="filter"><![CDATA[Country=="FRANCE"]]></w2:condition>
+            		<w2:condition type="sort"><![CDATA[]]></w2:condition>
+            	</w2:linkedDataList>
+            	<w2:linkedDataList bind="dataList1" id="linkedDataList3">
+            		<w2:condition type="filter"><![CDATA[Country=="CHINA"]]></w2:condition>
+            		<w2:condition type="sort"><![CDATA[]]></w2:condition>
+            	</w2:linkedDataList>
+            	<w2:linkedDataList bind="dataList1" id="linkedDataList4">
+            		<w2:condition type="filter"><![CDATA[Country=="AUSTRALIA"]]></w2:condition>
+            		<w2:condition type="sort"><![CDATA[]]></w2:condition>
+            	</w2:linkedDataList>
+            	<w2:linkedDataList bind="dataList1" id="linkedDataList5">
+            		<w2:condition type="filter"><![CDATA[Country=="CAMBODIA"]]></w2:condition>
+            		<w2:condition type="sort"><![CDATA[]]></w2:condition>
+            	</w2:linkedDataList>
+            	<w2:linkedDataList bind="dataList1" id="linkedDataList6">
+            		<w2:condition type="filter"><![CDATA[Country=="KOREA"]]></w2:condition>
+            		<w2:condition type="sort"><![CDATA[]]></w2:condition>
+            	</w2:linkedDataList>
+            </w2:dataCollection>
+            <w2:workflowCollection>
+            </w2:workflowCollection>
+        </xf:model>
+         <script type="text/javascript" lazy="false"><![CDATA[
+        
+	scwin.onpageload = function() {
+		var jsonData1 = [
+   {
+      "C_Code": "PAR",
+      "Airport": "ORLY",
+      "Country": "FRANCE",
+      "City": "PARIS",
+      "A_Code": "ORY"
+   },
+   {
+      "C_Code": "PDX",
+      "Airport": "PORTLAND INT’L",
+      "Country": "U.S.A.",
+      "City": "PORTLAND",
+      "A_Code": "PDX"
+   },
+   {
+      "C_Code": "PEK",
+      "Airport": "CAPITAL",
+      "Country": "CHINA",
+      "City": "BEIJING",
+      "A_Code": "PEK"
+   },
+   {
+      "C_Code": "PER",
+      "Airport": "PERTH",
+      "Country": "AUSTRALIA",
+      "City": "PERTH",
+      "A_Code": "PER"
+   },
+   {
+      "C_Code": "PHL",
+      "Airport": "PHILADELPHIA INT’L",
+      "Country": "U.S.A.",
+      "City": "PHILADELPHIA",
+      "A_Code": "PHL"
+   },
+   {
+      "C_Code": "PHX",
+      "Airport": "SKY HARBOR ",
+      "Country": "U.S.A.",
+      "City": "PHOENIX",
+      "A_Code": "PHX"
+   },
+   {
+      "C_Code": "PIT",
+      "Airport": "PITTSBURGH INT’L",
+      "Country": "U.S.A.",
+      "City": "PITTSBURGH",
+      "A_Code": "PIT"
+   },
+   {
+      "C_Code": "PNH",
+      "Airport": "POCHENTONG",
+      "Country": "CAMBODIA",
+      "City": "PHNOMPENH",
+      "A_Code": "PNH"
+   },
+   {
+      "C_Code": "PUS",
+      "Airport": "KIMHAE",
+      "Country": "KOREA",
+      "City": "PUSAN",
+      "A_Code": "PUS"
+   },
+   {
+      "C_Code": "ICH",
+      "Airport": "Incheon International Airport",
+      "Country": "KOREA",
+      "City": "Incheon",
+      "A_Code": "ICN"
+   },
+   {
+      "C_Code": "JJU",
+      "Airport": "Jeju International Airport",
+      "Country": "KOREA",
+      "City": "Jeju",
+      "A_Code": "CJU"
+   },
+   {
+      "C_Code": "GPO",
+      "Airport": "Gimpo International Airport",
+      "Country": "KOREA",
+      "City": "Gimpo",
+      "A_Code": "GMP"
+   },
+   {
+      "C_Code": "NCE",
+      "Airport": "Nice",
+      "Country": "FRANCE",
+      "City": "Nice",
+      "A_Code": "NCE"
+   },
+   {
+      "C_Code": "LYN",
+      "Airport": "Lyon",
+      "Country": "FRANCE",
+      "City": "Lyon",
+      "A_Code": "LYS"
+   },
+   {
+      "C_Code": "ANQ",
+      "Airport": "Anqing Tianzhushan Airport",
+      "Country": "CHINA",
+      "City": "Anqing",
+      "A_Code": "AQG"
+   },
+   {
+      "C_Code": "HRB",
+      "Airport": "Harbin Taping International Airport",
+      "Country": "CHINA",
+      "City": "Harbin",
+      "A_Code": "HRB"
+   },
+   {
+      "C_Code": "SDN",
+      "Airport": "Sydney Aiport",
+      "Country": "AUSTRALIA",
+      "City": "Sydney",
+      "A_Code": "SYD"
+   },
+   {
+      "C_Code": "MBR",
+      "Airport": "Melbourne Aiport",
+      "Country": "AUSTRALIA",
+      "City": "Melbourne",
+      "A_Code": "MEL"
+   },
+   {
+      "C_Code": "BRB",
+      "Airport": "Brisbane Aiport",
+      "Country": "AUSTRALIA",
+      "City": "Brisbane",
+      "A_Code": "BNE"
+   },
+   {
+      "C_Code": "SRP",
+      "Airport": "Siem Reap Aiport",
+      "Country": "CAMBODIA",
+      "City": "Siem Reap",
+      "A_Code": "REP"
+   },
+   {
+      "C_Code": "SHV",
+      "Airport": "Sihanoukville International Aiport",
+      "Country": "CAMBODIA",
+      "City": "Sihanoukville",
+      "A_Code": "KOS"
+   }
+];
+		dataList1.setJSON(jsonData1);
+	};
+	
+	scwin.onpageunload = function() {
+		
+	};
+	
+	]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    <xf:group id="" style="padding: 30px;"><w2:gridView scrollByColumnAdaptive="false" dataList="data:dataList1" style="width: 1000px;height: 200px;margin-bottom: 20px;" scrollByColumn="false" id="" autoFit="allColumn" defaultCellHeight="20">
+    		<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
+    		<w2:header style="" id="header1">
+    			<w2:row style="" id="row1">
+    				<w2:column removeBorderStyle="false" width="70" inputType="text" style="height:20px" id="column5" value="Country" blockSelect="false" displayMode="label">
+    				</w2:column>
+    				<w2:column removeBorderStyle="false" width="70" inputType="text" style="height:20px" id="column4" value="City" blockSelect="false" displayMode="label">
+    				</w2:column>
+    				<w2:column removeBorderStyle="false" width="70" inputType="text" style="height:20px" id="column3" value="Airport" blockSelect="false" displayMode="label">
+    				</w2:column>
+    				<w2:column removeBorderStyle="false" width="70" inputType="text" style="height:20px" id="column2" value="A_Code" blockSelect="false" displayMode="label">
+    				</w2:column>
+    				<w2:column removeBorderStyle="false" width="70" inputType="text" style="height:20px" id="column1" value="C_Code" blockSelect="false" displayMode="label">
+    				</w2:column>
+    			</w2:row>
+    		</w2:header>
+    		<w2:gBody style="" id="gBody1">
+    			<w2:row style="" id="row2">
+    				<w2:column removeBorderStyle="false" width="70" inputType="text" style="height:20px" id="Country" value="" blockSelect="false" displayMode="label">
+    				</w2:column>
+    				<w2:column removeBorderStyle="false" width="70" inputType="text" style="height:20px" id="City" value="" blockSelect="false" displayMode="label">
+    				</w2:column>
+    				<w2:column removeBorderStyle="false" width="70" inputType="text" style="height:20px" id="Airport" value="" blockSelect="false" displayMode="label">
+    				</w2:column>
+    				<w2:column removeBorderStyle="false" width="70" inputType="text" style="height:20px" id="A_Code" value="" blockSelect="false" displayMode="label">
+    				</w2:column>
+    				<w2:column removeBorderStyle="false" width="70" inputType="text" style="height:20px" id="C_Code" value="" blockSelect="false" displayMode="label">
+    				</w2:column>
+    			</w2:row>
+    		</w2:gBody>
+    	</w2:gridView><xf:group tagname="table" style="width: 1000px;" id="" class="w2tb">
+    		<w2:attributes>
+    			<w2:summary></w2:summary>
+    		</w2:attributes>
+    		<xf:group tagname="caption"></xf:group>
+    		<xf:group tagname="colgroup">
+    			<xf:group tagname="col" style="width:33.33%;"></xf:group>
+    			<xf:group tagname="col" style="width:33.33%;"></xf:group>
+    			<xf:group tagname="col" style="width:33.33%;"></xf:group><xf:group tagname="col" style="width:33.33%;"></xf:group><xf:group tagname="col" style="width:33.33%;"></xf:group><xf:group tagname="col" style="width:33.33%;"></xf:group>
+    		</xf:group>
+    		<xf:group tagname="tr" style="">
+    			<xf:group tagname="th" style="background-color: lightgray;" class="w2tb_th">AutoComplete<w2:attributes>
+    					<w2:scope>row</w2:scope>
+    				</w2:attributes></xf:group>
+    			<xf:group tagname="th" style="background-color: lightgray" class="w2tb_th">CheckBox</xf:group>
+    			<xf:group tagname="th" style="background-color: lightgray;" class="w2tb_th">CheckComboBox<w2:attributes>
+    					<w2:scope>col</w2:scope>
+    				</w2:attributes></xf:group>
+    		<xf:group tagname="th" style="background-color: lightgray;" class="w2tb_th">MultiSelect<w2:attributes><w2:scope>row</w2:scope></w2:attributes></xf:group><xf:group tagname="th" style="background-color: lightgray;" class="w2tb_th">Radio<w2:attributes><w2:scope>row</w2:scope></w2:attributes></xf:group><xf:group tagname="th" style="background-color: lightgray;" class="w2tb_th">SelectBox<w2:attributes><w2:scope>row</w2:scope></w2:attributes></xf:group></xf:group>
+    		<xf:group tagname="tr">
+    			<xf:group tagname="th" style="background-color: transparent" class="w2tb_th">
+    				<w2:attributes>
+    					<w2:scope>row</w2:scope>
+    				</w2:attributes>
+    				<w2:autoComplete submenuSize="auto" search="contain" ref="" chooseOption="" editType="select" useKeywordHighlight="true"
+    					style="width: 148px;height: 21px;" id="" allOption="" caseSensitive="false" escape="false">
+    					<w2:choices>
+    						<w2:itemset nodeset="data:linkedDataList1">
+    							<w2:label ref="City"></w2:label>
+    							<w2:value ref="C_Code"></w2:value>
+    						</w2:itemset>
+    					</w2:choices>
+    				</w2:autoComplete>
+    			</xf:group>
+    			<xf:group tagname="th" style="height: 250px;" tabIndex="" class="w2tb_td">
+    				<xf:select ref="" appearance="full" style="width: 148px;height: 21px;" id="" selectedindex="-1" rows="" cols="">
+    					<xf:choices>
+    						<xf:itemset nodeset="data:linkedDataList2">
+    							<xf:label ref="City"></xf:label>
+    							<xf:value ref="C_Code"></xf:value>
+    						</xf:itemset>
+    					</xf:choices>
+    				</xf:select>
+    			</xf:group>
+    			<xf:group tagname="th" style="background-color: transparent;" class="w2tb_th">
+    				<w2:attributes>
+    					<w2:scope>col</w2:scope>
+    				</w2:attributes>
+    				<xf:checkcombobox submenuSize="auto" displayAllOptionLabel="false" ref="" appearance="minimal" chooseOption=""
+    					disabled="false" style="width: 148px;height: 21px;margin-top: 0px;" allOption="" id="" displayMode="label" direction="auto">
+    					<xf:choices>
+    						<xf:itemset nodeset="data:linkedDataList3">
+    							<xf:label ref="City"></xf:label>
+    							<xf:value ref="C_Code"></xf:value>
+    						</xf:itemset>
+    					</xf:choices>
+    				</xf:checkcombobox>
+    			</xf:group>
+    			<xf:group tagname="th" style="background-color: transparent;" class="w2tb_th">
+    				<w2:attributes>
+    					<w2:scope>row</w2:scope>
+    				</w2:attributes>
+    				<xf:select ref="" appearance="minimal" style="width: 150px;" id="">
+    					<xf:choices>
+    						<xf:itemset nodeset="data:linkedDataList4">
+    							<xf:label ref="City"></xf:label>
+    							<xf:value ref="C_Code"></xf:value>
+    						</xf:itemset>
+    					</xf:choices>
+    				</xf:select>
+    			</xf:group>
+    			<xf:group tagname="th" style="background-color: transparent;" class="w2tb_th">
+    				<w2:attributes>
+    					<w2:scope>row</w2:scope>
+    				</w2:attributes>
+    				<xf:select1 ref="" appearance="full" style="width: 150px;height: 21px;" id="" rows="" cols="" selectedIndex="-1">
+    					<xf:choices>
+    						<xf:itemset nodeset="data:linkedDataList5">
+    							<xf:label ref="City"></xf:label>
+    							<xf:value ref="C_Code"></xf:value>
+    						</xf:itemset>
+    					</xf:choices>
+    				</xf:select1>
+    			</xf:group>
+    			<xf:group tagname="th" style="background-color: transparent;" class="w2tb_th">
+    				<w2:attributes>
+    					<w2:scope>row</w2:scope>
+    				</w2:attributes>
+    				<xf:select1 submenuSize="auto" ref="" appearance="minimal" disabledClass="w2selectbox_disabled" chooseOption=""
+    					style="width: 148px;height: 21px;" disabled="false" id="" allOption="" direction="auto">
+    					<xf:choices>
+    						<xf:itemset nodeset="data:linkedDataList6">
+    							<xf:label ref="City"></xf:label>
+    							<xf:value ref="C_Code"></xf:value>
+    						</xf:itemset>
+    					</xf:choices>
+    				</xf:select1>
+    			</xf:group></xf:group>
+    	</xf:group></xf:group></body>
+</html>

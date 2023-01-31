@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+            <w2:dataCollection baseNode="map">
+            </w2:dataCollection>
+            <w2:workflowCollection>
+            </w2:workflowCollection>
+        </xf:model>
+        <style>
+        	.test{
+				text-overflow:ellipsis;
+			}
+			.test2{
+				background-color:red;
+			}
+
+        	table {
+				table-layout:fixed;
+			}
+
+			table td {
+				width:30px;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+		</style>
+         <script type="text/javascript" lazy="false"><![CDATA[
+        
+	scwin.onpageload = function() {
+		
+	};
+	
+	scwin.onpageunload = function() {
+		
+	};
+	
+	scwin.tooltip = function(label, index) {
+		return "Select " + label + ".";
+	};
+	
+	]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+
+
+    	<xf:select1 tooltipFormatter="scwin.tooltip" ref="" tooltipClass="" appearance="full" tooltipDisplay="true"
+    		style="width:150px;height:140px;text-overflow:ellipsis;margin: 50px;margin-left: 100px;" id="" selectedindex="-1" rows="" cols="2"
+    		class="test" tooltipItemLabel="" tooltipShowAlways="true">
+    		<xf:choices>
+    			<xf:item>
+    				<xf:label><![CDATA[yourChoice111]]></xf:label>
+    				<xf:value><![CDATA[001]]></xf:value>
+    			</xf:item>
+    			<xf:item>
+    				<xf:label><![CDATA[Item2]]></xf:label>
+    				<xf:value><![CDATA[002]]></xf:value>
+    			</xf:item>
+    			<xf:item>
+    				<xf:label><![CDATA[Item3]]></xf:label>
+    				<xf:value><![CDATA[003]]></xf:value>
+    			</xf:item>
+    			<xf:item>
+    				<xf:label><![CDATA[yourChoice444]]></xf:label>
+    				<xf:value><![CDATA[004]]></xf:value>
+    			</xf:item>
+    		</xf:choices>
+    	</xf:select1>
+
+    </body>
+</html>

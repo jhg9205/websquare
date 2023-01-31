@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+            <w2:dataCollection baseNode="map">
+            	<w2:dataList id="dataList1" baseNode="list" saveRemovedData="true" repeatNode="map">
+            		<w2:columnInfo>
+            			<w2:column id="col1" name="name1" dataType="text"></w2:column>
+            			<w2:column id="col2" name="name2" dataType="text"></w2:column>
+            			<w2:column id="col3" name="name3" dataType="text"></w2:column>
+            		</w2:columnInfo>
+            	</w2:dataList>
+            </w2:dataCollection>
+            <w2:workflowCollection>
+            </w2:workflowCollection>
+        </xf:model>
+        <script type="text/javascript"><![CDATA[
+	
+	scwin.onpageload = function() {
+		
+	};
+	
+	scwin.onpageunload = function() {
+		
+	};        
+        var count=0;
+		
+		scwin.trigger1_onclick = function(e) {
+			count++;
+			widgetContainer.addWidgets({
+			    id : "Widget_Added_"+count,
+			    title : "Widget_Added_"+count,
+			    //src : "widget.xml",
+			    scope : true,
+			    x : 0,
+			    y : 0,
+			    unitWidth : 1,
+			    unitHeight : 1
+			});
+		};]]></script>
+    </head>
+    <body style="padding:20px;">
+    	<xf:group id=""><xf:trigger style="width: 120px;height: 39px;line-height:32px;padding:5px;background-color:#C0C0C0;font-size:15px;font-family:monospace;" id="trigger1" type="button" ev:onclick="scwin.trigger1_onclick">
+    		<xf:label><![CDATA[addWidgets()]]></xf:label>
+    	</xf:trigger></xf:group><w2:widgetContainer id="widgetContainer" cols="3"
+    		style="position: relative ;width:100%;height:100%;border:1px solid black;margin-top: 30px;" unitHeightPixel="200" mode="pushpull"
+    		widgetMove="true" ev:onwidgetmove="scwin.widgetContainer1_onwidgetmove" preventMaximizeByTitle="false">
+    	</w2:widgetContainer>
+
+    </body>
+</html>

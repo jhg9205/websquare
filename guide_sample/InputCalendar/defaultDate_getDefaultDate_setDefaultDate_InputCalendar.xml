@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+            <w2:dataCollection baseNode="map">
+            </w2:dataCollection>
+            <w2:workflowCollection>
+            </w2:workflowCollection>
+        </xf:model>
+         <script type="text/javascript" lazy="false"><![CDATA[
+        
+	scwin.onpageload = function() {
+		
+	};
+	
+	scwin.onpageunload = function() {
+		
+	};
+	
+	
+	
+	scwin.trigger1_onclick = function(e) {
+		var date = inputCalendar1.getDefaultDate();
+		alert(date);
+	};
+	
+	scwin.trigger2_onclick = function(e) {
+		inputCalendar1.setDefaultDate("20131231");
+	};
+	
+	scwin.trigger3_onclick = function(e) {
+		inputCalendar1.setValue("19910101");
+	};
+	
+	scwin.trigger4_onclick = function(e) {
+		var date = inputCalendar1.getValue();
+		alert(date);
+		
+	};
+	]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    	<w2:textbox label="Choose a date from 2023."
+    		style="font-color: blue;font-size: 20px;font-family: helvetica;height: 23px;margin-top: 20px;margin-left: 50px;" id="">
+    	</w2:textbox><xf:group id="" style="padding-top: 20px;padding-left: 50px;">
+
+    		<w2:inputCalendar defaultDate="" footerDiv="false" rightAlign="false" focusOnDateSelect="false" style="width: 150px;height: 23px;" id="inputCalendar1" renderType="component" renderDiv="true" calendarValueType="yearMonthDate" monthNames="01,02,03,04,05,06,07,08,09,10,11,12" yearSuffix=" Y">
+    		</w2:inputCalendar>
+    	</xf:group><xf:group id="" style="margin: 50px;margin-top: 30px;">
+    		<xf:trigger ev:onclick="scwin.trigger1_onclick" style="width: 150px;height: 39px;line-height:32px;padding:5px;background-color:#C0C0C0;font-size:15px;font-family:monospace;" id="trigger1" type="button">
+    			<xf:label><![CDATA[getDefaultDate()]]></xf:label>
+    		</xf:trigger>
+    		<xf:trigger ev:onclick="scwin.trigger2_onclick" style="width: 150px;height: 39px;margin-left: 30px;line-height:32px;padding:5px;background-color:#C0C0C0;font-size:15px;font-family:monospace;" id="trigger2" type="button">
+    			<xf:label><![CDATA[setDefaultDate()]]></xf:label>
+    		</xf:trigger>
+    		<xf:trigger ev:onclick="scwin.trigger3_onclick" style="width: 100px;height: 39px;margin-left: 30px;line-height:32px;padding:5px;background-color:#C0C0C0;font-size:15px;font-family:monospace;" id="trigger3" type="button">
+    			<xf:label><![CDATA[setValue()]]></xf:label>
+    		</xf:trigger>
+    		<xf:trigger ev:onclick="scwin.trigger4_onclick" style="width: 100px;height: 39px;margin-left: 30px;line-height:32px;padding:5px;background-color:#C0C0C0;font-size:15px;font-family:monospace;" id="trigger4" type="button">
+    			<xf:label><![CDATA[getValue()]]></xf:label>
+    		</xf:trigger>
+    	</xf:group>
+    	
+    	
+    </body>
+</html>

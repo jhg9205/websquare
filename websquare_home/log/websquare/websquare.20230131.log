@@ -200,3 +200,132 @@
 01/31 09:04:39.574 [main/SEVERE][GeneratedMethodAccessor34.invoke:-1] LoadingModule [uiplugin/panelContainer/panelContainer][websquare.uiplugin.panelContainer.PanelContainer][8035][5]
 01/31 09:05:13.929 [http-nio-8080-exec-5/INFO][GeneratedMethodAccessor34.invoke:-1] [WebSquareConfig.getStringValue] key[//engineType/@etag] value[support] defaultValue[support]
 01/31 09:05:14.096 [http-nio-8080-exec-1/INFO][GeneratedMethodAccessor34.invoke:-1] [WebSquareConfig.getStringValue] key[//date/encoding/@value] value[] defaultValue[UTF-8]
+01/31 09:34:15.920 [http-nio-8080-exec-7/INFO][GeneratedMethodAccessor34.invoke:-1] [WebSquareConfig.getStringValue] key[//excel/download/mobile/userAgent/@value] value[] defaultValue[]
+01/31 09:34:15.921 [http-nio-8080-exec-7/INFO][GeneratedMethodAccessor34.invoke:-1] [WebSquareConfig.getStringValue] key[//excel/download/xmlEncode/@value] value[] defaultValue[]
+01/31 09:34:15.922 [http-nio-8080-exec-7/INFO][GeneratedMethodAccessor34.invoke:-1] [WebSquareConfig.getStringValue] key[//excel/download/dataXMLProvider/@value] value[] defaultValue[]
+01/31 09:34:15.922 [http-nio-8080-exec-7/INFO][GeneratedMethodAccessor34.invoke:-1] [WebSquareConfig.getStringValue] key[//excel/download/dataXMLProvider/@pattern] value[] defaultValue[]
+01/31 09:34:15.956 [http-nio-8080-exec-7/INFO][GeneratedMethodAccessor34.invoke:-1] [GridXmlInfo.initXmlInfo][grid/gridView ID] : testGrid
+01/31 09:34:15.957 [http-nio-8080-exec-7/INFO][GeneratedMethodAccessor34.invoke:-1] [GridXmlInfo.initData][Non-Provider] : 48
+01/31 09:34:15.959 [http-nio-8080-exec-7/INFO][GeneratedMethodAccessor34.invoke:-1] [WebSquareConfig.getStringValue] key[//excel/headerColor/@value] value[] defaultValue[]
+01/31 09:34:15.959 [http-nio-8080-exec-7/INFO][GeneratedMethodAccessor34.invoke:-1] [WebSquareConfig.getStringValue] key[//excel/bodyColor/@value] value[] defaultValue[]
+01/31 09:34:15.959 [http-nio-8080-exec-7/INFO][GeneratedMethodAccessor34.invoke:-1] [WebSquareConfig.getStringValue] key[//excel/footerColor/@value] value[] defaultValue[]
+01/31 09:34:15.960 [http-nio-8080-exec-7/INFO][GeneratedMethodAccessor34.invoke:-1] [WebSquareConfig.getStringValue] key[//excel/subtotalColor/@value] value[] defaultValue[]
+01/31 09:34:15.971 [http-nio-8080-exec-7/INFO][GeneratedMethodAccessor34.invoke:-1] [WebSquareConfig.getStringValue] key[//excel/download/rowAccessWindowSize/@value] value[] defaultValue[100]
+01/31 09:34:16.262 [http-nio-8080-exec-7/INFO][GeneratedMethodAccessor34.invoke:-1] [WebSquareConfig.getStringValue] key[//excel/download/dataConvertor/@value] value[] defaultValue[]
+01/31 09:34:16.396 [http-nio-8080-exec-7/SEVERE][GeneratedMethodAccessor34.invoke:-1] [ExcelDocument] Header rows : [1], Body rows : [12], SubTotal rows : [0], Footer rows : 0
+01/31 09:34:16.396 [http-nio-8080-exec-7/INFO][GeneratedMethodAccessor34.invoke:-1] [GridXmlInfo.initXmlInfo][grid/gridView ID] : subGrid
+01/31 09:34:16.397 [http-nio-8080-exec-7/INFO][GeneratedMethodAccessor34.invoke:-1] [GridXmlInfo.initData][Non-Provider] : 15
+01/31 09:34:16.423 [http-nio-8080-exec-7/SEVERE][GeneratedMethodAccessor34.invoke:-1] [ExcelDocument] Header rows : [1], Body rows : [3], SubTotal rows : [0], Footer rows : 0
+01/31 09:34:16.504 [http-nio-8080-exec-7/SEVERE][GeneratedMethodAccessor34.invoke:-1] # Download File : GridViews_down.xlsx# File Size : [5182] byte
+01/31 09:34:16.505 [http-nio-8080-exec-7/INFO][GeneratedMethodAccessor34.invoke:-1] [WebSquareConfig.getStringValue] key[//excel/download/mobile/definer/@value] value[] defaultValue[]
+01/31 09:34:16.505 [http-nio-8080-exec-7/INFO][GeneratedMethodAccessor34.invoke:-1] [WebSquareConfig.getStringValue] key[//csv/download/mobile/definer/@value] value[] defaultValue[]
+01/31 09:34:16.506 [http-nio-8080-exec-7/INFO][GeneratedMethodAccessor34.invoke:-1] [WebSquareConfig.getStringValue] key[//excel/download/fileNameDefiner/@value] value[] defaultValue[]
+01/31 09:34:16.506 [http-nio-8080-exec-7/SEVERE][GeneratedMethodAccessor34.invoke:-1] [MobileExcelManager.initialize] ###################initialize MobileExcelManager#####################
+01/31 09:34:16.506 [http-nio-8080-exec-7/SEVERE][GeneratedMethodAccessor34.invoke:-1] [MobileExcelManager.initialize] MobileExcelManager.definerName : 
+01/31 09:34:16.506 [http-nio-8080-exec-7/SEVERE][GeneratedMethodAccessor34.invoke:-1] [MobileExcelManager.initialize] MobileExcelManager.excelFileNameDefiner : 
+01/31 09:34:16.506 [http-nio-8080-exec-7/SEVERE][GeneratedMethodAccessor34.invoke:-1] [MobileExcelManager.initialize] ##################################################################
+01/31 09:34:16.507 [http-nio-8080-exec-7/INFO][GeneratedMethodAccessor34.invoke:-1] [WebSquareConfig.getStringValue] key[//dispatcher/post/encoding/@value] value[ISO8859-1] defaultValue[ISO-8859-1]
+01/31 09:34:16.508 [http-nio-8080-exec-7/INFO][GeneratedMethodAccessor34.invoke:-1] [WebSquareConfig.getStringValue] key[//excel/download/encrypt/@value] value[] defaultValue[]
+01/31 09:34:16.509 [http-nio-8080-exec-7/INFO][GeneratedMethodAccessor34.invoke:-1] [WebSquareConfig.getStringValue] key[//csv/download/encrypt/@value] value[] defaultValue[]
+01/31 09:34:16.509 [http-nio-8080-exec-7/SEVERE][GeneratedMethodAccessor34.invoke:-1] [DownloadFileManager.initialize] ###################initialize DownloadFileManager#####################
+01/31 09:34:16.509 [http-nio-8080-exec-7/SEVERE][GeneratedMethodAccessor34.invoke:-1] [DownloadFileManager.initialize] DownloadFileManager.downloadEngrypterName : 
+01/31 09:34:16.510 [http-nio-8080-exec-7/SEVERE][GeneratedMethodAccessor34.invoke:-1] [DownloadFileManager.initialize] ##################################################################
+01/31 09:35:06.618 [http-nio-8080-exec-8/INFO][GeneratedMethodAccessor34.invoke:-1] [GridXmlInfo.initXmlInfo][grid/gridView ID] : testGrid
+01/31 09:35:06.618 [http-nio-8080-exec-8/INFO][GeneratedMethodAccessor34.invoke:-1] [GridXmlInfo.initData][Non-Provider] : 48
+01/31 09:35:06.629 [http-nio-8080-exec-8/SEVERE][GeneratedMethodAccessor34.invoke:-1] [ExcelDocument] Header rows : [1], Body rows : [12], SubTotal rows : [0], Footer rows : 0
+01/31 09:35:06.629 [http-nio-8080-exec-8/INFO][GeneratedMethodAccessor34.invoke:-1] [GridXmlInfo.initXmlInfo][grid/gridView ID] : subGrid
+01/31 09:35:06.629 [http-nio-8080-exec-8/INFO][GeneratedMethodAccessor34.invoke:-1] [GridXmlInfo.initData][Non-Provider] : 5
+01/31 09:35:06.635 [http-nio-8080-exec-8/SEVERE][GeneratedMethodAccessor34.invoke:-1] [ExcelDocument] Header rows : [1], Body rows : [1], SubTotal rows : [0], Footer rows : 0
+01/31 09:35:06.654 [http-nio-8080-exec-8/SEVERE][GeneratedMethodAccessor34.invoke:-1] # Download File : GridViews_down.xlsx# File Size : [5007] byte
+01/31 09:36:06.305 [http-nio-8080-exec-9/INFO][GeneratedMethodAccessor34.invoke:-1] [GridXmlInfo.initXmlInfo][grid/gridView ID] : testGrid
+01/31 09:36:06.306 [http-nio-8080-exec-9/INFO][GeneratedMethodAccessor34.invoke:-1] [GridXmlInfo.initData][Non-Provider] : 48
+01/31 09:36:06.313 [http-nio-8080-exec-9/SEVERE][GeneratedMethodAccessor34.invoke:-1] [ExcelDocument] Header rows : [1], Body rows : [12], SubTotal rows : [0], Footer rows : 0
+01/31 09:36:06.314 [http-nio-8080-exec-9/INFO][GeneratedMethodAccessor34.invoke:-1] [GridXmlInfo.initXmlInfo][grid/gridView ID] : subGrid
+01/31 09:36:06.314 [http-nio-8080-exec-9/INFO][GeneratedMethodAccessor34.invoke:-1] [GridXmlInfo.initData][Non-Provider] : 5
+01/31 09:36:06.321 [http-nio-8080-exec-9/SEVERE][GeneratedMethodAccessor34.invoke:-1] [ExcelDocument] Header rows : [1], Body rows : [1], SubTotal rows : [0], Footer rows : 0
+01/31 09:36:06.339 [http-nio-8080-exec-9/SEVERE][GeneratedMethodAccessor34.invoke:-1] # Download File : GridViews_down.xlsx# File Size : [5006] byte
+01/31 09:36:57.245 [http-nio-8080-exec-1/INFO][GeneratedMethodAccessor34.invoke:-1] [GridXmlInfo.initXmlInfo][grid/gridView ID] : testGrid
+01/31 09:36:57.246 [http-nio-8080-exec-1/INFO][GeneratedMethodAccessor34.invoke:-1] [GridXmlInfo.initData][Non-Provider] : 48
+01/31 09:36:57.254 [http-nio-8080-exec-1/SEVERE][GeneratedMethodAccessor34.invoke:-1] [ExcelDocument] Header rows : [1], Body rows : [12], SubTotal rows : [0], Footer rows : 0
+01/31 09:36:57.254 [http-nio-8080-exec-1/INFO][GeneratedMethodAccessor34.invoke:-1] [GridXmlInfo.initXmlInfo][grid/gridView ID] : subGrid
+01/31 09:36:57.254 [http-nio-8080-exec-1/INFO][GeneratedMethodAccessor34.invoke:-1] [GridXmlInfo.initData][Non-Provider] : 5
+01/31 09:36:57.260 [http-nio-8080-exec-1/SEVERE][GeneratedMethodAccessor34.invoke:-1] [ExcelDocument] Header rows : [1], Body rows : [1], SubTotal rows : [0], Footer rows : 0
+01/31 09:36:57.277 [http-nio-8080-exec-1/SEVERE][GeneratedMethodAccessor34.invoke:-1] # Download File : GridViews_down.xlsx# File Size : [4898] byte
+01/31 09:38:02.971 [http-nio-8080-exec-8/INFO][GeneratedMethodAccessor34.invoke:-1] [GridXmlInfo.initXmlInfo][grid/gridView ID] : testGrid
+01/31 09:38:02.972 [http-nio-8080-exec-8/INFO][GeneratedMethodAccessor34.invoke:-1] [GridXmlInfo.initData][Non-Provider] : 48
+01/31 09:38:02.976 [http-nio-8080-exec-8/SEVERE][GeneratedMethodAccessor34.invoke:-1] [ExcelDocument] Header rows : [1], Body rows : [12], SubTotal rows : [0], Footer rows : 0
+01/31 09:38:02.976 [http-nio-8080-exec-8/INFO][GeneratedMethodAccessor34.invoke:-1] [GridXmlInfo.initXmlInfo][grid/gridView ID] : subGrid
+01/31 09:38:02.976 [http-nio-8080-exec-8/INFO][GeneratedMethodAccessor34.invoke:-1] [GridXmlInfo.initData][Non-Provider] : 5
+01/31 09:38:02.979 [http-nio-8080-exec-8/SEVERE][GeneratedMethodAccessor34.invoke:-1] [ExcelDocument] Header rows : [1], Body rows : [1], SubTotal rows : [0], Footer rows : 0
+01/31 09:38:02.990 [http-nio-8080-exec-8/SEVERE][GeneratedMethodAccessor34.invoke:-1] # Download File : GridViews_down.xlsx# File Size : [4897] byte
+01/31 09:38:27.814 [http-nio-8080-exec-10/INFO][GeneratedMethodAccessor34.invoke:-1] [GridXmlInfo.initXmlInfo][grid/gridView ID] : testGrid
+01/31 09:38:27.815 [http-nio-8080-exec-10/INFO][GeneratedMethodAccessor34.invoke:-1] [GridXmlInfo.initData][Non-Provider] : 48
+01/31 09:38:27.822 [http-nio-8080-exec-10/SEVERE][GeneratedMethodAccessor34.invoke:-1] [ExcelDocument] Header rows : [1], Body rows : [12], SubTotal rows : [0], Footer rows : 0
+01/31 09:38:27.822 [http-nio-8080-exec-10/INFO][GeneratedMethodAccessor34.invoke:-1] [GridXmlInfo.initXmlInfo][grid/gridView ID] : subGrid
+01/31 09:38:27.822 [http-nio-8080-exec-10/INFO][GeneratedMethodAccessor34.invoke:-1] [GridXmlInfo.parseArrayDataBySeparator] [[]]
+01/31 09:38:27.822 [http-nio-8080-exec-10/INFO][GeneratedMethodAccessor34.invoke:-1] [GridXmlInfo.initData][Non-Provider] : 1
+01/31 09:38:27.825 [http-nio-8080-exec-10/SEVERE][GeneratedMethodAccessor34.invoke:-1] [ExcelDocument] Header rows : [1], Body rows : [0], SubTotal rows : [0], Footer rows : 0
+01/31 09:38:27.840 [http-nio-8080-exec-10/SEVERE][GeneratedMethodAccessor34.invoke:-1] # Download File : GridViews_down.xlsx# File Size : [4788] byte
+01/31 11:00:32.582 [http-nio-8080-exec-8/SEVERE][GeneratedMethodAccessor34.invoke:-1] LoadingModule [uiplugin/popup][websquare.uiplugin.popup.Popup][6502][5]
+01/31 11:00:32.961 [http-nio-8080-exec-6/SEVERE][GeneratedMethodAccessor34.invoke:-1] LoadingModule [uiplugin/fusionchart][websquare.uiplugin.fusionchart.Fusionchart][7412][5]
+01/31 11:28:09.222 [http-nio-8080-exec-2/INFO][GeneratedMethodAccessor34.invoke:-1] [GridXmlInfo.initXmlInfo][grid/gridView ID] : testGrid
+01/31 11:28:09.222 [http-nio-8080-exec-2/INFO][GeneratedMethodAccessor34.invoke:-1] [GridXmlInfo.initData][Non-Provider] : 40
+01/31 11:28:09.229 [http-nio-8080-exec-2/SEVERE][GeneratedMethodAccessor34.invoke:-1] [ExcelDocument] Header rows : [1], Body rows : [10], SubTotal rows : [0], Footer rows : 0
+01/31 11:28:09.256 [http-nio-8080-exec-2/SEVERE][GeneratedMethodAccessor34.invoke:-1] # Download File : base.xlsx# File Size : [3879] byte
+01/31 11:28:30.871 [http-nio-8080-exec-5/INFO][GeneratedMethodAccessor34.invoke:-1] [GridXmlInfo.initXmlInfo][grid/gridView ID] : testGrid
+01/31 11:28:30.871 [http-nio-8080-exec-5/INFO][GeneratedMethodAccessor34.invoke:-1] [GridXmlInfo.initData][Non-Provider] : 40
+01/31 11:28:30.875 [http-nio-8080-exec-5/SEVERE][GeneratedMethodAccessor34.invoke:-1] [ExcelDocument] Header rows : [1], Body rows : [10], SubTotal rows : [0], Footer rows : 0
+01/31 11:28:30.889 [http-nio-8080-exec-5/SEVERE][GeneratedMethodAccessor34.invoke:-1] # Download File : base.xlsx# File Size : [4114] byte
+01/31 11:28:45.145 [http-nio-8080-exec-5/INFO][GeneratedMethodAccessor34.invoke:-1] [GridXmlInfo.initXmlInfo][grid/gridView ID] : testGrid
+01/31 11:28:45.145 [http-nio-8080-exec-5/INFO][GeneratedMethodAccessor34.invoke:-1] [GridXmlInfo.initData][Non-Provider] : 40
+01/31 11:28:45.151 [http-nio-8080-exec-5/SEVERE][GeneratedMethodAccessor34.invoke:-1] [ExcelDocument] Header rows : [1], Body rows : [10], SubTotal rows : [0], Footer rows : 0
+01/31 11:28:45.174 [http-nio-8080-exec-5/SEVERE][GeneratedMethodAccessor34.invoke:-1] # Download File : base.xlsx# File Size : [4028] byte
+01/31 11:29:45.843 [http-nio-8080-exec-4/INFO][GeneratedMethodAccessor34.invoke:-1] [GridXmlInfo.initXmlInfo][grid/gridView ID] : testGrid
+01/31 11:29:45.967 [http-nio-8080-exec-4/INFO][GeneratedMethodAccessor34.invoke:-1] [GridXmlInfo.initData][Provider] : 48
+01/31 11:29:45.976 [http-nio-8080-exec-4/SEVERE][GeneratedMethodAccessor34.invoke:-1] [ExcelDocument] Header rows : [1], Body rows : [12], SubTotal rows : [0], Footer rows : 0
+01/31 11:29:45.990 [http-nio-8080-exec-4/SEVERE][GeneratedMethodAccessor34.invoke:-1] # Download File : provider.xlsx# File Size : [4254] byte
+01/31 11:29:58.378 [http-nio-8080-exec-9/INFO][GeneratedMethodAccessor34.invoke:-1] [GridXmlInfo.initXmlInfo][grid/gridView ID] : testGrid
+01/31 11:29:58.378 [http-nio-8080-exec-9/INFO][GeneratedMethodAccessor34.invoke:-1] [GridXmlInfo.initData][Non-Provider] : 40
+01/31 11:29:58.381 [http-nio-8080-exec-9/SEVERE][GeneratedMethodAccessor34.invoke:-1] [ExcelDocument] Header rows : [1], Body rows : [10], SubTotal rows : [0], Footer rows : 0
+01/31 11:29:58.381 [http-nio-8080-exec-9/INFO][GeneratedMethodAccessor34.invoke:-1] [GridXmlInfo.initXmlInfo][grid/gridView ID] : subGrid
+01/31 11:29:58.381 [http-nio-8080-exec-9/INFO][GeneratedMethodAccessor34.invoke:-1] [GridXmlInfo.parseArrayDataBySeparator] [[]]
+01/31 11:29:58.381 [http-nio-8080-exec-9/INFO][GeneratedMethodAccessor34.invoke:-1] [GridXmlInfo.initData][Non-Provider] : 1
+01/31 11:29:58.385 [http-nio-8080-exec-9/SEVERE][GeneratedMethodAccessor34.invoke:-1] [ExcelDocument] Header rows : [1], Body rows : [0], SubTotal rows : [0], Footer rows : 0
+01/31 11:29:58.400 [http-nio-8080-exec-9/SEVERE][GeneratedMethodAccessor34.invoke:-1] # Download File : GridViews_down.xlsx# File Size : [4647] byte
+01/31 11:40:09.788 [http-nio-8080-exec-8/INFO][GeneratedMethodAccessor34.invoke:-1] [GridXmlInfo.initXmlInfo][grid/gridView ID] : testGrid
+01/31 11:40:09.788 [http-nio-8080-exec-8/INFO][GeneratedMethodAccessor34.invoke:-1] [GridXmlInfo.initData][Non-Provider] : 8
+01/31 11:40:09.792 [http-nio-8080-exec-8/SEVERE][GeneratedMethodAccessor34.invoke:-1] [ExcelDocument] Header rows : [1], Body rows : [2], SubTotal rows : [0], Footer rows : 0
+01/31 11:40:09.809 [http-nio-8080-exec-8/SEVERE][GeneratedMethodAccessor34.invoke:-1] # Download File : base.xlsx# File Size : [3860] byte
+01/31 11:40:43.225 [http-nio-8080-exec-4/INFO][GeneratedMethodAccessor34.invoke:-1] [GridXmlInfo.initXmlInfo][grid/gridView ID] : testGrid
+01/31 11:40:43.350 [http-nio-8080-exec-4/INFO][GeneratedMethodAccessor34.invoke:-1] [GridXmlInfo.initData][Provider] : 48
+01/31 11:40:43.358 [http-nio-8080-exec-4/SEVERE][GeneratedMethodAccessor34.invoke:-1] [ExcelDocument] Header rows : [1], Body rows : [12], SubTotal rows : [0], Footer rows : 0
+01/31 11:40:43.371 [http-nio-8080-exec-4/SEVERE][GeneratedMethodAccessor34.invoke:-1] # Download File : provider.xlsx# File Size : [4254] byte
+01/31 11:50:00.384 [http-nio-8080-exec-6/INFO][GeneratedMethodAccessor34.invoke:-1] [GridXmlInfo.initXmlInfo][grid/gridView ID] : testGrid
+01/31 11:50:00.384 [http-nio-8080-exec-6/INFO][GeneratedMethodAccessor34.invoke:-1] [GridXmlInfo.initData][Non-Provider] : 40
+01/31 11:50:00.389 [http-nio-8080-exec-6/SEVERE][GeneratedMethodAccessor34.invoke:-1] [ExcelDocument] Header rows : [1], Body rows : [10], SubTotal rows : [0], Footer rows : 0
+01/31 11:50:00.389 [http-nio-8080-exec-6/INFO][GeneratedMethodAccessor34.invoke:-1] [GridXmlInfo.initXmlInfo][grid/gridView ID] : subGrid
+01/31 11:50:00.390 [http-nio-8080-exec-6/INFO][GeneratedMethodAccessor34.invoke:-1] [GridXmlInfo.initData][Non-Provider] : 5
+01/31 11:50:00.394 [http-nio-8080-exec-6/SEVERE][GeneratedMethodAccessor34.invoke:-1] [ExcelDocument] Header rows : [1], Body rows : [1], SubTotal rows : [0], Footer rows : 0
+01/31 11:50:00.424 [http-nio-8080-exec-6/SEVERE][GeneratedMethodAccessor34.invoke:-1] # Download File : GridViews_down.xlsx# File Size : [4925] byte
+01/31 11:50:15.168 [http-nio-8080-exec-2/INFO][GeneratedMethodAccessor34.invoke:-1] [GridXmlInfo.initXmlInfo][grid/gridView ID] : testGrid
+01/31 11:50:15.169 [http-nio-8080-exec-2/INFO][GeneratedMethodAccessor34.invoke:-1] [GridXmlInfo.initData][Non-Provider] : 40
+01/31 11:50:15.172 [http-nio-8080-exec-2/SEVERE][GeneratedMethodAccessor34.invoke:-1] [ExcelDocument] Header rows : [1], Body rows : [10], SubTotal rows : [0], Footer rows : 0
+01/31 11:50:15.172 [http-nio-8080-exec-2/INFO][GeneratedMethodAccessor34.invoke:-1] [GridXmlInfo.initXmlInfo][grid/gridView ID] : subGrid
+01/31 11:50:15.172 [http-nio-8080-exec-2/INFO][GeneratedMethodAccessor34.invoke:-1] [GridXmlInfo.initData][Non-Provider] : 5
+01/31 11:50:15.176 [http-nio-8080-exec-2/SEVERE][GeneratedMethodAccessor34.invoke:-1] [ExcelDocument] Header rows : [1], Body rows : [1], SubTotal rows : [0], Footer rows : 0
+01/31 11:50:15.198 [http-nio-8080-exec-2/SEVERE][GeneratedMethodAccessor34.invoke:-1] # Download File : GridViews_down.xlsx# File Size : [4799] byte
+01/31 11:50:38.972 [http-nio-8080-exec-8/INFO][GeneratedMethodAccessor34.invoke:-1] [GridXmlInfo.initXmlInfo][grid/gridView ID] : testGrid
+01/31 11:50:38.972 [http-nio-8080-exec-8/INFO][GeneratedMethodAccessor34.invoke:-1] [GridXmlInfo.initData][Non-Provider] : 40
+01/31 11:50:38.986 [http-nio-8080-exec-8/SEVERE][GeneratedMethodAccessor34.invoke:-1] [ExcelDocument] Header rows : [1], Body rows : [10], SubTotal rows : [0], Footer rows : 0
+01/31 11:50:38.987 [http-nio-8080-exec-8/INFO][GeneratedMethodAccessor34.invoke:-1] [GridXmlInfo.initXmlInfo][grid/gridView ID] : subGrid
+01/31 11:50:38.987 [http-nio-8080-exec-8/INFO][GeneratedMethodAccessor34.invoke:-1] [GridXmlInfo.parseArrayDataBySeparator] [[]]
+01/31 11:50:38.987 [http-nio-8080-exec-8/INFO][GeneratedMethodAccessor34.invoke:-1] [GridXmlInfo.initData][Non-Provider] : 1
+01/31 11:50:38.990 [http-nio-8080-exec-8/SEVERE][GeneratedMethodAccessor34.invoke:-1] [ExcelDocument] Header rows : [1], Body rows : [0], SubTotal rows : [0], Footer rows : 0
+01/31 11:50:39.013 [http-nio-8080-exec-8/SEVERE][GeneratedMethodAccessor34.invoke:-1] # Download File : GridViews_down.xlsx# File Size : [4593] byte
+01/31 11:50:46.436 [http-nio-8080-exec-5/INFO][GeneratedMethodAccessor34.invoke:-1] [GridXmlInfo.initXmlInfo][grid/gridView ID] : testGrid
+01/31 11:50:46.437 [http-nio-8080-exec-5/INFO][GeneratedMethodAccessor34.invoke:-1] [GridXmlInfo.initData][Non-Provider] : 40
+01/31 11:50:46.439 [http-nio-8080-exec-5/SEVERE][GeneratedMethodAccessor34.invoke:-1] [ExcelDocument] Header rows : [1], Body rows : [10], SubTotal rows : [0], Footer rows : 0
+01/31 11:50:46.439 [http-nio-8080-exec-5/INFO][GeneratedMethodAccessor34.invoke:-1] [GridXmlInfo.initXmlInfo][grid/gridView ID] : subGrid
+01/31 11:50:46.439 [http-nio-8080-exec-5/INFO][GeneratedMethodAccessor34.invoke:-1] [GridXmlInfo.initData][Non-Provider] : 15
+01/31 11:50:46.443 [http-nio-8080-exec-5/SEVERE][GeneratedMethodAccessor34.invoke:-1] [ExcelDocument] Header rows : [1], Body rows : [3], SubTotal rows : [0], Footer rows : 0
+01/31 11:50:46.462 [http-nio-8080-exec-5/SEVERE][GeneratedMethodAccessor34.invoke:-1] # Download File : GridViews_down.xlsx# File Size : [4856] byte

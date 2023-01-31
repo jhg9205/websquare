@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+            <w2:dataCollection baseNode="map">
+            </w2:dataCollection>
+            <w2:workflowCollection>
+            </w2:workflowCollection>
+        </xf:model>
+         <script type="text/javascript" lazy="false"><![CDATA[
+        
+	scwin.onpageload = function() {
+		var tabOptions = {};
+		
+		for (var i = 0; i < 10; i++) {
+			var addCount = i + 1;
+			var tabOptions = {
+				label : "Tab " + addCount,
+				openAction: "new",
+				closable: "true"
+			}
+			
+			const tab = ["tab_", i+1, ".xml"];
+			var first = tab[0];
+			var second = tab[1];
+			var third = tab[2];
+			var all = first + second + third;
+			
+			var contentsOptions = {
+                    frameMode : "wframe",
+                    alwaysDraw : false,
+                    src: all
+                }
+			tabControl1.addTab(i, tabOptions, contentsOptions);
+		}
+	};
+	
+	scwin.onpageunload = function() {
+		
+	};
+	
+	]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    	<w2:tabControl useTabKeyOnly="true" id="tabControl1" useMoveNextTabFocus="false" useConfirmMessage="false" confirmTrueAction="exist"
+    		confirmFalseAction="new" alwaysDraw="false" style="position:absolute;width:600px;height:400px;margin:50px;margin-left: 200px;" tabScroll="true" tabScrollAuto="true" tabPosition="top" changeActiveTab="true">
+    	</w2:tabControl>
+    </body>
+</html>

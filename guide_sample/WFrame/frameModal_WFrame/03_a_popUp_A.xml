@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+            <w2:dataCollection baseNode="map">
+            </w2:dataCollection>
+            <w2:workflowCollection>
+            </w2:workflowCollection>
+        </xf:model>
+         <script type="text/javascript" lazy="false"><![CDATA[
+        
+	scwin.onpageload = function() {
+		requires("uiplugin.popup");	
+		var parent = $p.parent().text1.getValue();	
+		var triggerName = parent;
+		trigger1.setLabel(triggerName);
+		text1.hide();
+		
+		
+		var parent = $p.parent().text2.getValue();	
+		var triggerName = parent;
+		trigger2.setLabel(triggerName);
+		text2.hide();
+		
+		trigger2.hide();
+		
+	};
+	
+	scwin.onpageunload = function() {
+		
+	};
+	
+	
+	scwin.trigger1_onclick = function(e) {	
+		var random = Math.random();
+		var top = random * 100;
+		var left = random * 200;
+		var name = trigger1.getLabel();
+		var parent = $p.parent().text1.getValue();			
+		var label = parent + "-1";
+		//trigger1.setLabel(label);
+		text1.setValue(label);
+		var options = {  		 
+		        id : random, 
+		        type : "wframePopup", // "iframePopup", "browserPopup"
+		        width: "400px", 
+		        height: "300px", 
+		        top: top, 
+		        left: left, 
+		        popupName :label,		        
+		        modal : "modal",
+		        frameModal : ""
+		    }; 
+	 
+	    $p.openPopup("03_a_popUp_A.xml",  options );
+	};
+	
+	scwin.trigger2_onclick = function(e) {
+		
+		var random = Math.random();
+		var name = trigger2.getLabel();
+		var parent = $p.parent().text2.getValue();			
+		var label = parent + "-1";
+		//trigger1.setLabel(label);
+		text1.setValue(label);
+		var options = {  		 
+		        id : random, 
+		        type : "wframePopup", // "iframePopup", "browserPopup"
+		        width: "400px", 
+		        height: "300px", 
+		        //top: "0px", 
+		        //left: "0px", 
+		        popupName :label,		        
+		        modal : "modal",
+		        frameModal : ""
+		    }; 
+	 
+	    $p.openPopup("grand_parent2.xml",  options );
+		
+	};
+	]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    	<xf:trigger type="button"
+    		style="height:52px;margin:10px;margin-right:0px;width:250px;font-size:17px;font-family:monospace;font-style:normal;font-weight:bolder;background-color:#FF8080;"
+    		id="trigger1" ev:onclick="scwin.trigger1_onclick">
+    		<xf:label><![CDATA[]]></xf:label>
+    	</xf:trigger>
+    	<w2:textbox id="text1" label="" style="width: 150px;height: 23px;"></w2:textbox>
+    </body>
+</html>

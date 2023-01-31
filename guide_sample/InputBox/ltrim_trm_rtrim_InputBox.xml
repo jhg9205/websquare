@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+            <w2:dataCollection baseNode="map">
+            </w2:dataCollection>
+            <w2:workflowCollection>
+            </w2:workflowCollection>
+        </xf:model>
+         <script type="text/javascript" lazy="false"><![CDATA[
+        
+	scwin.onpageload = function() {
+		
+	};
+	
+	scwin.onpageunload = function() {
+		
+	};
+	
+	]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    	<xf:group tagname="table" style="width:80%;margin: 50px;" id="" class="w2tb">
+    		<w2:attributes>
+    			<w2:summary></w2:summary>
+    		</w2:attributes>
+    		<xf:group tagname="caption"></xf:group>
+    		<xf:group tagname="colgroup">
+    			<xf:group tagname="col" style="width:50.00%;"></xf:group>
+    			<xf:group tagname="col" style="width:50.00%"></xf:group>
+    		</xf:group>
+    		<xf:group tagname="tr" style="">
+    			<xf:group tagname="th" style="width: 30%;font-size:17px;font-family:monospace;font-style:normal;font-weight:bolder;" class="w2tb_th">ltrim=&quot;true&quot;<w2:attributes>
+    					<w2:scope>row</w2:scope>
+    				</w2:attributes></xf:group>
+    			<xf:group tagname="td" style="" class="w2tb_td">
+    				<xf:input adjustMaxLength="false" id="" style="width:70.00%;height:36px;font-size:17px;font-family:monospace;font-style:normal;font-weight:bolder;margin:10px;" ltrim="true"></xf:input>
+    			</xf:group>
+    		</xf:group>
+    		<xf:group tagname="tr" style="">
+    			<xf:group tagname="th" style="width: 30%;font-size:17px;font-family:monospace;font-style:normal;font-weight:bolder;" class="w2tb_th">trim=&quot;true&quot;<w2:attributes>
+    					<w2:scope>row</w2:scope>
+    				</w2:attributes></xf:group>
+    			<xf:group tagname="td" style="" class="w2tb_td">
+    				<xf:input adjustMaxLength="false" id=""
+    					style="width:70.00%;height:36px;font-size:17px;font-family:monospace;font-style:normal;font-weight:bolder;margin:10px;" rtrim="" trim="true">
+    				</xf:input>
+    			</xf:group>
+    		</xf:group>
+    		<xf:group tagname="tr" style="">
+    			<xf:group tagname="th" style="width: 30%;font-size:17px;font-family:monospace;font-style:normal;font-weight:bolder;" class="w2tb_th">rtrim=&quot;true&quot;<w2:attributes>
+    					<w2:scope>row</w2:scope>
+    				</w2:attributes></xf:group>
+    			<xf:group tagname="td" style="" class="w2tb_td">
+    				<xf:input adjustMaxLength="false" id=""
+    					style="width:70.00%;height:36px;font-size:17px;font-family:monospace;font-style:normal;font-weight:bolder;margin:10px;" trim="" rtrim="true">
+    				</xf:input>
+    			</xf:group>
+    		</xf:group>
+    	</xf:group>
+    </body>
+</html>

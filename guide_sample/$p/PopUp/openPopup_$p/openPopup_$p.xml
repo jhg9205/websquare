@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+            <w2:dataCollection baseNode="map">
+            </w2:dataCollection>
+            <w2:workflowCollection>
+            </w2:workflowCollection>
+        </xf:model>
+         <script type="text/javascript" lazy="false"><![CDATA[
+        
+	scwin.onpageload = function() {
+		requires("uiplugin.popup");
+	};
+	
+	scwin.onpageunload = function() {
+		
+	};
+	
+	scwin.trigger2_onclick = function(e) {
+		
+	
+		var options = {  
+		 
+		        id : "popPsnlCertiInq", 
+		        type : "wframePopup", 
+		        width: "400px", 
+		        height: "250px", 
+		        top: "130px", 
+		        left: "200px", 
+		        popupName : "WFrame Popup", 
+		        modal : true, 
+		        resizable : true
+		    }; 
+	 
+	    $p.openPopup("for_wframe.xml",  options );
+	};
+	
+	scwin.trigger3_onclick = function(e) {
+		var options = {  
+		 
+		        id : "popPsnlCertiInq", 
+		        type : "iframePopup", 
+		        width: "400px", 
+		        height: "250px", 
+		        top: "130px", 
+		        left: "200px", 
+		        popupName : "IFrame Popup", 
+		        modal : true, 
+		        resizable : true
+		    }; 
+	 
+	    $p.openPopup("for_iframe.xml",  options );
+	};
+	
+
+	
+	scwin.trigger4_onclick = function(e) {
+		var options = {  
+		 
+		        id : "popBrowser", 
+		        type : "browserPopup", 
+		        width: "400px", 
+		        height: "250px", 
+		        top: "130px", 
+		        left: "200px", 
+		        popupName : "Browser Popup", 
+		        modal : true, 
+		        resizable : true
+		    }; 
+	 
+	    $p.openPopup("for_browser.xml",  options );
+		
+	};
+	]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    <xf:group id="" style="margin: 20px;"><xf:trigger ev:onclick="scwin.trigger2_onclick" style="width:300px;height:50px;padding: 10px;font: 20px bolder;color: white;background-color: red;display: block;" id="trigger2" type="button">
+    		<xf:label><![CDATA[$p.openPopup wframePopup]]></xf:label>
+    	</xf:trigger><xf:trigger ev:onclick="scwin.trigger3_onclick" style="width:300px;height:50px;padding: 10px;font: 20px bolder;color: white;background-color: blue;margin: 10px 0 10px 0;display: block;" id="trigger3" type="button">
+    		<xf:label><![CDATA[$p.openPopup iframePopup]]></xf:label>
+    	</xf:trigger><xf:trigger ev:onclick="scwin.trigger4_onclick" style="width:300px;height:50px;padding: 10px;font: 20px bolder;color: white;background-color: black;display: block;" id="trigger4" type="button">
+    		<xf:label><![CDATA[$p.openPopup browserPopup]]></xf:label>
+    	</xf:trigger></xf:group></body>
+</html>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+            <w2:dataCollection baseNode="map">
+            </w2:dataCollection>
+            <w2:workflowCollection>
+            </w2:workflowCollection>
+        </xf:model>
+         <script type="text/javascript" lazy="false"><![CDATA[
+        
+	scwin.onpageload = function() {
+		
+	};
+	
+	scwin.onpageunload = function() {
+		
+	};
+	
+	
+	scwin.group1_onmouseleave = function(e) {
+		alert("Mouse LEAVING the Group component.");
+	};
+	
+	scwin.group1_onmouseenter = function(e) {
+		alert("Mouse ENTERING the Group component.");		
+	};
+	]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    	<w2:textbox id="" label='onmouseleave &amp; onmouseenter' style="width:338px;padding: 10px;text-align:center;line-height:32px;height:32px;margin:50px;margin-bottom: 0px;margin-bottom:30px;background-color:#C0C0C0;font-size:17px;font-family:monospace;font-style:normal;font-weight:bolder;">
+    	</w2:textbox><xf:group style="width:361px;height:200px;margin:50px;background-color:#FF8080;font-size:40px;font-family:monospace;" id="group1"
+    		ev:onmouseleave="scwin.group1_onmouseleave" ev:onmouseenter="scwin.group1_onmouseenter" text="Group" tagname="">
+    	</xf:group>
+    	
+    </body>
+</html>

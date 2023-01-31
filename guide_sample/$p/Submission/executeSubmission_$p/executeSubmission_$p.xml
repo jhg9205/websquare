@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+        	<xf:instance>
+        		<data xmlns="" />
+        	</xf:instance>
+        	<w2:dataCollection baseNode="map">
+        		<w2:dataList baseNode="list" id="dataList1" repeatNode="map" saveRemovedData="true" style="">
+        			<w2:columnInfo>
+        				<w2:column dataType="text" id="Status" name="Status"></w2:column>
+        				<w2:column dataType="text" id="date" name="date"></w2:column>
+        				<w2:column dataType="text" id="Expense" name="Expense"></w2:column>
+        				<w2:column dataType="text" id="Income" name="Income"></w2:column>
+        				<w2:column dataType="text" id="Hobby" name="Hobby"></w2:column>
+        				<w2:column dataType="text" id="Region" name="Region"></w2:column>
+        				<w2:column dataType="text" id="Frequency" name="Frequency"></w2:column>
+        				<w2:column dataType="text" id="ID" name="ID"></w2:column>
+        				<w2:column dataType="text" id="Age" name="Age"></w2:column>
+        			</w2:columnInfo>
+        		</w2:dataList>
+        	</w2:dataCollection>
+        	<w2:workflowCollection></w2:workflowCollection>
+        	<xf:submission id="submission1" ref="" target="data:json,dataList1" action="data.json" method="post"
+        		mediatype="application/json" encoding="UTF-8" instance="" replace="" errorHandler="" customHandler="" mode="asynchronous"
+        		processMsg="Submission being processed..." ev:submit="scwin.submission1_submit" ev:submitdone="scwin.submission1_submitdone"
+        		ev:submiterror="scwin.submission1_submiterror" abortTrigger="">
+        	</xf:submission>
+        	<xf:submission id="submission2" ref="" target="data:json,dataList1" action="datal.json" method="post"
+        		mediatype="application/json" encoding="UTF-8" instance="" replace="" errorHandler="" customHandler="" mode="asynchronous"
+        		processMsg="Submission being processed..." ev:submit="scwin.submission2_submit" ev:submitdone="scwin.submission2_submitdone"
+        		ev:submiterror="scwin.submission2_submiterror" abortTrigger="">
+        	</xf:submission>
+        </xf:model>
+        <script type="text/javascript" lazy="false"><![CDATA[
+        
+	scwin.onpageload = function() {
+		
+	};
+	
+	scwin.onpageunload = function() {
+		
+	};
+	
+	
+	scwin.submission1_submit = function(e) {
+		alert("Submission is about to start!");
+	};
+	
+	scwin.submission1_submitdone = function(e) {
+		alert("Submission successful.");
+	};
+	
+	scwin.submission1_submiterror = function(e) {
+		alert("Submission failed.");
+	};
+	
+	scwin.trigger1_onclick = function(e) {
+		$p.executeSubmission("submission1");		
+	};
+	
+	scwin.submission2_submit = function(e) {
+		alert("Submission is about to start!");
+	};
+	
+	scwin.submission2_submitdone = function(e) {
+		alert("Submission successful.");
+	};
+	
+	scwin.submission2_submiterror = function(e) {
+		alert("Submission failed.");
+	};
+	
+	scwin.trigger2_onclick = function(e) {
+		$p.executeSubmission("submission2");	
+	};
+	]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    	<w2:gridView autoFit="allColumn" dataList="data:dataList1" defaultCellHeight="20" id="" scrollByColumn="false"
+    		scrollByColumnAdaptive="false" style="margin:100px;margin-bottom: 20px;width: 80%;height: 50%;border: solid black 1px;">
+    		<w2:caption id="caption1" style="" value="this is a grid caption."></w2:caption>
+    		<w2:header id="header1" style="">
+    			<w2:row id="row1" style="">
+    				<w2:column displayMode="label" id="column9" inputType="text" style="height:20px" value="Status" width="70"></w2:column>
+    				<w2:column displayMode="label" id="column8" inputType="text" style="height:20px" value="date" width="70"></w2:column>
+    				<w2:column displayMode="label" id="column7" inputType="text" style="height:20px" value="Expense" width="70"></w2:column>
+    				<w2:column displayMode="label" id="column6" inputType="text" style="height:20px" value="Income" width="70"></w2:column>
+    				<w2:column displayMode="label" id="column5" inputType="text" style="height:20px" value="Hobby" width="70"></w2:column>
+    				<w2:column displayMode="label" id="column4" inputType="text" style="height:20px" value="Region" width="70"></w2:column>
+    				<w2:column displayMode="label" id="column3" inputType="text" style="height:20px" value="Frequency" width="70"></w2:column>
+    				<w2:column displayMode="label" id="column2" inputType="text" style="height:20px" value="ID" width="70"></w2:column>
+    				<w2:column displayMode="label" id="column1" inputType="text" style="height:20px" value="Age" width="70"></w2:column>
+    			</w2:row>
+    		</w2:header>
+    		<w2:gBody id="gBody1" style="">
+    			<w2:row id="row2" style="">
+    				<w2:column displayMode="label" id="Status" inputType="text" style="height:20px" value="" width="70"></w2:column>
+    				<w2:column displayMode="label" id="date" inputType="text" style="height:20px" value="" width="70"></w2:column>
+    				<w2:column displayMode="label" id="Expense" inputType="text" style="height:20px" value="" width="70"></w2:column>
+    				<w2:column displayMode="label" id="Income" inputType="text" style="height:20px" value="" width="70"></w2:column>
+    				<w2:column displayMode="label" id="Hobby" inputType="text" style="height:20px" value="" width="70"></w2:column>
+    				<w2:column displayMode="label" id="Region" inputType="text" style="height:20px" value="" width="70"></w2:column>
+    				<w2:column displayMode="label" id="Frequency" inputType="text" style="height:20px" value="" width="70"></w2:column>
+    				<w2:column displayMode="label" id="ID" inputType="text" style="height:20px" value="" width="70"></w2:column>
+    				<w2:column displayMode="label" id="Age" inputType="text" style="height:20px" value="" width="70"></w2:column>
+    			</w2:row>
+    		</w2:gBody>
+    	</w2:gridView>
+    	<xf:trigger type="button"
+    		style="display: block;width: 320px;padding: 10px;line-height:32px;height:45px;background-color:#C0C0C0;font-size:15px;font-family:monospace;font-style:normal;font-weight:bolder;margin-left: 100px;margin-top:0px;"
+    		id="trigger1" ev:onclick="scwin.trigger1_onclick">
+    		<xf:label><![CDATA[submission1]]></xf:label>
+    	</xf:trigger>
+    	<xf:trigger type="button" style="width: 320px;padding: 10px;line-height:32px;height:45px;background-color:#C0C0C0;font-size:15px;font-family:monospace;font-style:normal;font-weight:bolder;margin: 100px;margin-top:20px;" id="trigger2" ev:onclick="scwin.trigger2_onclick">
+    		<xf:label><![CDATA[submission2]]></xf:label>
+    	</xf:trigger>
+    </body>
+</html>

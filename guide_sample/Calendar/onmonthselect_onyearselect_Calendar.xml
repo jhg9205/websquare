@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+            <w2:dataCollection baseNode="map">
+            </w2:dataCollection>
+            <w2:workflowCollection>
+            </w2:workflowCollection>
+        </xf:model>
+         <script type="text/javascript" lazy="false"><![CDATA[
+        
+	scwin.onpageload = function() {
+		
+	};
+	
+	scwin.onpageunload = function() {
+		
+	};
+	
+	
+	scwin.calendar1_onyearselect = function(info) {
+		alert("onyearselect\n\n Change the year from " + info.oldValue + " to " + info.newValue + "?" );
+	};
+	
+	scwin.calendar1_onmonthselect = function(info) {
+		alert("onmonthselect\n\n Change the month from " + info.oldValue + " to " + info.newValue + "?" );	
+	};
+	]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    <xf:group id="" style="padding-top: 100px;padding-left: 200px;"><w2:calendar ev:onyearselect="scwin.calendar1_onyearselect" footerDiv="false" ev:onmonthselect="scwin.calendar1_onmonthselect" style="width: 100px;height: 100px;" id="calendar1" calendarValueType="" monthNames="1,2,3,4,5,6,7,8,9,10,11,12" yearSuffix="Y"></w2:calendar></xf:group></body>
+</html>

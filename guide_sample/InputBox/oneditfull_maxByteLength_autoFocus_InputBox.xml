@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+            <w2:dataCollection baseNode="map">
+            </w2:dataCollection>
+            <w2:workflowCollection>
+            </w2:workflowCollection>
+        </xf:model>
+         <script type="text/javascript" lazy="false"><![CDATA[
+        
+	scwin.onpageload = function() {
+		
+	};
+	
+	scwin.onpageunload = function() {
+		
+	};	
+	
+	scwin.input1_oneditfull = function() {
+		alert("oneditfull - Maximum length reached.");
+	};
+	]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    	<w2:textbox id="" label="Event - oneditfull" style="width:354px;padding: 5px;line-height:32px;height:32px;margin:20px;margin-top: 100px;margin-left: 150px;margin-bottom:30px;background-color:#C0C0C0;font-size:17px;font-family:monospace;font-style:normal;font-weight:bolder;">
+    	</w2:textbox><xf:input adjustMaxLength="false" id="input1"
+    		style="width:338px;padding: 10px;line-height:32px;height:32px;margin:50px;margin-top: 0px;margin-left: 150px;margin-bottom: 0px;margin-bottom:30px;font-size:17px;font-family:monospace;font-style:normal;font-weight:bolder;"
+    		ev:oneditfull="scwin.input1_oneditfull" maxByteLength="7" autoFocus="true">
+    	</xf:input>
+    	
+    </body>
+</html>

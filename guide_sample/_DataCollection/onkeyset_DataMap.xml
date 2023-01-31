@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+        <w2:type>COMPONENT</w2:type>
+        <w2:buildDate/>
+        <w2:MSA/>
+        <xf:model>
+            <w2:dataCollection baseNode="map">
+            	<w2:dataMap baseNode="map" id="dataMap1" style="" ev:onkeyset="scwin.dataMap1_onkeyset">
+            		<w2:keyInfo>
+            			<w2:key dataType="text" id="key1" name="Continent"></w2:key>
+            			<w2:key dataType="text" id="key2" name="Country"></w2:key>
+            			<w2:key dataType="text" id="key3" name="City"></w2:key>
+            		</w2:keyInfo>
+            		<w2:data use="true">
+            			<Asa><![CDATA[ ]]></Asa>
+            			<Asia><![CDATA[ ]]></Asia>
+            			<Korea><![CDATA[ ]]></Korea>
+            			<Seoul><![CDATA[ ]]></Seoul>
+            			<key1><![CDATA[Asia]]></key1>
+            			<key2><![CDATA[Korea]]></key2>
+            			<key3><![CDATA[Seoul]]></key3>
+            		</w2:data>
+            	</w2:dataMap>
+            </w2:dataCollection>
+            <w2:workflowCollection/>
+        </xf:model>
+        <w2:layoutInfo/>
+        <w2:publicInfo method=""/>
+        <script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function () {
+
+};
+
+scwin.trigger1_onclick = function (e) {
+    dataMap1.set("key3", "Busan");
+};
+
+scwin.dataMap1_onkeyset = function(info) {
+    var info = JSON.stringify(info);
+    alert(info);
+};
+]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload">
+    	<xf:trigger type="button"
+    		style="width:126px;height:39px;background-color:#C0C0C0;font-size:30px;font-family:monospace;font-style:normal;font-weight:bolder;margin: 100px;"
+    		id="trigger1" ev:onclick="scwin.trigger1_onclick">
+    		<xf:label><![CDATA[set()]]></xf:label>
+    	</xf:trigger>
+    	<xf:input adjustMaxLength="false" id="" style="width: 144px;height:39px;font-size:30px;" ref="data:dataMap1.key3"></xf:input>
+    </body>
+</html>

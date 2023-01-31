@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+            <w2:dataCollection baseNode="map">
+            	<w2:dataList baseNode="list" id="dataList1" repeatNode="map" saveRemovedData="true" style="">
+            		<w2:columnInfo>
+            			<w2:column dataType="text" id="col1" name="name1"></w2:column>
+            			<w2:column dataType="text" id="col2" name="name2"></w2:column>
+            		</w2:columnInfo>
+            	</w2:dataList>
+            </w2:dataCollection>
+            <w2:workflowCollection>
+            </w2:workflowCollection>
+        </xf:model>
+         <script type="text/javascript" lazy="false"><![CDATA[
+    
+	scwin.onpageload = function() {
+		
+	};
+	
+	scwin.onpageunload = function() {
+		
+	};	
+	
+	scwin.trigger1_onclick = function(e) {
+		var data = [];
+		var count = input1.getValue();
+		for (var i = 0; i < count ; i ++) {
+			data.push(i + "");
+			data.push(i + "" + "_v");
+		}
+		dataList1.setData(data, true);
+	};
+	
+	]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    <xf:group id="" style="margin: 50px;margin-top: 0px;padding:50px;"><xf:input adjustMaxLength="false" style="width: 80px;height: 50px;margin-right: 50px;font-size:15px;font-weight:bolder;text-align: center" id="input1"></xf:input><xf:trigger ev:onclick="scwin.trigger1_onclick" style="width: 170px;height: 50px;line-height:32px;background-color:#C0C0C0;font-size:15px;font-family:monospace;font-style:normal;font-weight:bolder;" id="trigger1" type="button">
+    		<xf:label><![CDATA[dataList1.setData()]]></xf:label>
+    	</xf:trigger><xf:checkcombobox displayAllOptionLabel="false" submenuSize="auto" chooseOption="" allOption="" separator="," displayMode="label" ref="" appearance="minimal" checkboxClickSync="true" useEdit="true" validateOnInput="true" disabled="false" style="width:300px;height:50px;display: block;margin-top: 50px;" allowChar="0-9,-" id="checkcombobox1" useDrag="" rangeSeparator="" direction="auto" visibleColNum="" visibleRowNum="" visibleColumn="" visibleColMax="5">
+    		<xf:choices>
+    			<xf:itemset nodeset="data:dataList1">
+    				<xf:label ref="col1"></xf:label>
+    				<xf:value ref="col2"></xf:value>
+    			</xf:itemset>
+    		</xf:choices>
+    	</xf:checkcombobox></xf:group></body>
+</html>

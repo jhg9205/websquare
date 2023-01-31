@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+            <w2:dataCollection baseNode="map">
+            </w2:dataCollection>
+            <w2:workflowCollection>
+            </w2:workflowCollection>
+        </xf:model>
+         <script type="text/javascript" lazy="false"><![CDATA[
+        
+	scwin.onpageload = function() {
+		
+	};
+	
+	scwin.onpageunload = function() {
+		
+	};	
+	
+	scwin.trigger1_onclick = function(e) {
+		autoComplete1.setValue("Seoul");
+		
+		var info = $p.getEventTarget(this);
+		//var info = WebSquare.util.getEventTarget(this);
+		var pluginName = info.pluginName;
+		var id = info.id;
+		var realId = info.realId;		
+		alert("The action has been performed by (Name : " + pluginName + " & ID : " + id + " & Real ID : " + realId + ".)");	
+	};
+	
+	
+	]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    	<xf:trigger type="button"
+    		style="height: 30px;margin: 50px;margin-right: 0px;width: 200px;font-size:17px;font-family:monospace;font-style:normal;font-weight:bolder;"
+    		id="trigger1" ev:onclick="scwin.trigger1_onclick">
+    		<xf:label><![CDATA[Select "Seoul".]]></xf:label>
+    	</xf:trigger>
+    	<w2:autoComplete allOption="" autoFocus="" caseSensitive="false" chooseOption="true" chooseOptionLabel="Select a city."
+    		editType="select" id="autoComplete1" mandatory="true" nextTabID="" placeholder="Select a city." ref="" search="start"
+    		style="height: 30px;margin: 50px;width: 200px;" submenuSize="auto" useKeywordHighlight="false" class="">
+    		<w2:choices>
+    			<w2:item>
+    				<w2:label><![CDATA[Seoul]]></w2:label>
+    				<w2:value><![CDATA[Seoul]]></w2:value>
+    			</w2:item>
+    			<w2:item>
+    				<w2:label><![CDATA[Busan]]></w2:label>
+    				<w2:value><![CDATA[Busan]]></w2:value>
+    			</w2:item>
+    			<w2:item>
+    				<w2:label><![CDATA[Daegu]]></w2:label>
+    				<w2:value><![CDATA[Daegu]]></w2:value>
+    			</w2:item>
+    			<w2:item>
+    				<w2:label><![CDATA[Jeju]]></w2:label>
+    				<w2:value><![CDATA[Jeju]]></w2:value>
+    			</w2:item>
+    			<w2:item>
+    				<w2:label><![CDATA[Jeonju]]></w2:label>
+    				<w2:value><![CDATA[Jeonju]]></w2:value>
+    			</w2:item>
+    		</w2:choices>
+    	</w2:autoComplete>
+
+
+    </body>
+</html>

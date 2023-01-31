@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+            <w2:dataCollection baseNode="map">
+            	<w2:dataList baseNode="list" id="dataList1" repeatNode="map" saveRemovedData="true" style="">
+            		<w2:columnInfo>
+            			<w2:column dataType="text" id="select" name="select"></w2:column>
+            			<w2:column dataType="text" id="autoComplete" name="autoComplete"></w2:column>
+            			<w2:column dataType="text" id="checkcombobox" name="checkcombobox"></w2:column>
+            		</w2:columnInfo>
+            		<w2:data use="false">
+            		</w2:data>
+            	</w2:dataList>
+            	<w2:dataList baseNode="list" id="select" repeatNode="map" saveRemovedData="true" style="">
+            		<w2:columnInfo>
+            			<w2:column dataType="text" id="label" name="name2"></w2:column>
+            			<w2:column dataType="text" id="value" name="name2"></w2:column>
+            		</w2:columnInfo>
+            		<w2:data use="true">
+            			<w2:row>
+            				<label><![CDATA[Bangkok]]></label>
+            				<value><![CDATA[100]]></value>
+            			</w2:row>
+            			<w2:row>
+            				<label><![CDATA[Ottawa]]></label>
+            				<value><![CDATA[200]]></value>
+            			</w2:row>
+            			<w2:row>
+            				<label><![CDATA[Kenya]]></label>
+            				<value><![CDATA[300]]></value>
+            			</w2:row>
+            			<w2:row>
+            				<label><![CDATA[Dubai]]></label>
+            				<value><![CDATA[400]]></value>
+            			</w2:row>
+            			<w2:row>
+            				<label><![CDATA[Paris]]></label>
+            				<value><![CDATA[500]]></value>
+            			</w2:row>
+            		</w2:data>
+            	</w2:dataList>
+            	<w2:dataList baseNode="list" id="autoComplete" repeatNode="map" saveRemovedData="true" style="">
+            		<w2:columnInfo>
+            			<w2:column dataType="text" id="label" name="name1"></w2:column>
+            			<w2:column dataType="text" id="value" name="name2"></w2:column>
+            		</w2:columnInfo>
+            		<w2:data use="true">
+            			<w2:row>
+            				<value><![CDATA[100]]></value>
+            				<label><![CDATA[TH]]></label>
+            			</w2:row>
+            			<w2:row>
+            				<value><![CDATA[200]]></value>
+            				<label><![CDATA[CA]]></label>
+            			</w2:row>
+            			<w2:row>
+            				<value><![CDATA[300]]></value>
+            				<label><![CDATA[KN]]></label>
+            			</w2:row>
+            			<w2:row>
+            				<value><![CDATA[400]]></value>
+            				<label><![CDATA[DB]]></label>
+            			</w2:row>
+            			<w2:row>
+            				<value><![CDATA[500]]></value>
+            				<label><![CDATA[FR]]></label>
+            			</w2:row>
+            		</w2:data>
+            	</w2:dataList>
+            	<w2:dataList baseNode="list" id="checkcombobox" repeatNode="map" saveRemovedData="true" style="">
+            		<w2:columnInfo>
+            			<w2:column dataType="text" id="label" name="name1"></w2:column>
+            			<w2:column dataType="text" id="value" name="name2"></w2:column>
+            		</w2:columnInfo>
+            		<w2:data use="true">
+            			<w2:row>
+            				<value><![CDATA[100]]></value>
+            				<label><![CDATA[Asia]]></label>
+            			</w2:row>
+            			<w2:row>
+            				<value><![CDATA[200]]></value>
+            				<label><![CDATA[Americas]]></label>
+            			</w2:row>
+            			<w2:row>
+            				<value><![CDATA[300]]></value>
+            				<label><![CDATA[Africa]]></label>
+            			</w2:row>
+            			<w2:row>
+            				<value><![CDATA[400]]></value>
+            				<label><![CDATA[MiddleEast]]></label>
+            			</w2:row>
+            			<w2:row>
+            				<value><![CDATA[500]]></value>
+            				<label><![CDATA[Europe]]></label>
+            			</w2:row>
+            		</w2:data>
+            	</w2:dataList>
+            </w2:dataCollection>
+            <w2:workflowCollection>
+            </w2:workflowCollection>
+        </xf:model>
+         <script type="text/javascript" lazy="false"><![CDATA[
+        
+	scwin.onpageload = function() {
+		
+	};
+	
+	scwin.onpageunload = function() {
+		
+	};
+	
+	
+	scwin.trigger1_onclick = function(e) {
+		var options = {
+			headerExist: 1,			
+			type: "1",
+			convertIndex: "1"
+		};
+		gridView1.advancedExcelUpload(options);
+	};
+	]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    <xf:group id="" style="padding: 100px;"><w2:gridView scrollByColumnAdaptive="false" dataList="data:dataList1" style="width: 600px;padding: 5px;height: 150px;border: solid gray 1px;" scrollByColumn="false" id="gridView1" defaultCellHeight="20" autoFit="allColumn">
+    		<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
+    		<w2:header style="" id="header1">
+    			<w2:row style="" id="row1">
+    				<w2:column removeBorderStyle="false" width="70" inputType="text" style="height:20px;" id="column3" value="select" blockSelect="false" displayMode="label">
+    				</w2:column>
+    				<w2:column removeBorderStyle="false" width="70" inputType="text" style="height:20px;" id="column2" value="autoComplete" blockSelect="false" displayMode="label">
+    				</w2:column>
+    				<w2:column removeBorderStyle="false" width="70" inputType="text" style="height:20px;" id="column1" value="checkcombobox" blockSelect="false" displayMode="label">
+    				</w2:column>
+    			</w2:row>
+    		</w2:header>
+    		<w2:gBody style="" id="gBody1">
+    			<w2:row style="" id="row2">
+    				<w2:column ref="" displayFormatter="" removeBorderStyle="false" chooseOption="" width="70" inputType="select" style="height:20px" id="select" allOption="" value="" blockSelect="false" displayMode="label">
+    					<w2:choices>
+    						<w2:itemset nodeset="data:select">
+    							<w2:label ref="label"></w2:label>
+    							<w2:value ref="value"></w2:value>
+    						</w2:itemset>
+    					</w2:choices>
+    				</w2:column>
+    				<w2:column ref="" removeBorderStyle="false" chooseOption="" width="70" inputType="autoComplete" style="height:20px" id="autoComplete" allOption="" value="" blockSelect="false" displayMode="value">
+    					<w2:choices>
+    						<w2:itemset nodeset="data:autoComplete">
+    							<w2:label ref="label"></w2:label>
+    							<w2:value ref="value"></w2:value>
+    						</w2:itemset>
+    					</w2:choices>
+    				</w2:column>
+    				<w2:column ref="" removeBorderStyle="false" chooseOption="" width="70" inputType="checkcombobox" style="height:20px" id="checkcombobox" allOption="" value="" blockSelect="false" displayMode="label delim value">
+    					<w2:choices>
+    						<w2:itemset nodeset="data:checkcombobox">
+    							<w2:label ref="label"></w2:label>
+    							<w2:value ref="value"></w2:value>
+    						</w2:itemset>
+    					</w2:choices>
+    				</w2:column>
+    			</w2:row>
+    		</w2:gBody>
+    	</w2:gridView><xf:trigger ev:onclick="scwin.trigger1_onclick" style="width:248px;height:32px;padding:5px;line-height:32px;background-color:#C0C0C0;font-size:15px;font-family:monospace;font-style:normal;font-weight:bolder;margin-top: 10px;" id="trigger1" type="button">
+    		<xf:label><![CDATA[advancedExcelUpload()]]></xf:label>
+    	</xf:trigger></xf:group></body>
+</html>

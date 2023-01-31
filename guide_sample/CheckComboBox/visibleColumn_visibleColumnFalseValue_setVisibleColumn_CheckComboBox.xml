@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head meta_vertical_guides="" meta_horizontal_guides="">
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+            <w2:dataCollection baseNode="map">
+            	<w2:dataList baseNode="list" id="dataList1" repeatNode="map" saveRemovedData="true" style="">
+            		<w2:columnInfo>
+            			<w2:column dataType="text" id="Name" name="name1"></w2:column>
+            			<w2:column dataType="text" id="Value" name="name2"></w2:column>
+            			<w2:column dataType="text" id="Type" name="name3"></w2:column>
+            		</w2:columnInfo>
+            		<w2:data use="true">
+            			<w2:row>
+            				<Name><![CDATA[Seoul]]></Name>
+            				<Value><![CDATA[001]]></Value>
+            				<Type><![CDATA[Domestic]]></Type>
+            				
+            			</w2:row>
+            			<w2:row>
+            				<Name><![CDATA[Busan]]></Name>
+            				<Value><![CDATA[002]]></Value>
+            				<Type><![CDATA[Domestic]]></Type>
+            				
+            			</w2:row>
+            			<w2:row>
+            				<Name><![CDATA[Daegu]]></Name>
+            				<Value><![CDATA[003]]></Value>
+            				<Type><![CDATA[Domestic]]></Type>
+            				
+            			</w2:row>
+            			<w2:row>
+            				<Name><![CDATA[Jeju]]></Name>
+            				<Value><![CDATA[004]]></Value>
+            				<Type><![CDATA[Domestic]]></Type>
+            				
+            			</w2:row>
+            			<w2:row>
+            				<Name><![CDATA[Tokyo]]></Name>
+            				<Value><![CDATA[100]]></Value>
+            				<Type><![CDATA[Overseas]]></Type>
+            				
+            			</w2:row>
+            			<w2:row>
+            				<Name><![CDATA[Beijing]]></Name>
+            				<Value><![CDATA[200]]></Value>
+            				<Type><![CDATA[Overseas]]></Type>
+            				
+            			</w2:row>
+            			<w2:row>
+            				<Name><![CDATA[Taipei]]></Name>
+            				<Value><![CDATA[300]]></Value>
+            				<Type><![CDATA[Overseas]]></Type>
+            				
+            			</w2:row>
+            		</w2:data>
+            	</w2:dataList>
+            </w2:dataCollection>
+            <w2:workflowCollection>
+            </w2:workflowCollection>
+        </xf:model>
+         <script type="text/javascript" lazy="false"><![CDATA[
+        
+	scwin.onpageload = function() {
+		
+	};
+	
+	scwin.onpageunload = function() {
+		
+	};	
+
+	scwin.trigger1_onclick = function(e) {
+		radio1.setVisibleColumn("Type", "Domestic");
+	};
+	
+	scwin.trigger9_onclick = function(e) {
+		select1.setVisibleColumn("Type", "Overseas");
+	};
+	
+	scwin.trigger10_onclick = function(e) {
+		auto1.setVisibleColumn("Type", "Overseas");
+	};
+	
+	scwin.trigger11_onclick = function(e) {
+		checkbox1.setVisibleColumn("Type", "Overseas");
+	};
+	
+	scwin.trigger12_onclick = function(e) {
+		combo1.setVisibleColumn("Type", "Overseas");
+	};
+	]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    	<xf:group tagname="table" style="width:80%;margin: 20px;" id="" class="w2tb">
+    		<w2:attributes>
+    			<w2:summary></w2:summary>
+    		</w2:attributes>
+    		<xf:group tagname="caption"></xf:group>
+    		<xf:group tagname="colgroup" style="">
+    			<xf:group tagname="col" style="width:50.00%;"></xf:group>
+    			<xf:group tagname="col" style="width:50.00%;"></xf:group><xf:group tagname="col" style="width:50.00%"></xf:group>
+    		</xf:group>
+    		<xf:group tagname="tr" style="height: 70px;">
+    			<xf:group tagname="th" style="" class="w2tb_th">Radio<w2:attributes>
+    					<w2:scope>row</w2:scope>
+    				</w2:attributes></xf:group>
+    			<xf:group tagname="td" style="vertical-align: middle;" class="w2tb_td">
+    				<xf:select1 id="radio1" selectedIndex="-1" appearance="full" style="width: 150px;height: 21px;padding: 10px;" cols="4"
+    					rows="" ref="" visibleColumn="" visibleColumnFalseValue="">
+    					<xf:choices>
+    						<xf:itemset nodeset="data:dataList1">
+    							<xf:label ref="Name"></xf:label>
+    							<xf:value ref="Value"></xf:value>
+    						</xf:itemset>
+    					</xf:choices>
+    				</xf:select1>
+    			</xf:group>
+    			<xf:group tagname="td" class="w2tb_td" style="text-align: center;vertical-align: middle;">
+    				<w2:attributes></w2:attributes>
+    				<xf:trigger type="button" style="width: 120px;height: 23px;font: 15px bold;color: blue;" id="trigger1" ev:onclick="scwin.trigger1_onclick">
+    					<xf:label><![CDATA[setVisibleColumn]]></xf:label>
+    				</xf:trigger>
+    			</xf:group></xf:group>
+    		<xf:group tagname="tr" style="">
+    			<xf:group tagname="th" style="" class="w2tb_th">SelectBox<w2:attributes>
+    					<w2:scope>row</w2:scope>
+    				</w2:attributes></xf:group>
+    			<xf:group tagname="td" style="text-align: center;vertical-align: middle;" class="w2tb_td">
+    				<xf:select1 id="select1" chooseOption="" style="width: 90%;height: 23px;" submenuSize="auto" allOption=""
+    					disabled="false" direction="auto" appearance="minimal" disabledClass="w2selectbox_disabled" ref="" visibleColumn="" visibleColumnFalseValue="">
+    					<xf:choices>
+    						<xf:itemset nodeset="data:dataList1">
+    							<xf:label ref="Name"></xf:label>
+    							<xf:value ref="Value"></xf:value>
+    						</xf:itemset>
+    					</xf:choices>
+    				</xf:select1>
+    			</xf:group>
+    			<xf:group tagname="td" class="w2tb_td" style="text-align: center;vertical-align: middle;">
+    				<w2:attributes></w2:attributes>
+    				<xf:trigger type="button" style="width: 120px;height: 23px;font: 15px bold;color: blue;" id="trigger9" ev:onclick="scwin.trigger9_onclick">
+    					<xf:label><![CDATA[setVisibleColumn]]></xf:label>
+    				</xf:trigger>
+    			</xf:group></xf:group>
+    		<xf:group tagname="tr" style=""><xf:group tagname="th" class="w2tb_th">AutoComplete<w2:attributes><w2:scope>row</w2:scope></w2:attributes></xf:group>
+    			<xf:group tagname="td" class="w2tb_td" style="text-align: center;vertical-align: middle;">
+    				<w2:attributes></w2:attributes>
+    				<w2:autoComplete editType="select" id="auto1" useKeywordHighlight="false" style="width: 90%;height: 21px;" submenuSize="auto"
+    					search="contain" allOption="" chooseOption="" ref="" caseSensitive="false" visibleColumn="" visibleColumnFalseValue="">
+    					<w2:choices>
+    						<w2:itemset nodeset="data:dataList1">
+    							<w2:label ref="Name"></w2:label>
+    							<w2:value ref="Value"></w2:value>
+    						</w2:itemset>
+    					</w2:choices>
+    				</w2:autoComplete>
+    			</xf:group>
+    			<xf:group tagname="td" class="w2tb_td" style="text-align: center;vertical-align: middle;">
+    				<w2:attributes></w2:attributes>
+    				<xf:trigger type="button" style="width: 120px;height: 23px;font: 15px bold;color: green;" id="trigger10" ev:onclick="scwin.trigger10_onclick">
+    					<xf:label><![CDATA[setVisibleColumn]]></xf:label>
+    				</xf:trigger>
+    			</xf:group></xf:group><xf:group tagname="tr" style="height: 150px;">
+    			<xf:group tagname="th" style="" class="w2tb_th">CheckBox<w2:attributes>
+    					<w2:scope>row</w2:scope>
+    				</w2:attributes></xf:group>
+    			<xf:group tagname="td" style="text-align: center;vertical-align: top;" class="w2tb_td">
+    				<xf:select selectedindex="-1" id="checkbox1" appearance="full" style="width: 90%;height: 21px;" cols="" rows=""
+    					ref="" visibleColumn="" visibleColumnFalseValue="">
+    					<xf:choices>
+    						<xf:itemset nodeset="data:dataList1">
+    							<xf:label ref="Name"></xf:label>
+    							<xf:value ref="Value"></xf:value>
+    						</xf:itemset>
+    					</xf:choices>
+    				</xf:select>
+    			</xf:group>
+    			<xf:group tagname="td" class="w2tb_td" style="text-align: center;vertical-align: middle;">
+    				<w2:attributes></w2:attributes>
+    				<xf:trigger type="button" style="width: 120px;height: 23px;font: 15px bold;color: magenta;" id="trigger11" ev:onclick="scwin.trigger11_onclick">
+    					<xf:label><![CDATA[setVisibleColumn]]></xf:label>
+    				</xf:trigger>
+    			</xf:group></xf:group>
+    		<xf:group tagname="tr" style="">
+    			<xf:group tagname="th" style="" class="w2tb_th">CheckComboBox<w2:attributes>
+    					<w2:scope>row</w2:scope>
+    				</w2:attributes></xf:group>
+    			<xf:group tagname="td" style="text-align: center;vertical-align: middle;" class="w2tb_td">
+    				<xf:checkcombobox submenuSize="auto" allOption="" disabled="false" id="combo1" direction="auto"
+    					displayAllOptionLabel="false" chooseOption="" displayMode="label" appearance="minimal" style="width: 90%;height: 21px;" ref="" visibleColumn="" visibleColumnFalseValue="">
+    					<xf:choices>
+    						<xf:itemset nodeset="data:dataList1">
+    							<xf:label ref="Name"></xf:label>
+    							<xf:value ref="Value"></xf:value>
+    						</xf:itemset>
+    					</xf:choices>
+    				</xf:checkcombobox>
+    			</xf:group>
+    			<xf:group tagname="td" class="w2tb_td" style="text-align: center;vertical-align: middle;">
+    				<w2:attributes></w2:attributes>
+    				<xf:trigger type="button" style="width: 120px;height: 23px;font: 15px bold;" id="trigger12" ev:onclick="scwin.trigger12_onclick">
+    					<xf:label><![CDATA[setVisibleColumn]]></xf:label>
+    				</xf:trigger>
+    			</xf:group></xf:group>
+    	</xf:group>
+    </body>
+</html>

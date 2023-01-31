@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head meta_vertical_guides="" meta_horizontal_guides="">
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+            <w2:dataCollection baseNode="map">
+            	<w2:dataList baseNode="list" id="dataList1" repeatNode="map" saveRemovedData="true" style="">
+            		<w2:columnInfo>
+            			<w2:column dataType="text" id="col1" name="Continent"></w2:column>
+            			<w2:column dataType="text" id="col2" name="Country"></w2:column>
+            			<w2:column dataType="text" id="col3" name="Item"></w2:column>
+            			<w2:column dataType="text" id="col4" name="Quantity"></w2:column>
+            		</w2:columnInfo>
+            		<w2:data use="true">
+            			<w2:row>
+            				<col1><![CDATA[Asia]]></col1>
+            				<col2><![CDATA[Korea]]></col2>
+            				<col3><![CDATA[Freezer]]></col3>
+            				<col4><![CDATA[300]]></col4>
+            			</w2:row>
+            			<w2:row>
+            				<col1><![CDATA[Asia]]></col1>
+            				<col2><![CDATA[China]]></col2>
+            				<col3><![CDATA[Washer]]></col3>
+            				<col4><![CDATA[700]]></col4>
+            			</w2:row>
+            			<w2:row>
+            				<col1><![CDATA[Europe]]></col1>
+            				<col2><![CDATA[Germany]]></col2>
+            				<col3><![CDATA[TV]]></col3>
+            				<col4><![CDATA[350]]></col4>
+            			</w2:row>
+            			<w2:row>
+            				<col1><![CDATA[Europe]]></col1>
+            				<col2><![CDATA[France]]></col2>
+            				<col3><![CDATA[Washer]]></col3>
+            				<col4><![CDATA[400]]></col4>
+            			</w2:row>
+            			<w2:row>
+            				<col1><![CDATA[Americas]]></col1>
+            				<col2><![CDATA[Canada]]></col2>
+            				<col3><![CDATA[TV]]></col3>
+            				<col4><![CDATA[330]]></col4>
+            			</w2:row>
+            			<w2:row>
+            				<col1><![CDATA[Americas]]></col1>
+            				<col2><![CDATA[Mexico]]></col2>
+            				<col3><![CDATA[Freezer]]></col3>
+            				<col4><![CDATA[500]]></col4>
+            			</w2:row>
+            		</w2:data>
+            	</w2:dataList>
+            </w2:dataCollection>
+            <w2:workflowCollection>
+            </w2:workflowCollection>
+        </xf:model>
+         <script type="text/javascript" lazy="false"><![CDATA[
+        
+	scwin.onpageload = function() {
+		
+	};
+	
+	scwin.onpageunload = function() {		
+			
+	};
+	
+	
+	
+	
+	
+	]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    	<w2:gridView id="gridView1" style="width: 250px;height: 100px;margin: 30px;margin-top: 50px;margin-left: 100px;"
+    		checkAllType="false" scrollByColumn="false" defaultCellHeight="20" scrollByColumnAdaptive="false" dataList="data:dataList1"
+    		autoFit="" visibleRowNum="13" rowNumVisible="" sortable="" showSortableUseFilter="" useFilterList="true"
+    		noResultMessageVisible="" copyOption="" copyType="native" useCtrlKey="" focusMode="cell" useShiftKey="true" selectedCellColor="#FF8040" showSortableImage="" noResultMessage="No data." noResultMessageClass="" noResultMessageVisibleAlways="true" contextMenu="true" contextMenuAltClick="">
+    		<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
+    		<w2:header style="" id="header1">
+    			<w2:row style="" id="row1">
+    				<w2:column width="70" inputType="" style="height:20px" id="column4" value="Continent" displayMode="label"></w2:column>
+    				<w2:column width="70" inputType="text" style="height:20px" id="column3" value="Country" displayMode="label"></w2:column>
+    				<w2:column width="70" inputType="text" style="height:20px" id="column2" value="Item" displayMode="label" useFilter="" sortLabel=""></w2:column>
+    				<w2:column width="70" inputType="text" style="height:20px" id="column1" value="Quantity" displayMode="label"></w2:column>
+    			</w2:row>
+    		</w2:header>
+    		<w2:gBody style="" id="gBody1">
+    			<w2:row style="" id="row2">
+    				<w2:column width="70" inputType="" style="height:20px" id="col1" value="" displayMode="label" embeddedInput=""
+    					allOption="" chooseOption="" ref="">
+    					<w2:choices>
+    						<w2:itemset nodeset="data:dataList2">
+    							<w2:label ref="label"></w2:label>
+    							<w2:value ref="value"></w2:value>
+    						</w2:itemset>
+    					</w2:choices>
+    				</w2:column>
+    				<w2:column width="70" inputType="text" style="height:20px" id="col2" value="" displayMode="label"></w2:column>
+    				<w2:column width="70" inputType="" style="height:20px" id="col3" value="" displayMode="label"
+    					validateOnInput="" allOption="" chooseOption="" ref="">
+    					<w2:choices>
+    						<w2:itemset nodeset="data:dataList3">
+    							<w2:label ref="label"></w2:label>
+    							<w2:value ref="value"></w2:value>
+    						</w2:itemset>
+    					</w2:choices>
+    				</w2:column>
+    				<w2:column width="70" inputType="text" style="height:20px" id="col4" value="" displayMode="label" dataType=""></w2:column>
+    			</w2:row>
+    		</w2:gBody>
+    	</w2:gridView>
+    </body>
+</html>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+            <w2:dataCollection baseNode="map">
+            </w2:dataCollection>
+            <w2:workflowCollection>
+            </w2:workflowCollection>
+        </xf:model>
+         <script type="text/javascript" lazy="false"><![CDATA[
+        
+	scwin.onpageload = function() {
+		
+	};
+	
+	scwin.onpageunload = function() {
+		
+	};
+	
+	
+	scwin.trigger1_onclick = function(e) {
+		var value = input1.getValue();
+		alert(value);
+	};
+	
+	scwin.trigger2_onclick = function(e) {
+		input1.setValue("Hello!");
+	};
+	
+	scwin.trigger3_onclick = function(e) {
+		input1.setValue(111);
+	};
+	
+	scwin.trigger4_onclick = function(e) {
+		input1.setValue("WebSquare5");
+	};
+	]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    <xf:group id="" style="margin: 50px;"><xf:group style="" id="">
+    		<xf:input adjustMaxLength="false" style="width: 150px;height: 39px;line-height:32px;padding:5px;font-size:15px;font-family:monospace;" id="input1"></xf:input>
+    		<xf:trigger style="width: 150px;height: 39px;margin-left: 50px;float: right;line-height:32px;padding:5px;background-color:#C0C0C0;font-size:15px;font-family:monospace;" id="trigger1" type="button" ev:onclick="scwin.trigger1_onclick">
+    			<xf:label><![CDATA[getValue()]]></xf:label>
+    		</xf:trigger>
+
+
+    	</xf:group><xf:trigger style="width: 150px;height:39px;margin-top:30px;display: block;line-height:32px;padding:5px;background-color:#C0C0C0;font-size:15px;font-family:monospace;" id="trigger2" type="button" ev:onclick="scwin.trigger2_onclick">
+    		<xf:label><![CDATA[setValue()]]></xf:label>
+    	</xf:trigger><xf:trigger style="width: 150px;height:39px;margin-top:30px;display: block;line-height:32px;padding:5px;background-color:#C0C0C0;font-size:15px;font-family:monospace;" id="trigger3" type="button" ev:onclick="scwin.trigger3_onclick">
+    		<xf:label><![CDATA[setValue()]]></xf:label>
+    	</xf:trigger><xf:trigger style="width: 150px;height:39px;margin-top:30px;display: block;line-height:32px;padding:5px;background-color:#C0C0C0;font-size:15px;font-size:15px;font-family:monospace;" id="trigger4" type="button" ev:onclick="scwin.trigger4_onclick">
+    		<xf:label><![CDATA[setValue()]]></xf:label>
+    	</xf:trigger></xf:group></body>
+</html>

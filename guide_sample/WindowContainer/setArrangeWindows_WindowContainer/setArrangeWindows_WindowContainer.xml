@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+            <w2:dataCollection baseNode="map">
+            </w2:dataCollection>
+            <w2:workflowCollection>
+            </w2:workflowCollection>
+        </xf:model>
+         <script type="text/javascript" lazy="false"><![CDATA[
+        
+	scwin.onpageload = function() {
+		windowContainer1.createWindow({
+			"title" : "Red", 
+			"src" : "sub_red.xml", 
+			"windowId" : "red", 
+			"frameMode" : "wframe", 
+			"title" : "Title_Red"
+		});	
+		windowContainer1.createWindow({
+			"title" : "Green", 
+			"src" : "sub_green.xml", 
+			"windowId" : "green", 
+			"frameMode" : "wframe", 
+			"title" : "Title_Green"
+		});	
+		windowContainer1.createWindow({
+			"title" : "Blue", 
+			"src" : "sub_blue.xml", 
+			"windowId" : "blue", 
+			"frameMode" : "wframe", 
+			"title" : "Title_Blue"
+		});	
+		windowContainer1.createWindow({
+			"title" : "Yellow", 
+			"src" : "sub_yellow.xml", 
+			"windowId" : "yellow", 
+			"frameMode" : "wframe", 
+			"title" : "Title_Yellow"
+		});	
+	};
+	
+	scwin.onpageunload = function() {
+		
+	};
+	
+	
+	scwin.trigger1_onclick = function(e) {
+		windowContainer1.setArrangeWindows("vertical", ["red", "yellow", "green"]);
+	};
+	
+	scwin.trigger2_onclick = function(e) {
+		windowContainer1.setArrangeWindows("vertical", ["blue", "red"]);
+		
+	};
+	
+	scwin.trigger3_onclick = function(e) {
+		windowContainer1.setArrangeWindows("horizontal", ["red", "yellow", "green"]);
+		
+	};
+	
+	scwin.trigger4_onclick = function(e) {
+		windowContainer1.setArrangeWindows("horizontal", ["green", "red"]);
+		
+	};
+	]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    	<w2:windowContainer sequentialArrangeColNum="2" verticalArrangeNum="2" controlIconPosition="left" windowMaximizeAll="false"
+    		id="windowContainer1" useStatusMsg="true" hideTitleOnMaximize="false" spaInitCount="0" useNameContainer="false"
+    		useControlIconTitle="false" tooltipDisplay="true" style="position: relative;width:50%;height:70%;margin: 20px;margin-left: 300px;border: gray solid 1px;"
+    		sequentialArrangeRowNum="2" fixArrangeFullScreen="false" useFixButton="false" windowAutoResize="false" windowMaxNum="5"
+    		useCloseButton="false" stopMinimizeOnNameLayer="true" toolbarPosition="bottom" stopToggleOnLast="false" horizontalArrangeNum="2"
+    		useCustomMsg="false" tooltipGroupClass="false" windowTooltipDisplay="true">
+    		<w2:windowToolbar>
+    			<w2:controlIconLayer>
+    				<w2:controlIcon></w2:controlIcon>
+    				<w2:controlIcon></w2:controlIcon>
+    				<w2:controlIcon></w2:controlIcon>
+    				<w2:controlIcon></w2:controlIcon>
+    				<w2:controlIcon></w2:controlIcon>
+    			</w2:controlIconLayer>
+    			<w2:nameLayer></w2:nameLayer>
+    			<w2:selectedNameLayer></w2:selectedNameLayer>
+    		</w2:windowToolbar>
+    	</w2:windowContainer>
+    	<xf:group tagname="table"
+    		style='position: relative;width:50%;margin: 20px;margin-left: 300px;'
+    		id="" class="w2tb">
+    		<w2:attributes>
+    			<w2:summary></w2:summary>
+    		</w2:attributes>
+    		<xf:group tagname="caption"></xf:group>
+    		<xf:group tagname="colgroup">
+    			<xf:group tagname="col" style="width:25.00%"></xf:group>
+    			<xf:group tagname="col" style="width:25.00%"></xf:group>
+    		</xf:group>
+    		<xf:group tagname="tr">
+    			<xf:group tagname="th" style="background-color: white" class="w2tb_th">
+    				<w2:attributes>
+    					<w2:scope>row</w2:scope>
+    				</w2:attributes>
+    				<xf:trigger ev:onclick="scwin.trigger1_onclick" id="trigger1"
+    					style="position: relative;width: 90%;height: 30px;margin: 10px;margin-left: 20px;font-weight: bolder;font-size: 15px;" type="button">
+    					<xf:label><![CDATA[Vertial (Red - Yellow - Green)]]></xf:label>
+    				</xf:trigger>
+    			</xf:group>
+    			<xf:group tagname="th" style="background-color: white;" class="w2tb_th">
+    				<w2:attributes>
+    					<w2:scope>row</w2:scope>
+    				</w2:attributes>
+    				<xf:trigger ev:onclick="scwin.trigger2_onclick" id="trigger2"
+    					style="position: relative;width: 90%;height: 30px;margin: 10px;margin-left: 20px;font-weight: bolder;font-size: 15px;" type="button">
+    					<xf:label><![CDATA[Vertial (Blue- Red)]]></xf:label>
+    				</xf:trigger>
+    			</xf:group>
+    		</xf:group>
+    		<xf:group tagname="tr">
+    			<xf:group tagname="th" style="background-color: white;" class="w2tb_th">
+    				<w2:attributes>
+    					<w2:scope>row</w2:scope>
+    				</w2:attributes>
+    				<xf:trigger ev:onclick="scwin.trigger3_onclick" id="trigger3"
+    					style="position: relative;width: 90%;height: 30px;margin: 10px;margin-left: 20px;font-weight: bolder;font-size: 15px;" type="button">
+    					<xf:label><![CDATA[Horizontal (Red, Yellow, Green)]]></xf:label>
+    				</xf:trigger>
+    			</xf:group>
+    			<xf:group tagname="th" style="background-color: white;" class="w2tb_th">
+    				<w2:attributes>
+    					<w2:scope>row</w2:scope>
+    				</w2:attributes>
+    				<xf:trigger ev:onclick="scwin.trigger4_onclick" id="trigger4"
+    					style="position: relative;width: 90%;height: 30px;margin: 10px;margin-left: 20px;font-weight: bolder;font-size: 15px;" type="button">
+    					<xf:label><![CDATA[Horizontal (Green, Red)]]></xf:label>
+    				</xf:trigger>
+    			</xf:group>
+    		</xf:group>
+    	</xf:group>
+    </body>
+</html>

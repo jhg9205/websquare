@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+            <w2:dataCollection baseNode="map">
+            	<w2:dataList id="dataList1" baseNode="list" saveRemovedData="true" repeatNode="map">
+            		<w2:columnInfo>
+            			<w2:column id="STND_YYMM" name="기준년월" dataType="text"></w2:column>
+            			<w2:column id="BSN_DIV_CD" name="배분대상상품" dataType="text"></w2:column>
+            			<w2:column id="PR_COST" name="판촉비" dataType="text"></w2:column>
+            			<w2:column id="APLY_NM" name="name4" dataType="text"></w2:column>
+            			<w2:column id="TRT_YYMM" name="name5" dataType="text"></w2:column>
+            			<w2:column id="DIST_PR_COST" name="배분판촉비" dataType="text"></w2:column>
+            			<w2:column id="TRT_AMT" name="당월대출금액" dataType="text"></w2:column>
+            			<w2:column id="DIST_RT" name="대출별배분비율" dataType="text"></w2:column>
+            		</w2:columnInfo>
+            	</w2:dataList>
+            </w2:dataCollection>
+            <w2:workflowCollection>
+            </w2:workflowCollection>
+        </xf:model>
+        <script type="javascript"><![CDATA[ 
+		var dataStr = "2015-04,1,500000,5,2015-01,100000,2395000000,0.004"
+		+",2015-04,1,500000,5,2015-02,100000,3467000000,0.003"
+		+",2015-04,1,500000,5,2015-03,100000,442000000,0.023"
+		+",2015-04,0,7000000,7,2015-04,1000000,0,0"
+		+",2015-04,1,500000,5,2015-04,100000,0,0"
+		+",2015-04,2,30000,4,2015-04,7500,0,0"
+		+",2015-04,0,7000000,7,2015-05,1000000,0,0"
+		+",2015-04,1,500000,5,2015-05,100000,0,0"
+		+",2015-04,2,30000,4,2015-05,7500,0,0"
+		+",2015-04,0,7000000,7,2015-06,1000000,0,0"
+		+",2015-04,2,30000,4,2015-06,7500,0,0"
+		+",2015-04,0,7000000,7,2015-07,1000000,0,0"
+		+",2015-04,2,30000,4,2015-07,7500,0,0"
+		+",2015-04,0,7000000,7,2015-08,1000000,0,0"
+		+",2015-04,0,7000000,7,2015-09,1000000,0,0"
+		+",2015-04,0,7000000,7,2015-10,1000000,0,0";
+		dataList1.setData(dataStr.split(","));
+		i1.setValue("STND_YYMM,BSN_DIV_CD,PR_COST");
+		i2.setValue("TRT_YYMM");
+		i3.setValue("DIST_PR_COST,TRT_AMT,DIST_RT");
+		i4.setValue('{\n"rows" : "STND_YYMM,BSN_DIV_CD,PR_COST",\n'
+		+ '"cols" : "TRT_YYMM",\n'
+		+ '"vals" : "DIST_PR_COST,TRT_AMT,DIST_RT"\n}');
+              
+		scwin.t1_onclick = function(e) {
+			pivotTable1.setRows(i1.getValue());
+		};
+		
+		scwin.t2_onclick = function(e) {
+			pivotTable1.setCols(i2.getValue());
+		};
+		
+		scwin.t3_onclick = function(e) {
+			pivotTable1.setVals(i3.getValue());
+		};
+		scwin.t4_onclick = function(e) {
+			pivotTable1.setOption(JSON.parse(i4.getValue()));
+		};
+		]]></script>
+    </head>
+    <body>
+    	<w2:gridView dataList="dataList1" scrollByColumn="false" id="" style="position: relative;width:826px;height:361px;"
+    		ignoreCellClick="false" ignoreToggleOnDisabled="false" fixedColumnWithHidden="true" useShiftKey="true" autoFit="allColumn">
+    		<w2:header id="header1" style="">
+    			<w2:row id="row2" style="">
+    				<w2:column blockSelect="false" id="column19" style="height:20px" inputType="text" width="70" displayMode="label"
+    					value="기준년월">
+    				</w2:column>
+    				<w2:column blockSelect="false" id="column17" style="height:20px" inputType="text" width="70" displayMode="label"
+    					value="배분대상상품">
+    				</w2:column>
+    				<w2:column blockSelect="false" id="column15" style="height:20px" inputType="text" width="70" displayMode="label"
+    					value="판촉비">
+    				</w2:column>
+    				<w2:column blockSelect="false" id="column13" style="height:20px" inputType="text" width="70" displayMode="label"
+    					value="name4">
+    				</w2:column>
+    				<w2:column blockSelect="false" id="column11" style="height:20px" inputType="text" width="70" displayMode="label"
+    					value="name5">
+    				</w2:column>
+    				<w2:column blockSelect="false" id="column9" style="height:20px" inputType="text" width="70" displayMode="label"
+    					value="배분판촉비">
+    				</w2:column>
+    				<w2:column blockSelect="false" id="column7" style="height:20px" inputType="text" width="70" displayMode="label"
+    					value="당월대출금액">
+    				</w2:column>
+    				<w2:column blockSelect="false" id="column3" style="height:20px" width="70" inputType="text" displayMode="label"
+    					value="대출별배분비율">
+    				</w2:column>
+    			</w2:row>
+    		</w2:header>
+    		<w2:gBody id="gBody4" style="">
+    			<w2:row id="row5" style="">
+    				<w2:column blockSelect="false" id="STND_YYMM" style="height:20px" inputType="text" width="70" displayMode="label"></w2:column>
+    				<w2:column blockSelect="false" id="BSN_DIV_CD" style="height:20px" inputType="text" width="70" displayMode="label"></w2:column>
+    				<w2:column blockSelect="false" id="PR_COST" style="height:20px" inputType="text" width="70" displayMode="label"></w2:column>
+    				<w2:column blockSelect="false" id="APLY_NM" style="height:20px" inputType="text" width="70" displayMode="label"></w2:column>
+    				<w2:column blockSelect="false" id="TRT_YYMM" style="height:20px" inputType="text" width="70" displayMode="label"></w2:column>
+    				<w2:column blockSelect="false" id="DIST_PR_COST" style="height:20px" inputType="text" width="70" displayMode="label"></w2:column>
+    				<w2:column blockSelect="false" id="TRT_AMT" style="height:20px" inputType="text" width="70" displayMode="label"></w2:column>
+    				<w2:column blockSelect="false" id="DIST_RT" style="height:20px" width="70" inputType="text" displayMode="label"></w2:column>
+    			</w2:row>
+    		</w2:gBody>
+    	</w2:gridView>
+    	<w2:textbox label="PIVOT" id="txt_pv"
+    		style="position: relative;width:363px;height:24px;font-size:18pt;text-align:left;padding-top:27px;padding-bottom:0px;">
+    	</w2:textbox>
+    	<w2:pivotTable dataList="dataList1" id="pivotTable1" defaultAggregator="Sum" cols="TRT_YYMM"
+    		style="position : relative;width:1200px;height:300px;padding-left:20px;padding-top:20px;" valuesAxis="col" class=""
+    		vals="DIST_PR_COST,TRT_AMT,DIST_RT" rows="STND_YYMM,BSN_DIV_CD,PR_COST" renderMode="compact">
+    		<w2:fieldInfo>
+    			<w2:field id="STND_YYMM" name="기준년월"></w2:field>
+    			<w2:field id="BSN_DIV_CD" name="배분대상상품"></w2:field>
+    			<w2:field id="PR_COST" name="판촉비"></w2:field>
+    			<w2:field id="APLY_MM"></w2:field>
+    			<w2:field id="TRT_YYMM"></w2:field>
+    			<w2:field id="DIST_PR_COST" name="배분판촉비"></w2:field>
+    			<w2:field id="TRT_AMT" name="당월대출금액"></w2:field>
+    			<w2:field id="DIST_RT" name="대출별배분비율"></w2:field>
+    		</w2:fieldInfo>
+    	</w2:pivotTable>
+    	<w2:textbox label="Pivot Control Button" id="txt_pvc" style="position: relative;width:300px;height:31px;font-size:18pt;"></w2:textbox><xf:group id="" style="height:100px;">
+    			<xf:trigger ev:onclick="scwin.t4_onclick" id="t4" style="position: relative;width:100px;height:35px;" type="button">
+    				<xf:label><![CDATA[setOption]]></xf:label>
+    			</xf:trigger>
+    			<xf:textarea id="i4" style="position: relative;width: 500px;height: 100px;"></xf:textarea>
+    		</xf:group>
+    	<xf:group id="" style="height:36px;">
+    		<xf:trigger id="t1" style="position: relative;width:100px;height:35px;" type="button" ev:onclick="scwin.t1_onclick">
+    			<xf:label><![CDATA[setRows]]></xf:label>
+    		</xf:trigger>
+    		<xf:input id="i1" style="position: relative;width: 250px;height: 33px;"></xf:input>
+    	</xf:group>
+    	<xf:group id="" style="height:36px;">
+    		<xf:trigger id="t2" style="position: relative;width:100px;height:35px;" type="button" ev:onclick="scwin.t2_onclick">
+    			<xf:label><![CDATA[setCols]]></xf:label>
+    		</xf:trigger>
+    		<xf:input id="i2" style="position: relative;width: 250px;height: 33px;"></xf:input>
+    		<xf:group id="" style="height:36px;">
+    			<xf:trigger id="t3" style="position: relative;width:100px;height:35px;" type="button" ev:onclick="scwin.t3_onclick">
+    				<xf:label><![CDATA[setVals]]></xf:label>
+    			</xf:trigger>
+    			<xf:input id="i3" style="position: relative;width: 250px;height: 33px;"></xf:input>
+    		</xf:group>
+    		
+    	</xf:group>
+    </body>
+</html>

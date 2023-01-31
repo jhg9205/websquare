@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+    	<w2:type>DEFAULT</w2:type>
+    	<w2:buildDate />
+    	<xf:model>
+    		<xf:instance>
+    			<data xmlns="" />
+    		</xf:instance>
+    		<w2:dataCollection baseNode="map"></w2:dataCollection>
+    		<w2:workflowCollection></w2:workflowCollection>
+    	</xf:model>
+    	<script type="text/javascript" lazy="false"><![CDATA[
+        
+	scwin.onpageload = function() {
+		
+	};
+	
+	scwin.onpageunload = function() {
+		
+	};
+	
+	
+	scwin.trigger1_onclick = function(e) {
+		var first = input1.getValue();
+		udc3.setFirst(first);
+	};
+	
+	scwin.trigger2_onclick = function(e) {
+		var second = input2.getValue();
+		udc3.setSecond(second);		
+	};
+	
+	scwin.trigger3_onclick = function(e) {
+		var message = udc3.getValues();
+		input3.setValue("Entered full name is " + message + ".");
+	};
+	
+	scwin.udc3_onclick = function() {
+		var message = udc3.getValue();
+		alert("Full name is " + message);
+	};
+	
+	scwin.udc3_onclick = function() {
+		var message = udc3.getValues();
+		alert(message);
+	};
+	
+	scwin.udc3_onUserClick_1 = function() {
+		alert("You are about to see the full name.");
+	};
+	]]></script>
+    	<w2:require src="/xhtml/two.xml"></w2:require>
+    	<w2:require src="/xhtml/full%20Name.xml"></w2:require>
+    	<w2:require src="/xhtml/fullNames.xml"></w2:require>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    	<w2:textbox id="" label="User's Input"
+    		style="width:80%;height:35px;padding:5px;line-height:32px;font-size:15px;font-family:monospace;font-style:normal;font-weight:bolder;margin:30px;">
+    	</w2:textbox>
+    	<xf:group tagname="table" style="width:80%;margin:30px;padding:10px;" id="" class="w2tb">
+    		<w2:attributes>
+    			<w2:summary></w2:summary>
+    		</w2:attributes>
+    		<xf:group tagname="caption"></xf:group>
+    		<xf:group tagname="colgroup">
+    			<xf:group tagname="col" style="width:25.00%;"></xf:group>
+    			<xf:group tagname="col" style="width:25.00%"></xf:group>
+    			<xf:group tagname="col" style="width:25.00%;"></xf:group>
+    			<xf:group tagname="col" style="width:25.00%"></xf:group>
+    		</xf:group>
+    		<xf:group tagname="tr" style="">
+    			<xf:group tagname="th" style="font-size:15px;font-family:monospace;font-style:normal;font-weight:bolder;" class="w2tb_th">First&amp;nbsp;Name<w2:attributes>
+    					<w2:scope>row</w2:scope>
+    				</w2:attributes></xf:group>
+    			<xf:group tagname="td" style="" class="w2tb_td">
+    				<xf:input adjustMaxLength="false" id="input1" style="width: 144px;height:35px;padding:5px;line-height:32px;font-size:15px;color: blue;font-family:monospace;font-style:normal;font-weight:bolder;margin:20px;color: blue;"></xf:input>
+    			</xf:group>
+    			<xf:group tagname="th" style="font-size:15px;font-family:monospace;font-style:normal;font-weight:bolder;" class="w2tb_th">Last&amp;nbsp;Name<w2:attributes>
+    					<w2:scope>row</w2:scope>
+    				</w2:attributes></xf:group>
+    			<xf:group tagname="td" style="" class="w2tb_td">
+    				<xf:input adjustMaxLength="false" id="input2" style="width: 144px;height:35px;padding:5px;line-height:32px;font-size:15px;color: blue;font-family:monospace;font-style:normal;font-weight:bolder;margin:20px;color: magenta;"></xf:input>
+    			</xf:group>
+    		</xf:group>
+    	</xf:group>
+
+    	<w2:textbox id="" label="UDC"
+    		style="width:80%;height:35px;padding:5px;line-height:32px;font-size:15px;font-family:monospace;font-style:normal;font-weight:bolder;margin:30px;">
+    	</w2:textbox>
+    	<xf:group tagname="table" style="width:80%;margin:30px;padding:10px;" id="" class="w2tb">
+    		<w2:attributes>
+    			<w2:summary></w2:summary>
+    		</w2:attributes>
+    		<xf:group tagname="caption"></xf:group>
+    		<xf:group tagname="colgroup">
+    			<xf:group tagname="col" style="width:50.00%;"></xf:group>
+    			<xf:group tagname="col" style="width:50.00%"></xf:group>
+    		</xf:group>
+    		<xf:group tagname="tr" style="">
+    			<xf:group tagname="th" style="font-size:15px;font-family:monospace;font-style:normal;font-weight:bolder;" class="w2tb_th">disable1&amp;nbsp;&amp;&amp;nbsp;disable2<w2:attributes>
+    					<w2:scope>row</w2:scope>
+    				</w2:attributes></xf:group>
+    			<xf:group tagname="td" style="" class="w2tb_td">
+    				<w2:udc_fullNames style="width: 80%;height: 90%;" id="udc1" disable2="true" disable1=""></w2:udc_fullNames>
+    			</xf:group>
+    		</xf:group>
+    		<xf:group tagname="tr">
+    			<xf:group tagname="th" style="" class="w2tb_th">
+    				<w2:attributes>
+    					<w2:scope>row</w2:scope>
+    				</w2:attributes>
+    				<xf:trigger type="button"
+    					style="width:40%;height:35px;padding:5px;line-height:32px;background-color:#C0C0C0;font-size:15px;font-family:monospace;font-style:normal;font-weight:bolder;"
+    					id="trigger1" ev:onclick="scwin.trigger1_onclick">
+    					<xf:label><![CDATA[setFirst()]]></xf:label>
+    				</xf:trigger>
+    				<xf:trigger type="button" style="width:45%;height:35px;padding:5px;line-height:32px;background-color:#C0C0C0;font-size:15px;font-family:monospace;font-style:normal;font-weight:bolder;margin-left: 10px;" id="trigger2" ev:onclick="scwin.trigger2_onclick">
+    					<xf:label><![CDATA[setSecond()]]></xf:label>
+    				</xf:trigger>
+    			</xf:group>
+    			<xf:group tagname="td" style="" class="w2tb_td">
+    				<w2:udc_fullNames style="width: 80%;height: 90%;" id="udc3" disable2="false" disable1="false"
+    					ev:onUserClick="scwin.udc3_onclick" ev:onUserClick_2="scwin.udc3_onUserClick_2" ev:onUserClick_1="scwin.udc3_onUserClick_1">
+    				</w2:udc_fullNames>
+    			</xf:group>
+    		</xf:group>
+    		<xf:group tagname="tr" style="">
+    			<xf:group tagname="th" style="font-size:15px;font-family:monospace;font-style:normal;font-weight:bolder;" class="w2tb_th">onUserClick_1&amp;nbsp;&amp;&amp;nbsp;<w2:attributes>
+    					<w2:scope>row</w2:scope>
+    				</w2:attributes><xf:trigger type="button" style="width:45%;height:35px;padding:5px;line-height:32px;background-color:#C0C0C0;font-size:15px;font-family:monospace;font-style:normal;font-weight:bolder;margin-left: 10px;" id="trigger3" ev:onclick="scwin.trigger3_onclick">
+    					<xf:label><![CDATA[getValues()]]></xf:label>
+    				</xf:trigger></xf:group>
+    			<xf:group tagname="td" style="" class="w2tb_td">
+    				<xf:input adjustMaxLength="false" id="input3" style="width: 90%;height:35px;padding:5px;line-height:32px;font-size:15px;font-family:monospace;font-style:normal;font-weight:bolder;margin:20px;"></xf:input>
+    			</xf:group>
+    		</xf:group>
+    	</xf:group>
+    </body>
+</html>

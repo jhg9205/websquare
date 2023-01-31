@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+            <w2:dataCollection baseNode="map">
+            	<w2:dataList id="dataList1" baseNode="list" saveRemovedData="true" repeatNode="map">
+            		<w2:data>
+            			<w2:row></w2:row>
+            			<w2:row></w2:row>
+            			<w2:row></w2:row>
+            		</w2:data>
+            		<w2:columnInfo>
+            			<w2:column id="col1" name="name1" dataType="text"></w2:column>
+            			<w2:column id="col2" name="name2" dataType="text"></w2:column>
+            			<w2:column id="col3" name="name3" dataType="text"></w2:column>
+            			<w2:column id="col4" name="name4" dataType="text"></w2:column>
+            			<w2:column id="col5" name="name5" dataType="text"></w2:column>
+            			<w2:column id="col6" name="name6" dataType="text"></w2:column>
+            		</w2:columnInfo>
+            	</w2:dataList>
+            </w2:dataCollection>
+            <w2:workflowCollection>
+            </w2:workflowCollection>
+        </xf:model>
+         <script type="text/javascript" lazy="false"><![CDATA[
+        
+    scwin.group = 5;
+    scwin.toggleRow = {};
+	scwin.onpageload = function() {
+        var data = [];
+        for (var i = 0; i < 100; i++) {
+            for (var j = 0; j < 6; j++) {
+                if (j === 2) {
+                    data.push(i + "_" + j);
+                } else {
+                    data.push(Math.floor(j / 2) * 100 + Math.floor(i / (j+scwin.group)));
+                }
+                //data.push(j * 100 + (i % 5));
+            }
+        }
+		dataList1.setData(data);
+	};
+	
+	scwin.onpageunload = function() {
+		
+	};
+
+    scwin.trigger1_onclick = function() {
+        gridView1.setSubtotalVisible(false);
+    }
+
+    scwin.trigger2_onclick = function() {
+        gridView1.setSubtotalVisible(true);
+    }
+
+	
+	
+	
+	
+	
+	
+	]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+        <xf:trigger type="button" id="trigger1" style="width: 300px;height: 30px;margin: 20px;font: 20px bolder;" ev:onclick="scwin.trigger1_onclick">
+            <xf:label><![CDATA[setSubtotalVisible(false);]]></xf:label>
+        </xf:trigger><xf:trigger type="button" id="trigger2" style="width: 300px;height: 30px;margin: 20px;font: 20px bolder;display: block" ev:onclick="scwin.trigger2_onclick">
+            <xf:label><![CDATA[setSubtotalVisible(true);]]></xf:label>
+        </xf:trigger><w2:gridView dataList="data:dataList1" scrollByColumn="false" defaultCellHeight="20" scrollByColumnAdaptive="false" id="gridView1"
+    		style="position:relative;width:550px;height:400px;margin: 20px;" rowNumVisible="true" visibleRowNum="">
+    		<w2:caption id="caption2" style="" value="this is a grid caption."></w2:caption>
+    		<w2:header id="header2" style="">
+    			<w2:row id="row3" style="">
+    				<w2:column blockSelect="false" id="column13" removeBorderStyle="false" style="" inputType="text" width="130"
+    					value="Type" displayMode="label">
+    				</w2:column>
+    				<w2:column blockSelect="false" id="column11" removeBorderStyle="false" style="" inputType="text" width="70"
+    					value="" displayMode="label">
+    				</w2:column>
+    				<w2:column blockSelect="false" id="column9" removeBorderStyle="false" style="" inputType="text" width="70" value="Category"
+    					displayMode="label">
+    				</w2:column>
+    				<w2:column blockSelect="false" id="column7" removeBorderStyle="false" style="" inputType="text" width="70" value="AAA"
+    					displayMode="label">
+    				</w2:column>
+    				<w2:column blockSelect="false" id="column5" removeBorderStyle="false" style="" inputType="text" width="70" value="BBB"
+    					displayMode="label">
+    				</w2:column>
+    				<w2:column blockSelect="false" id="column3" removeBorderStyle="false" style="" width="70" inputType="text" value="CCC"
+    					displayMode="label">
+    				</w2:column>
+    			</w2:row>
+    		</w2:header>
+    		<w2:gBody id="gBody2" style="">
+    			<w2:row id="row4" style="">
+    				<w2:column blockSelect="false" id="col1" removeBorderStyle="false" style="" inputType="text" width="130" value=""
+    					displayMode="label" colMerge="">
+    				</w2:column>
+    				<w2:column blockSelect="false" id="col2" removeBorderStyle="false" style="" inputType="text" width="70" value=""
+    					displayMode="label" colMerge="">
+    				</w2:column>
+    				<w2:column blockSelect="false" id="col3" removeBorderStyle="false" style="" inputType="text" width="70" value=""
+    					displayMode="label" colMerge="">
+    				</w2:column>
+    				<w2:column blockSelect="false" id="col4" removeBorderStyle="false" style="" inputType="text" width="70" value=""
+    					displayMode="label" colMerge="">
+    				</w2:column>
+    				<w2:column blockSelect="false" id="col5" removeBorderStyle="false" style="" inputType="text" width="70" value=""
+    					displayMode="label" colMerge="">
+    				</w2:column>
+    				<w2:column blockSelect="false" id="col6" removeBorderStyle="false" style="" width="70" inputType="text" value=""
+    					displayMode="label" colMerge="">
+    				</w2:column>
+    			</w2:row>
+    		</w2:gBody>
+    		<w2:subTotal id="subTotal1" style="" targetColumnID="col1">
+    			<w2:row id="row5" style="">
+    				<w2:column blockSelect="false" id="column20" removeBorderStyle="false" style="" width="130" inputType="expression"
+    					value="" displayMode="label" expression="SUM('col1')">
+    				</w2:column>
+    				<w2:column blockSelect="false" id="column19" removeBorderStyle="false" style="" width="70" inputType="expression"
+    					value="" displayMode="label" expression="SUM('col2')">
+    				</w2:column>
+    				<w2:column blockSelect="false" id="column18" removeBorderStyle="false" style="" width="70" inputType="expression"
+    					value="" displayMode="label">
+    				</w2:column>
+    				<w2:column blockSelect="false" id="column17" removeBorderStyle="false" style="" width="70" inputType="expression"
+    					value="" displayMode="label" expression="SUM('col4')">
+    				</w2:column>
+    				<w2:column blockSelect="false" id="column16" removeBorderStyle="false" style="" width="70" inputType="expression"
+    					value="" displayMode="label" expression="SUM('col5')">
+    				</w2:column>
+    				<w2:column blockSelect="false" id="column15" removeBorderStyle="false" style="" width="70" inputType="expression"
+    					value="" displayMode="label" expression="SUM('col6')">
+    				</w2:column>
+    			</w2:row>
+    		</w2:subTotal>
+    	</w2:gridView>
+        
+        
+    </body>
+</html>

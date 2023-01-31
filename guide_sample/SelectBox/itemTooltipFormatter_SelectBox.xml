@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+            <w2:dataCollection baseNode="map">
+            	<w2:dataList baseNode="list" id="dataList1" repeatNode="map" saveRemovedData="true" style="margin: 100px;">
+            		<w2:columnInfo>
+            			<w2:column dataType="text" id="Code" name="name1"></w2:column>
+            			<w2:column dataType="text" id="City" name="name2"></w2:column>
+            			<w2:column dataType="text" id="Country" name="name3"></w2:column>
+            			<w2:column dataType="text" id="Type" name="name4"></w2:column>
+            		</w2:columnInfo>
+            	</w2:dataList>
+            </w2:dataCollection>
+            <w2:workflowCollection>
+            </w2:workflowCollection>
+        </xf:model>
+         <script type="text/javascript" lazy="false"><![CDATA[
+        
+	scwin.onpageload = function() {
+		var json = [
+			{"Code" : "SEL", "City" : "Seoul, the largest city in Korea", "Country" : "Korea", "Type" : "Domestic"},
+			{"Code" : "BSN", "City" : "Busan, the second largest city in Korea", "Country" : "Korea", "Type" : "Domestic"},
+			{"Code" : "ICN", "City" : "Incheon, the gateway to Korea", "Country" : "Korea", "Type" : "Domestic"},
+			{"Code" : "DJN", "City" : "Daejeon, the government city of Korea", "Country" : "Korea", "Type" : "Domestic"},
+			{"Code" : "DGU", "City" : "Jeju, the largest island in Korea", "Country" : "Korea", "Type" : "Domestic"},
+			{"Code" : "OTW", "City" : "Ottawa in Canada", "Country" : "Canada", "Type" : "Overseas"},
+			{"Code" : "LDN", "City" : "Toronto in Canada", "Country" : "Canada", "Type" : "Overseas"},
+			{"Code" : "BRN", "City" : "Berlin in Germany", "Country" : "Germany", "Type" : "Overseas"},
+			{"Code" : "BJG", "City" : "Beijing in China", "Country" : "China", "Type" : "Overseas"},
+			{"Code" : "LDN", "City" : "London in GB", "Country" : "UK", "Type" : "Overseas"},
+			];
+		dataList1.setJSON(json);	
+		
+	};
+	
+	scwin.onpageunload = function() {
+		
+	};
+	
+	scwin.selectBoxTooltip = function(label, index){
+       		var row = index + 1;
+       		return row + " row to be formatted.";
+  };]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    <xf:group id="" style="padding-left: 200px;padding-top: 50px;"><xf:select1 enableColumn="" tooltipShowAlways="" submenuSize="auto" useItemLocale="" labelWidthAuto="" chooseOption="" tooltip="" allOption="" itemTooltipDisplay="true" ref="" appearance="minimal" enableColumnFalseValue="" tooltipDisplay="" disabledClass="w2selectbox_disabled" itemTooltipFormatter="scwin.selectBoxTooltip" style="width: 100px;height: 30px;" disabled="false" id="select1" class="" direction="auto" tooltipLocaleRef="">
+    		<xf:choices>
+    			<xf:itemset nodeset="data:dataList1">
+    				<xf:label ref="City"></xf:label>
+    				<xf:value ref="Code"></xf:value>
+    			</xf:itemset>
+    		</xf:choices>
+    	</xf:select1></xf:group></body>
+</html>

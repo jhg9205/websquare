@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+            <w2:dataCollection baseNode="map">
+            	<w2:dataList baseNode="list" repeatNode="map" id="dataList1" saveRemovedData="true">
+            		<w2:columnInfo>
+            			<w2:column id="number" name="number" dataType="text"></w2:column>
+            			<w2:column id="bigDecimal" name="bigDecimal" dataType="text"></w2:column>
+            			<w2:column id="text" name="text" dataType="text"></w2:column>
+            			<w2:column id="date" name="date" dataType="text"></w2:column>
+            		</w2:columnInfo>
+            		<w2:data use="true">
+            			<w2:row>
+            				<number><![CDATA[11]]></number>
+            				<bigDecimal><![CDATA[1.1]]></bigDecimal>
+            				<text><![CDATA[11]]></text>
+            				<date><![CDATA[20210101]]></date>
+            			</w2:row>
+            			<w2:row>
+            				<number><![CDATA[12]]></number>
+            				<bigDecimal><![CDATA[1.2]]></bigDecimal>
+            				<text><![CDATA[12]]></text>
+            				<date><![CDATA[20210102]]></date>
+            			</w2:row>
+            			<w2:row>
+            				<number><![CDATA[13]]></number>
+            				<bigDecimal><![CDATA[1.3]]></bigDecimal>
+            				<text><![CDATA[13]]></text>
+            				<date><![CDATA[20210103]]></date>
+            			</w2:row>
+            			<w2:row>
+            				<number><![CDATA[14]]></number>
+            				<bigDecimal><![CDATA[1.4]]></bigDecimal>
+            				<text><![CDATA[14]]></text>
+            				<date><![CDATA[20210104]]></date>
+            			</w2:row>
+            			<w2:row>
+            				<number><![CDATA[15]]></number>
+            				<bigDecimal><![CDATA[1.5]]></bigDecimal>
+            				<text><![CDATA[15]]></text>
+            				<date><![CDATA[20210105]]></date>
+            			</w2:row>
+            		</w2:data>
+            	</w2:dataList>
+            </w2:dataCollection>
+            <w2:workflowCollection>
+            </w2:workflowCollection>
+        </xf:model>
+         <script type="text/javascript" lazy="false"><![CDATA[
+        
+	scwin.onpageload = function() {
+		
+	};
+	
+	scwin.onpageunload = function() {
+		
+	};
+	
+	
+	scwin.trigger1_onclick = function(e) {
+		var options = {
+			useDataFormat: true,
+			useSubTotal: true,
+			useFooter: true
+		};
+		gridView1.advancedExcelDownload(options);
+	};
+	]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    	
+    <xf:group id="" style="margin: 50px;"><w2:textbox style="width:600px;padding:5px;line-height:32px;height:28px;background-color:#C0C0C0;font-size:15px;font-family:monospace;font-style:normal;font-weight:bolder;margin-bottom:30px;" id="" label='excelCellType = "number" / "bigDecimal" / "text" / "date"' escape="false">
+    	</w2:textbox>
+    	<w2:gridView scrollByColumnAdaptive="false" dataList="data:dataList1" style="width: 600px;height: 150px;" scrollByColumn="false"
+    		id="gridView1" defaultCellHeight="20" autoFit="allColumn" visibleRowNum="5">
+    		<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
+    		<w2:header style="" id="header1">
+    			<w2:row style="" id="row1">
+    				<w2:column removeBorderStyle="false" width="70" inputType="text" style="height:20px" id="column4" value="number"
+    					blockSelect="false" displayMode="label">
+    				</w2:column>
+    				<w2:column removeBorderStyle="false" width="70" inputType="text" style="height:20px" id="column3" value="bigDecimal"
+    					blockSelect="false" displayMode="label">
+    				</w2:column>
+    				<w2:column removeBorderStyle="false" width="70" inputType="text" style="height:20px" id="column2" value="text"
+    					blockSelect="false" displayMode="label">
+    				</w2:column>
+    				<w2:column removeBorderStyle="false" width="70" inputType="text" style="height:20px" id="column1" value="date"
+    					blockSelect="false" displayMode="label">
+    				</w2:column>
+    			</w2:row>
+    		</w2:header>
+    		<w2:gBody style="" id="gBody1">
+    			<w2:row style="" id="row2">
+    				<w2:column removeBorderStyle="false" dataType="" width="70" excelCellType="number" inputType="text" style="height:20px"
+    					id="number" value="" blockSelect="false" displayMode="label">
+    				</w2:column>
+    				<w2:column removeBorderStyle="false" dataType="" width="70" excelCellType="bigDecimal" inputType="text"
+    					style="height:20px" id="bigDecimal" value="" blockSelect="false" displayMode="label">
+    				</w2:column>
+    				<w2:column removeBorderStyle="false" dataType="" width="70" excelCellType="text" inputType="text" style="height:20px"
+    					id="text" value="" blockSelect="false" displayMode="label">
+    				</w2:column>
+    				<w2:column removeBorderStyle="false" dataType="" width="70" excelCellType="date" inputType="text" style="height:20px"
+    					id="date" value="" blockSelect="false" displayMode="label">
+    				</w2:column>
+    			</w2:row>
+    		</w2:gBody>
+    		<w2:subTotal targetColumnID="" style="" id="subTotal1">
+    			<w2:row style="" id="row3">
+    				<w2:column expression='SUM("number")' removeBorderStyle="false" width="70" excelCellType="number" inputType="expression" style="height:20px"
+    					id="column12" value="" excelExpression='' blockSelect="false" displayMode="label">
+    				</w2:column>
+    				<w2:column removeBorderStyle="false" width="70" inputType="expression" style="height:20px" id="column11" value=""
+    					blockSelect="false" displayMode="label" excelCellType="number" expression='SUM("bigDecimal")'>
+    				</w2:column>
+    				<w2:column removeBorderStyle="false" width="70" inputType="text" style="height:20px" id="column10" value=""
+    					blockSelect="false" displayMode="label" excelCellType="">
+    				</w2:column>
+    				<w2:column removeBorderStyle="false" width="70" inputType="text" style="height:20px" id="column9" value=""
+    					blockSelect="false" displayMode="label">
+    				</w2:column>
+    			</w2:row>
+    		</w2:subTotal>
+    		<w2:footer style="" id="footer1">
+    			<w2:row style="" id="row4">
+    				<w2:column removeBorderStyle="false" width="70" inputType="expression" style="height:20px" id="column16" value=""
+    					blockSelect="false" displayMode="label" expression='SUM("number")' excelCellType="number">
+    				</w2:column>
+    				<w2:column expression='SUM("bigDecimal")' removeBorderStyle="false" width="70" excelCellType="bigDecimal"
+    					inputType="expression" style="height:20px" id="column15" value="" blockSelect="false" displayMode="label">
+    				</w2:column>
+    				<w2:column removeBorderStyle="false" width="70" inputType="text" style="height:20px" id="column14" value=""
+    					blockSelect="false" displayMode="label">
+    				</w2:column>
+    				<w2:column removeBorderStyle="false" width="70" inputType="text" style="height:20px" id="column13" value=""
+    					blockSelect="false" displayMode="label">
+    				</w2:column>
+    			</w2:row>
+    		</w2:footer>
+    	</w2:gridView>
+    	<xf:trigger ev:onclick="scwin.trigger1_onclick" style="width:286px;height:43px;padding:5px;line-height:32px;background-color:#C0C0C0;font-size:15px;font-family:monospace;font-style:normal;font-weight:bolder;margin-top:30px;text-align: left;" id="trigger1" type="button">
+    		<xf:label><![CDATA[advancedExcelDownload();]]></xf:label>
+    	</xf:trigger></xf:group></body>
+</html>

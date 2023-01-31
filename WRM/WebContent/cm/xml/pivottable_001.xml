@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+        	<xf:instance>
+        		<data xmlns=""/>
+        	</xf:instance>
+        	<w2:dataCollection baseNode="map">
+        		<w2:dataList id="dlt_pivot" baseNode="list" saveRemovedData="true" repeatNode="record">
+        			<w2:columnInfo>
+        				<w2:column id="CUSTNM" name="CUSTNM" dataType="text"></w2:column>
+        				<w2:column id="CUSTNO" name="CUSTNO" dataType="text"></w2:column>
+        				<w2:column id="DEPTNM" name="DEPTNM" dataType="text"></w2:column>
+        				<w2:column id="EMP" name="EMP" dataType="text"></w2:column>
+        				<w2:column id="ITEMNM" name="ITEMNM" dataType="text"></w2:column>
+        				<w2:column id="ITEMNO" name="ITEMNO" dataType="text"></w2:column>
+        				<w2:column id="MON" name="MON" dataType="text"></w2:column>
+        				<w2:column id="REGION" name="REGION" dataType="text"></w2:column>
+        				<w2:column id="RECEIPT" name="수금" dataType="text"></w2:column>
+        				<w2:column id="RETURN" name="반품" dataType="text"></w2:column>        				
+        				<w2:column id="SALES" name="팬매" dataType="text"></w2:column>
+        				<w2:column id="TEAMNM" name="TEAMNM" dataType="text"></w2:column>
+        				<w2:column id="TYPE" name="TYPE" dataType="text"></w2:column>
+        			</w2:columnInfo>
+        		</w2:dataList>
+        	</w2:dataCollection>
+        	<w2:workflowCollection></w2:workflowCollection>
+        	
+        </xf:model>
+        <script type="text/javascript"><![CDATA[
+        
+          	var jsonData = [{"CUSTNM":"", "CUSTNO":"", "DEPTNM":"", "EMP":"", "ITEMNM":"", "ITEMNO":"", "MON":"201603", "RECEIPT":"29516572142", "REGION":"도매", "RETURN":"-859317002", "SALES":"22449501315", "TEAMNM":"", "TYPE":""}
+          	               ,{"CUSTNM":"", "CUSTNO":"", "DEPTNM":"", "EMP":"", "ITEMNM":"", "ITEMNO":"", "MON":"201603", "RECEIPT":"706566573", "REGION":"병원", "RETURN":"-27534256", "SALES":"8707244827", "TEAMNM":"", "TYPE":""}
+          	               ,{"CUSTNM":"", "CUSTNO":"", "DEPTNM":"", "EMP":"", "ITEMNM":"", "ITEMNO":"", "MON":"201603", "RECEIPT":"8719364455", "REGION":"약국", "RETURN":"-499467808", "SALES":"8679929601", "TEAMNM":"", "TYPE":""}
+          	               ,{"CUSTNM":"", "CUSTNO":"", "DEPTNM":"", "EMP":"", "ITEMNM":"", "ITEMNO":"", "MON":"201603", "RECEIPT":"1502675536", "REGION":"의원", "RETURN":"-64305096", "SALES":"1636162439", "TEAMNM":"", "TYPE":""}
+          	               ,{"CUSTNM":"", "CUSTNO":"", "DEPTNM":"", "EMP":"", "ITEMNM":"", "ITEMNO":"", "MON":"201603", "RECEIPT":"3018150605", "REGION":"약국외", "RETURN":"-214069733", "SALES":"3648252436", "TEAMNM":"", "TYPE":""}
+          	               ,{"CUSTNM":"", "CUSTNO":"", "DEPTNM":"", "EMP":"", "ITEMNM":"", "ITEMNO":"", "MON":"201603", "RECEIPT":"200000", "REGION":"영업외", "RETURN":"0", "SALES":"0", "TEAMNM":"", "TYPE":""}
+          	               ,{"CUSTNM":"", "CUSTNO":"", "DEPTNM":"", "EMP":"", "ITEMNM":"", "ITEMNO":"", "MON":"201603", "RECEIPT":"1695699534", "REGION":"영업기타", "RETURN":"0", "SALES":"2169999401", "TEAMNM":"", "TYPE":""}
+          	               ,{"CUSTNM":"", "CUSTNO":"", "DEPTNM":"", "EMP":"", "ITEMNM":"", "ITEMNO":"", "MON":"201603", "RECEIPT":"319575030", "REGION":"영업외(마케팅)", "RETURN":"-55937122", "SALES":"170797270", "TEAMNM":"", "TYPE":""}
+          	               ,{"CUSTNM":"", "CUSTNO":"", "DEPTNM":"", "EMP":"", "ITEMNM":"", "ITEMNO":"", "MON":"201604", "RECEIPT":"32069047488", "REGION":"도매", "RETURN":"-680869029", "SALES":"22236438246", "TEAMNM":"", "TYPE":""}
+          	               ,{"CUSTNM":"", "CUSTNO":"", "DEPTNM":"", "EMP":"", "ITEMNM":"", "ITEMNO":"", "MON":"201604", "RECEIPT":"676289552", "REGION":"병원", "RETURN":"-38538884", "SALES":"8172975005", "TEAMNM":"", "TYPE":""}
+          	               ,{"CUSTNM":"", "CUSTNO":"", "DEPTNM":"", "EMP":"", "ITEMNM":"", "ITEMNO":"", "MON":"201604", "RECEIPT":"8832426170", "REGION":"약국", "RETURN":"-369050332", "SALES":"8847786485", "TEAMNM":"", "TYPE":""}
+          	               ,{"CUSTNM":"", "CUSTNO":"", "DEPTNM":"", "EMP":"", "ITEMNM":"", "ITEMNO":"", "MON":"201604", "RECEIPT":"1412324268", "REGION":"의원", "RETURN":"-44077148", "SALES":"1567805155", "TEAMNM":"", "TYPE":""}
+          	               ,{"CUSTNM":"", "CUSTNO":"", "DEPTNM":"", "EMP":"", "ITEMNM":"", "ITEMNO":"", "MON":"201604", "RECEIPT":"3480658463", "REGION":"약국외", "RETURN":"-98325353", "SALES":"3249930011", "TEAMNM":"", "TYPE":""}
+          	               ,{"CUSTNM":"", "CUSTNO":"", "DEPTNM":"", "EMP":"", "ITEMNM":"", "ITEMNO":"", "MON":"201604", "RECEIPT":"1805286376", "REGION":"영업기타", "RETURN":"0", "SALES":"1383672249", "TEAMNM":"", "TYPE":""}
+          	               ,{"CUSTNM":"", "CUSTNO":"", "DEPTNM":"", "EMP":"", "ITEMNM":"", "ITEMNO":"", "MON":"201604", "RECEIPT":"279055560", "REGION":"영업외(마케팅)", "RETURN":"-13528434", "SALES":"187249950", "TEAMNM":"", "TYPE":""}
+          	               ,{"CUSTNM":"", "CUSTNO":"", "DEPTNM":"", "EMP":"", "ITEMNM":"", "ITEMNO":"", "MON":"201605", "RECEIPT":"0", "REGION":"도매", "RETURN":"-47866223", "SALES":"12675587754", "TEAMNM":"", "TYPE":""}
+          	               ,{"CUSTNM":"", "CUSTNO":"", "DEPTNM":"", "EMP":"", "ITEMNM":"", "ITEMNO":"", "MON":"201605", "RECEIPT":"0", "REGION":"병원", "RETURN":"-17932786", "SALES":"5427519655", "TEAMNM":"", "TYPE":""}
+          	               ,{"CUSTNM":"", "CUSTNO":"", "DEPTNM":"", "EMP":"", "ITEMNM":"", "ITEMNO":"", "MON":"201605", "RECEIPT":"0", "REGION":"약국", "RETURN":"-161868010", "SALES":"4984885117", "TEAMNM":"", "TYPE":""}
+          	               ,{"CUSTNM":"", "CUSTNO":"", "DEPTNM":"", "EMP":"", "ITEMNM":"", "ITEMNO":"", "MON":"201605", "RECEIPT":"0", "REGION":"의원", "RETURN":"-8127939", "SALES":"813260901", "TEAMNM":"", "TYPE":""}
+          	               ,{"CUSTNM":"", "CUSTNO":"", "DEPTNM":"", "EMP":"", "ITEMNM":"", "ITEMNO":"", "MON":"201605", "RECEIPT":"0", "REGION":"약국외", "RETURN":"-1194855", "SALES":"1673593705", "TEAMNM":"", "TYPE":""}
+          	               ,{"CUSTNM":"", "CUSTNO":"", "DEPTNM":"", "EMP":"", "ITEMNM":"", "ITEMNO":"", "MON":"201605", "RECEIPT":"0", "REGION":"영업기타", "RETURN":"0", "SALES":"55327500", "TEAMNM":"", "TYPE":""}
+          	               ,{"CUSTNM":"", "CUSTNO":"", "DEPTNM":"", "EMP":"", "ITEMNM":"", "ITEMNO":"", "MON":"201605", "RECEIPT":"0", "REGION":"영업외(마케팅)", "RETURN":"153414524", "SALES":"-51032074", "TEAMNM":"", "TYPE":""}
+          	               ];
+          	               
+          	   dlt_pivot.setJSON( jsonData );            
+		]]></script>
+    </head>
+    <body>
+    	<w2:pivotTable style="position: absolute ;left: 62px;top: 42px;width:100%;height:100%;" dataList="dlt_pivot" vals="RECEIPT,RETURN,SALES" rows="REGION" cols="Σ값,MON" defaultAggregator="Sum" valuesAxis="col" id="p1" renderMode="">
+    		<w2:fieldInfo>
+    			<w2:field id="CUSTNM" name="CUSTNM"></w2:field>
+    			<w2:field id="CUSTNO" name="CUSTNO"></w2:field>
+    			<w2:field id="DEPTNM" name="DEPTNM"></w2:field>
+    			<w2:field id="EMP" name="EMP"></w2:field>
+    			<w2:field id="ITEMNM" name="ITEMNM"></w2:field>
+    			<w2:field id="ITEMNO" name="ITEMNO"></w2:field>
+    			<w2:field id="MON" name="MON" sortOrder="RECEIPT,RETURN,SALES"></w2:field>
+    			<w2:field id="REGION" name="REGION"></w2:field>
+    			<w2:field id="RECEIPT" name="RECEIPT"></w2:field>
+    			<w2:field id="RETURN" name="RETURN"></w2:field>
+    			<w2:field id="SALES" name="SALES" ></w2:field>
+    			<w2:field id="TEAMNM" name="TEAMNM"></w2:field>
+    			<w2:field id="TYPE" name="TYPE"></w2:field>
+    		</w2:fieldInfo>
+    	</w2:pivotTable>
+    </body>
+</html>

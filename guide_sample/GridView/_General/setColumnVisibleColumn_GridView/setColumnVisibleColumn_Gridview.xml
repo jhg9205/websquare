@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/2019-09/Components/gridview.css" type="text/css"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+        	<xf:instance>
+        		<data xmlns="" />
+        	</xf:instance>
+        	<w2:dataCollection baseNode="map">
+        		<w2:dataList baseNode="list" repeatNode="map" id="dataList1" saveRemovedData="true">
+        			<w2:columnInfo>
+        				<w2:column id="Check" name="Check" dataType="text"></w2:column>
+        				<w2:column id="ID" name="ID" dataType="text"></w2:column>
+        				<w2:column id="Age" name="Age" dataType="text"></w2:column>
+        				<w2:column id="Status" name="Status" dataType="text"></w2:column>
+        				<w2:column id="Income" name="Income" dataType="text"></w2:column>
+        				<w2:column id="Expense" name="Expense" dataType="text"></w2:column>
+        				<w2:column id="Hobby" name="Hobby" dataType="text"></w2:column>
+        				<w2:column id="Region" name="Region" dataType="text"></w2:column>
+        				<w2:column id="Frequency" name="Frequency" dataType="text"></w2:column>
+        				<w2:column id="date" name="date" dataType="text"></w2:column>
+        			</w2:columnInfo>
+        		</w2:dataList>
+        		<w2:dataList baseNode="list" repeatNode="map" id="dataList2" saveRemovedData="true">
+        			<w2:columnInfo>
+        				<w2:column id="label" name="label" dataType="text"></w2:column>
+        				<w2:column id="value" name="value" dataType="text"></w2:column>
+        				<w2:column id="type" name="type" dataType="text"></w2:column>
+        			</w2:columnInfo>
+        			<w2:data use="true">
+        				<w2:row>
+        					<label><![CDATA[Single]]></label>
+        					<value><![CDATA[Single]]></value>
+        					<type><![CDATA[true]]></type>
+        				</w2:row>
+        				<w2:row>
+        					<label><![CDATA[Divorced]]></label>
+        					<value><![CDATA[Divorced]]></value>
+        					<type><![CDATA[true]]></type>
+        				</w2:row>
+        				<w2:row>
+        					<label><![CDATA[Married]]></label>
+        					<value><![CDATA[Married]]></value>
+        					<type><![CDATA[true]]></type>
+        				</w2:row>
+        				<w2:row>
+        					<label><![CDATA[None]]></label>
+        					<value><![CDATA[None]]></value>
+        					<type><![CDATA[false]]></type>
+        				</w2:row>
+        			</w2:data>
+        		</w2:dataList>
+        	</w2:dataCollection>
+        	<w2:workflowCollection></w2:workflowCollection>
+        	<xf:submission id="submission1" ref="" target='data:json,dataList1' action="data.json" method="post"
+        		mediatype="application/json" encoding="UTF-8" instance="" replace="" errorHandler="" customHandler="" mode="asynchronous"
+        		processMsg="" ev:submit="" ev:submitdone="" ev:submiterror="" abortTrigger="">
+        	</xf:submission>
+        	<xf:submission id="submission2" ref="" target="" action="" method="post" mediatype="application/json" encoding="UTF-8"
+        		instance="" replace="" errorHandler="" customHandler="" mode="asynchronous" processMsg="" ev:submit="" ev:submitdone=""
+        		ev:submiterror="" abortTrigger="">
+        	</xf:submission>
+        </xf:model>
+        <script type="text/javascript" lazy="false"><![CDATA[
+        
+	scwin.onpageload = function() {
+		$p.executeSubmission("submission1");
+	};
+	
+	scwin.onpageunload = function() {
+		
+	};
+	
+	scwin.trigger7_onclick = function(e) {
+		var filtered = dataList1.getFilteredColData('Hobby');
+		alert(filtered);
+	};
+	
+	scwin.trigger8_onclick = function(e) {
+		var full = dataList1.getColData('Hobby');
+		alert(full);
+	};
+	
+	scwin.trigger9_onclick = function(e) {
+		gridview1.setColumnVisibleColumn("Status", "type", false);
+	};
+	]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    	<xf:trigger type="button" style="width: 360px;height: 40px;margin: 30px 10px 20px 30px;font: 17px bolder;color: blue;"
+    		id="trigger7" ev:onclick="scwin.trigger7_onclick">
+    		<xf:label><![CDATA[getFilteredColData]]></xf:label>
+    	</xf:trigger>
+    	<xf:trigger type="button" style="width: 360px;height: 40px;margin: 30px 10px 20px 30px;font: 17px bolder;color: magenta;"
+    		id="trigger8" ev:onclick="scwin.trigger8_onclick">
+    		<xf:label><![CDATA[getColData]]></xf:label>
+    	</xf:trigger>
+    	<xf:trigger type="button" style="width: 360px;height: 40px;margin: 20px 10px 50px 30px;font: 17px bolder;color: green;" id="trigger9" ev:onclick="scwin.trigger9_onclick">
+    		<xf:label><![CDATA[setColumnVisibleColumn]]></xf:label>
+    	</xf:trigger>
+    	<w2:gridView id="gridview1" style="width: 90%;height: 300px;margin-left: 30px;" scrollByColumn="false" defaultCellHeight="20"
+    		scrollByColumnAdaptive="false" dataList="data:dataList1" class="" autoFit="allColumn" rowNumVisible="" rowStatusVisible=""
+    		showSortableUseFilter="" filterShowAlways="" showSortableImage="" sortable="" useFilterList="true" columnMove="">
+    		<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
+    		<w2:header style="" id="header1">
+    			<w2:row style="height: 25px;" id="row1">
+    				<w2:column removeBorderStyle="false" width="70" inputType="checkbox" style="height:20px;" id="column19" value="Check"
+    					blockSelect="false" displayMode="label">
+    				</w2:column>
+    				<w2:column removeBorderStyle="false" width="70" inputType="text" style="height:20px;" id="column17" value="ID"
+    					blockSelect="false" displayMode="label">
+    				</w2:column>
+    				<w2:column removeBorderStyle="false" width="70" inputType="text" style="height:20px;" id="column15" value="Age"
+    					blockSelect="false" displayMode="label">
+    				</w2:column>
+    				<w2:column removeBorderStyle="false" width="70" inputType="select" style="height:20px;" id="column13" value="Status"
+    					blockSelect="false" displayMode="label" allOption="" chooseOption="true" chooseOptionLabel="Status" ref="">
+    					<w2:choices>
+    						<w2:itemset nodeset="data:dataList2">
+    							<w2:label ref="label"></w2:label>
+    							<w2:value ref="value"></w2:value>
+    						</w2:itemset>
+    					</w2:choices>
+    				</w2:column>
+    				<w2:column removeBorderStyle="false" width="70" inputType="text" style="height:20px;" id="column11" value="Income"
+    					blockSelect="false" displayMode="label">
+    				</w2:column>
+    				<w2:column removeBorderStyle="false" width="70" inputType="text" style="height:20px;" id="column9" value="Expense"
+    					blockSelect="false" displayMode="label" sortable="">
+    				</w2:column>
+    				<w2:column removeBorderStyle="false" width="70" inputType="text" style="height:20px;" id="column7" value="Hobby"
+    					blockSelect="false" displayMode="label" useFilter="true">
+    				</w2:column>
+    				<w2:column removeBorderStyle="false" width="70" inputType="text" style="height:20px;" id="column5" value="Region"
+    					blockSelect="false" displayMode="label">
+    				</w2:column>
+    				<w2:column removeBorderStyle="false" width="70" inputType="text" style="height:20px;" id="column3" value="Frequency"
+    					blockSelect="false" displayMode="label">
+    				</w2:column>
+    				<w2:column removeBorderStyle="false" width="70" inputType="text" style="height:20px;" id="column1" value="date"
+    					blockSelect="false" displayMode="label">
+    				</w2:column>
+    			</w2:row>
+    		</w2:header>
+    		<w2:gBody style="" id="gBody1">
+    			<w2:row style="" id="row2">
+    				<w2:column removeBorderStyle="false" width="70" inputType="checkbox" style="height:20px" id="Check" value=""
+    					blockSelect="false" displayMode="label">
+    				</w2:column>
+    				<w2:column removeBorderStyle="false" width="70" inputType="text" style="height:20px" id="ID" value=""
+    					blockSelect="false" displayMode="label">
+    				</w2:column>
+    				<w2:column removeBorderStyle="false" width="70" inputType="text" style="height:20px" id="Age" value=""
+    					blockSelect="false" displayMode="label">
+    				</w2:column>
+    				<w2:column removeBorderStyle="false" width="70" inputType="select" style="height:20px;" id="Status" value=""
+    					blockSelect="false" displayMode="label" allOption="" chooseOption="" ref="">
+    					<w2:choices>
+    						<w2:itemset nodeset="data:dataList2">
+    							<w2:label ref="label"></w2:label>
+    							<w2:value ref="value"></w2:value>
+    						</w2:itemset>
+    					</w2:choices>
+    				</w2:column>
+    				<w2:column removeBorderStyle="false" width="70" inputType="text" style="height:20px" id="Income" value=""
+    					blockSelect="false" displayMode="label">
+    				</w2:column>
+    				<w2:column removeBorderStyle="false" width="70" inputType="text" style="height:20px" id="Expense" value=""
+    					blockSelect="false" displayMode="label">
+    				</w2:column>
+    				<w2:column removeBorderStyle="false" width="70" inputType="text" style="height:20px" id="Hobby" value=""
+    					blockSelect="false" displayMode="label" useFilter="">
+    				</w2:column>
+    				<w2:column removeBorderStyle="false" width="70" inputType="" style="height:20px" id="Region" value=""
+    					blockSelect="false" displayMode="label">
+    				</w2:column>
+    				<w2:column removeBorderStyle="false" width="70" inputType="text" style="height:20px" id="Frequency" value=""
+    					blockSelect="false" displayMode="label">
+    				</w2:column>
+    				<w2:column removeBorderStyle="false" width="70" inputType="text" style="height:20px" id="date" value=""
+    					blockSelect="false" displayMode="label">
+    				</w2:column>
+    			</w2:row>
+    		</w2:gBody>
+    	</w2:gridView>
+    </body>
+</html>

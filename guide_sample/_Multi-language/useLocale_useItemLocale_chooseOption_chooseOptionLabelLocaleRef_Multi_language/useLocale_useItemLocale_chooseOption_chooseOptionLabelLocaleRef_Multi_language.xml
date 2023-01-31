@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+            <w2:dataCollection baseNode="map">
+            </w2:dataCollection>
+            <w2:workflowCollection>
+            </w2:workflowCollection>
+        </xf:model>
+         <script type="text/javascript" lazy="false"><![CDATA[
+        
+	scwin.onpageload = function() {
+		
+	};
+	
+	scwin.onpageunload = function() {
+		
+	};
+	
+	]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    <xf:group id="" style=""><xf:group tagname="table" style="width:90%;" id="" class="w2tb">
+    		<w2:attributes>
+    			<w2:summary></w2:summary>
+    		</w2:attributes>
+    		<xf:group tagname="caption"></xf:group>
+    		<xf:group tagname="colgroup">
+    			<xf:group tagname="col" style="width:50.00%;"></xf:group>
+    			<xf:group tagname="col" style="width:50.00%"></xf:group>
+    		</xf:group>
+    		<xf:group tagname="tr" style="">
+    			<xf:group tagname="th" style="" class="w2tb_th">AutoComplete<w2:attributes>
+    					<w2:scope>row</w2:scope>
+    				</w2:attributes></xf:group>
+    			<xf:group tagname="td" style="padding: 10px;padding-bottom: 100px;" class="w2tb_td">
+    				<w2:autoComplete submenuSize="auto" search="start" useItemLocale="true" ref="" chooseOption="true" editType="select"
+    					useKeywordHighlight="false" style="width: 148px;height: 21px;color: red;" id="" allOption="true" useLocale="true"
+    					chooseOptionLabel="" chooseOptionLabelLocaleRef="chooseOption">
+    					<w2:choices>
+    						<w2:item>
+    							<w2:label><![CDATA[001]]></w2:label>
+    							<w2:value><![CDATA[aaa]]></w2:value>
+    						</w2:item>
+    						<w2:item>
+    							<w2:label><![CDATA[002]]></w2:label>
+    							<w2:value><![CDATA[bbb]]></w2:value>
+    						</w2:item>
+    						<w2:item>
+    							<w2:label><![CDATA[003]]></w2:label>
+    							<w2:value><![CDATA[ccc]]></w2:value>
+    						</w2:item>
+    						<w2:item>
+    							<w2:label><![CDATA[004]]></w2:label>
+    							<w2:value><![CDATA[ddd]]></w2:value>
+    						</w2:item>
+    					</w2:choices>
+    				</w2:autoComplete>
+    			</xf:group>
+    		</xf:group>
+    		<xf:group tagname="tr" style="">
+    			<xf:group tagname="th" style="" class="w2tb_th">CheckComboBox<w2:attributes>
+    					<w2:scope>row</w2:scope>
+    				</w2:attributes></xf:group>
+    			<xf:group tagname="td" style="padding: 10px;padding-bottom: 120px;" class="w2tb_td">
+    				<xf:checkcombobox submenuSize="auto" displayAllOptionLabel="false" useItemLocale="true" chooseOption="true"
+    					allOption="true" displayMode="label" ref="" appearance="minimal" disabled="false" style="width: 148px;height: 21px;color: red;"
+    					id="" direction="auto" useLocale="true" chooseOptionLabelLocaleRef="chooseOption" chooseOptionLabel="">
+    					<xf:choices>
+    						<xf:item>
+    							<xf:label><![CDATA[001]]></xf:label>
+    							<xf:value><![CDATA[aaa]]></xf:value>
+    						</xf:item>
+    						<xf:item>
+    							<xf:label><![CDATA[002]]></xf:label>
+    							<xf:value><![CDATA[bbb]]></xf:value>
+    						</xf:item>
+    						<xf:item>
+    							<xf:label><![CDATA[003]]></xf:label>
+    							<xf:value><![CDATA[ccc]]></xf:value>
+    						</xf:item>
+    						<xf:item>
+    							<xf:label><![CDATA[004]]></xf:label>
+    							<xf:value><![CDATA[ddd]]></xf:value>
+    						</xf:item>
+    					</xf:choices>
+    				</xf:checkcombobox>
+    			</xf:group>
+    		</xf:group>
+    		<xf:group tagname="tr" style="">
+    			<xf:group tagname="th" style="" class="w2tb_th">SelectBox<w2:attributes>
+    					<w2:scope>row</w2:scope>
+    				</w2:attributes></xf:group>
+    			<xf:group tagname="td" localeRef="" style="width: 148px;height: 21px;color: red;padding: 10px;padding-bottom: 100px;" tooltipLocaleRef="" class="w2tb_td" useLocale="">
+    				<xf:select1 submenuSize="auto" ref="" useItemLocale="true" appearance="minimal" disabledClass="w2selectbox_disabled"
+    					chooseOption="true" style="width: 148px;height: 21px;color: red;" disabled="false" id="" allOption="true" direction="auto"
+    					useLocale="true" chooseOptionLabelLocaleRef="chooseOption" chooseOptionLabel="">
+    					<xf:choices>
+    						<xf:item>
+    							<xf:label><![CDATA[001]]></xf:label>
+    							<xf:value><![CDATA[aaa]]></xf:value>
+    						</xf:item>
+    						<xf:item>
+    							<xf:label><![CDATA[002]]></xf:label>
+    							<xf:value><![CDATA[bbb]]></xf:value>
+    						</xf:item>
+    						<xf:item>
+    							<xf:label><![CDATA[003]]></xf:label>
+    							<xf:value><![CDATA[ccc]]></xf:value>
+    						</xf:item>
+    						<xf:item>
+    							<xf:label><![CDATA[004]]></xf:label>
+    							<xf:value><![CDATA[ddd]]></xf:value>
+    						</xf:item>
+    					</xf:choices>
+    				</xf:select1>
+    			</xf:group>
+    		</xf:group>
+    	</xf:group></xf:group></body>
+</html>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+            <w2:dataCollection baseNode="map">
+            	<w2:dataList baseNode="list" repeatNode="map" id="dataList1" saveRemovedData="true">
+            		<w2:columnInfo>
+            			<w2:column id="c_code" name="city_code" dataType="text"></w2:column>
+            			<w2:column id="airport" name="airport" dataType="text"></w2:column>
+            			<w2:column id="country" name="country" dataType="text"></w2:column>
+            			<w2:column id="city" name="city" dataType="text"></w2:column>
+            			<w2:column id="a_code" name="airport_code" dataType="text"></w2:column>
+            		</w2:columnInfo>
+            	</w2:dataList>
+            </w2:dataCollection>
+            <w2:workflowCollection>
+            </w2:workflowCollection>
+        </xf:model>
+         <script type="text/javascript" lazy="false"><![CDATA[
+        
+	scwin.onpageload = function() {
+		var json = [
+		{
+      "c_code": "PAR",
+      "airport": "ORLY",
+      "country": "FRANCE",
+      "city": "PARIS",
+      "a_code": "ORY"
+   },
+   {
+      "c_code": "PDX",
+      "airport": "PORTLAND INT’L",
+      "country": "U.S.A.",
+      "city": "PORTLAND",
+      "a_code": "PDX"
+   },
+   {
+      "c_code": "PEK",
+      "airport": "CAPITAL",
+      "country": "CHINA",
+      "city": "BEIJING",
+      "a_code": "PEK"
+   },
+   {
+      "c_code": "PER",
+      "airport": "PERTH",
+      "country": "AUSTRALIA",
+      "city": "PERTH",
+      "a_code": "PER"
+   },
+   {
+      "c_code": "PHL",
+      "airport": "PHILADELPHIA INT’L",
+      "country": "U.S.A.",
+      "city": "PHILADELPHIA",
+      "a_code": "PHL"
+   },
+   {
+      "c_code": "PHX",
+      "airport": "SKY HARBOR ",
+      "country": "U.S.A.",
+      "city": "PHOENIX",
+      "a_code": "PHX"
+   },
+   {
+      "c_code": "PIT",
+      "airport": "PITTSBURGH INT’L",
+      "country": "U.S.A.",
+      "city": "PITTSBURGH",
+      "a_code": "PIT"
+   },
+   {
+      "c_code": "PNH",
+      "airport": "POCHENTONG",
+      "country": "CAMBODIA",
+      "city": "PHNOMPENH",
+      "a_code": "PNH"
+   },
+   {
+      "c_code": "PUS",
+      "airport": "KIMHAE",
+      "country": "KOREA",
+      "city": "PUSAN",
+      "a_code": "PUS"
+   }
+];
+dataList1.setJSON(json);
+	};
+	
+	scwin.onpageunload = function() {
+		
+	};
+	
+	]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    <xf:group id="" style="padding-left: 100px;padding-top: 50px;"><w2:gridView scrollByColumnAdaptive="false" rowNumVisible="true" checkAllType="false" dataList="data:dataList1" style="width: 700px;height: 150px;" scrollByColumn="false" id="gridView1" autoFit="allColumn" visibleRowNum="10" defaultCellHeight="20" contextMenu="true" useHeaderContextMenu="true">
+    		<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
+    		<w2:header style="" id="header1">
+    			<w2:row style="" id="row1">
+    				<w2:column width="70" inputType="text" style="height:20px" id="column5" value="city_code" displayMode="label"></w2:column>
+    				<w2:column width="70" inputType="text" style="height:20px" id="column4" value="airport" displayMode="label"></w2:column>
+    				<w2:column width="70" inputType="text" style="height:20px" id="column3" value="country" displayMode="label"></w2:column>
+    				<w2:column width="70" inputType="text" style="height:20px" id="column2" value="city" displayMode="label"></w2:column>
+    				<w2:column width="70" inputType="text" style="height:20px" id="column1" value="airport_code" displayMode="label"></w2:column>
+    			</w2:row>
+    		</w2:header>
+    		<w2:gBody style="" id="gBody1">
+    			<w2:row style="" id="row2">
+    				<w2:column width="70" inputType="text" style="height:20px" id="c_code" value="" displayMode="label"></w2:column>
+    				<w2:column width="70" inputType="text" style="height:20px" id="airport" value="" displayMode="label"></w2:column>
+    				<w2:column width="70" inputType="text" style="height:20px" id="country" value="" displayMode="label"></w2:column>
+    				<w2:column width="70" inputType="text" style="height:20px" id="city" value="" displayMode="label"></w2:column>
+    				<w2:column width="70" inputType="text" style="height:20px" id="a_code" value="" displayMode="label"></w2:column>
+    			</w2:row>
+    		</w2:gBody>
+    	</w2:gridView></xf:group></body>
+</html>

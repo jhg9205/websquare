@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+            <w2:dataCollection baseNode="map">
+            </w2:dataCollection>
+            <w2:workflowCollection>
+            </w2:workflowCollection>
+        </xf:model>
+         <script type="text/javascript" lazy="false"><![CDATA[
+        
+	scwin.onpageload = function() {
+		
+	};
+	
+	scwin.onpageunload = function() {
+		
+	};
+	
+	]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    	<w2:textbox id="" label="tooltipDisplay &amp; tooltipShowAlways" style="width:388px;text-align:center;line-height:32px;height:32px;margin:20px;margin-bottom:30px;background-color:#C0C0C0;font-size:17px;font-family:monospace;font-style:normal;font-weight:bolder;">
+    	</w2:textbox><w2:textbox
+    		label="Once upon a time, there was a Kingdom. The king there only had one leg and one eye, but he was very intelligent and kind. Everyone in his kingdom lived a happy and a healthy life because of their king. One day the king was walking through the palace hallway and saw the portraits of his ancestors."
+    		style="width:200px;height:11px;overflow:hidden;text-overflow:ellipsis;margin:20px;border-color:#000000;border-style:solid;padding:5px;"
+    		id="" tooltipDisplay="true" tooltipShowAlways="true" tooltipPositionY="2" tooltipPositionX="60" toolTip="" tooltipTime="0">
+    	</w2:textbox>
+    	<w2:textbox id="" label="tooltip"
+    		style="width:51px;height:11px;overflow:hidden;text-overflow:ellipsis;margin:20px;border-color:black;border-style:solid;padding:5px;"
+    		tooltipDisplay="true" tooltipPositionY="2" tooltipShowAlways="true" tooltipPositionX="60" toolTip="">
+    	</w2:textbox>
+    	
+    </body>
+</html>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+        	<xf:instance>
+        		<data xmlns="" />
+        	</xf:instance>
+        	<w2:dataCollection baseNode="map">
+        		<w2:dataMap baseNode="map" id="dataMap1">
+        			<w2:keyInfo>
+        				<w2:key id="Name" name="Name" dataType="text"></w2:key>
+        				<w2:key id="Gender" name="Gender" dataType="text"></w2:key>
+        				<w2:key id="Date" name="Date" dataType="text"></w2:key>
+        				<w2:key id="City" name="City" dataType="text"></w2:key>
+        				<w2:key id="Email" name="Email" dataType="text"></w2:key>
+        				<w2:key id="Title" name="Title" dataType="text"></w2:key>
+        			</w2:keyInfo>
+        			<w2:data use="false"></w2:data>
+        		</w2:dataMap>
+        		<w2:dataList baseNode="list" repeatNode="map" id="dataList1" saveRemovedData="true">
+        			<w2:columnInfo>
+        				<w2:column id="City" name="City" dataType="text"></w2:column>
+        				<w2:column id="code" name="code" dataType="text"></w2:column>
+        			</w2:columnInfo>
+        			<w2:data use="false">
+        				<w2:row></w2:row>
+        			</w2:data>
+        		</w2:dataList>
+        		<w2:dataList baseNode="list" repeatNode="map" id="dataList2" saveRemovedData="true">
+        			<w2:columnInfo>
+        				<w2:column id="Gender" name="Gender" dataType="text"></w2:column>
+        				<w2:column id="code" name="code" dataType="text"></w2:column>
+        			</w2:columnInfo>
+        		</w2:dataList>
+        	</w2:dataCollection>
+        	<w2:workflowCollection></w2:workflowCollection>
+        	<xf:submission id="submission1" ref="" target='data:json,["dataList1","dataList2"]' action="code.json"
+        		method="post" mediatype="application/json" encoding="UTF-8" instance="" replace="" errorHandler="" customHandler=""
+        		mode="asynchronous" processMsg="" ev:submit="" ev:submitdone="" ev:submiterror="" abortTrigger="">
+        	</xf:submission>
+        	<xf:submission id="submission2" ref="" target="data:json,dataMap1" action="data.json" method="post" mediatype="application/json" encoding="UTF-8"
+        		instance="" replace="" errorHandler="" customHandler="" mode="asynchronous" processMsg="" ev:submit="" ev:submitdone=""
+        		ev:submiterror="" abortTrigger="">
+        	</xf:submission>
+        </xf:model>
+        <script type="text/javascript" lazy="false"><![CDATA[
+        
+	scwin.onpageload = function() {
+		
+	};
+	
+	scwin.onpageunload = function() {
+		
+	};
+	
+	
+	scwin.trigger1_onclick = function(e) {
+		$p.executeSubmission("submission1");
+	};
+	
+	scwin.trigger2_onclick = function(e) {		
+		$p.executeSubmission("submission2");
+	};
+	]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    	<xf:group tagname="table" style="margin: 20px;" id="" class="w2tb">
+    		<w2:attributes>
+    			<w2:summary></w2:summary>
+    		</w2:attributes>
+    		<xf:group tagname="caption"></xf:group>
+    		<xf:group tagname="colgroup">
+    			<xf:group tagname="col" style="width:25.00%;"></xf:group>
+    			<xf:group tagname="col" style="width:25.00%"></xf:group>
+    			<xf:group tagname="col" style="width:25.00%;"></xf:group>
+    			<xf:group tagname="col" style="width:25.00%"></xf:group>
+    		</xf:group>
+    		<xf:group tagname="tr" style="">
+    			<xf:group tagname="th" style="padding: 10px;background-color: white" class="w2tb_th">
+    				<w2:attributes>
+    					<w2:scope>row</w2:scope>
+    					<w2:colspan>4</w2:colspan>
+    					<w2:rowspan>1</w2:rowspan>
+    				</w2:attributes>
+    			<xf:group id="" style="float: right;"><xf:trigger ev:onclick="scwin.trigger1_onclick" style="width: 80px;height: 23px;" id="trigger1" type="button">
+    					<xf:label><![CDATA[Get Code]]></xf:label>
+    				</xf:trigger><xf:trigger ev:onclick="scwin.trigger2_onclick" style="width: 80px;height: 23px;margin-left: 20px;" id="trigger2" type="button">
+    					<xf:label><![CDATA[Get Data]]></xf:label>
+    				</xf:trigger></xf:group></xf:group>
+    		</xf:group>
+    		<xf:group tagname="tr" style="">
+    			<xf:group tagname="th" style="" class="w2tb_th">
+    				Name
+    				<w2:attributes>
+    					<w2:scope>row</w2:scope>
+    				</w2:attributes>
+    			</xf:group>
+    			<xf:group tagname="td" style="padding: 10px;" class="w2tb_td">
+    				<xf:input adjustMaxLength="false" id="" style="width: 144px;height: 21px;" ref="data:dataMap1.Name"></xf:input>
+    			</xf:group>
+    			<xf:group tagname="th" style="" class="w2tb_th">Gender<w2:attributes>
+    					<w2:scope>row</w2:scope>
+    				</w2:attributes></xf:group>
+    			<xf:group tagname="td" style="padding: 10px;" class="w2tb_td">
+    				<xf:select1 id="" selectedIndex="-1" appearance="full" style="width: 150px;height: 21px;" ref="data:dataMap1.Gender" cols="" rows="1">
+    					<xf:choices>
+    						<xf:itemset nodeset="data:dataList2">
+    							<xf:label ref="Gender"></xf:label>
+    							<xf:value ref="code"></xf:value>
+    						</xf:itemset>
+    					</xf:choices>
+    				</xf:select1>
+    			</xf:group>
+    		</xf:group>
+    		<xf:group tagname="tr" style="">
+    			<xf:group tagname="th" style="" class="w2tb_th">
+    				Sign-up&amp;nbsp;Date
+    				<w2:attributes>
+    					<w2:scope>row</w2:scope>
+    				</w2:attributes>
+    			</xf:group>
+    			<xf:group tagname="td" style="padding: 10px;" class="w2tb_td">
+    				<w2:inputCalendar footerDiv="false" id="" style="width: 150px;height: 23px;" renderDiv="true" focusOnDateSelect="false"
+    					calendarValueType="yearMonthDate" rightAlign="false" renderType="component" ref="data:dataMap1.Date">
+    				</w2:inputCalendar>
+    			</xf:group>
+    			<xf:group tagname="th" style="" class="w2tb_th">City<w2:attributes>
+    					<w2:scope>row</w2:scope>
+    				</w2:attributes></xf:group>
+    			<xf:group tagname="td" style="padding: 10px;" class="w2tb_td">
+    				<xf:select1 id="" chooseOption="" style="width: 148px;height: 21px;" submenuSize="auto" allOption="" disabled="false"
+    					direction="auto" appearance="minimal" disabledClass="w2selectbox_disabled" ref="data:dataMap1.City" chooseOptionLabel="">
+    					<xf:choices>
+    						<xf:itemset nodeset="data:dataList1">
+    							<xf:label ref="City"></xf:label>
+    							<xf:value ref="code"></xf:value>
+    						</xf:itemset>
+    					</xf:choices>
+    				</xf:select1>
+    			</xf:group>
+    		</xf:group>
+    		<xf:group tagname="tr" style="">
+    			<xf:group tagname="th" style="" class="w2tb_th">
+    				E-mail
+    				<w2:attributes>
+    					<w2:scope>row</w2:scope>
+    				</w2:attributes>
+    			</xf:group>
+    			<xf:group tagname="td" style="padding: 10px;" class="w2tb_td">
+    				<xf:input adjustMaxLength="false" id="" style="width: 144px;height: 21px;" ref="data:dataMap1.Email"></xf:input>
+    			</xf:group>
+    			<xf:group tagname="th" style="" class="w2tb_th">
+    				Title
+    				<w2:attributes>
+    					<w2:scope>row</w2:scope>
+    				</w2:attributes>
+    			</xf:group>
+    			<xf:group tagname="td" style="padding: 10px;" class="w2tb_td">
+    				<xf:input adjustMaxLength="false" id="" style="width: 144px;height: 21px;" ref="data:dataMap1.Title"></xf:input>
+    			</xf:group>
+    		</xf:group>
+    	</xf:group>
+    </body>
+</html>

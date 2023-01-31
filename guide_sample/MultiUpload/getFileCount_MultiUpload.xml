@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+            <w2:dataCollection baseNode="map">
+            </w2:dataCollection>
+            <w2:workflowCollection>
+            </w2:workflowCollection>
+        </xf:model>
+         <script type="text/javascript" lazy="false"><![CDATA[
+        
+	scwin.onpageload = function() {
+		
+	};
+	
+	scwin.onpageunload = function() {
+		
+	};
+	
+	
+	scwin.trigger1_onclick = function(e) {
+		var count = multi1.getFileCount();
+		alert("Total " + count + " files to be uploaded.");
+	};
+	]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    	<w2:multiupload action="" filter="" id="multi1" maxcount="" maxsize="" mode="flash"
+    		style="width:446px;height:180px;margin:50px;margin-bottom: 0;border-color:#C0C0C0;border-style:solid;" uploadButton="" userData1="" wmode="">
+    	</w2:multiupload>
+    	<xf:trigger type="button" style="width:189px;text-align:center;line-height:32px;height:32px;margin:50px;margin-bottom:0px;background-color:#C0C0C0;font-size:17px;font-family:monospace;font-style:normal;font-weight:bolder;" id="trigger1" ev:onclick="scwin.trigger1_onclick">
+    		<xf:label><![CDATA[getFileCount()]]></xf:label>
+    	</xf:trigger>
+
+    </body>
+</html>

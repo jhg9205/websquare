@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+            <w2:dataCollection baseNode="map">
+            </w2:dataCollection>
+            <w2:workflowCollection>
+            </w2:workflowCollection>
+        </xf:model>
+         <script type="text/javascript" lazy="false"><![CDATA[
+        
+	scwin.onpageload = function() {
+		
+	};
+	
+	scwin.onpageunload = function() {
+		
+	};
+	
+	
+	scwin.textbox1_onclick = function(e) {
+		var x =  0.1 + 0.2;
+		output1.setValue(x);
+	};
+	]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    	<w2:textbox id="textbox1" label="0.1 + 0.2 = " style="width:222px;text-align:center;line-height:32px;height:32px;margin:30px;margin-bottom:30px;background-color:#C0C0C0;font-size:17px;font-family:monospace;font-style:normal;font-weight:bolder;" ev:onclick="scwin.textbox1_onclick">
+    	</w2:textbox><xf:output label=""
+    		style="width:511px;height:35px;margin:30px;padding:20px;font-size:40px;font-family:monospace;font-style:italic;font-weight:bolder;border-color:#000000;border-style:solid;line-height:40px;"
+    		id="output1" dataType="number" disabled="">
+    		<xf:label><![CDATA[]]></xf:label>
+    	</xf:output>
+    	
+    </body>
+</html>

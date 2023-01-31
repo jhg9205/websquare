@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+            <w2:dataCollection baseNode="map">
+            </w2:dataCollection>
+            <w2:workflowCollection>
+            </w2:workflowCollection>
+        </xf:model>
+         <script type="text/javascript" lazy="false"><![CDATA[
+        
+	scwin.onpageload = function() {
+		
+	};
+	
+	scwin.onpageunload = function() {
+		
+	};
+	
+	
+	scwin.trigger1_onclick = function(e) {
+		inputCalendar1.disableDate("20220527 20220528 20220529");
+	};
+	]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    <xf:group id="" style="padding: 50px;"><xf:trigger style="width:188px;line-height:32px;height: 40px;background-color:#C0C0C0;font-size:15px;font-family:monospace;font-style:normal;font-weight:bolder;top:20px;text-align:left;" id="trigger1" type="button" ev:onclick="scwin.trigger1_onclick">
+    		<xf:label><![CDATA[disableDate()]]></xf:label>
+    	</xf:trigger><w2:inputCalendar footerDiv="false" rightAlign="false" focusOnDateSelect="false" style="width:150px;height:40px;margin-left:100px;" id="inputCalendar1" renderDiv="true" calendarValueType="yearMonthDate" monthNames="1,2,3,4,5,6,7,8,9,10,11,12" monthNamesForYearMonthType="1,2,3,4,5,6,7,8,9,10,11,12" yearSuffix="Y">
+    	</w2:inputCalendar></xf:group></body>
+</html>

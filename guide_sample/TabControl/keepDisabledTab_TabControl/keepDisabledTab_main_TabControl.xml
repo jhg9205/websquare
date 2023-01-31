@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+            <w2:dataCollection baseNode="map">
+            </w2:dataCollection>
+            <w2:workflowCollection>
+            </w2:workflowCollection>
+        </xf:model>
+         <script type="text/javascript" lazy="false"><![CDATA[
+        
+	scwin.onpageload = function() {
+		
+	};
+	
+	scwin.onpageunload = function() {
+		
+	};
+	
+	
+	scwin.trigger1_onclick = function(e) {
+		if (tabControl1.tabArr[0].disabled === false) {
+            tabControl1.disableTab(0);
+        } else {
+            tabControl1.enableTab(0);
+        }
+	};
+	]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    	<xf:trigger type="button"
+    		style="width:248px;line-height:32px;padding:5px;background-color:#C0C0C0;font-size:15px;font-family:monospace;font-style:normal;font-weight:bolder;top:20px;text-align:left;margin:50px;margin-bottom: 0px;margin-left: 200px;"
+    		id="trigger1" ev:onclick="scwin.trigger1_onclick">
+    		<xf:label><![CDATA[disableTab() & enableTab()]]></xf:label>
+    	</xf:trigger>
+    	<w2:tabControl useTabKeyOnly="true" id="tabControl1" useMoveNextTabFocus="false" useConfirmMessage="false" confirmTrueAction="exist"
+    		confirmFalseAction="new" alwaysDraw="false" style="width: 700px;height: 400px;margin: 50px;margin-left: 200px">
+    		<w2:tabs disabled="false" style="width:70px;height:30px;" id="tabs1" label="Tab 1"></w2:tabs>
+    		<w2:content alwaysDraw="false" style="height:500px;" id="content1" src="keepDisabledTab_src_TabControl.xml"></w2:content>
+    	</w2:tabControl>
+    </body>
+</html>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/2019-09/Components/WebSquare.css" type="text/css"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+            <w2:dataCollection baseNode="map">
+            </w2:dataCollection>
+            <w2:workflowCollection>
+            </w2:workflowCollection>
+        </xf:model>
+         <script type="text/javascript" lazy="false"><![CDATA[
+        
+	scwin.onpageload = function() {
+		
+	};
+	
+	scwin.onpageunload = function() {
+		
+	};
+	
+
+	scwin.trigger1_onclick = function(e) {
+		
+		inputCalendar1.validate();
+		// alert(result);
+	};
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	scwin.fn_msg = function(){ 
+		var msg = "";
+		var invalidType = this.getType(); 
+		if (invalidType == "mandatory") {
+			msg = "Enter a date. 날짜를 입력하세요. ";
+		} else {
+			msg = "Invalid date. 날짜 형식을 확인하세요.";
+		}
+		alert(msg);	
+	};	
+	]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    	<xf:group tagname="table" style="margin-top:100px;	margin-left:100px;	padding: 10px;	font-size: 20px;	border: black solid 2px;"
+    		id="" class="w2tb">
+    		<w2:attributes>
+    			<w2:summary></w2:summary>
+    		</w2:attributes>
+    		<xf:group tagname="caption"></xf:group>
+    		<xf:group tagname="colgroup">
+    			<xf:group tagname="col" style="width:50.00%;"></xf:group>
+    			<xf:group tagname="col" style="width:50.00%"></xf:group>
+    		</xf:group>
+    		<xf:group tagname="tr" style="">
+    			<xf:group tagname="th" style="padding: 10px;" class="w2tb_th">
+    				Validate&amp;nbsp;/&amp;nbsp;날짜&amp;nbsp;검증
+    				<w2:attributes>
+    					<w2:scope>row</w2:scope>
+    					<w2:colspan>2</w2:colspan>
+    					<w2:rowspan>1</w2:rowspan>
+    				</w2:attributes>
+    			</xf:group>
+    		</xf:group>
+    		<xf:group tagname="tr" style="">
+    			<xf:group tagname="th" style="padding: 10px;" class="w2tb_th">
+    				<w2:attributes>
+    					<w2:scope>row</w2:scope>
+    				</w2:attributes>
+    				<xf:trigger type="button"
+    					style="border: none;width: 80px;height: 23px;color: blue;font-weight: bolder;font-size: 15px;background-color: lightblue;"
+    					id="trigger1" ev:onclick="scwin.trigger1_onclick">
+    					<xf:label><![CDATA[Validate]]></xf:label>
+    				</xf:trigger>
+    			</xf:group>
+    			<xf:group tagname="td" style="padding: 10px;" class="w2tb_td">
+    				<w2:inputCalendar footerDiv="false" id="inputCalendar1" style="width: 150px;height: 23px;	font-size: 20px;"
+    					renderDiv="true" focusOnDateSelect="false" calendarValueType="yearMonthDate" rightAlign="false" renderType="component"
+    					defaultDate="20180101" invalidMessageFunc="scwin.fn_msg" dateValidCheck="true" mandatory="true" displaymessage="true">
+    				</w2:inputCalendar>
+    			</xf:group>
+    		</xf:group>
+    	</xf:group>
+    </body>
+</html>

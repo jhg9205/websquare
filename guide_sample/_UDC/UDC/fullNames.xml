@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+            <w2:dataCollection baseNode="map">
+            </w2:dataCollection>
+            <w2:workflowCollection>
+            </w2:workflowCollection>
+        </xf:model>
+         <script type="text/javascript" lazy="false"><![CDATA[
+        
+	scwin.onpageload = function() {
+		
+	};
+	
+	scwin.onpageunload = function() {
+		
+	};
+	
+	]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    	<!--/** WEBSQUARE UDC */
+    		{
+    		"disableIcon": "",
+    		"notSupportBrowser": "",
+    		"htmlRender": "",
+    		"icon": "",
+    		"description": "",
+    		"version": "",
+    		"apis": [
+    		{
+    		"name": "setFirst",
+    		"description": "desc",
+    		"params": [{
+    		"name": "value_1",
+    		"description": "desc",
+    		"type": "String"
+    		}],
+    		"return": [{
+    		"description": "desc",
+    		"type": "String"
+    		}]
+    		},
+    		{
+    		"name": "setSecond",
+    		"description": "desc",
+    		"params": [{
+    		"name": "value_1",
+    		"description": "desc",
+    		"type": "String"
+    		}],
+    		"return": [{
+    		"description": "desc",
+    		"type": "String"
+    		}]
+    		},
+    		{
+    		"name": "getValues",
+    		"description": "desc",
+    		"params": [],
+    		"return": [{
+    		"description": "desc",
+    		"type": "String"
+    		}]
+    		}
+    		],
+    		"pluginName": "udc_fullNames",
+    		"width": "80%",
+    		"company": "",
+    		"developer": "",
+    		"componentName": "udc_fullNames",
+    		"category": "Basic",
+    		"properties": [
+    		{
+    		"default": "",
+    		"necessary": "Y",
+    		"hidden": "N",
+    		"name": "id",
+    		"description": "Component id",
+    		"type": "string",
+    		"bindparent": "",
+    		"option": ""
+    		},
+    		{
+    		"default": "",
+    		"necessary": "N",
+    		"hidden": "N",
+    		"name": "style",
+    		"description": "Component style",
+    		"type": "string",
+    		"bindparent": "",
+    		"option": ""
+    		},
+    		{
+    		"default": "",
+    		"necessary": "N",
+    		"hidden": "N",
+    		"name": "class",
+    		"description": "Component class",
+    		"type": "string",
+    		"bindparent": "",
+    		"option": ""
+    		},
+    		{
+    		"default": "",
+    		"necessary": "N",
+    		"hidden": "N",
+    		"name": "ref",
+    		"description": "Component ref",
+    		"type": "bindColumn",
+    		"bindparent": "",
+    		"option": ""
+    		},
+    		{
+    		"default": "false",
+    		"necessary": "N",
+    		"hidden": "N",
+    		"name": "disable1",
+    		"description": "desc",
+    		"type": "combobox",
+    		"bindparent": "",
+    		"option": "[true,false]"
+    		},
+    		{
+    		"default": "false",
+    		"necessary": "N",
+    		"hidden": "N",
+    		"name": "disable2",
+    		"description": "desc",
+    		"type": "combobox",
+    		"bindparent": "",
+    		"option": "[true,false]"
+    		}
+    		],
+    		"events": [{
+    		"name": "onUserClick_1()",
+    		"description": "desc",
+    		"type": "user"
+    		}],
+    		"height": "90%"
+    		}
+    	-->
+    	<xf:group id="" pluginName="udc_fullNames">
+    		<link rel="stylesheet" type="text/css" href=""></link>
+    		<style type="text/css"><![CDATA[ ]]></style>
+    		<script type="text/javascript" src=""></script>
+    		<script ev:event="oncreated(options)" type="text/javascript"><![CDATA[
+				/**
+				 * //property handling
+				 * $w.log("id:" + options.id);
+				 * $w.log("style:" + options.style);
+				 * $w.log("class:" + options.class);
+				 * $w.log("ref:" + options.ref);
+				 * $w.log("disable1:" + options.disable1);
+				 * $w.log("disable2:" + options.disable2);
+				 *
+				 * //event trigger
+				 * udc_obj.trigger("onUserClick_1"); 
+				*/
+
+				/**
+				 * //property handling
+				 * $w.log("id:" + options.id);
+				 * $w.log("style:" + options.style);
+				 * $w.log("class:" + options.class);
+				 * $w.log("ref:" + options.ref);
+				 * $w.log("disable1:" + options.disable1);
+				 * $w.log("disable2:" + options.disable2);
+				 *
+				 * //event trigger
+				 * udc_obj.trigger("onUserClick_1"); 
+				*/
+
+				/**
+				 * //property handling
+				 * $w.log("id:" + options.id);
+				 * $w.log("style:" + options.style);
+				 * $w.log("class:" + options.class);
+				 * $w.log("ref:" + options.ref);
+				 *
+				 * //event trigger
+				*/
+				var one = options.disable1;
+				var two = options.disable2;
+
+				if (one == "true") {
+				    input1.setDisabled(true);
+				}
+				if (two == "true") {
+				    input2.setDisabled(true);
+				}		
+
+
+
+				
+				/**
+				 * Function description...
+				 * @date 2021. 05. 24
+				 * @memberOf udc_obj
+				 * @param 
+				 * @returns  
+				 * @author inswave
+				 * @example
+				 * @since
+				*/ 
+				udc_obj.setFirst = function(value_1){
+					input1.setValue(value_1);				
+				};
+
+				/**
+				 * Function description...
+				 * @date 2021. 05. 24
+				 * @memberOf udc_obj
+				 * @param 
+				 * @returns  
+				 * @author inswave
+				 * @example
+				 * @since
+				*/ 
+				udc_obj.setSecond = function(value_1){
+					var last = value_1.toUpperCase();
+					input2.setValue(last);					
+				};
+
+				/**
+				 * Function description...
+				 * @date 2021. 05. 24
+				 * @memberOf udc_obj
+				 * @param 
+				 * @returns  
+				 * @author inswave
+				 * @example
+				 * @since
+				*/ 
+				udc_obj.getValues = function(){
+					udc_obj.trigger("onUserClick_1");
+					return input1.getValue() + " " + input2.getValue();
+				};
+				]]></script>
+    		<script ev:event="onattributeChanged(type,value)" type="text/javascript"><![CDATA[ ]]></script>
+    		<script ev:event="ondestroyed()" type="text/javascript"><![CDATA[ ]]></script>
+    		<xf:input adjustMaxLength="false"
+    			style="width: 144px;height:35px;padding:5px;line-height:32px;font-size:15px;color: blue;font-family:monospace;font-style:normal;font-weight:bolder;margin:20px;color: blue;"
+    			id="input1" placeholder="First name">
+    		</xf:input>
+    		<xf:input adjustMaxLength="false"
+    			style="width: 144px;height:35px;padding:5px;line-height:32px;font-size:15px;color: blue;font-family:monospace;font-style:normal;font-weight:bolder;margin:20px;color: magenta;"
+    			id="input2" placeholder="Last name">
+    		</xf:input>
+    	</xf:group>
+    </body>
+</html>

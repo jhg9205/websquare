@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+        	<xf:instance>
+        		<data xmlns="" />
+        	</xf:instance>
+        	<w2:dataCollection baseNode="map">
+        		<w2:dataList baseNode="list" repeatNode="map" id="dataList1" saveRemovedData="true">
+        			<w2:columnInfo>
+        				<w2:column id="Depth" name="Depth" dataType="text"></w2:column>
+        				<w2:column id="Region" name="Region" dataType="text"></w2:column>
+        				<w2:column id="Population" name="Population" dataType="text" valueType=""></w2:column>
+        				<w2:column id="Area" name="Area" dataType="text"></w2:column>
+        				<w2:column id="GDP" name="GDP" dataType="text"></w2:column>
+        				<w2:column id="Literacy" name="Literacy" dataType="text"></w2:column>
+        				<w2:column id="Phones" name="Phones" dataType="text"></w2:column>
+        				<w2:column id="Birthrate" name="Birthrate" dataType="text"></w2:column>
+        				<w2:column id="Deathrate" name="Deathrate" dataType="text"></w2:column>
+        			</w2:columnInfo>
+        		</w2:dataList>
+        		<w2:dataList baseNode="list" repeatNode="map" id="dataList2" saveRemovedData="true">
+        			<w2:columnInfo>
+        				<w2:column id="Depth" name="Depth" dataType="text"></w2:column>
+        				<w2:column id="Region" name="Region" dataType="text"></w2:column>
+        				<w2:column id="Population" name="Population" dataType="text"></w2:column>
+        				<w2:column id="Area" name="Area" dataType="text"></w2:column>
+        				<w2:column id="GDP" name="GDP" dataType="text"></w2:column>
+        				<w2:column id="Literacy" name="Literacy" dataType="text"></w2:column>
+        				<w2:column id="Phones" name="Phones" dataType="text"></w2:column>
+        				<w2:column id="Birthrate" name="Birthrate" dataType="text"></w2:column>
+        				<w2:column id="Deathrate" name="Deathrate" dataType="text"></w2:column>
+        			</w2:columnInfo>
+        			<w2:data use="true">
+        				<w2:row></w2:row>
+        				<w2:row></w2:row>
+        				<w2:row></w2:row>
+        				<w2:row></w2:row>
+        				<w2:row></w2:row>
+        				<w2:row></w2:row>
+        				<w2:row></w2:row>
+        				<w2:row></w2:row>
+        			</w2:data>
+        		</w2:dataList>
+        	</w2:dataCollection>
+        	<w2:workflowCollection></w2:workflowCollection>
+        	<xf:submission id="submission1" ref="" target="data:json,dataList1" action="population.json" method="post"
+        		mediatype="application/json" encoding="UTF-8" instance="" replace="" errorHandler="" customHandler="" mode="asynchronous"
+        		processMsg="" ev:submit="" ev:submitdone="" ev:submiterror="" abortTrigger="" style="margin: 10px;">
+        	</xf:submission>
+        </xf:model>
+        <script type="text/javascript" lazy="false"><![CDATA[
+        
+	scwin.onpageload = function() {
+		$p.executeSubmission("submission1");		
+	};
+	
+	scwin.onpageunload = function() {
+		
+	};	
+	
+	scwin.trigger1_onclick = function(e) {
+		gridView1.setDrillDownDragDrop(true);
+	};
+	]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    	<xf:trigger type="button" style="width:309px;line-height:32px;padding: 5px;background-color:#C0C0C0;font-size:15px;font-family:monospace;font-style:normal;font-weight:bolder;top:20px;text-align: left;margin: 20px;" id="trigger1" ev:onclick="scwin.trigger1_onclick">
+    		<xf:label><![CDATA[setDrillDownDragDrop(true);]]></xf:label>
+    	</xf:trigger>
+    	<w2:gridView id="gridView1" style="width: 95%;margin: 20px;height: 30%;" scrollByColumn="false" defaultCellHeight="20"
+    		scrollByColumnAdaptive="false" dataList="data:dataList1" autoFit="allColumn" visibleRowNumFix="" visibleRowNum="" rowNumVisible=""
+    		dataDragSelect="true" useShiftKey="true" focusMode="both" dataDragSelectAutoScroll="true" contextMenu="true" dataDragDrop="true"
+    		ignoreCellClick="false" columnMove="true" readOnlyTabIgnore="" ignoreToggleOnDisabled="false" overflowY="scroll" useFilterList="true"
+    		copyOption="dataList" selectedCellColor="#FF8080" selectedRowColor="#FF8040">
+    		<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
+    		<w2:header style="" id="header1">
+    			<w2:row style="" id="row1">
+    				<w2:column width="70" id="column19" value="Depth"></w2:column>
+    				<w2:column width="70" id="column20" value="Region"></w2:column>
+    				<w2:column width="70" id="column21" value="Population"></w2:column>
+    				<w2:column width="70" id="column22" value="Area"></w2:column>
+    				<w2:column width="70" id="column23" value="GDP"></w2:column>
+    				<w2:column width="70" id="column24" value="Literacy"></w2:column>
+    				<w2:column width="70" id="column25" value="Phones"></w2:column>
+    				<w2:column width="70" id="column26" value="Birthrate"></w2:column>
+    				<w2:column width="70" id="column27" value="Deathrate"></w2:column>
+    			</w2:row>
+    		</w2:header>
+    		<w2:gBody style="" id="gBody1">
+    			<w2:row style="" id="row2">
+    				<w2:column width="70" id="Depth"></w2:column>
+    				<w2:column width="70" id="Region" style="text-align: left;" inputType="drilldown" depthColumn="Depth" showDepth="3"
+    					depthType="" textAlign="left">
+    				</w2:column>
+    				<w2:column width="70" id="Population"></w2:column>
+    				<w2:column width="70" id="Area"></w2:column>
+    				<w2:column width="70" id="GDP"></w2:column>
+    				<w2:column width="70" id="Literacy"></w2:column>
+    				<w2:column width="70" id="Phones" copyOption="dataList"></w2:column>
+    				<w2:column width="70" id="Birthrate"></w2:column>
+    				<w2:column width="70" id="Deathrate"></w2:column>
+    			</w2:row>
+    		</w2:gBody>
+    	</w2:gridView>
+    	<w2:gridView id="gridView2" style="width: 95%;margin: 20px;height:30%;" scrollByColumn="false" defaultCellHeight=""
+    		scrollByColumnAdaptive="false" dataList="data:dataList2" dataDragSelect="true" autoFit="allColumn" rowNumVisible="" contextMenu=""
+    		focusMode="row" rowStatusVisible="" visibleRowNum="" dataDragSelectAutoScroll="true" dataDragDrop="true" overflowY="scroll"
+    		fixedColumnWithHidden="true" ignoreCellClick="false" ignoreToggleOnDisabled="false" readOnly="false" loadCount="1" useShiftKey="true"
+    		useFilterList="true" summaryAuto="false" summaryOnlyAuto="false" tooltipDisplay="true" tooltipShowAlwaysColumns=""
+    		tooltipShowAlways="" preventAddRowOnPaste="">
+    		<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
+    		<w2:header style="" id="header1">
+    			<w2:row style="" id="row1">
+    				<w2:column removeBorderStyle="false" width="70" inputType="text" style="height:20px" id="column9" value="Depth"
+    					blockSelect="false" displayMode="label">
+    				</w2:column>
+    				<w2:column removeBorderStyle="false" width="70" inputType="text" style="height:20px" id="column8" value="Region"
+    					blockSelect="false" displayMode="label">
+    				</w2:column>
+    				<w2:column removeBorderStyle="false" width="70" inputType="text" style="height:20px" id="column7" value="Population"
+    					blockSelect="false" displayMode="label">
+    				</w2:column>
+    				<w2:column removeBorderStyle="false" width="70" inputType="text" style="height:20px" id="column6" value="Area"
+    					blockSelect="false" displayMode="label">
+    				</w2:column>
+    				<w2:column removeBorderStyle="false" width="70" inputType="text" style="height:20px" id="column5" value="GDP"
+    					blockSelect="false" displayMode="label">
+    				</w2:column>
+    				<w2:column removeBorderStyle="false" width="70" inputType="text" style="height:20px" id="column4" value="Literacy"
+    					blockSelect="false" displayMode="label">
+    				</w2:column>
+    				<w2:column removeBorderStyle="false" width="70" inputType="text" style="height:20px" id="column3" value="Phones"
+    					blockSelect="false" displayMode="label">
+    				</w2:column>
+    				<w2:column removeBorderStyle="false" width="70" inputType="text" style="height:20px" id="column2" value="Birthrate"
+    					blockSelect="false" displayMode="label">
+    				</w2:column>
+    				<w2:column removeBorderStyle="false" width="70" inputType="text" style="height:20px" id="column1" value="Deathrate"
+    					blockSelect="false" displayMode="label">
+    				</w2:column>
+    			</w2:row>
+    		</w2:header>
+    		<w2:gBody style="" id="gBody1">
+    			<w2:row style="" id="row2">
+    				<w2:column removeBorderStyle="false" width="70" inputType="text" style="height:20px" id="Depth" value=""
+    					blockSelect="false" displayMode="label">
+    				</w2:column>
+    				<w2:column removeBorderStyle="" width="70" inputType="drilldown" style="height:20px" id="Region" value=""
+    					blockSelect="false" displayMode="label" depthColumn="Depth" showDepth="3" depthType="" textAlign="left">
+    				</w2:column>
+    				<w2:column removeBorderStyle="false" width="70" inputType="text" style="height:20px" id="Population" value=""
+    					blockSelect="false" displayMode="label">
+    				</w2:column>
+    				<w2:column removeBorderStyle="false" width="70" inputType="text" style="height:20px" id="Area" value=""
+    					blockSelect="false" displayMode="label">
+    				</w2:column>
+    				<w2:column removeBorderStyle="false" width="70" inputType="text" style="height:20px" id="GDP" value=""
+    					blockSelect="false" displayMode="label">
+    				</w2:column>
+    				<w2:column removeBorderStyle="false" width="70" inputType="text" style="height:20px" id="Literacy" value=""
+    					blockSelect="false" displayMode="label">
+    				</w2:column>
+    				<w2:column removeBorderStyle="false" width="70" inputType="text" style="height:20px" id="Phones" value=""
+    					blockSelect="false" displayMode="label" copyOption="dataList">
+    				</w2:column>
+    				<w2:column removeBorderStyle="false" width="70" inputType="text" style="height:20px" id="Birthrate" value=""
+    					blockSelect="false" displayMode="label">
+    				</w2:column>
+    				<w2:column removeBorderStyle="false" width="70" inputType="text" style="height:20px" id="Deathrate" value=""
+    					blockSelect="false" displayMode="label">
+    				</w2:column>
+    			</w2:row>
+    		</w2:gBody>
+    	</w2:gridView>
+
+    </body>
+</html>

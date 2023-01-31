@@ -1,0 +1,256 @@
+{"dataList1": [
+ {
+   "Depth": 1,
+   "Region": "Asia",
+   "Population": null,
+   "Area": null,
+   "GDP": null,
+   "Literacy": null,
+   "Phones": null,
+   "Birthrate": null,
+   "Deathrate": null
+ },
+ {
+   "Depth": 2,
+   "Region": "Central",
+   "Population": null,
+   "Area": null,
+   "GDP": null,
+   "Literacy": null,
+   "Phones": null,
+   "Birthrate": null,
+   "Deathrate": null
+ },
+ {
+   "Depth": 3,
+   "Region": "Afghanistan ",
+   "Population": 31056997,
+   "Area": 647500,
+   "GDP": 700,
+   "Literacy": 36,
+   "Phones": 3.2,
+   "Birthrate": 46.6,
+   "Deathrate": 20.34
+ },
+ {
+   "Depth": 3,
+   "Region": "Bangladesh ",
+   "Population": 147365352,
+   "Area": 144000,
+   "GDP": 1900,
+   "Literacy": 43.1,
+   "Phones": 7.3,
+   "Birthrate": 29.8,
+   "Deathrate": 8.27
+ },
+ {
+   "Depth": 3,
+   "Region": "Bhutan ",
+   "Population": 2279723,
+   "Area": 47000,
+   "GDP": 1300,
+   "Literacy": 42.2,
+   "Phones": 14.3,
+   "Birthrate": 33.65,
+   "Deathrate": 12.7
+ },
+ {
+   "Depth": 3,
+   "Region": "Iran ",
+   "Population": 68688433,
+   "Area": 1648000,
+   "GDP": 7000,
+   "Literacy": 79.4,
+   "Phones": 276.4,
+   "Birthrate": 17,
+   "Deathrate": 5.55
+ },
+ {
+   "Depth": 3,
+   "Region": "Nepal ",
+   "Population": 28287147,
+   "Area": 147181,
+   "GDP": 1400,
+   "Literacy": 45.2,
+   "Phones": 15.9,
+   "Birthrate": 30.98,
+   "Deathrate": 9.31
+ },
+ {
+   "Depth": 3,
+   "Region": "Pakistan ",
+   "Population": 165803560,
+   "Area": 803940,
+   "GDP": 2100,
+   "Literacy": 45.7,
+   "Phones": 31.8,
+   "Birthrate": 29.74,
+   "Deathrate": 8.23
+ },
+ {
+   "Depth": 2,
+   "Region": "Southeast",
+   "Population": null,
+   "Area": null,
+   "GDP": null,
+   "Literacy": null,
+   "Phones": null,
+   "Birthrate": null,
+   "Deathrate": null
+ },
+ {
+   "Depth": 3,
+   "Region": "Laos ",
+   "Population": 6368481,
+   "Area": 236800,
+   "GDP": 1700,
+   "Literacy": 66.4,
+   "Phones": 14.1,
+   "Birthrate": 35.49,
+   "Deathrate": 11.55
+ },
+ {
+   "Depth": 3,
+   "Region": "Macau ",
+   "Population": 453125,
+   "Area": 28,
+   "GDP": 19400,
+   "Literacy": 94.5,
+   "Phones": 384.9,
+   "Birthrate": 8.48,
+   "Deathrate": 4.47
+ },
+ {
+   "Depth": 3,
+   "Region": "Malaysia ",
+   "Population": 24385858,
+   "Area": 329750,
+   "GDP": 9000,
+   "Literacy": 88.7,
+   "Phones": 179,
+   "Birthrate": 22.86,
+   "Deathrate": 5.05
+ },
+ {
+   "Depth": 3,
+   "Region": "Maldives ",
+   "Population": 359008,
+   "Area": 300,
+   "GDP": 3900,
+   "Literacy": 97.2,
+   "Phones": 90,
+   "Birthrate": 34.81,
+   "Deathrate": 7.06
+ },
+ {
+   "Depth": 3,
+   "Region": "Hong Kong ",
+   "Population": 6940432,
+   "Area": 1092,
+   "GDP": 28800,
+   "Literacy": 93.5,
+   "Phones": 546.7,
+   "Birthrate": 7.29,
+   "Deathrate": 6.29
+ },
+ {
+   "Depth": 3,
+   "Region": "Philippines ",
+   "Population": 89468677,
+   "Area": 300000,
+   "GDP": 4600,
+   "Literacy": 92.6,
+   "Phones": 38.4,
+   "Birthrate": 24.89,
+   "Deathrate": 5.41
+ },
+ {
+   "Depth": 3,
+   "Region": "Singapore ",
+   "Population": 4492150,
+   "Area": 693,
+   "GDP": 23700,
+   "Literacy": 92.5,
+   "Phones": 411.4,
+   "Birthrate": 9.34,
+   "Deathrate": 4.28
+ },
+ {
+   "Depth": 3,
+   "Region": "Vietnam ",
+   "Population": 84402966,
+   "Area": 329560,
+   "GDP": 2500,
+   "Literacy": 90.3,
+   "Phones": 187.7,
+   "Birthrate": 16.86,
+   "Deathrate": 6.22
+ },
+ {
+   "Depth": 2,
+   "Region": "Far East",
+   "Population": null,
+   "Area": null,
+   "GDP": null,
+   "Literacy": null,
+   "Phones": null,
+   "Birthrate": null,
+   "Deathrate": null
+ },
+ {
+   "Depth": 3,
+   "Region": "China ",
+   "Population": 1313973713,
+   "Area": 9596960,
+   "GDP": 5000,
+   "Literacy": 90.9,
+   "Phones": 266.7,
+   "Birthrate": 13.25,
+   "Deathrate": 6.97
+ },
+ {
+   "Depth": 3,
+   "Region": "Japan ",
+   "Population": 127463611,
+   "Area": 377835,
+   "GDP": 28200,
+   "Literacy": 99,
+   "Phones": 461.2,
+   "Birthrate": 9.37,
+   "Deathrate": 9.16
+ },
+ {
+   "Depth": 3,
+   "Region": "Korea, North ",
+   "Population": 23113019,
+   "Area": 120540,
+   "GDP": 1300,
+   "Literacy": 99,
+   "Phones": 42.4,
+   "Birthrate": 15.54,
+   "Deathrate": 7.13
+ },
+ {
+   "Depth": 3,
+   "Region": "Korea, South ",
+   "Population": 48846823,
+   "Area": 98480,
+   "GDP": 17800,
+   "Literacy": 97.9,
+   "Phones": 486.1,
+   "Birthrate": 10,
+   "Deathrate": 5.85
+ },
+ {
+   "Depth": 3,
+   "Region": "Mongolia ",
+   "Population": 2832224,
+   "Area": 1564116,
+   "GDP": 1800,
+   "Literacy": 97.8,
+   "Phones": 55.1,
+   "Birthrate": 21.59,
+   "Deathrate": 6.95
+ }
+]
+}

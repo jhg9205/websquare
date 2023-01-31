@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+            <w2:dataCollection baseNode="map">
+            </w2:dataCollection>
+            <w2:workflowCollection>
+            </w2:workflowCollection>
+        </xf:model>
+         <script type="text/javascript" lazy="false"><![CDATA[
+        
+	scwin.onpageload = function() {
+		
+	};
+	
+	scwin.onpageunload = function() {
+		
+	};
+	
+	
+	scwin.trigger1_onclick = function(e) {
+		var panelList = accordion1.getOpenPanelListInfo();
+		var panelListInfo = JSON.stringify(panelList);
+		alert(panelListInfo);
+	};
+	]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    	<xf:trigger type="button"
+    		style="width:20%;height:35px;margin:20px;margin-top:30px;background-color:#C0C0C0;font-size:15px;padding:10px;font-family:monospace;font-style:normal;font-weight:bolder;margin-left: 50px;"
+    		id="trigger1" ev:onclick="scwin.trigger1_onclick">
+    		<xf:label><![CDATA[getOpenPanelListInfo()]]></xf:label>
+    	</xf:trigger><w2:accordion id="accordion1" unCollapseAll="true" collapseAll="" style="width: 60%;height: 80%;margin-top: 0px;margin-left: 50px;" collapsible=""
+    		selectedPanel="" class="" titleDivTag="" panelMoveSpeed="">
+    		<w2:panels id="panel1" style="" class="">
+    			<w2:panelTitle id="panelTitle1" style="" class="" label="1"></w2:panelTitle>
+    			<w2:panelContent id="panelContent1" style="height:80%;width: 90%;" class="">
+    				<w2:textbox id="" label="Panel 1"
+    					style="width: 150px;height: 23px;margin: 50px;background-color:#C0C0C0;font-size:15px;padding: 10px;font-family:monospace;font-style:normal;font-weight:bolder;">
+    				</w2:textbox>
+    			</w2:panelContent>
+    		</w2:panels>
+    		<w2:panels id="panel2" style="" class="">
+    			<w2:panelTitle id="panelTitle2" style="" class="" label="2"></w2:panelTitle>
+    			<w2:panelContent id="panelContent2" style="height:80%;width: 90%;" class="">
+    				<w2:textbox id="" label="Panel 2"
+    					style="width: 150px;height: 23px;margin: 50px;background-color:#C0C0C0;font-size:15px;padding: 10px;font-family:monospace;font-style:normal;font-weight:bolder;">
+    				</w2:textbox>
+    			</w2:panelContent>
+    		</w2:panels>
+    		<w2:panels id="panel3" style="" class="">
+    			<w2:panelTitle id="panelTitle3" style="" class="" label="3"></w2:panelTitle>
+    			<w2:panelContent id="panelContent3" style="height:80%;width: 90%;" class="">
+    				<xf:select1 appearance="full" id="select1" style="position: absolute ;left:589px;top:91px;width: 54px;height: 25px;"
+    					selectedIndex="-1">
+    				</xf:select1>
+    				<w2:textbox id="" label="Panel 3"
+    					style="width: 150px;height: 23px;margin: 50px;background-color:#C0C0C0;font-size:15px;padding: 10px;font-family:monospace;font-style:normal;font-weight:bolder;">
+    				</w2:textbox>
+    			</w2:panelContent>
+    		</w2:panels>
+    	</w2:accordion>
+
+
+    	
+    </body>
+</html>

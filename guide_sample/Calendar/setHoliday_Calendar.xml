@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+            <w2:dataCollection baseNode="map">
+            </w2:dataCollection>
+            <w2:workflowCollection>
+            </w2:workflowCollection>
+        </xf:model>
+         <script type="text/javascript" lazy="false"><![CDATA[
+        
+	scwin.onpageload = function() {
+		calendar1.setHoliday("20220309 20220316 20220323");
+	};
+	
+	scwin.onpageunload = function() {
+		
+	};	
+	
+	scwin.trigger1_onclick = function(e) {
+		calendar1.setHoliday("20220308 20220315 20220322", true);
+	};
+	]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    <xf:group id="" style="margin: 30px;margin-left: 200px;"><w2:calendar footerDiv="false" style="width: 100px;height: 100px;" id="calendar1" monthNames="Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec" yearSuffix="Y"></w2:calendar><xf:trigger ev:onclick="scwin.trigger1_onclick" style="width:263px;height:44px;margin-top:30px;line-height:32px;padding:5px;background-color:#C0C0C0;font-size:15px;font-family:monospace;text-align:left;font-style:normal;font-weight:bolder;" id="trigger1" type="button">
+    		<xf:label><![CDATA[setHoliday();]]></xf:label>
+    	</xf:trigger></xf:group></body>
+</html>

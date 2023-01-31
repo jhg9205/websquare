@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+    	<w2:type>DEFAULT</w2:type>
+    	<w2:buildDate />
+    	<xf:model>
+    		<xf:instance>
+    			<data xmlns="" />
+    		</xf:instance>
+    		<w2:dataCollection baseNode="map">
+    			<w2:dataList baseNode="list" repeatNode="map" id="dataList1" saveRemovedData="true">
+    				<w2:columnInfo>
+    					<w2:column id="col1" name="name1" dataType="text"></w2:column>
+    					<w2:column id="col2" name="name2" dataType="text"></w2:column>
+    					<w2:column id="col3" name="name3" dataType="text"></w2:column>
+    					<w2:column id="col4" name="name4" dataType="text"></w2:column>
+    					<w2:column id="col5" name="name5" dataType="text"></w2:column>
+    					<w2:column id="col6" name="name6" dataType="text"></w2:column>
+    				</w2:columnInfo>
+    			</w2:dataList>
+    		</w2:dataCollection>
+    		<w2:workflowCollection></w2:workflowCollection>
+    	</xf:model>
+    	<script type="text/javascript" lazy="false"><![CDATA[
+        
+	scwin.onpageload = function() {
+		var data = [];
+                var row = 20;
+                var col = 6;
+                for (var i = 0; i < row; i++) {
+                    for (var j = 0; j < col; j++) {
+                        var t = Math.floor(i / 5);
+                        data.push(t * 100 + j * (t+1));
+                    }
+                }
+                dataList1.setData(data);
+	};
+	
+	scwin.onpageunload = function() {
+		
+	};
+	
+	scwin.styleFormatter = function(value, formattedValue) {
+                if (value > 5000) {
+                    return "w2subtotalbig";
+                } else {
+                    return "w2subtotalsmall";
+                }
+            };
+	]]></script>
+    	<style type="text/css"><![CDATA[.w2subtotalbig {
+                color : red;
+            }
+            .w2subtotalsmall {
+                color : blue;
+            } ]]></style>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    	<w2:gridView id="" style="width: 600px;height: 30%;margin: 100px;" checkAllType="false" scrollByColumn="false" defaultCellHeight="20"
+    		scrollByColumnAdaptive="false" dataList="data:dataList1" rowNumVisible="true" autoFit="allColumn" subtotalStyleFormatter="scwin.styleFormatter" visibleRowNum="7">
+    		<w2:caption style="" id="caption2" value="this is a grid caption."></w2:caption>
+    		<w2:header style="" id="header2">
+    			<w2:row style="" id="row4">
+    				<w2:column width="70" inputType="text" style="height:20px" id="column9" value="name1" displayMode="label"></w2:column>
+    				<w2:column width="70" inputType="text" style="height:20px" id="column8" value="name2" displayMode="label"></w2:column>
+    				<w2:column width="70" inputType="text" style="height:20px" id="column7" value="name3" displayMode="label"></w2:column>
+    				<w2:column width="70" inputType="text" style="height:20px" id="column6" value="name4" displayMode="label"></w2:column>
+    				<w2:column width="70" inputType="text" style="height:20px" id="column5" value="name5" displayMode="label"></w2:column>
+    				<w2:column width="70" inputType="text" style="height:20px" id="column4" value="name6" displayMode="label"></w2:column>
+    			</w2:row>
+    		</w2:header>
+    		<w2:gBody style="" id="gBody2">
+    			<w2:row style="" id="row5">
+    				<w2:column width="70" inputType="text" style="height:20px" id="col1" value="" displayMode="label"></w2:column>
+    				<w2:column width="70" inputType="text" style="height:20px" id="col2" value="" displayMode="label"></w2:column>
+    				<w2:column width="70" inputType="text" style="height:20px" id="col3" value="" displayMode="label"></w2:column>
+    				<w2:column width="70" inputType="text" style="height:20px" id="col4" value="" displayMode="label"></w2:column>
+    				<w2:column width="70" inputType="text" style="height:20px" id="col5" value="" displayMode="label"></w2:column>
+    				<w2:column width="70" inputType="text" style="height:20px" id="col6" value="" displayMode="label"></w2:column>
+    			</w2:row>
+    		</w2:gBody>
+    		<w2:subTotal targetColumnID="" style="" id="subTotal2">
+    			<w2:row style="" id="row6">
+    				<w2:column width="70" inputType="expression" style="height:20px" id="column21" value="" displayMode="label" expression="sum('col1')*10"></w2:column>
+    				<w2:column width="70" inputType="expression" style="height:20px" id="column20" value="" displayMode="label" expression="sum('col2')"></w2:column>
+    				<w2:column width="70" inputType="expression" style="height:20px" id="column19" value="" displayMode="label" expression="sum('col3')*2"></w2:column>
+    				<w2:column width="70" inputType="expression" style="height:20px" id="column18" value="" displayMode="label" expression="sum('col4')"></w2:column>
+    				<w2:column width="70" inputType="expression" style="height:20px" id="column17" value="" displayMode="label" expression="sum('col5')*3"></w2:column>
+    				<w2:column width="70" inputType="expression" style="height:20px" id="column16" value="" displayMode="label" expression="sum('col6')"></w2:column>
+    			</w2:row>
+    		</w2:subTotal>
+    	</w2:gridView>
+    </body>
+</html>

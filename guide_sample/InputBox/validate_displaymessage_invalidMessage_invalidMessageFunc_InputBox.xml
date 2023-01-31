@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+            <w2:dataCollection baseNode="map">
+            </w2:dataCollection>
+            <w2:workflowCollection>
+            </w2:workflowCollection>
+        </xf:model>
+         <script type="text/javascript" lazy="false"><![CDATA[
+        
+	scwin.onpageload = function() {
+		
+	};
+	
+	scwin.onpageunload = function() {
+		
+	};
+	
+	
+	scwin.trigger1_onclick = function(e) {
+		//var result = input1.validate();
+		//alert (result);
+		input1.validate();
+	};
+	
+	scwin.fn_msg = function() {
+		var invalidType = this.getType();
+		var invalidValue = this.getValue();
+		switch (invalidType) {
+			case "mandatory" :
+				msg = "Information is required.";
+				break;
+			case "minLength":
+				msg = "Minimum " + invalidValue + " digits are required.";
+				break;
+			case "minByteLength":
+				msg = "Minimum " + invalidValue + " bytes are required.";
+				break;
+			default :
+				msg = "Not valid";
+				break;
+		}
+		alert(msg);
+		return msg;			
+	}
+	]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    <xf:group id="" style="margin: 50px;"><xf:input minlength="" minByteLength="5" invalidMessage="" adjustMaxLength="false" style="width: 144px;height: 39px;" invalidMessageFunc="scwin.fn_msg" id="input1" displaymessage="true" mandatory="true">
+    	</xf:input><xf:trigger ev:onclick="scwin.trigger1_onclick" style="width: 150px;height: 39px;margin-left: 30px;line-height:32px;padding:5px;background-color:#C0C0C0;font-size:15px;font-family:monospace;" id="trigger1" type="button">
+    		<xf:label><![CDATA[validate();]]></xf:label>
+    	</xf:trigger></xf:group></body>
+</html>

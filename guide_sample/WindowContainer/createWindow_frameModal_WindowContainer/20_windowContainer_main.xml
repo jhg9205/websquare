@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+            <w2:dataCollection baseNode="map">
+            </w2:dataCollection>
+            <w2:workflowCollection>
+            </w2:workflowCollection>
+        </xf:model>
+         <script type="text/javascript" lazy="false"><![CDATA[
+        
+	scwin.onpageload = function() {
+		
+		text1.hide();
+		text2.hide();
+		trigger1.hide();
+		
+		windowContainer1.createWindow({
+			"title" : "PopUp Closing", 
+			"windowTitle" : "PopUp Closing",
+			"src" : "01_wframe_frameModal.xml", 
+			"windowId" : "window01", 
+			"frameMode" : "wframe",
+			"frameModal" : "true"
+		});	
+		windowContainer1.createWindow({
+			"title" : "frameModal", 
+			"windowTitle" : "frameModal",
+			"src" : "11_wframe_01.xml", 
+			"windowId" : "window02", 
+			"frameMode" : "wframe",
+			"frameModal" : "true"
+		});	
+	};
+	
+	scwin.onpageunload = function() {
+		
+	};
+	
+	]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    	<w2:windowContainer sequentialArrangeColNum="2" verticalArrangeNum="2" controlIconPosition="left" windowMaximizeAll="false"
+    		id="windowContainer1" useStatusMsg="true" hideTitleOnMaximize="false" spaInitCount="0" useNameContainer="false"
+    		useControlIconTitle="false" tooltipDisplay="true" style="position: relative;width: 95%;height: 95%;border: gray solid 1px;"
+    		sequentialArrangeRowNum="2" fixArrangeFullScreen="false" useFixButton="false" windowAutoResize="false" windowMaxNum="5"
+    		useCloseButton="false" stopMinimizeOnNameLayer="false" toolbarPosition="bottom" stopToggleOnLast="false" horizontalArrangeNum="2"
+    		useCustomMsg="false" tooltipGroupClass="false" windowTooltipDisplay="true">
+    		<w2:windowToolbar>
+    			<w2:controlIconLayer>
+    				<w2:controlIcon></w2:controlIcon>
+    				<w2:controlIcon></w2:controlIcon>
+    				<w2:controlIcon></w2:controlIcon>
+    				<w2:controlIcon></w2:controlIcon>
+    				<w2:controlIcon></w2:controlIcon>
+    			</w2:controlIconLayer>
+    			<w2:nameLayer></w2:nameLayer>
+    			<w2:selectedNameLayer></w2:selectedNameLayer>
+    		</w2:windowToolbar>
+    	</w2:windowContainer>
+    	<w2:textbox id="text1" label="Main A" style="width: 150px;height: 23px;"></w2:textbox>
+    	<w2:textbox id="text2" label="Main 2" style="width: 150px;height: 23px;"></w2:textbox>
+    	<xf:trigger type="button" style="width: 80px;height: 23px;" id="trigger1">
+    		<xf:label><![CDATA[]]></xf:label>
+    	</xf:trigger>
+    </body>
+</html>

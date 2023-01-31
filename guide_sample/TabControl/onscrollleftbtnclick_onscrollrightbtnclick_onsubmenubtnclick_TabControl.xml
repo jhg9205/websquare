@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+            <w2:dataCollection baseNode="map">
+            </w2:dataCollection>
+            <w2:workflowCollection>
+            </w2:workflowCollection>
+        </xf:model>
+         <script type="text/javascript" lazy="false"><![CDATA[
+        
+	scwin.onpageload = function() {
+		var tabOptions = {};
+		for (var i = 0; i < 10; i++) {
+			var addCount = i + 2;
+			var tabOptions = {
+				label : "Tab " + addCount,
+				openAction: "new",
+				closable: "true"
+			}
+			var contentsOptions = {
+                    frameMode : "wframe",
+                    alwaysDraw : false
+                }
+			tabControl1.addTab(i, tabOptions, contentsOptions);
+		}
+		
+	};
+	
+	scwin.onpageunload = function() {
+		
+	};
+	
+	
+	scwin.tabControl1_onscrollleftbtnclick = function() {
+		alert("Left button clicked!");
+	};
+	
+	scwin.tabControl1_onscrollrightbtnclick = function() {
+		alert("Right button clicked!");
+	};
+	
+	scwin.tabControl1_onsubmenubtnclick = function() {
+		alert("Sub-menu clicked!");
+	};
+	]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    <xf:group id="" style="padding: 50px;"><w2:tabControl confirmTrueAction="exist" useTabKeyOnly="true" confirmFalseAction="new" useMoveNextTabFocus="false" tabScroll="true" tabScrollAuto="" useConfirmMessage="false" alwaysDraw="false" style="width: 430px;height: 200px;" tabPosition="top" id="tabControl1" ev:onscrollleftbtnclick="scwin.tabControl1_onscrollleftbtnclick" ev:onscrollrightbtnclick="scwin.tabControl1_onscrollrightbtnclick" ev:onsubmenubtnclick="scwin.tabControl1_onsubmenubtnclick">
+    		<w2:tabs disabled="false" style="width:70px;height:30px;" id="tabs1" label="Tab 1"></w2:tabs>
+    		<w2:content alwaysDraw="false" style="height:170px" id="content1"></w2:content>
+    	</w2:tabControl></xf:group></body>
+</html>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+    	<w2:type>DEFAULT</w2:type>
+    	<w2:buildDate />
+    	<xf:model>
+    		<xf:instance>
+    			<data xmlns="" />
+    		</xf:instance>
+    		<w2:dataCollection baseNode="map">
+    			<w2:dataList baseNode="list" repeatNode="map" id="dataList1" saveRemovedData="true" userData1="Default userData1" userData2="12345" userData3="67890">
+    				<w2:columnInfo>
+    					<w2:column id="col1" name="name1" dataType="text"></w2:column>
+    					<w2:column id="col2" name="name2" dataType="text"></w2:column>
+    					<w2:column id="col3" name="name3" dataType="text"></w2:column>
+    					<w2:column id="col4" name="name4" dataType="text"></w2:column>
+    					<w2:column id="col5" name="name5" dataType="text"></w2:column>
+    				</w2:columnInfo>
+    			</w2:dataList>
+    		</w2:dataCollection>
+    		<w2:workflowCollection></w2:workflowCollection>
+    	</xf:model>
+    	<script type="text/javascript" lazy="false"><![CDATA[
+        
+	scwin.onpageload = function() {
+		var json1 = [
+	            {"col1": "1", "col2": "3", "col3": "8", "col4": "2", "col5": "4"},
+	            {"col1": "3", "col2": "5", "col3": "7", "col4": "3", "col5": "5"},
+	            {"col1": "2", "col2": "7", "col3": "6", "col4": "2", "col5": "1"},
+	            {"col1": "4", "col2": "9", "col3": "5", "col4": "3", "col5": "5"},
+	            {"col1": "5", "col2": "1", "col3": "4", "col4": "4", "col5": "5"},
+	            {"col1": "6", "col2": "2", "col3": "3", "col4": "5", "col5": "1"}
+	            ];
+	     dataList1.setJSON( json1 );
+	   };
+	
+	
+	scwin.onpageunload = function() {
+		
+	};
+	
+	
+	
+	scwin.trigger1_onclick = function(e) {
+		 dataList1.setUserData("userData3", "This is userData3.");
+	};
+	
+	scwin.trigger2_onclick = function(e) {
+		alert(dataList1.getUserData("userData3"));			
+	};
+	]]></script>
+    	<style type="text/css"><![CDATA[
+    	
+    	.gridBodyDefault button {
+           width: 50px !important;
+        }
+    	 ]]></style>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    <xf:group id="" style="margin: 50px;"><w2:gridView ev:oncellclick="scwin.gridView1_oncellclick" scrollByColumnAdaptive="false" editModeEvent="onclick" rowNumVisible="true" scrollByColumn="false" sortable="true" ignoreNonEditableCellTabEnter="" userData1="gridView userData1 : 1111" defaultCellHeight="30" editModeEventIcon="" setCellInputTypeCustom="" rowStatusVisible="" contextMenu="true" dataList="data:dataList1" keyMoveEditMode="true" style="width:547px;height:231px;" moveKeyEditModeAll="" enterKeyMove="down" id="gridView1" ignoreNonEditableCell="">
+    		<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
+    		<w2:header style="" id="header1">
+    			<w2:row style="" id="row1">
+    				<w2:column removeBorderStyle="false" width="70" inputType="text" style="height:20px;" id="column9" value="col1" blockSelect="false" displayMode="label">
+    				</w2:column>
+    				<w2:column removeBorderStyle="false" width="70" inputType="text" style="height:20px;" id="column7" value="col2" blockSelect="false" displayMode="label">
+    				</w2:column>
+    				<w2:column removeBorderStyle="false" width="70" inputType="text" style="height:20px;" id="column5" value="col3" blockSelect="false" displayMode="label">
+    				</w2:column>
+    				<w2:column removeBorderStyle="false" width="70" inputType="text" style="height:20px;" id="column3" value="col4" blockSelect="false" displayMode="label">
+    				</w2:column>
+    				<w2:column removeBorderStyle="false" width="70" inputType="text" style="height:20px;" id="column1" sortable="" value="col5" blockSelect="false" displayMode="label">
+    				</w2:column>
+    			</w2:row>
+    		</w2:header>
+    		<w2:gBody style="" id="gBody1">
+    			<w2:row style="" id="row2">
+    				<w2:column removeBorderStyle="false" dataType="" width="70" inputType="button" style="height:20px" id="col1" value="" blockSelect="false" displayMode="label">
+    				</w2:column>
+    				<w2:column removeBorderStyle="false" width="70" inputType="" style="height:20px" imageSrc="" userData2="" id="col2" userData1="" value="" blockSelect="false" displayMode="label">
+    				</w2:column>
+    				<w2:column removeBorderStyle="false" width="70" inputType="" style="height:20px" imageSrc="" id="col3" value="" blockSelect="false" displayMode="label">
+    				</w2:column>
+    				<w2:column removeBorderStyle="false" width="70" inputType="" style="height:20px" imageSrc="" id="col4" value="" blockSelect="false" displayMode="label">
+    				</w2:column>
+    				<w2:column expression="sum('col1', 'col2', 'col3', 'col4')" removeBorderStyle="false" dataType="number" width="70" displayFormat="#,###,###" inputType="expression" style="height:20px" id="col5" sortable="true" value="" blockSelect="false" displayMode="label">
+    				</w2:column>
+    			</w2:row>
+    		</w2:gBody>
+    	</w2:gridView><xf:trigger ev:onclick="scwin.trigger1_onclick" style="width:248px;height:32px;padding:5px;line-height:32px;background-color:#C0C0C0;font-size:15px;font-family:monospace;font-style:normal;font-weight:bolder;margin-top: 10px;display: block" id="trigger1" type="button">
+    		<xf:label><![CDATA[setUserData()]]></xf:label>
+    	</xf:trigger><xf:trigger ev:onclick="scwin.trigger2_onclick" style="width:248px;height:32px;padding:5px;line-height:32px;background-color:#C0C0C0;font-size:15px;font-family:monospace;font-style:normal;font-weight:bolder;margin-top: 10px;" id="trigger2" type="button">
+    		<xf:label><![CDATA[getUserData()]]></xf:label>
+    	</xf:trigger></xf:group></body>
+</html>

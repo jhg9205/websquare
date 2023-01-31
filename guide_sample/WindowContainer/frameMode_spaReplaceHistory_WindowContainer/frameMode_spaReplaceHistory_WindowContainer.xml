@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+            <w2:dataCollection baseNode="map">
+            </w2:dataCollection>
+            <w2:workflowCollection>
+            </w2:workflowCollection>
+        </xf:model>
+         <script type="text/javascript" lazy="false"><![CDATA[
+        
+	scwin.onpageload = function() {
+		
+	};
+	
+	scwin.onpageunload = function() {
+		
+	};
+	
+	
+	scwin.trigger1_onclick = function(e) {
+		var idx = selectbox1.getValue();
+		var obj = {
+			"title" : "test_" + idx,
+			"windowID" : "window_" + idx,
+			"frameMode" : "iframe", 
+			"src" : idx + ".xml"
+		};
+		windowCon1.createWindow(obj);
+	};
+	]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    <xf:group id="" style="margin: 20px;"><w2:windowContainer sequentialArrangeColNum="2" sequentialArrangeRowNum="2" spaReplaceHistory="true" fixArrangeFullScreen="false" frameMode="iframe" useFixButton="false" windowAutoResize="false" verticalArrangeNum="2" windowMaxNum="5" useCloseButton="false" controlIconPosition="left" windowMaximizeAll="false" stopMinimizeOnNameLayer="false" toolbarPosition="bottom" id="windowCon1" useStatusMsg="true" hideTitleOnMaximize="false" spaInitCount="10" stopToggleOnLast="false" useNameContainer="false" horizontalArrangeNum="2" useCustomMsg="false" spaAuto="true" useControlIconTitle="false" tooltipDisplay="true" tooltipGroupClass="false" windowTooltipDisplay="true" style="position: relative;width: 500px;height: 300px;border-style:solid;border-color:#000000;border-width:1px;">
+    		<w2:windowToolbar>
+    			<w2:controlIconLayer>
+    				<w2:controlIcon></w2:controlIcon>
+    				<w2:controlIcon></w2:controlIcon>
+    				<w2:controlIcon></w2:controlIcon>
+    				<w2:controlIcon></w2:controlIcon>
+    				<w2:controlIcon></w2:controlIcon>
+    			</w2:controlIconLayer>
+    			<w2:nameLayer></w2:nameLayer>
+    			<w2:selectedNameLayer></w2:selectedNameLayer>
+    		</w2:windowToolbar>
+    	</w2:windowContainer><xf:trigger ev:onclick="scwin.trigger1_onclick" style="width:196px;height:39px;margin-top:10px;margin-right:10px;font-family:sans-serif;font-size:15px;font-size-adjust:0;font-style:italic;font-weight:bold;" id="trigger1" type="button">
+    		<xf:label><![CDATA[createWindow()]]></xf:label>
+    	</xf:trigger><xf:select1 submenuSize="auto" ref="" appearance="minimal" disabledClass="w2selectbox_disabled" chooseOption="" style="width:196px;height:39px;margin-top:10px;font-size:15px;font-weight:bold;" disabled="false" id="selectbox1" allOption="" direction="auto">
+    		<xf:choices>
+    			<xf:item>
+    				<xf:label><![CDATA[11]]></xf:label>
+    				<xf:value><![CDATA[11]]></xf:value>
+    			</xf:item>
+    			<xf:item>
+    				<xf:label><![CDATA[22]]></xf:label>
+    				<xf:value><![CDATA[22]]></xf:value>
+    			</xf:item>
+    			<xf:item>
+    				<xf:label><![CDATA[33]]></xf:label>
+    				<xf:value><![CDATA[33]]></xf:value>
+    			</xf:item>
+    		</xf:choices>
+    	</xf:select1></xf:group></body>
+</html>

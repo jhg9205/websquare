@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+            <w2:dataCollection baseNode="map">
+            	<w2:dataList baseNode="list" repeatNode="map" id="dataList1" saveRemovedData="true">
+            		<w2:columnInfo>
+            			<w2:column id="col1" name="name1" dataType="text"></w2:column>
+            			<w2:column id="col2" name="name2" dataType="text"></w2:column>
+            			<w2:column id="col3" name="name3" dataType="text"></w2:column>
+            		</w2:columnInfo>
+            	</w2:dataList>
+            </w2:dataCollection>
+            <w2:workflowCollection>
+            </w2:workflowCollection>
+        </xf:model>
+         <script type="text/javascript" lazy="false"><![CDATA[
+	scwin.onpageload = function() {
+		var select = [{
+			"col1" : "Asia",
+			"col2" : "Asia",
+			"col3" : "1"
+		}, {
+			"col1" : "Korea",
+			"col2" : "Korea",
+			"col3" : "2"
+		}, {
+			"col1" : "Seoul",
+			"col2" : "Seoul",
+			"col3" : "3"
+		}, {
+			"col1" : "Busan",
+			"col2" : "Busan",
+			"col3" : "3"
+		}, {
+			"col1" : "Thailand",
+			"col2" : "Thailand",
+			"col3" : "2"
+		}, {
+			"col1" : "Bangkok",
+			"col2" : "Bangkok",
+			"col3" : "3"
+		}, {
+			"col1" : "Chiang Mai",
+			"col2" : "Chiang Mai",
+			"col3" : "3"
+		}, {
+			"col1" : "Europe",
+			"col2" : "Europe",
+			"depth" : "1"
+		}, {
+			"col1" : "France",
+			"col2" : "France",
+			"col3" : "2"
+		}, {
+			"col1" : "Paris",
+			"col2" : "Paris",
+			"col3" : "3"
+		}, {
+			"col1" : "Lyon",
+			"col2" : "Lyon",
+			"col3" : "3"
+		}, {
+			"col1" : "Spain",
+			"col2" : "Spain",
+			"col3" : "2"
+		}, {
+			"col1" : "Madrid",
+			"col2" : "Madrid",
+			"col3" : "3"
+		}, {
+			"col1" : "Barcelona",
+			"col2" : "Barcelona",
+			"col3" : "3"
+		}];
+		dataList1.setJSON(select);
+	};
+
+	scwin.onpageunload = function() {
+
+	};
+]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    	<xf:select1 id="" chooseOption="" style="width: 148px;height: 30px;margin: 100px;margin-left: 200px;" submenuSize="auto" allOption="" disabled="false"
+    		direction="auto" appearance="minimal" disabledClass="w2selectbox_disabled" depthColumn="col3" ref="">
+    		<xf:choices>
+    			<xf:itemset nodeset="data:dataList1">
+    				<xf:label ref="col1"></xf:label>
+    				<xf:value ref="col2"></xf:value>
+    			</xf:itemset>
+    		</xf:choices>
+    	</xf:select1>
+    </body>
+</html>

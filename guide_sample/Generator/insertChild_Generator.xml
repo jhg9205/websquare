@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+            <w2:dataCollection baseNode="map">
+            </w2:dataCollection>
+            <w2:workflowCollection>
+            </w2:workflowCollection>
+        </xf:model>
+         <script type="text/javascript" lazy="false"><![CDATA[
+
+scwin.onpageload = function () {
+
+};
+
+scwin.onpageunload = function () {
+
+};
+
+
+scwin.trigger1_onclick = function (e) {
+	var count = input1.getValue();
+	for (var i = 0; i < count; i++) {
+		generator1.insertChild(i);
+	}
+};
+]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    	<xf:group id="" style="margin: 50px;">
+    		<xf:input adjustMaxLength="false" style="width:150px;height:21px;" id="input1"></xf:input>
+    		<xf:trigger ev:onclick="scwin.trigger1_onclick" style="width: 100px;height: 23px;margin-left: 50px;" id="trigger1"
+    			type="button">
+    			<xf:label><![CDATA[insertChild()]]></xf:label>
+    		</xf:trigger>
+    		<w2:generator style="width: 300px;height: 100px;margin-top: 50px;" id="generator1">
+    		<xf:group id="" style="padding-bottom: 20px;"><xf:input adjustMaxLength="false" style="width: 144px;height: 21px;" id="" placeholder="Enter name."></xf:input><xf:trigger style="width: 80px;height: 23px;margin-left: 50px;" id="" type="button">
+    				<xf:label><![CDATA[Click]]></xf:label>
+    			</xf:trigger></xf:group></w2:generator>
+    	</xf:group>
+    </body>
+</html>

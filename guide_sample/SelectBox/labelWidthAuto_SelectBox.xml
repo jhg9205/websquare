@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+            <w2:dataCollection baseNode="map">
+            	<w2:dataList baseNode="list" id="dataList1" repeatNode="map" saveRemovedData="true" style="">
+            		<w2:columnInfo>
+            			<w2:column dataType="text" id="code" name="name1"></w2:column>
+            			<w2:column dataType="text" id="value" name="name2"></w2:column>
+            		</w2:columnInfo>
+            		<w2:data use="true">
+            			<w2:row>
+            				<code><![CDATA[0]]></code>
+            				<value><![CDATA[Seoul]]></value>
+            			</w2:row>
+            			<w2:row>
+            				<code><![CDATA[1]]></code>
+            				<value><![CDATA[Busan]]></value>
+            			</w2:row>
+            			<w2:row>
+            				<code><![CDATA[2]]></code>
+            				<value><![CDATA[Daejeon]]></value>
+            			</w2:row>
+            			<w2:row>
+            				<code><![CDATA[3]]></code>
+            				<value><![CDATA[Jeju]]></value>
+            			</w2:row>
+            			<w2:row>
+            				<code><![CDATA[4]]></code>
+            				<value><![CDATA[A very long long long long long long long long long name]]></value>
+            			</w2:row>
+            		</w2:data>
+            	</w2:dataList>
+            </w2:dataCollection>
+            <w2:workflowCollection>
+            </w2:workflowCollection>
+        </xf:model>
+         <script type="text/javascript" lazy="false"><![CDATA[
+        
+	scwin.onpageload = function() {
+		
+	};
+	
+	scwin.onpageunload = function() {
+		
+	};
+	
+	]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    	<xf:select1 allOption="" appearance="minimal" chooseOption="" direction="auto" disabled="false" disabledClass="w2selectbox_disabled"
+    		id="select1" ref="" style="width:220px;height:49px;left:31px;margin: 100px;" submenuSize="auto" labelWidthAuto="true">
+    		<xf:choices>
+    			<xf:itemset nodeset="data:dataList1">
+    				<xf:label ref="value"></xf:label>
+    				<xf:value ref="code"></xf:value>
+    			</xf:itemset>
+    		</xf:choices>
+    	</xf:select1>
+
+    	
+    </body>
+</html>

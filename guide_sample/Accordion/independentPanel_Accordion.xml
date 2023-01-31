@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head meta_screenName="Accordion">
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+            <w2:dataCollection baseNode="map">
+            </w2:dataCollection>
+            <w2:workflowCollection>
+            </w2:workflowCollection>
+        </xf:model>
+         <script type="text/javascript" lazy="false"><![CDATA[
+
+scwin.onpageload = function () {
+
+};
+
+scwin.onpageunload = function () {
+
+};
+
+]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    	<xf:group style="width:817px;height:505px;padding: 20px;margin: 50px;" id="grp1">
+    		<w2:textbox id="" label='independentPanel="true"' style="width:239px;height:30px;font-size:15px;font-family:monospace;font-style:normal;font-weight:bolder;margin-bottom:30px;"></w2:textbox>
+    		<w2:accordion independentPanel="true" style="width:482px;height:426px;" id="accodion1" unCollapseAll="true" collapsible="true"
+    			collapseAll="true" selectedPanel="">
+    			<w2:panels style="" id="panel1" class="">
+    				<w2:panelTitle style="" id="panelTitle1" label="panel1"></w2:panelTitle>
+    				<w2:panelContent style="" id="panelContent1">
+    					<xf:input adjustMaxLength="false" id="" style="width: 144px;height: 21px;"></xf:input>
+    				</w2:panelContent>
+    			</w2:panels>
+    			<w2:panels style="" id="panel2" class="">
+    				<w2:panelTitle style="" id="panelTitle2" label="panel2">
+
+    				</w2:panelTitle>
+    				<w2:panelContent style="" id="panelContent2">
+    					<w2:calendar footerDiv="false" id="" style="width: 100px;height: 100px;" yearSuffix="Y" monthNames="Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Nov, Dec"></w2:calendar>
+
+    				</w2:panelContent>
+    			</w2:panels>
+    			<w2:panels style="" id="panel3" class="">
+    				<w2:panelTitle style="" id="panelTitle3" label="panel3"></w2:panelTitle>
+    				<w2:panelContent style="" id="panelContent3">
+    					<w2:calendar footerDiv="false" id="" style="width: 100px;height: 100px;" yearSuffix="Y" monthNames="Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Nov, Dec"></w2:calendar>
+    				</w2:panelContent>
+    			</w2:panels>
+    		</w2:accordion>
+
+
+    	</xf:group>
+    </body>
+</html>

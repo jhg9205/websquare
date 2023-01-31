@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head meta_vertical_guides="" meta_horizontal_guides="">
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+            <w2:dataCollection baseNode="map">
+            </w2:dataCollection>
+            <w2:workflowCollection>
+            </w2:workflowCollection>
+        </xf:model>
+         <script type="text/javascript" lazy="false"><![CDATA[
+        
+	scwin.onpageload = function() {
+		
+	};
+	
+	scwin.onpageunload = function() {
+		
+	};
+	
+	
+	scwin.trigger1_onclick = function(e) {
+		autoComplete1.changeChooseOption("0", "what is your favorite fruit?");
+	};
+	
+	scwin.trigger2_onclick = function(e) {
+		autoComplete1.showChooseOption(false);
+	};
+	]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    <xf:group id="" style="padding: 50px;"><xf:trigger ev:onclick="scwin.trigger1_onclick" style="width:200px;line-height:20px;height: 30px;background-color:#C0C0C0;font-size:15px;font-family:monospace;font-style:normal;font-weight:bolder;top:20px;text-align:left;" id="trigger1" type="button">
+    		<xf:label><![CDATA[changeChooseOption()]]></xf:label>
+    	</xf:trigger><xf:trigger ev:onclick="scwin.trigger2_onclick" style="width:220px;line-height:20px;height: 30px;background-color:#C0C0C0;font-size:15px;font-family:monospace;font-style:normal;font-weight:bolder;top:20px;text-align:left;margin-left: 30px;" id="trigger2" type="button">
+    		<xf:label><![CDATA[showChooseOption(false);]]></xf:label>
+    	</xf:trigger>
+    	<w2:autoComplete submenuSize="auto" search="start" chooseOptionLabel="Select a fruit." ref="" chooseOption="true" editType="select"
+    		useKeywordHighlight="false" style="width: 200px;height: 21px;display: block;margin-top: 30px;" id="autoComplete1" allOption=""
+    		useLocale="false" chooseOptionValue="1">
+    		<w2:choices>
+    			<w2:item>
+    				<w2:label><![CDATA[Apple]]></w2:label>
+    				<w2:value><![CDATA[11]]></w2:value>
+    			</w2:item>
+    			<w2:item>
+    				<w2:label><![CDATA[Banana]]></w2:label>
+    				<w2:value><![CDATA[22]]></w2:value>
+    			</w2:item>
+    			<w2:item>
+    				<w2:label><![CDATA[Orange]]></w2:label>
+    				<w2:value><![CDATA[33]]></w2:value>
+    			</w2:item>
+    		</w2:choices>
+    	</w2:autoComplete></xf:group></body>
+</html>

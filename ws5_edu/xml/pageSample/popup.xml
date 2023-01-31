@@ -29,7 +29,7 @@
 	};
 	
 	scwin.btnPopup_onclick = function() {
-		scwin.openPopup("/xml/pageSample/popup_contents.xml");
+		scwin.openPopup("/xml/pageSamplepopup_contents/.xml");
 	};
 	
 	// 팝업 함수

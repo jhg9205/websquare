@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:w2="http://www.inswave.com/websquare"
+	xmlns:xf="http://www.w3.org/2002/xforms">
+	<head>
+		<w2:type>DEFAULT</w2:type>
+		<w2:buildDate />
+		<xf:model>
+			<xf:instance>
+				<data xmlns="" />
+			</xf:instance>
+			<w2:dataCollection baseNode="map">
+				<w2:dataList id="dataList1" baseNode="list" style="" saveRemovedData="true" repeatNode="map">
+					<w2:columnInfo>
+						<w2:column id="id" name="id" dataType="text"></w2:column>
+						<w2:column id="title" name="title" dataType="text"></w2:column>
+						<w2:column id="start" name="start" dataType="text"></w2:column>
+						<w2:column id="end" name="end" dataType="text"></w2:column>
+
+					</w2:columnInfo>
+					<w2:data use="true">
+						<w2:row>
+							<title><![CDATA[(Jul-08 11:00 ~ Jul-10 11:00)]]></title>
+							<start><![CDATA[20190708090000]]></start>
+							<end><![CDATA[20190710110000]]></end>
+
+							<id><![CDATA[Event 002]]></id>
+						</w2:row>
+						<w2:row>
+							<id><![CDATA[Evnt 001]]></id>
+							<title><![CDATA[(Jul-15 12:00 ~ Jul-17 16:00)]]></title>
+							<start><![CDATA[20190715120000]]></start>
+							<end><![CDATA[20190717160000]]></end>
+						</w2:row>
+					</w2:data>
+				</w2:dataList>
+			</w2:dataCollection>
+			<w2:workflowCollection>
+			</w2:workflowCollection>
+		</xf:model>
+		<script type="javascript" lazy="false"><![CDATA[
+			scwin.onpageload = function() {
+				//mf_schedule1.addSchedule({"title":"이벤트6", "start":"20190722", "end":"20190725", "id":"이벤트6"});
+			}
+				
+		]]></script>
+		<style type="text/css">
+
+		    
+		    .fc-day-number.fc-sat.fc-past { color:#0000FF; }
+		    .fc-day-number.fc-sun.fc-past { color:#FF0000; }
+		</style>
+	</head>
+	<body ev:onpageload="scwin.onpageload">
+		<xf:group id="" style="margin: 20px;" class="cont_wrap type1">
+			<xf:group class="w2tb tbl_lo" id="" style="width:100%;padding: 20px;" tagname="table">
+				<w2:attributes>
+					<w2:summary></w2:summary>
+				</w2:attributes>
+				<xf:group tagname="colgroup">
+					<xf:group style="width:100.00%" tagname="col"></xf:group>
+				</xf:group>
+				<xf:group tagname="tr">
+					<xf:group class="w2tb_td" style="padding: 20px;" tagname="td">
+						<xf:group class="grpbox" id="" style="">
+							<xf:group class="stit_01" id="" style="">
+								<w2:textbox id="" label="ScheduleCalendar" style="font: 20px blue ;" tagname="h3"></w2:textbox>
+							</xf:group>
+							<xf:group class="sub_cont" id="" style="">
+								<w2:scheduleCalendar id="schedule1" style="height:450px; width: 800px;" defaultDate="2019-07"
+									editable="true" eventLimit="true" version="3.6" defaultView="month" eventOrderDefaultValue="0" selectable="true"
+									dataList="data:dataList1" titleColumn="title" startColumn="start" endColumn="end" ev:onclick="scwin.schdule1_onclick"
+									headerLeftBtn="" ev:onheaderbtnclick="scwin.schdule1_onheaderbtnclick" headerRightBtn="" eventOrderColumn="num" idColumn="id"
+									themeColumn="theme" lang="en" locale="en" nextDayThreshold="12:00:00">
+								</w2:scheduleCalendar>
+							</xf:group>
+						</xf:group>
+					</xf:group>
+				</xf:group>
+			</xf:group>
+		</xf:group>
+	</body>
+</html>

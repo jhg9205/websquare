@@ -2053,3 +2053,269 @@ INFO http-nio-9090-exec-3 org.springframework.web.servlet.mvc.method.annotation.
 INFO http-nio-9090-exec-3 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: WebApplicationContext for namespace 'SpringDispatcher-servlet': startup date [Tue Jan 31 09:08:05 KST 2023]; parent: Root WebApplicationContext
 INFO http-nio-9090-exec-3 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: WebApplicationContext for namespace 'SpringDispatcher-servlet': startup date [Tue Jan 31 09:08:05 KST 2023]; parent: Root WebApplicationContext
 INFO http-nio-9090-exec-3 org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'SpringDispatcher': initialization completed in 491 ms
+DEBUG http-nio-9090-exec-7 com.inswave.edu.dao.EduDao.selectCodeList - ==>  Preparing: select A.GRP_CD, A.COM_CD AS CODE_CD, A.CODE_NM from SP_CODE A, SP_CODE_GRP B where B.GRP_CD = A.GRP_CD and B.IS_USE = 'Y' and A.IS_USE = 'Y' and A.GRP_CD IN ( ? , ? , ? , ? ) order by A.GRP_CD, A.SORT_ORDER 
+DEBUG http-nio-9090-exec-10 com.inswave.edu.dao.EduDao.selectSpMemberTotal - ==>  Preparing: SELECT count(EMP_CD) ROW_TOTAL FROM sp_member WHERE 'A'='A' 
+DEBUG http-nio-9090-exec-10 com.inswave.edu.dao.EduDao.selectSpMemberTotal - ==> Parameters: 
+DEBUG http-nio-9090-exec-7 com.inswave.edu.dao.EduDao.selectCodeList - ==> Parameters: 01(String), 02(String), 19(String), 101(String)
+DEBUG http-nio-9090-exec-10 com.inswave.edu.dao.EduDao.selectSpMemberTotal - <==      Total: 1
+DEBUG http-nio-9090-exec-7 com.inswave.edu.dao.EduDao.selectCodeList - <==      Total: 19
+DEBUG http-nio-9090-exec-10 com.inswave.edu.dao.EduDao.selectListSpMember - ==>  Preparing: SELECT EMP_CD,EMP_NM,GENDER_CD,JOIN_DATE,POSITION_CD,DUTY_CD,ROLE_CD,ASSIGNED_TASK,EMAIL,ZIP_CD,ADDRESS1,ADDRESS2,CONVERT(IMAGE_PATH USING utf8) AS IMAGE_PATH,CREATED_DATE,UPDATED_DATE FROM sp_member WHERE 'A'='A' ORDER BY EMP_CD LIMIT ?,? 
+DEBUG http-nio-9090-exec-10 com.inswave.edu.dao.EduDao.selectListSpMember - ==> Parameters: 0(Integer), 10(String)
+DEBUG http-nio-9090-exec-10 com.inswave.edu.dao.EduDao.selectListSpMember - <==      Total: 10
+DEBUG http-nio-9090-exec-1 com.inswave.edu.dao.EduDao.selectSpMemberTotal - ==>  Preparing: SELECT count(EMP_CD) ROW_TOTAL FROM sp_member WHERE 'A'='A' 
+DEBUG http-nio-9090-exec-1 com.inswave.edu.dao.EduDao.selectSpMemberTotal - ==> Parameters: 
+DEBUG http-nio-9090-exec-1 com.inswave.edu.dao.EduDao.selectSpMemberTotal - <==      Total: 1
+DEBUG http-nio-9090-exec-1 com.inswave.edu.dao.EduDao.selectListSpMember - ==>  Preparing: SELECT EMP_CD,EMP_NM,GENDER_CD,JOIN_DATE,POSITION_CD,DUTY_CD,ROLE_CD,ASSIGNED_TASK,EMAIL,ZIP_CD,ADDRESS1,ADDRESS2,CONVERT(IMAGE_PATH USING utf8) AS IMAGE_PATH,CREATED_DATE,UPDATED_DATE FROM sp_member WHERE 'A'='A' ORDER BY EMP_CD LIMIT ?,? 
+DEBUG http-nio-9090-exec-1 com.inswave.edu.dao.EduDao.selectListSpMember - ==> Parameters: 0(Integer), 10(String)
+DEBUG http-nio-9090-exec-1 com.inswave.edu.dao.EduDao.selectListSpMember - <==      Total: 10
+DEBUG http-nio-9090-exec-5 com.inswave.edu.dao.EduDao.selectSpMemberTotal - ==>  Preparing: SELECT count(EMP_CD) ROW_TOTAL FROM sp_member WHERE 'A'='A' 
+DEBUG http-nio-9090-exec-5 com.inswave.edu.dao.EduDao.selectSpMemberTotal - ==> Parameters: 
+DEBUG http-nio-9090-exec-5 com.inswave.edu.dao.EduDao.selectSpMemberTotal - <==      Total: 1
+DEBUG http-nio-9090-exec-5 com.inswave.edu.dao.EduDao.selectListSpMember - ==>  Preparing: SELECT EMP_CD,EMP_NM,GENDER_CD,JOIN_DATE,POSITION_CD,DUTY_CD,ROLE_CD,ASSIGNED_TASK,EMAIL,ZIP_CD,ADDRESS1,ADDRESS2,CONVERT(IMAGE_PATH USING utf8) AS IMAGE_PATH,CREATED_DATE,UPDATED_DATE FROM sp_member WHERE 'A'='A' ORDER BY EMP_CD LIMIT ?,? 
+DEBUG http-nio-9090-exec-5 com.inswave.edu.dao.EduDao.selectListSpMember - ==> Parameters: 10(Integer), 10(String)
+DEBUG http-nio-9090-exec-5 com.inswave.edu.dao.EduDao.selectListSpMember - <==      Total: 10
+DEBUG http-nio-9090-exec-6 com.inswave.edu.dao.EduDao.selectSpMemberTotal - ==>  Preparing: SELECT count(EMP_CD) ROW_TOTAL FROM sp_member WHERE 'A'='A' 
+DEBUG http-nio-9090-exec-6 com.inswave.edu.dao.EduDao.selectSpMemberTotal - ==> Parameters: 
+DEBUG http-nio-9090-exec-6 com.inswave.edu.dao.EduDao.selectSpMemberTotal - <==      Total: 1
+DEBUG http-nio-9090-exec-6 com.inswave.edu.dao.EduDao.selectListSpMember - ==>  Preparing: SELECT EMP_CD,EMP_NM,GENDER_CD,JOIN_DATE,POSITION_CD,DUTY_CD,ROLE_CD,ASSIGNED_TASK,EMAIL,ZIP_CD,ADDRESS1,ADDRESS2,CONVERT(IMAGE_PATH USING utf8) AS IMAGE_PATH,CREATED_DATE,UPDATED_DATE FROM sp_member WHERE 'A'='A' ORDER BY EMP_CD LIMIT ?,? 
+DEBUG http-nio-9090-exec-6 com.inswave.edu.dao.EduDao.selectListSpMember - ==> Parameters: 20(Integer), 10(String)
+DEBUG http-nio-9090-exec-6 com.inswave.edu.dao.EduDao.selectListSpMember - <==      Total: 10
+DEBUG http-nio-9090-exec-9 com.inswave.edu.dao.EduDao.selectSpMemberTotal - ==>  Preparing: SELECT count(EMP_CD) ROW_TOTAL FROM sp_member WHERE 'A'='A' 
+DEBUG http-nio-9090-exec-9 com.inswave.edu.dao.EduDao.selectSpMemberTotal - ==> Parameters: 
+DEBUG http-nio-9090-exec-9 com.inswave.edu.dao.EduDao.selectSpMemberTotal - <==      Total: 1
+DEBUG http-nio-9090-exec-9 com.inswave.edu.dao.EduDao.selectListSpMember - ==>  Preparing: SELECT EMP_CD,EMP_NM,GENDER_CD,JOIN_DATE,POSITION_CD,DUTY_CD,ROLE_CD,ASSIGNED_TASK,EMAIL,ZIP_CD,ADDRESS1,ADDRESS2,CONVERT(IMAGE_PATH USING utf8) AS IMAGE_PATH,CREATED_DATE,UPDATED_DATE FROM sp_member WHERE 'A'='A' ORDER BY EMP_CD LIMIT ?,? 
+DEBUG http-nio-9090-exec-9 com.inswave.edu.dao.EduDao.selectListSpMember - ==> Parameters: 30(Integer), 10(String)
+DEBUG http-nio-9090-exec-9 com.inswave.edu.dao.EduDao.selectListSpMember - <==      Total: 10
+DEBUG http-nio-9090-exec-10 com.inswave.edu.dao.EduDao.selectSpMemberTotal - ==>  Preparing: SELECT count(EMP_CD) ROW_TOTAL FROM sp_member WHERE 'A'='A' 
+DEBUG http-nio-9090-exec-10 com.inswave.edu.dao.EduDao.selectSpMemberTotal - ==> Parameters: 
+DEBUG http-nio-9090-exec-10 com.inswave.edu.dao.EduDao.selectSpMemberTotal - <==      Total: 1
+DEBUG http-nio-9090-exec-10 com.inswave.edu.dao.EduDao.selectListSpMember - ==>  Preparing: SELECT EMP_CD,EMP_NM,GENDER_CD,JOIN_DATE,POSITION_CD,DUTY_CD,ROLE_CD,ASSIGNED_TASK,EMAIL,ZIP_CD,ADDRESS1,ADDRESS2,CONVERT(IMAGE_PATH USING utf8) AS IMAGE_PATH,CREATED_DATE,UPDATED_DATE FROM sp_member WHERE 'A'='A' ORDER BY EMP_CD LIMIT ?,? 
+DEBUG http-nio-9090-exec-10 com.inswave.edu.dao.EduDao.selectListSpMember - ==> Parameters: 40(Integer), 10(String)
+DEBUG http-nio-9090-exec-10 com.inswave.edu.dao.EduDao.selectListSpMember - <==      Total: 10
+DEBUG http-nio-9090-exec-2 com.inswave.edu.dao.EduDao.selectCodeList - ==>  Preparing: select A.GRP_CD, A.COM_CD AS CODE_CD, A.CODE_NM from SP_CODE A, SP_CODE_GRP B where B.GRP_CD = A.GRP_CD and B.IS_USE = 'Y' and A.IS_USE = 'Y' and A.GRP_CD IN ( ? , ? , ? , ? ) order by A.GRP_CD, A.SORT_ORDER 
+DEBUG http-nio-9090-exec-2 com.inswave.edu.dao.EduDao.selectCodeList - ==> Parameters: 02(String), 01(String), 19(String), 101(String)
+DEBUG http-nio-9090-exec-2 com.inswave.edu.dao.EduDao.selectCodeList - <==      Total: 19
+DEBUG http-nio-9090-exec-1 com.inswave.edu.dao.EduDao.selectListSpMember - ==>  Preparing: SELECT EMP_CD,EMP_NM,GENDER_CD,JOIN_DATE,POSITION_CD,DUTY_CD,ROLE_CD,ASSIGNED_TASK,EMAIL,ZIP_CD,ADDRESS1,ADDRESS2,CONVERT(IMAGE_PATH USING utf8) AS IMAGE_PATH,CREATED_DATE,UPDATED_DATE FROM sp_member WHERE 'A'='A' ORDER BY EMP_CD LIMIT ?,? 
+DEBUG http-nio-9090-exec-1 com.inswave.edu.dao.EduDao.selectListSpMember - ==> Parameters: 0(Integer), 100(Integer)
+DEBUG http-nio-9090-exec-1 com.inswave.edu.dao.EduDao.selectListSpMember - <==      Total: 100
+DEBUG http-nio-9090-exec-1 com.inswave.edu.dao.EduDao.selectSpMemberTotalScroll - ==>  Preparing: SELECT count(*) TOTAL_CNT FROM sp_member WHERE 'A'='A' 
+DEBUG http-nio-9090-exec-1 com.inswave.edu.dao.EduDao.selectSpMemberTotalScroll - ==> Parameters: 
+DEBUG http-nio-9090-exec-1 com.inswave.edu.dao.EduDao.selectSpMemberTotalScroll - <==      Total: 1
+DEBUG http-nio-9090-exec-1 com.inswave.edu.dao.EduDao.selectCodeList - ==>  Preparing: select A.GRP_CD, A.COM_CD AS CODE_CD, A.CODE_NM from SP_CODE A, SP_CODE_GRP B where B.GRP_CD = A.GRP_CD and B.IS_USE = 'Y' and A.IS_USE = 'Y' and A.GRP_CD IN ( ? , ? , ? , ? ) order by A.GRP_CD, A.SORT_ORDER 
+DEBUG http-nio-9090-exec-1 com.inswave.edu.dao.EduDao.selectCodeList - ==> Parameters: 01(String), 02(String), 19(String), 101(String)
+DEBUG http-nio-9090-exec-1 com.inswave.edu.dao.EduDao.selectCodeList - <==      Total: 19
+DEBUG http-nio-9090-exec-4 com.inswave.edu.dao.EduDao.selectSpMemberTotal - ==>  Preparing: SELECT count(EMP_CD) ROW_TOTAL FROM sp_member WHERE 'A'='A' 
+DEBUG http-nio-9090-exec-4 com.inswave.edu.dao.EduDao.selectSpMemberTotal - ==> Parameters: 
+DEBUG http-nio-9090-exec-4 com.inswave.edu.dao.EduDao.selectSpMemberTotal - <==      Total: 1
+DEBUG http-nio-9090-exec-4 com.inswave.edu.dao.EduDao.selectListSpMember - ==>  Preparing: SELECT EMP_CD,EMP_NM,GENDER_CD,JOIN_DATE,POSITION_CD,DUTY_CD,ROLE_CD,ASSIGNED_TASK,EMAIL,ZIP_CD,ADDRESS1,ADDRESS2,CONVERT(IMAGE_PATH USING utf8) AS IMAGE_PATH,CREATED_DATE,UPDATED_DATE FROM sp_member WHERE 'A'='A' ORDER BY EMP_CD LIMIT ?,? 
+DEBUG http-nio-9090-exec-4 com.inswave.edu.dao.EduDao.selectListSpMember - ==> Parameters: 0(Integer), 10(String)
+DEBUG http-nio-9090-exec-4 com.inswave.edu.dao.EduDao.selectListSpMember - <==      Total: 10
+DEBUG http-nio-9090-exec-5 com.inswave.edu.dao.EduDao.selectCodeList - ==>  Preparing: select A.GRP_CD, A.COM_CD AS CODE_CD, A.CODE_NM from SP_CODE A, SP_CODE_GRP B where B.GRP_CD = A.GRP_CD and B.IS_USE = 'Y' and A.IS_USE = 'Y' and A.GRP_CD IN ( ? , ? , ? , ? ) order by A.GRP_CD, A.SORT_ORDER 
+DEBUG http-nio-9090-exec-5 com.inswave.edu.dao.EduDao.selectCodeList - ==> Parameters: 02(String), 01(String), 19(String), 101(String)
+DEBUG http-nio-9090-exec-5 com.inswave.edu.dao.EduDao.selectCodeList - <==      Total: 19
+DEBUG http-nio-9090-exec-6 com.inswave.edu.dao.EduDao.selectListSpMember - ==>  Preparing: SELECT EMP_CD,EMP_NM,GENDER_CD,JOIN_DATE,POSITION_CD,DUTY_CD,ROLE_CD,ASSIGNED_TASK,EMAIL,ZIP_CD,ADDRESS1,ADDRESS2,CONVERT(IMAGE_PATH USING utf8) AS IMAGE_PATH,CREATED_DATE,UPDATED_DATE FROM sp_member WHERE 'A'='A' ORDER BY EMP_CD LIMIT ?,? 
+DEBUG http-nio-9090-exec-6 com.inswave.edu.dao.EduDao.selectListSpMember - ==> Parameters: 0(Integer), 100(Integer)
+DEBUG http-nio-9090-exec-6 com.inswave.edu.dao.EduDao.selectListSpMember - <==      Total: 100
+DEBUG http-nio-9090-exec-6 com.inswave.edu.dao.EduDao.selectSpMemberTotalScroll - ==>  Preparing: SELECT count(*) TOTAL_CNT FROM sp_member WHERE 'A'='A' 
+DEBUG http-nio-9090-exec-6 com.inswave.edu.dao.EduDao.selectSpMemberTotalScroll - ==> Parameters: 
+DEBUG http-nio-9090-exec-6 com.inswave.edu.dao.EduDao.selectSpMemberTotalScroll - <==      Total: 1
+DEBUG http-nio-9090-exec-10 com.inswave.edu.dao.EduDao.selectListSpMember - ==>  Preparing: SELECT EMP_CD,EMP_NM,GENDER_CD,JOIN_DATE,POSITION_CD,DUTY_CD,ROLE_CD,ASSIGNED_TASK,EMAIL,ZIP_CD,ADDRESS1,ADDRESS2,CONVERT(IMAGE_PATH USING utf8) AS IMAGE_PATH,CREATED_DATE,UPDATED_DATE FROM sp_member WHERE 'A'='A' ORDER BY EMP_CD LIMIT ?,? 
+DEBUG http-nio-9090-exec-10 com.inswave.edu.dao.EduDao.selectListSpMember - ==> Parameters: 100(Integer), 100(Integer)
+DEBUG http-nio-9090-exec-10 com.inswave.edu.dao.EduDao.selectListSpMember - <==      Total: 100
+DEBUG http-nio-9090-exec-7 com.inswave.edu.dao.EduDao.selectCodeList - ==>  Preparing: select A.GRP_CD, A.COM_CD AS CODE_CD, A.CODE_NM from SP_CODE A, SP_CODE_GRP B where B.GRP_CD = A.GRP_CD and B.IS_USE = 'Y' and A.IS_USE = 'Y' and A.GRP_CD IN ( ? , ? , ? , ? ) order by A.GRP_CD, A.SORT_ORDER 
+DEBUG http-nio-9090-exec-7 com.inswave.edu.dao.EduDao.selectCodeList - ==> Parameters: 02(String), 01(String), 19(String), 101(String)
+DEBUG http-nio-9090-exec-7 com.inswave.edu.dao.EduDao.selectCodeList - <==      Total: 19
+DEBUG http-nio-9090-exec-1 com.inswave.edu.dao.EduDao.selectCodeList - ==>  Preparing: select A.GRP_CD, A.COM_CD AS CODE_CD, A.CODE_NM from SP_CODE A, SP_CODE_GRP B where B.GRP_CD = A.GRP_CD and B.IS_USE = 'Y' and A.IS_USE = 'Y' and A.GRP_CD IN ( ? , ? , ? , ? ) order by A.GRP_CD, A.SORT_ORDER 
+DEBUG http-nio-9090-exec-1 com.inswave.edu.dao.EduDao.selectCodeList - ==> Parameters: 02(String), 01(String), 19(String), 101(String)
+DEBUG http-nio-9090-exec-1 com.inswave.edu.dao.EduDao.selectCodeList - <==      Total: 19
+DEBUG http-nio-9090-exec-10 com.inswave.edu.dao.EduDao.selectSpMemberTotal - ==>  Preparing: SELECT count(EMP_CD) ROW_TOTAL FROM sp_member WHERE 'A'='A' 
+DEBUG http-nio-9090-exec-10 com.inswave.edu.dao.EduDao.selectSpMemberTotal - ==> Parameters: 
+DEBUG http-nio-9090-exec-10 com.inswave.edu.dao.EduDao.selectSpMemberTotal - <==      Total: 1
+DEBUG http-nio-9090-exec-10 com.inswave.edu.dao.EduDao.selectListSpMember - ==>  Preparing: SELECT EMP_CD,EMP_NM,GENDER_CD,JOIN_DATE,POSITION_CD,DUTY_CD,ROLE_CD,ASSIGNED_TASK,EMAIL,ZIP_CD,ADDRESS1,ADDRESS2,CONVERT(IMAGE_PATH USING utf8) AS IMAGE_PATH,CREATED_DATE,UPDATED_DATE FROM sp_member WHERE 'A'='A' ORDER BY EMP_CD LIMIT ?,? 
+DEBUG http-nio-9090-exec-10 com.inswave.edu.dao.EduDao.selectListSpMember - ==> Parameters: 0(Integer), 10(String)
+DEBUG http-nio-9090-exec-10 com.inswave.edu.dao.EduDao.selectListSpMember - <==      Total: 10
+DEBUG http-nio-9090-exec-5 com.inswave.edu.dao.EduDao.selectSpMemberTotal - ==>  Preparing: SELECT count(EMP_CD) ROW_TOTAL FROM sp_member WHERE 'A'='A' 
+DEBUG http-nio-9090-exec-5 com.inswave.edu.dao.EduDao.selectSpMemberTotal - ==> Parameters: 
+DEBUG http-nio-9090-exec-5 com.inswave.edu.dao.EduDao.selectSpMemberTotal - <==      Total: 1
+DEBUG http-nio-9090-exec-5 com.inswave.edu.dao.EduDao.selectListSpMember - ==>  Preparing: SELECT EMP_CD,EMP_NM,GENDER_CD,JOIN_DATE,POSITION_CD,DUTY_CD,ROLE_CD,ASSIGNED_TASK,EMAIL,ZIP_CD,ADDRESS1,ADDRESS2,CONVERT(IMAGE_PATH USING utf8) AS IMAGE_PATH,CREATED_DATE,UPDATED_DATE FROM sp_member WHERE 'A'='A' ORDER BY EMP_CD LIMIT ?,? 
+DEBUG http-nio-9090-exec-5 com.inswave.edu.dao.EduDao.selectListSpMember - ==> Parameters: 10(Integer), 10(String)
+DEBUG http-nio-9090-exec-5 com.inswave.edu.dao.EduDao.selectListSpMember - <==      Total: 10
+DEBUG http-nio-9090-exec-9 com.inswave.edu.dao.EduDao.selectSpMemberTotal - ==>  Preparing: SELECT count(EMP_CD) ROW_TOTAL FROM sp_member WHERE 'A'='A' 
+DEBUG http-nio-9090-exec-9 com.inswave.edu.dao.EduDao.selectSpMemberTotal - ==> Parameters: 
+DEBUG http-nio-9090-exec-9 com.inswave.edu.dao.EduDao.selectSpMemberTotal - <==      Total: 1
+DEBUG http-nio-9090-exec-9 com.inswave.edu.dao.EduDao.selectListSpMember - ==>  Preparing: SELECT EMP_CD,EMP_NM,GENDER_CD,JOIN_DATE,POSITION_CD,DUTY_CD,ROLE_CD,ASSIGNED_TASK,EMAIL,ZIP_CD,ADDRESS1,ADDRESS2,CONVERT(IMAGE_PATH USING utf8) AS IMAGE_PATH,CREATED_DATE,UPDATED_DATE FROM sp_member WHERE 'A'='A' ORDER BY EMP_CD LIMIT ?,? 
+DEBUG http-nio-9090-exec-9 com.inswave.edu.dao.EduDao.selectListSpMember - ==> Parameters: 0(Integer), 10(String)
+DEBUG http-nio-9090-exec-9 com.inswave.edu.dao.EduDao.selectListSpMember - <==      Total: 10
+DEBUG http-nio-9090-exec-1 com.inswave.edu.dao.EduDao.selectSpMemberTotal - ==>  Preparing: SELECT count(EMP_CD) ROW_TOTAL FROM sp_member WHERE 'A'='A' 
+DEBUG http-nio-9090-exec-1 com.inswave.edu.dao.EduDao.selectSpMemberTotal - ==> Parameters: 
+DEBUG http-nio-9090-exec-1 com.inswave.edu.dao.EduDao.selectSpMemberTotal - <==      Total: 1
+DEBUG http-nio-9090-exec-1 com.inswave.edu.dao.EduDao.selectListSpMember - ==>  Preparing: SELECT EMP_CD,EMP_NM,GENDER_CD,JOIN_DATE,POSITION_CD,DUTY_CD,ROLE_CD,ASSIGNED_TASK,EMAIL,ZIP_CD,ADDRESS1,ADDRESS2,CONVERT(IMAGE_PATH USING utf8) AS IMAGE_PATH,CREATED_DATE,UPDATED_DATE FROM sp_member WHERE 'A'='A' ORDER BY EMP_CD LIMIT ?,? 
+DEBUG http-nio-9090-exec-1 com.inswave.edu.dao.EduDao.selectListSpMember - ==> Parameters: 10(Integer), 10(String)
+DEBUG http-nio-9090-exec-1 com.inswave.edu.dao.EduDao.selectListSpMember - <==      Total: 10
+DEBUG http-nio-9090-exec-9 com.inswave.edu.dao.EduDao.selectSpMemberTotal - ==>  Preparing: SELECT count(EMP_CD) ROW_TOTAL FROM sp_member WHERE 'A'='A' 
+DEBUG http-nio-9090-exec-9 com.inswave.edu.dao.EduDao.selectSpMemberTotal - ==> Parameters: 
+DEBUG http-nio-9090-exec-9 com.inswave.edu.dao.EduDao.selectSpMemberTotal - <==      Total: 1
+DEBUG http-nio-9090-exec-9 com.inswave.edu.dao.EduDao.selectListSpMember - ==>  Preparing: SELECT EMP_CD,EMP_NM,GENDER_CD,JOIN_DATE,POSITION_CD,DUTY_CD,ROLE_CD,ASSIGNED_TASK,EMAIL,ZIP_CD,ADDRESS1,ADDRESS2,CONVERT(IMAGE_PATH USING utf8) AS IMAGE_PATH,CREATED_DATE,UPDATED_DATE FROM sp_member WHERE 'A'='A' ORDER BY EMP_CD LIMIT ?,? 
+DEBUG http-nio-9090-exec-9 com.inswave.edu.dao.EduDao.selectListSpMember - ==> Parameters: 0(Integer), 10(String)
+DEBUG http-nio-9090-exec-9 com.inswave.edu.dao.EduDao.selectListSpMember - <==      Total: 10
+DEBUG http-nio-9090-exec-10 com.inswave.edu.dao.EduDao.deleteSpMemberBatch - ==>  Preparing: DELETE FROM SP_MEMBER WHERE EMP_CD IN ( ? ) 
+DEBUG http-nio-9090-exec-10 com.inswave.edu.dao.EduDao.deleteSpMemberBatch - ==> Parameters: (String)
+DEBUG http-nio-9090-exec-10 com.inswave.edu.dao.EduDao.deleteSpMemberBatch - <==    Updates: 0
+DEBUG http-nio-9090-exec-10 com.inswave.edu.dao.EduDao.selectSpMemberTotal - ==>  Preparing: SELECT count(EMP_CD) ROW_TOTAL FROM sp_member WHERE 'A'='A' 
+DEBUG http-nio-9090-exec-10 com.inswave.edu.dao.EduDao.selectSpMemberTotal - ==> Parameters: 
+DEBUG http-nio-9090-exec-10 com.inswave.edu.dao.EduDao.selectSpMemberTotal - <==      Total: 1
+DEBUG http-nio-9090-exec-10 com.inswave.edu.dao.EduDao.selectListSpMember - ==>  Preparing: SELECT EMP_CD,EMP_NM,GENDER_CD,JOIN_DATE,POSITION_CD,DUTY_CD,ROLE_CD,ASSIGNED_TASK,EMAIL,ZIP_CD,ADDRESS1,ADDRESS2,CONVERT(IMAGE_PATH USING utf8) AS IMAGE_PATH,CREATED_DATE,UPDATED_DATE FROM sp_member WHERE 'A'='A' ORDER BY EMP_CD LIMIT ?,? 
+DEBUG http-nio-9090-exec-10 com.inswave.edu.dao.EduDao.selectListSpMember - ==> Parameters: 0(Integer), 10(String)
+DEBUG http-nio-9090-exec-10 com.inswave.edu.dao.EduDao.selectListSpMember - <==      Total: 10
+DEBUG http-nio-9090-exec-7 com.inswave.edu.dao.EduDao.selectSpMemberTotal - ==>  Preparing: SELECT count(EMP_CD) ROW_TOTAL FROM sp_member WHERE 'A'='A' 
+DEBUG http-nio-9090-exec-7 com.inswave.edu.dao.EduDao.selectSpMemberTotal - ==> Parameters: 
+DEBUG http-nio-9090-exec-7 com.inswave.edu.dao.EduDao.selectSpMemberTotal - <==      Total: 1
+DEBUG http-nio-9090-exec-7 com.inswave.edu.dao.EduDao.selectListSpMember - ==>  Preparing: SELECT EMP_CD,EMP_NM,GENDER_CD,JOIN_DATE,POSITION_CD,DUTY_CD,ROLE_CD,ASSIGNED_TASK,EMAIL,ZIP_CD,ADDRESS1,ADDRESS2,CONVERT(IMAGE_PATH USING utf8) AS IMAGE_PATH,CREATED_DATE,UPDATED_DATE FROM sp_member WHERE 'A'='A' ORDER BY EMP_CD LIMIT ?,? 
+DEBUG http-nio-9090-exec-7 com.inswave.edu.dao.EduDao.selectListSpMember - ==> Parameters: 0(Integer), 1000(String)
+DEBUG http-nio-9090-exec-7 com.inswave.edu.dao.EduDao.selectListSpMember - <==      Total: 1000
+DEBUG http-nio-9090-exec-4 com.inswave.edu.dao.EduDao.selectSpMemberTotal - ==>  Preparing: SELECT count(EMP_CD) ROW_TOTAL FROM sp_member WHERE 'A'='A' 
+DEBUG http-nio-9090-exec-4 com.inswave.edu.dao.EduDao.selectSpMemberTotal - ==> Parameters: 
+DEBUG http-nio-9090-exec-4 com.inswave.edu.dao.EduDao.selectSpMemberTotal - <==      Total: 1
+DEBUG http-nio-9090-exec-4 com.inswave.edu.dao.EduDao.selectListSpMember - ==>  Preparing: SELECT EMP_CD,EMP_NM,GENDER_CD,JOIN_DATE,POSITION_CD,DUTY_CD,ROLE_CD,ASSIGNED_TASK,EMAIL,ZIP_CD,ADDRESS1,ADDRESS2,CONVERT(IMAGE_PATH USING utf8) AS IMAGE_PATH,CREATED_DATE,UPDATED_DATE FROM sp_member WHERE 'A'='A' ORDER BY EMP_CD LIMIT ?,? 
+DEBUG http-nio-9090-exec-4 com.inswave.edu.dao.EduDao.selectListSpMember - ==> Parameters: 1000(Integer), 1000(String)
+DEBUG http-nio-9090-exec-4 com.inswave.edu.dao.EduDao.selectListSpMember - <==      Total: 1000
+DEBUG http-nio-9090-exec-5 com.inswave.edu.dao.EduDao.selectCodeList - ==>  Preparing: select A.GRP_CD, A.COM_CD AS CODE_CD, A.CODE_NM from SP_CODE A, SP_CODE_GRP B where B.GRP_CD = A.GRP_CD and B.IS_USE = 'Y' and A.IS_USE = 'Y' and A.GRP_CD IN ( ? , ? , ? , ? ) order by A.GRP_CD, A.SORT_ORDER 
+DEBUG http-nio-9090-exec-5 com.inswave.edu.dao.EduDao.selectCodeList - ==> Parameters: 02(String), 01(String), 19(String), 101(String)
+DEBUG http-nio-9090-exec-5 com.inswave.edu.dao.EduDao.selectCodeList - <==      Total: 19
+DEBUG http-nio-9090-exec-10 com.inswave.edu.dao.EduDao.selectSpMemberTotal - ==>  Preparing: SELECT count(EMP_CD) ROW_TOTAL FROM sp_member WHERE 'A'='A' 
+DEBUG http-nio-9090-exec-6 com.inswave.edu.dao.EduDao.selectCodeList - ==>  Preparing: select A.GRP_CD, A.COM_CD AS CODE_CD, A.CODE_NM from SP_CODE A, SP_CODE_GRP B where B.GRP_CD = A.GRP_CD and B.IS_USE = 'Y' and A.IS_USE = 'Y' and A.GRP_CD IN ( ? , ? , ? , ? ) order by A.GRP_CD, A.SORT_ORDER 
+DEBUG http-nio-9090-exec-10 com.inswave.edu.dao.EduDao.selectSpMemberTotal - ==> Parameters: 
+DEBUG http-nio-9090-exec-6 com.inswave.edu.dao.EduDao.selectCodeList - ==> Parameters: 02(String), 01(String), 19(String), 101(String)
+DEBUG http-nio-9090-exec-6 com.inswave.edu.dao.EduDao.selectCodeList - <==      Total: 19
+DEBUG http-nio-9090-exec-10 com.inswave.edu.dao.EduDao.selectSpMemberTotal - <==      Total: 1
+DEBUG http-nio-9090-exec-10 com.inswave.edu.dao.EduDao.selectListSpMember - ==>  Preparing: SELECT EMP_CD,EMP_NM,GENDER_CD,JOIN_DATE,POSITION_CD,DUTY_CD,ROLE_CD,ASSIGNED_TASK,EMAIL,ZIP_CD,ADDRESS1,ADDRESS2,CONVERT(IMAGE_PATH USING utf8) AS IMAGE_PATH,CREATED_DATE,UPDATED_DATE FROM sp_member WHERE 'A'='A' ORDER BY EMP_CD LIMIT ?,? 
+DEBUG http-nio-9090-exec-10 com.inswave.edu.dao.EduDao.selectListSpMember - ==> Parameters: 0(Integer), 10(String)
+DEBUG http-nio-9090-exec-10 com.inswave.edu.dao.EduDao.selectListSpMember - <==      Total: 10
+DEBUG http-nio-9090-exec-6 com.inswave.edu.dao.EduDao.selectZipCodeStreet - ==>  Preparing: SELECT SEQ_NO, SIGUNGUCODE, STREETNUM, STREET, STREETENG, DONGSEQ, SIDO, SIGUNGU, DONGTYPE, DONGCODE, DONG, PARENTSTREETNUM, PARENTSTREET, ISUSE, CHANGEREASON, CHANGEHISTORY, SIDOENG, SIGUNGUENG, DONGENG, OPENDATE, CLOSEDATE FROM SP_ZIP_CODE_STREET WHERE SEQ_NO <= ? 
+DEBUG http-nio-9090-exec-6 com.inswave.edu.dao.EduDao.selectZipCodeStreet - ==> Parameters: 10000(String)
+DEBUG http-nio-9090-exec-6 com.inswave.edu.dao.EduDao.selectZipCodeStreet - <==      Total: 10000
+DEBUG http-nio-9090-exec-7 com.inswave.edu.dao.EduDao.selectZipCodeStreet - ==>  Preparing: SELECT SEQ_NO, SIGUNGUCODE, STREETNUM, STREET, STREETENG, DONGSEQ, SIDO, SIGUNGU, DONGTYPE, DONGCODE, DONG, PARENTSTREETNUM, PARENTSTREET, ISUSE, CHANGEREASON, CHANGEHISTORY, SIDOENG, SIGUNGUENG, DONGENG, OPENDATE, CLOSEDATE FROM SP_ZIP_CODE_STREET WHERE SEQ_NO <= ? 
+DEBUG http-nio-9090-exec-7 com.inswave.edu.dao.EduDao.selectZipCodeStreet - ==> Parameters: 10000(String)
+DEBUG http-nio-9090-exec-7 com.inswave.edu.dao.EduDao.selectZipCodeStreet - <==      Total: 10000
+DEBUG http-nio-9090-exec-3 com.inswave.edu.dao.EduDao.selectZipCodeStreet - ==>  Preparing: SELECT SEQ_NO, SIGUNGUCODE, STREETNUM, STREET, STREETENG, DONGSEQ, SIDO, SIGUNGU, DONGTYPE, DONGCODE, DONG, PARENTSTREETNUM, PARENTSTREET, ISUSE, CHANGEREASON, CHANGEHISTORY, SIDOENG, SIGUNGUENG, DONGENG, OPENDATE, CLOSEDATE FROM SP_ZIP_CODE_STREET WHERE SEQ_NO <= ? 
+DEBUG http-nio-9090-exec-3 com.inswave.edu.dao.EduDao.selectZipCodeStreet - ==> Parameters: 10000(String)
+DEBUG http-nio-9090-exec-3 com.inswave.edu.dao.EduDao.selectZipCodeStreet - <==      Total: 10000
+DEBUG http-nio-9090-exec-6 com.inswave.edu.dao.EduDao.selectZipCodeStreet - ==>  Preparing: SELECT SEQ_NO, SIGUNGUCODE, STREETNUM, STREET, STREETENG, DONGSEQ, SIDO, SIGUNGU, DONGTYPE, DONGCODE, DONG, PARENTSTREETNUM, PARENTSTREET, ISUSE, CHANGEREASON, CHANGEHISTORY, SIDOENG, SIGUNGUENG, DONGENG, OPENDATE, CLOSEDATE FROM SP_ZIP_CODE_STREET WHERE SEQ_NO <= ? 
+DEBUG http-nio-9090-exec-6 com.inswave.edu.dao.EduDao.selectZipCodeStreet - ==> Parameters: 10000(String)
+DEBUG http-nio-9090-exec-6 com.inswave.edu.dao.EduDao.selectZipCodeStreet - <==      Total: 10000
+DEBUG http-nio-9090-exec-5 com.inswave.edu.dao.EduDao.selectZipCodeStreet - ==>  Preparing: SELECT SEQ_NO, SIGUNGUCODE, STREETNUM, STREET, STREETENG, DONGSEQ, SIDO, SIGUNGU, DONGTYPE, DONGCODE, DONG, PARENTSTREETNUM, PARENTSTREET, ISUSE, CHANGEREASON, CHANGEHISTORY, SIDOENG, SIGUNGUENG, DONGENG, OPENDATE, CLOSEDATE FROM SP_ZIP_CODE_STREET WHERE SEQ_NO <= ? 
+DEBUG http-nio-9090-exec-5 com.inswave.edu.dao.EduDao.selectZipCodeStreet - ==> Parameters: 10000(String)
+DEBUG http-nio-9090-exec-5 com.inswave.edu.dao.EduDao.selectZipCodeStreet - <==      Total: 10000
+DEBUG http-nio-9090-exec-5 com.inswave.edu.dao.EduDao.selectZipCodeStreet - ==>  Preparing: SELECT SEQ_NO, SIGUNGUCODE, STREETNUM, STREET, STREETENG, DONGSEQ, SIDO, SIGUNGU, DONGTYPE, DONGCODE, DONG, PARENTSTREETNUM, PARENTSTREET, ISUSE, CHANGEREASON, CHANGEHISTORY, SIDOENG, SIGUNGUENG, DONGENG, OPENDATE, CLOSEDATE FROM SP_ZIP_CODE_STREET WHERE SEQ_NO <= ? 
+DEBUG http-nio-9090-exec-5 com.inswave.edu.dao.EduDao.selectZipCodeStreet - ==> Parameters: 10000(String)
+DEBUG http-nio-9090-exec-5 com.inswave.edu.dao.EduDao.selectZipCodeStreet - <==      Total: 10000
+DEBUG http-nio-9090-exec-2 com.inswave.edu.dao.EduDao.selectZipCodeStreet - ==>  Preparing: SELECT SEQ_NO, SIGUNGUCODE, STREETNUM, STREET, STREETENG, DONGSEQ, SIDO, SIGUNGU, DONGTYPE, DONGCODE, DONG, PARENTSTREETNUM, PARENTSTREET, ISUSE, CHANGEREASON, CHANGEHISTORY, SIDOENG, SIGUNGUENG, DONGENG, OPENDATE, CLOSEDATE FROM SP_ZIP_CODE_STREET WHERE SEQ_NO <= ? 
+DEBUG http-nio-9090-exec-2 com.inswave.edu.dao.EduDao.selectZipCodeStreet - ==> Parameters: 10000(String)
+DEBUG http-nio-9090-exec-2 com.inswave.edu.dao.EduDao.selectZipCodeStreet - <==      Total: 10000
+DEBUG http-nio-9090-exec-8 com.inswave.edu.dao.EduDao.selectZipCodeStreet - ==>  Preparing: SELECT SEQ_NO, SIGUNGUCODE, STREETNUM, STREET, STREETENG, DONGSEQ, SIDO, SIGUNGU, DONGTYPE, DONGCODE, DONG, PARENTSTREETNUM, PARENTSTREET, ISUSE, CHANGEREASON, CHANGEHISTORY, SIDOENG, SIGUNGUENG, DONGENG, OPENDATE, CLOSEDATE FROM SP_ZIP_CODE_STREET WHERE SEQ_NO <= ? 
+DEBUG http-nio-9090-exec-8 com.inswave.edu.dao.EduDao.selectZipCodeStreet - ==> Parameters: 10000(String)
+DEBUG http-nio-9090-exec-8 com.inswave.edu.dao.EduDao.selectZipCodeStreet - <==      Total: 10000
+DEBUG http-nio-9090-exec-8 com.inswave.edu.dao.EduDao.selectZipCodeStreet - ==>  Preparing: SELECT SEQ_NO, SIGUNGUCODE, STREETNUM, STREET, STREETENG, DONGSEQ, SIDO, SIGUNGU, DONGTYPE, DONGCODE, DONG, PARENTSTREETNUM, PARENTSTREET, ISUSE, CHANGEREASON, CHANGEHISTORY, SIDOENG, SIGUNGUENG, DONGENG, OPENDATE, CLOSEDATE FROM SP_ZIP_CODE_STREET WHERE SEQ_NO <= ? 
+DEBUG http-nio-9090-exec-8 com.inswave.edu.dao.EduDao.selectZipCodeStreet - ==> Parameters: 10000(String)
+DEBUG http-nio-9090-exec-8 com.inswave.edu.dao.EduDao.selectZipCodeStreet - <==      Total: 10000
+DEBUG http-nio-9090-exec-6 com.inswave.edu.dao.EduDao.selectZipCodeStreet - ==>  Preparing: SELECT SEQ_NO, SIGUNGUCODE, STREETNUM, STREET, STREETENG, DONGSEQ, SIDO, SIGUNGU, DONGTYPE, DONGCODE, DONG, PARENTSTREETNUM, PARENTSTREET, ISUSE, CHANGEREASON, CHANGEHISTORY, SIDOENG, SIGUNGUENG, DONGENG, OPENDATE, CLOSEDATE FROM SP_ZIP_CODE_STREET WHERE SEQ_NO <= ? 
+DEBUG http-nio-9090-exec-6 com.inswave.edu.dao.EduDao.selectZipCodeStreet - ==> Parameters: 10000(String)
+DEBUG http-nio-9090-exec-6 com.inswave.edu.dao.EduDao.selectZipCodeStreet - <==      Total: 10000
+DEBUG http-nio-9090-exec-8 com.inswave.edu.dao.EduDao.selectCodeList - ==>  Preparing: select A.GRP_CD, A.COM_CD AS CODE_CD, A.CODE_NM from SP_CODE A, SP_CODE_GRP B where B.GRP_CD = A.GRP_CD and B.IS_USE = 'Y' and A.IS_USE = 'Y' and A.GRP_CD IN ( ? , ? , ? , ? ) order by A.GRP_CD, A.SORT_ORDER 
+DEBUG http-nio-9090-exec-8 com.inswave.edu.dao.EduDao.selectCodeList - ==> Parameters: 02(String), 01(String), 19(String), 101(String)
+DEBUG http-nio-9090-exec-8 com.inswave.edu.dao.EduDao.selectCodeList - <==      Total: 19
+INFO http-nio-9090-exec-2 webApp - /edu/selectAllMemberList.do ::::: in default
+INFO http-nio-9090-exec-2 webApp - /edu/selectAllMemberList.do ::::: in default
+DEBUG http-nio-9090-exec-2 com.inswave.edu.dao.EduDao.selectListSpMember - ==>  Preparing: SELECT EMP_CD,EMP_NM,GENDER_CD,JOIN_DATE,POSITION_CD,DUTY_CD,ROLE_CD,ASSIGNED_TASK,EMAIL,ZIP_CD,ADDRESS1,ADDRESS2,CONVERT(IMAGE_PATH USING utf8) AS IMAGE_PATH,CREATED_DATE,UPDATED_DATE FROM sp_member WHERE 'A'='A' ORDER BY EMP_CD 
+DEBUG http-nio-9090-exec-2 com.inswave.edu.dao.EduDao.selectListSpMember - ==> Parameters: 
+DEBUG http-nio-9090-exec-2 com.inswave.edu.dao.EduDao.selectListSpMember - <==      Total: 2000
+DEBUG http-nio-9090-exec-2 com.inswave.edu.dao.EduDao.selectCodeList - ==>  Preparing: select A.GRP_CD, A.COM_CD AS CODE_CD, A.CODE_NM from SP_CODE A, SP_CODE_GRP B where B.GRP_CD = A.GRP_CD and B.IS_USE = 'Y' and A.IS_USE = 'Y' and A.GRP_CD IN ( ? , ? , ? , ? ) order by A.GRP_CD, A.SORT_ORDER 
+DEBUG http-nio-9090-exec-2 com.inswave.edu.dao.EduDao.selectCodeList - ==> Parameters: 01(String), 02(String), 19(String), 101(String)
+DEBUG http-nio-9090-exec-2 com.inswave.edu.dao.EduDao.selectCodeList - <==      Total: 19
+DEBUG http-nio-9090-exec-9 com.inswave.edu.dao.EduDao.selectSpMemberTotal - ==>  Preparing: SELECT count(EMP_CD) ROW_TOTAL FROM sp_member WHERE 'A'='A' 
+DEBUG http-nio-9090-exec-9 com.inswave.edu.dao.EduDao.selectSpMemberTotal - ==> Parameters: 
+DEBUG http-nio-9090-exec-9 com.inswave.edu.dao.EduDao.selectSpMemberTotal - <==      Total: 1
+DEBUG http-nio-9090-exec-9 com.inswave.edu.dao.EduDao.selectListSpMember - ==>  Preparing: SELECT EMP_CD,EMP_NM,GENDER_CD,JOIN_DATE,POSITION_CD,DUTY_CD,ROLE_CD,ASSIGNED_TASK,EMAIL,ZIP_CD,ADDRESS1,ADDRESS2,CONVERT(IMAGE_PATH USING utf8) AS IMAGE_PATH,CREATED_DATE,UPDATED_DATE FROM sp_member WHERE 'A'='A' ORDER BY EMP_CD LIMIT ?,? 
+DEBUG http-nio-9090-exec-9 com.inswave.edu.dao.EduDao.selectListSpMember - ==> Parameters: 0(Integer), 10(String)
+DEBUG http-nio-9090-exec-9 com.inswave.edu.dao.EduDao.selectListSpMember - <==      Total: 10
+DEBUG http-nio-9090-exec-6 com.inswave.edu.dao.EduDao.selectSpMemberTotal - ==>  Preparing: SELECT count(EMP_CD) ROW_TOTAL FROM sp_member WHERE 'A'='A' 
+DEBUG http-nio-9090-exec-6 com.inswave.edu.dao.EduDao.selectSpMemberTotal - ==> Parameters: 
+DEBUG http-nio-9090-exec-6 com.inswave.edu.dao.EduDao.selectSpMemberTotal - <==      Total: 1
+DEBUG http-nio-9090-exec-6 com.inswave.edu.dao.EduDao.selectListSpMember - ==>  Preparing: SELECT EMP_CD,EMP_NM,GENDER_CD,JOIN_DATE,POSITION_CD,DUTY_CD,ROLE_CD,ASSIGNED_TASK,EMAIL,ZIP_CD,ADDRESS1,ADDRESS2,CONVERT(IMAGE_PATH USING utf8) AS IMAGE_PATH,CREATED_DATE,UPDATED_DATE FROM sp_member WHERE 'A'='A' ORDER BY EMP_CD LIMIT ?,? 
+DEBUG http-nio-9090-exec-6 com.inswave.edu.dao.EduDao.selectListSpMember - ==> Parameters: 90(Integer), 10(String)
+DEBUG http-nio-9090-exec-6 com.inswave.edu.dao.EduDao.selectListSpMember - <==      Total: 10
+DEBUG http-nio-9090-exec-9 com.inswave.edu.dao.EduDao.selectSpMemberTotal - ==>  Preparing: SELECT count(EMP_CD) ROW_TOTAL FROM sp_member WHERE 'A'='A' 
+DEBUG http-nio-9090-exec-9 com.inswave.edu.dao.EduDao.selectSpMemberTotal - ==> Parameters: 
+DEBUG http-nio-9090-exec-9 com.inswave.edu.dao.EduDao.selectSpMemberTotal - <==      Total: 1
+DEBUG http-nio-9090-exec-9 com.inswave.edu.dao.EduDao.selectListSpMember - ==>  Preparing: SELECT EMP_CD,EMP_NM,GENDER_CD,JOIN_DATE,POSITION_CD,DUTY_CD,ROLE_CD,ASSIGNED_TASK,EMAIL,ZIP_CD,ADDRESS1,ADDRESS2,CONVERT(IMAGE_PATH USING utf8) AS IMAGE_PATH,CREATED_DATE,UPDATED_DATE FROM sp_member WHERE 'A'='A' ORDER BY EMP_CD LIMIT ?,? 
+DEBUG http-nio-9090-exec-9 com.inswave.edu.dao.EduDao.selectListSpMember - ==> Parameters: 80(Integer), 10(String)
+DEBUG http-nio-9090-exec-9 com.inswave.edu.dao.EduDao.selectListSpMember - <==      Total: 10
+DEBUG http-nio-9090-exec-3 com.inswave.edu.dao.EduDao.selectSpMemberTotal - ==>  Preparing: SELECT count(EMP_CD) ROW_TOTAL FROM sp_member WHERE 'A'='A' 
+DEBUG http-nio-9090-exec-3 com.inswave.edu.dao.EduDao.selectSpMemberTotal - ==> Parameters: 
+DEBUG http-nio-9090-exec-3 com.inswave.edu.dao.EduDao.selectSpMemberTotal - <==      Total: 1
+DEBUG http-nio-9090-exec-3 com.inswave.edu.dao.EduDao.selectListSpMember - ==>  Preparing: SELECT EMP_CD,EMP_NM,GENDER_CD,JOIN_DATE,POSITION_CD,DUTY_CD,ROLE_CD,ASSIGNED_TASK,EMAIL,ZIP_CD,ADDRESS1,ADDRESS2,CONVERT(IMAGE_PATH USING utf8) AS IMAGE_PATH,CREATED_DATE,UPDATED_DATE FROM sp_member WHERE 'A'='A' ORDER BY EMP_CD LIMIT ?,? 
+DEBUG http-nio-9090-exec-3 com.inswave.edu.dao.EduDao.selectListSpMember - ==> Parameters: 70(Integer), 10(String)
+DEBUG http-nio-9090-exec-3 com.inswave.edu.dao.EduDao.selectListSpMember - <==      Total: 10
+DEBUG http-nio-9090-exec-7 com.inswave.edu.dao.EduDao.selectSpMemberTotal - ==>  Preparing: SELECT count(EMP_CD) ROW_TOTAL FROM sp_member WHERE 'A'='A' 
+DEBUG http-nio-9090-exec-7 com.inswave.edu.dao.EduDao.selectSpMemberTotal - ==> Parameters: 
+DEBUG http-nio-9090-exec-7 com.inswave.edu.dao.EduDao.selectSpMemberTotal - <==      Total: 1
+DEBUG http-nio-9090-exec-7 com.inswave.edu.dao.EduDao.selectListSpMember - ==>  Preparing: SELECT EMP_CD,EMP_NM,GENDER_CD,JOIN_DATE,POSITION_CD,DUTY_CD,ROLE_CD,ASSIGNED_TASK,EMAIL,ZIP_CD,ADDRESS1,ADDRESS2,CONVERT(IMAGE_PATH USING utf8) AS IMAGE_PATH,CREATED_DATE,UPDATED_DATE FROM sp_member WHERE 'A'='A' ORDER BY EMP_CD LIMIT ?,? 
+DEBUG http-nio-9090-exec-7 com.inswave.edu.dao.EduDao.selectListSpMember - ==> Parameters: 60(Integer), 10(String)
+DEBUG http-nio-9090-exec-7 com.inswave.edu.dao.EduDao.selectListSpMember - <==      Total: 10
+DEBUG http-nio-9090-exec-10 com.inswave.edu.dao.EduDao.selectSpMemberTotal - ==>  Preparing: SELECT count(EMP_CD) ROW_TOTAL FROM sp_member WHERE 'A'='A' 
+DEBUG http-nio-9090-exec-10 com.inswave.edu.dao.EduDao.selectSpMemberTotal - ==> Parameters: 
+DEBUG http-nio-9090-exec-10 com.inswave.edu.dao.EduDao.selectSpMemberTotal - <==      Total: 1
+DEBUG http-nio-9090-exec-10 com.inswave.edu.dao.EduDao.selectListSpMember - ==>  Preparing: SELECT EMP_CD,EMP_NM,GENDER_CD,JOIN_DATE,POSITION_CD,DUTY_CD,ROLE_CD,ASSIGNED_TASK,EMAIL,ZIP_CD,ADDRESS1,ADDRESS2,CONVERT(IMAGE_PATH USING utf8) AS IMAGE_PATH,CREATED_DATE,UPDATED_DATE FROM sp_member WHERE 'A'='A' ORDER BY EMP_CD LIMIT ?,? 
+DEBUG http-nio-9090-exec-10 com.inswave.edu.dao.EduDao.selectListSpMember - ==> Parameters: 50(Integer), 10(String)
+DEBUG http-nio-9090-exec-10 com.inswave.edu.dao.EduDao.selectListSpMember - <==      Total: 10
+DEBUG http-nio-9090-exec-1 com.inswave.edu.dao.EduDao.selectSpMemberTotal - ==>  Preparing: SELECT count(EMP_CD) ROW_TOTAL FROM sp_member WHERE 'A'='A' 
+DEBUG http-nio-9090-exec-1 com.inswave.edu.dao.EduDao.selectSpMemberTotal - ==> Parameters: 
+DEBUG http-nio-9090-exec-1 com.inswave.edu.dao.EduDao.selectSpMemberTotal - <==      Total: 1
+DEBUG http-nio-9090-exec-1 com.inswave.edu.dao.EduDao.selectListSpMember - ==>  Preparing: SELECT EMP_CD,EMP_NM,GENDER_CD,JOIN_DATE,POSITION_CD,DUTY_CD,ROLE_CD,ASSIGNED_TASK,EMAIL,ZIP_CD,ADDRESS1,ADDRESS2,CONVERT(IMAGE_PATH USING utf8) AS IMAGE_PATH,CREATED_DATE,UPDATED_DATE FROM sp_member WHERE 'A'='A' ORDER BY EMP_CD LIMIT ?,? 
+DEBUG http-nio-9090-exec-1 com.inswave.edu.dao.EduDao.selectListSpMember - ==> Parameters: 40(Integer), 10(String)
+DEBUG http-nio-9090-exec-1 com.inswave.edu.dao.EduDao.selectListSpMember - <==      Total: 10
+DEBUG http-nio-9090-exec-6 com.inswave.edu.dao.EduDao.selectSpMemberTotal - ==>  Preparing: SELECT count(EMP_CD) ROW_TOTAL FROM sp_member WHERE 'A'='A' 
+DEBUG http-nio-9090-exec-6 com.inswave.edu.dao.EduDao.selectSpMemberTotal - ==> Parameters: 
+DEBUG http-nio-9090-exec-6 com.inswave.edu.dao.EduDao.selectSpMemberTotal - <==      Total: 1
+DEBUG http-nio-9090-exec-6 com.inswave.edu.dao.EduDao.selectListSpMember - ==>  Preparing: SELECT EMP_CD,EMP_NM,GENDER_CD,JOIN_DATE,POSITION_CD,DUTY_CD,ROLE_CD,ASSIGNED_TASK,EMAIL,ZIP_CD,ADDRESS1,ADDRESS2,CONVERT(IMAGE_PATH USING utf8) AS IMAGE_PATH,CREATED_DATE,UPDATED_DATE FROM sp_member WHERE 'A'='A' ORDER BY EMP_CD LIMIT ?,? 
+DEBUG http-nio-9090-exec-6 com.inswave.edu.dao.EduDao.selectListSpMember - ==> Parameters: 30(Integer), 10(String)
+DEBUG http-nio-9090-exec-6 com.inswave.edu.dao.EduDao.selectListSpMember - <==      Total: 10
+DEBUG http-nio-9090-exec-9 com.inswave.edu.dao.EduDao.selectSpMemberTotal - ==>  Preparing: SELECT count(EMP_CD) ROW_TOTAL FROM sp_member WHERE 'A'='A' 
+DEBUG http-nio-9090-exec-9 com.inswave.edu.dao.EduDao.selectSpMemberTotal - ==> Parameters: 
+DEBUG http-nio-9090-exec-9 com.inswave.edu.dao.EduDao.selectSpMemberTotal - <==      Total: 1
+DEBUG http-nio-9090-exec-9 com.inswave.edu.dao.EduDao.selectListSpMember - ==>  Preparing: SELECT EMP_CD,EMP_NM,GENDER_CD,JOIN_DATE,POSITION_CD,DUTY_CD,ROLE_CD,ASSIGNED_TASK,EMAIL,ZIP_CD,ADDRESS1,ADDRESS2,CONVERT(IMAGE_PATH USING utf8) AS IMAGE_PATH,CREATED_DATE,UPDATED_DATE FROM sp_member WHERE 'A'='A' ORDER BY EMP_CD LIMIT ?,? 
+DEBUG http-nio-9090-exec-9 com.inswave.edu.dao.EduDao.selectListSpMember - ==> Parameters: 20(Integer), 10(String)
+DEBUG http-nio-9090-exec-9 com.inswave.edu.dao.EduDao.selectListSpMember - <==      Total: 10
+DEBUG http-nio-9090-exec-3 com.inswave.edu.dao.EduDao.selectSpMemberTotal - ==>  Preparing: SELECT count(EMP_CD) ROW_TOTAL FROM sp_member WHERE 'A'='A' 
+DEBUG http-nio-9090-exec-3 com.inswave.edu.dao.EduDao.selectSpMemberTotal - ==> Parameters: 
+DEBUG http-nio-9090-exec-3 com.inswave.edu.dao.EduDao.selectSpMemberTotal - <==      Total: 1
+DEBUG http-nio-9090-exec-3 com.inswave.edu.dao.EduDao.selectListSpMember - ==>  Preparing: SELECT EMP_CD,EMP_NM,GENDER_CD,JOIN_DATE,POSITION_CD,DUTY_CD,ROLE_CD,ASSIGNED_TASK,EMAIL,ZIP_CD,ADDRESS1,ADDRESS2,CONVERT(IMAGE_PATH USING utf8) AS IMAGE_PATH,CREATED_DATE,UPDATED_DATE FROM sp_member WHERE 'A'='A' ORDER BY EMP_CD LIMIT ?,? 
+DEBUG http-nio-9090-exec-3 com.inswave.edu.dao.EduDao.selectListSpMember - ==> Parameters: 10(Integer), 10(String)
+DEBUG http-nio-9090-exec-3 com.inswave.edu.dao.EduDao.selectListSpMember - <==      Total: 10
+DEBUG http-nio-9090-exec-7 com.inswave.edu.dao.EduDao.selectSpMemberTotal - ==>  Preparing: SELECT count(EMP_CD) ROW_TOTAL FROM sp_member WHERE 'A'='A' 
+DEBUG http-nio-9090-exec-7 com.inswave.edu.dao.EduDao.selectSpMemberTotal - ==> Parameters: 
+DEBUG http-nio-9090-exec-7 com.inswave.edu.dao.EduDao.selectSpMemberTotal - <==      Total: 1
+DEBUG http-nio-9090-exec-7 com.inswave.edu.dao.EduDao.selectListSpMember - ==>  Preparing: SELECT EMP_CD,EMP_NM,GENDER_CD,JOIN_DATE,POSITION_CD,DUTY_CD,ROLE_CD,ASSIGNED_TASK,EMAIL,ZIP_CD,ADDRESS1,ADDRESS2,CONVERT(IMAGE_PATH USING utf8) AS IMAGE_PATH,CREATED_DATE,UPDATED_DATE FROM sp_member WHERE 'A'='A' ORDER BY EMP_CD LIMIT ?,? 
+DEBUG http-nio-9090-exec-7 com.inswave.edu.dao.EduDao.selectListSpMember - ==> Parameters: 0(Integer), 10(String)
+DEBUG http-nio-9090-exec-7 com.inswave.edu.dao.EduDao.selectListSpMember - <==      Total: 10
+DEBUG http-nio-9090-exec-4 com.inswave.edu.dao.EduDao.selectCodeList - ==>  Preparing: select A.GRP_CD, A.COM_CD AS CODE_CD, A.CODE_NM from SP_CODE A, SP_CODE_GRP B where B.GRP_CD = A.GRP_CD and B.IS_USE = 'Y' and A.IS_USE = 'Y' and A.GRP_CD IN ( ? , ? , ? , ? ) order by A.GRP_CD, A.SORT_ORDER 
+DEBUG http-nio-9090-exec-4 com.inswave.edu.dao.EduDao.selectCodeList - ==> Parameters: 01(String), 02(String), 19(String), 101(String)
+DEBUG http-nio-9090-exec-4 com.inswave.edu.dao.EduDao.selectCodeList - <==      Total: 19
+DEBUG http-nio-9090-exec-8 com.inswave.edu.dao.EduDao.selectSpMemberTotal - ==>  Preparing: SELECT count(EMP_CD) ROW_TOTAL FROM sp_member WHERE 'A'='A' 
+DEBUG http-nio-9090-exec-8 com.inswave.edu.dao.EduDao.selectSpMemberTotal - ==> Parameters: 
+DEBUG http-nio-9090-exec-8 com.inswave.edu.dao.EduDao.selectSpMemberTotal - <==      Total: 1
+DEBUG http-nio-9090-exec-8 com.inswave.edu.dao.EduDao.selectListSpMember - ==>  Preparing: SELECT EMP_CD,EMP_NM,GENDER_CD,JOIN_DATE,POSITION_CD,DUTY_CD,ROLE_CD,ASSIGNED_TASK,EMAIL,ZIP_CD,ADDRESS1,ADDRESS2,CONVERT(IMAGE_PATH USING utf8) AS IMAGE_PATH,CREATED_DATE,UPDATED_DATE FROM sp_member WHERE 'A'='A' ORDER BY EMP_CD LIMIT ?,? 
+DEBUG http-nio-9090-exec-8 com.inswave.edu.dao.EduDao.selectListSpMember - ==> Parameters: 0(Integer), 10(String)
+DEBUG http-nio-9090-exec-8 com.inswave.edu.dao.EduDao.selectListSpMember - <==      Total: 10
+DEBUG http-nio-9090-exec-6 com.inswave.edu.dao.EduDao.selectListZipCodeByTown - ==>  Preparing: select ZIP_CD, ZIP_NM, BUILDING, FROM_NO from sp_zip_code where town like concat('%',?,'%'); 
+DEBUG http-nio-9090-exec-6 com.inswave.edu.dao.EduDao.selectListZipCodeByTown - ==> Parameters: 동탄대로(String)
+DEBUG http-nio-9090-exec-6 com.inswave.edu.dao.EduDao.selectListZipCodeByTown - <==      Total: 0
+DEBUG http-nio-9090-exec-3 com.inswave.edu.dao.EduDao.selectListZipCodeByTown - ==>  Preparing: select ZIP_CD, ZIP_NM, BUILDING, FROM_NO from sp_zip_code where town like concat('%',?,'%'); 
+DEBUG http-nio-9090-exec-3 com.inswave.edu.dao.EduDao.selectListZipCodeByTown - ==> Parameters: 영통동(String)
+DEBUG http-nio-9090-exec-3 com.inswave.edu.dao.EduDao.selectListZipCodeByTown - <==      Total: 25
+DEBUG http-nio-9090-exec-9 com.inswave.edu.dao.EduDao.selectListZipCodeByTown - ==>  Preparing: select ZIP_CD, ZIP_NM, BUILDING, FROM_NO from sp_zip_code where town like concat('%',?,'%'); 
+DEBUG http-nio-9090-exec-9 com.inswave.edu.dao.EduDao.selectListZipCodeByTown - ==> Parameters: 청계동(String)
+DEBUG http-nio-9090-exec-9 com.inswave.edu.dao.EduDao.selectListZipCodeByTown - <==      Total: 4
+DEBUG http-nio-9090-exec-4 com.inswave.edu.dao.EduDao.selectListZipCodeByTown - ==>  Preparing: select ZIP_CD, ZIP_NM, BUILDING, FROM_NO from sp_zip_code where town like concat('%',?,'%'); 
+DEBUG http-nio-9090-exec-4 com.inswave.edu.dao.EduDao.selectListZipCodeByTown - ==> Parameters: 삼가동(String)
+DEBUG http-nio-9090-exec-4 com.inswave.edu.dao.EduDao.selectListZipCodeByTown - <==      Total: 8

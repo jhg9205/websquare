@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+            <w2:dataCollection baseNode="map">
+            	<w2:dataMap baseNode="map" id="dataMap1" ev:onbeforemodelchange="scwin.dataMap1_onbeforemodelchange">
+            		<w2:keyInfo>
+            			<w2:key id="id" name="id" dataType="text"></w2:key>
+            			<w2:key id="type" name="type" dataType="text"></w2:key>
+            			<w2:key id="color" name="color" dataType="text"></w2:key>
+            			<w2:key id="shape" name="shape" dataType="text"></w2:key>
+            		</w2:keyInfo>
+            		<w2:data use="true">
+            			<id><![CDATA[1001]]></id>
+            			<type><![CDATA[Medical]]></type>
+            			<color><![CDATA[Red]]></color>
+            			<shape><![CDATA[Round]]></shape>
+            		</w2:data>
+            	</w2:dataMap>
+            </w2:dataCollection>
+            <w2:workflowCollection>
+            </w2:workflowCollection>
+        </xf:model>
+         <script type="text/javascript" lazy="false"><![CDATA[
+        
+	scwin.onpageload = function() {
+		
+	};
+	
+	scwin.onpageunload = function() {
+		
+	};
+	
+	
+	scwin.trigger1_onclick = function(e) {
+		dataMap1.set("type", "Tourism");
+	};
+	
+	scwin.dataMap1_onbeforemodelchange = function(info) {
+		if (info.newValue == "Leisure") {
+			alert(info.newValue + " cannot be used.");
+			return false;
+		} else {
+			alert("Key : " + info.key + "\n\nOldValue : " + info.oldValue + "\n\nNewValue : " + info.newValue);			
+		}
+	};
+	]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    	<xf:trigger type="button" style="width:280px;line-height:32px;padding:5px;background-color:#C0C0C0;font-size:15px;font-family:monospace;font-style:normal;font-weight:bolder;top:20px;text-align:left;margin: 100px;" id="trigger1" ev:onclick="scwin.trigger1_onclick">
+    		<xf:label><![CDATA[dataMap1.set();]]></xf:label>
+    	</xf:trigger>
+    </body>
+</html>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+            <w2:dataCollection baseNode="map">
+            </w2:dataCollection>
+            <w2:workflowCollection>
+            </w2:workflowCollection>
+        </xf:model>
+         <script type="text/javascript" lazy="false"><![CDATA[
+        
+	scwin.onpageload = function() {
+		
+	};
+	
+	scwin.onpageunload = function() {
+		
+	};
+	
+	
+	scwin.trigger1_onclick = function(e) {
+		var rowJSON = {
+		"Product Info" : {"Origin" : "Korea", "Manufacturer" : "Inswave", "Type" : "Software"},
+		"Region": "Seoul",
+		"Carrier" : true
+		};
+		
+		var dataObject = {
+		"type" : "json", 
+		"name" : "param",
+		"data" : rowJSON
+		};
+		
+		var obj = {
+			"dataObject" : dataObject
+		};
+		
+		wframe1.setSrc("src.xml", obj);
+		
+	};
+	]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    	<xf:trigger type="button"
+    		style="width:248px;height:39px;margin:50px;line-height:32px;padding:5px;background-color:#C0C0C0;font-size:15px;font-family:monospace;text-align:left;font-style:normal;font-weight:bolder;"
+    		id="trigger1" ev:onclick="scwin.trigger1_onclick">
+    		<xf:label><![CDATA[setSrc()]]></xf:label>
+    	</xf:trigger>
+    	<w2:wframe style="width: 500px;height: 300px;margin-left: 50px;border: solid black 1px;" id="wframe1"></w2:wframe>
+    </body>
+</html>

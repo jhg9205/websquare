@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+            <w2:dataCollection baseNode="map">
+            </w2:dataCollection>
+            <w2:workflowCollection>
+            </w2:workflowCollection>
+        </xf:model>
+         <script type="text/javascript" lazy="false"><![CDATA[
+        
+	scwin.onpageload = function() {
+		
+	};
+	
+	scwin.onpageunload = function() {
+		
+	};
+	
+	
+	scwin.select11_onselected = function() {
+		alert("onselected event occurred!");
+	};
+	]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    	<xf:select1 id="select11" chooseOption="" style="height: 30px;margin: 50px;width: 200px;" submenuSize="auto" allOption="" disabled="false"
+    		direction="auto" appearance="minimal" disabledClass="w2selectbox_disabled" ref="" ev:onselected="scwin.select11_onselected">
+    		<xf:choices>
+    			<xf:item>
+    				<xf:label><![CDATA[Afghanistan]]></xf:label>
+    				<xf:value><![CDATA[93]]></xf:value>
+    			</xf:item>
+    			<xf:item>
+    				<xf:label><![CDATA[Albania]]></xf:label>
+    				<xf:value><![CDATA[355]]></xf:value>
+    			</xf:item>
+    			<xf:item>
+    				<xf:label><![CDATA[Algeria]]></xf:label>
+    				<xf:value><![CDATA[213]]></xf:value>
+    			</xf:item>
+    			<xf:item>
+    				<xf:label><![CDATA[American Samoa]]></xf:label>
+    				<xf:value><![CDATA[1-684]]></xf:value>
+    			</xf:item>
+    			<xf:item>
+    				<xf:label><![CDATA[Andorra]]></xf:label>
+    				<xf:value><![CDATA[376]]></xf:value>
+    			</xf:item>
+    			<xf:item>
+    				<xf:label><![CDATA[Angola]]></xf:label>
+    				<xf:value><![CDATA[244]]></xf:value>
+    			</xf:item>
+    		</xf:choices>
+    	</xf:select1>
+    </body>
+</html>

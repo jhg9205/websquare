@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+            <w2:dataCollection baseNode="map">
+            </w2:dataCollection>
+            <w2:workflowCollection>
+            </w2:workflowCollection>
+        </xf:model>
+         <script type="text/javascript" lazy="false"><![CDATA[
+        
+	scwin.onpageload = function() {
+		
+	};
+	
+	scwin.onpageunload = function() {
+		
+	};
+	
+	
+	scwin.trigger1_onclick = function(e) {
+		var date = input1.getValue();
+		inputCalendar1.disableBeforeDate(date);
+	};
+	
+	scwin.trigger2_onclick = function(e) {
+		var date = input1.getValue();
+		inputCalendar1.disableAfterDate(date);
+	};
+	]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    	
+    	
+    	
+    <xf:group id="" style="margin-left: 100px;"><xf:input adjustMaxLength="false" style="width: 180px;display: block;padding: 10px;line-height:30px;font-size:15px;color: red;font-family:monospace;font-style:normal;font-weight:bolder;margin: 30px;margin-bottom: 0px;" id="input1"></xf:input><xf:trigger ev:onclick="scwin.trigger1_onclick" style="width: 200px;padding: 10px;line-height:32px;height:45px;background-color:#C0C0C0;font-size:15px;font-family:monospace;font-style:normal;font-weight:bolder;margin: 30px;" id="trigger1" type="button">
+    		<xf:label><![CDATA[disableBeforeDate()]]></xf:label>
+    	</xf:trigger><xf:trigger ev:onclick="scwin.trigger2_onclick" style="width: 200px;padding: 10px;line-height:32px;height:45px;background-color:#C0C0C0;font-size:15px;font-family:monospace;font-style:normal;font-weight:bolder;margin: 30px;" id="trigger2" type="button">
+    		<xf:label><![CDATA[disableAfterDate()]]></xf:label>
+    	</xf:trigger><w2:inputCalendar footerDiv="false" rightAlign="false" monthNamesForYearMonthType="1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12" focusOnDateSelect="false" style="width: 220px;height: 23px;display: block;margin-left: 30px;height:45px;" id="inputCalendar1" renderType="component" renderDiv="true" calendarValueType="yearMonthDate" monthNames="1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12" ioFormat="ddMMyyyy" yearSuffix="Y">
+    	</w2:inputCalendar></xf:group></body>
+</html>

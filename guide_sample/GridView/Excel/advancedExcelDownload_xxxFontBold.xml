@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:w2="http://www.inswave.com/websquare"
+	xmlns:xf="http://www.w3.org/2002/xforms">
+	<head>
+		<w2:type>DEFAULT</w2:type>
+		<w2:buildDate />
+		<xf:model>
+			<xf:instance>
+				<data xmlns="" />
+			</xf:instance>
+			<w2:dataCollection baseNode="map">
+				<w2:dataList baseNode="list" id="dataList1" repeatNode="map" saveRemovedData="true" style="">
+					<w2:columnInfo>
+						<w2:column dataType="text" id="col1" name="name1"></w2:column>
+						<w2:column dataType="text" id="col2" name="name2"></w2:column>
+						<w2:column dataType="text" id="col3" name="name3"></w2:column>
+						<w2:column dataType="text" id="col4" name="name4"></w2:column>
+						<w2:column dataType="text" id="col5" name="name5"></w2:column>
+						<w2:column dataType="text" id="col6" name="name6"></w2:column>
+					</w2:columnInfo>
+				</w2:dataList>
+			</w2:dataCollection>
+			<w2:workflowCollection>
+			</w2:workflowCollection>
+		</xf:model>
+		<script type="text/javascript" lazy="false"><![CDATA[
+	scwin.onpageload = function() {
+		var data = [];
+		var row = 10;
+		var col = 6;
+		for (var i = 0; i < row; i++) {
+			for (var j = 0; j < col; j++) {
+				var t = Math.floor(i / 5);
+				data.push(t * 100 + j * (t + 1));
+			}
+		}
+		dataList1.setData(data);
+	};
+
+	scwin.onpageunload = function() {
+	};
+
+	scwin.onpageunload = function() {
+
+	};
+
+	scwin.trigger1_onclick = function(e) {
+		var options = {
+			useSubTotal : true,
+			headerFontBold : true,
+			bodyFontBold : true,
+			//subTotalFontBold : true,
+			//footerFontBold : true
+		};
+		gridView1.advancedExcelDownload(options);	
+	};
+	]]></script>
+	</head>
+	<body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+		<xf:trigger type="button"
+			style="width:250px;height:30px;padding-left:5px;margin-left:100px;margin-top:20px;background-color:#C0C0C0;font-size:15px;font-family:monospace;font-style:normal;font-weight:bolder;text-align:left;"
+			id="trigger1" ev:onclick="scwin.trigger1_onclick">
+			<xf:label><![CDATA[advancedExcelDownload()]]></xf:label>
+		</xf:trigger>
+		<w2:gridView dataList="data:dataList1" fixedColumnWithHidden="true" id="gridView1" ignoreCellClick="false"
+			ignoreToggleOnDisabled="false" scrollByColumn="false" scrollByColumnAdaptive="false"
+			style="width: 600px;height: 200px;margin: 100px;margin-top: 20px;" useShiftKey="true" visibleRowNum="10" rowNumVisible="true">
+			<w2:header id="header1" style="">
+				<w2:row id="row1" style="">
+					<w2:column blockSelect="false" displayMode="label" id="column7" inputType="text" style="height:20px;" value="name1"
+						width="70">
+					</w2:column>
+					<w2:column blockSelect="false" displayMode="label" id="column1" inputType="text" style="height:20px;" value="name2"
+						width="70">
+					</w2:column>
+					<w2:column width="70" inputType="text" style="height:20px" id="column22" value="name3" displayMode="label"></w2:column>
+					<w2:column width="70" inputType="text" style="height:20px" id="column18" value="name4" displayMode="label"></w2:column>
+					<w2:column width="70" inputType="text" style="height:20px" id="column14" value="name5" displayMode="label"></w2:column>
+					<w2:column blockSelect="false" displayMode="label" id="column3" inputType="text" style="height:20px;" value="name6"
+						width="70">
+					</w2:column>
+				</w2:row>
+			</w2:header>
+			<w2:gBody id="gBody1" style="">
+				<w2:row id="row2" style="">
+					<w2:column blockSelect="false" displayMode="label" id="col1" inputType="text" style="height:20px" width="70"></w2:column>
+					<w2:column blockSelect="false" displayMode="label" id="col2" inputType="text" style="height:20px" width="70"></w2:column>
+					<w2:column width="70" inputType="text" style="height:20px" id="col3" value="" displayMode="label"></w2:column>
+					<w2:column width="70" inputType="text" style="height:20px" id="col4" value="" displayMode="label"></w2:column>
+					<w2:column width="70" inputType="text" style="height:20px" id="col5" value="" displayMode="label"></w2:column>
+					<w2:column blockSelect="false" displayMode="label" id="col6" inputType="text" style="height:20px" width="70"></w2:column>
+				</w2:row>
+			</w2:gBody>
+			<w2:subTotal id="subTotal1" style="" targetColumnID="col1">
+				<w2:row id="row4" style="">
+					<w2:column blockSelect="false" displayMode="label" expression="sum('col1')" id="column13" inputType="expression"
+						style="height:20px" width="70">
+					</w2:column>
+					<w2:column blockSelect="false" displayMode="label" id="column12" inputType="expression" style="height:20px" width="70"
+						expression="sum('col2')"></w2:column>
+					<w2:column width="70" inputType="expression" style="height:20px" id="column24" value="" displayMode="label"
+						expression="sum('col3')"></w2:column>
+					<w2:column width="70" inputType="expression" style="height:20px" id="column20" value="" displayMode="label"
+						expression="sum('col4')"></w2:column>
+					<w2:column width="70" inputType="expression" style="height:20px" id="column16" value="" displayMode="label"
+						expression="sum('col5')"></w2:column>
+					<w2:column blockSelect="false" displayMode="label" id="column11" inputType="expression" style="height:20px" width="70"
+						expression="sum('col6')"></w2:column>
+				</w2:row>
+			</w2:subTotal>
+			<w2:footer id="footer1" style="">
+				<w2:row id="row3" style="">
+					<w2:column blockSelect="false" displayMode="label" expression="sum('col1')" id="column10" inputType="expression"
+						style="height:20px" width="70">
+					</w2:column>
+					<w2:column blockSelect="false" displayMode="label" id="column9" inputType="expression" style="height:20px" width="70"
+						expression="sum('col2')"></w2:column>
+					<w2:column width="70" inputType="expression" style="height:20px" id="column25" value="" displayMode="label"
+						expression="sum('col3')"></w2:column>
+					<w2:column width="70" inputType="expression" style="height:20px" id="column21" value="" displayMode="label"
+						expression="sum('col4')"></w2:column>
+					<w2:column width="70" inputType="expression" style="height:20px" id="column17" value="" displayMode="label"
+						expression="sum('col5')"></w2:column>
+					<w2:column blockSelect="false" displayMode="label" id="column8" inputType="expression" style="height:20px" width="70"
+						expression="sum('col6')"></w2:column>
+				</w2:row>
+			</w2:footer>
+		</w2:gridView>
+	</body>
+</html>

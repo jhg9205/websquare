@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+        <w2:type>COMPONENT</w2:type>
+        <w2:buildDate/>
+        <w2:MSA/>
+        <xf:model>
+            <w2:dataCollection baseNode="map"/>
+            <w2:workflowCollection/>
+        </xf:model>
+        <w2:layoutInfo/>
+        <w2:publicInfo method=""/>
+        <script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function() {
+	var i;
+        for (i=0; i<10; i++) {
+	        var num = JSON.stringify(i+1);  
+	        var title = "windowTitle_" + num;
+	        var windowId = num;
+	        var windowName = "window_" + num;
+	        windowContainer1.createWindow( title , "" , "" , windowName , windowId ,"newWindow");
+	        windowContainer1.setArrangeWindows("cascade");
+	        }   
+};
+]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload">
+    	<w2:windowContainer sequentialArrangeColNum="2" verticalArrangeNum="2" controlIconPosition="left" windowMaximizeAll="false" id="windowContainer1"
+    		useStatusMsg="true" hideTitleOnMaximize="false" spaInitCount="0" nameLayerRearrange="false" useNameContainer="false"
+    		useControlIconTitle="false" tooltipDisplay="true" style="position: relative;height: 400px;width: 640px;margin: 50px;border: gray solid 1px;" sequentialArrangeRowNum="2"
+    		fixArrangeFullScreen="false" useFixButton="false" windowAutoResize="false" useCloseButton="false"
+    		stopMinimizeOnNameLayer="false" toolbarPosition="bottom" stopToggleOnLast="false" horizontalArrangeNum="2" useCustomMsg="false"
+    		tooltipGroupClass="false" windowTooltipDisplay="true" windowMaxNum="10" changeActiveWindow="true">
+    		<w2:windowToolbar>
+    			<w2:controlIconLayer>
+    				<w2:controlIcon></w2:controlIcon>
+    				<w2:controlIcon></w2:controlIcon>
+    				<w2:controlIcon></w2:controlIcon>
+    				<w2:controlIcon></w2:controlIcon>
+    				<w2:controlIcon></w2:controlIcon>
+    			</w2:controlIconLayer>
+    			<w2:nameLayer></w2:nameLayer>
+    			<w2:selectedNameLayer></w2:selectedNameLayer>
+    		</w2:windowToolbar>
+    	</w2:windowContainer>
+    </body>
+</html>

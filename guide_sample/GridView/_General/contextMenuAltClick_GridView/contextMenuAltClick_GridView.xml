@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+        	<xf:instance>
+        		<data xmlns="" />
+        	</xf:instance>
+        	<w2:dataCollection baseNode="map">
+        		<w2:dataList baseNode="list" id="dataList1" repeatNode="map" saveRemovedData="true" style="">
+        			<w2:columnInfo>
+        				<w2:column dataType="text" id="Depth" name="Depth"></w2:column>
+        				<w2:column dataType="text" id="Region" name="Region"></w2:column>
+        				<w2:column dataType="text" id="Population" name="Population" valueType=""></w2:column>
+        				<w2:column dataType="text" id="Area" name="Area"></w2:column>
+        				<w2:column dataType="text" id="GDP" name="GDP"></w2:column>
+        				<w2:column dataType="text" id="Literacy" name="Literacy"></w2:column>
+        				<w2:column dataType="text" id="Phones" name="Phones"></w2:column>
+        				<w2:column dataType="text" id="Birthrate" name="Birthrate"></w2:column>
+        				<w2:column dataType="text" id="Deathrate" name="Deathrate"></w2:column>
+        			</w2:columnInfo>
+        		</w2:dataList>
+        	</w2:dataCollection>
+        	<w2:workflowCollection></w2:workflowCollection>
+        	<xf:submission id="submission1" ref="" target="data:json,dataList1" action="population.json" method="post"
+        		mediatype="application/json" encoding="UTF-8" instance="" replace="" errorHandler="" customHandler="" mode="asynchronous"
+        		processMsg="" ev:submit="" ev:submitdone="" ev:submiterror="" abortTrigger="">
+        	</xf:submission>
+        </xf:model>
+        <script type="text/javascript" lazy="false"><![CDATA[
+        
+	scwin.onpageload = function() {
+		$p.executeSubmission("submission1");
+		
+	};
+	
+	scwin.onpageunload = function() {
+		
+	};
+	
+	]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    	<w2:textbox id="" label="contextMenu &amp; contextMenuAltClick" style="width:354px;text-align:center;line-height:32px;height:32px;margin:20px;margin-bottom:30px;background-color:#C0C0C0;font-size:17px;font-family:monospace;font-style:normal;font-weight:bolder;">
+    	</w2:textbox><w2:gridView id="" style="width: 95%;margin: 20px;" scrollByColumn="false" defaultCellHeight="20"
+    		scrollByColumnAdaptive="false" dataList="data:dataList1" autoFit="" rowNumVisible="true" visibleRowNum="15" visibleRowNumFix="true" filterBoxvisibleRowNum="0" contextMenu="true" contextMenuAltClick="true">
+    		<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
+    		<w2:header style="" id="header1">
+    			<w2:row style="" id="row1">
+    				<w2:column width="70" id="column19" value="Depth"></w2:column>
+    				<w2:column width="70" id="column20" value="Region"></w2:column>
+    				<w2:column width="70" id="column21" value="Population"></w2:column>
+    				<w2:column width="70" id="column22" value="Area"></w2:column>
+    				<w2:column width="70" id="column23" value="GDP"></w2:column>
+    				<w2:column width="70" id="column24" value="Literacy"></w2:column>
+    				<w2:column width="70" id="column25" value="Phones"></w2:column>
+    				<w2:column width="70" id="column26" value="Birthrate"></w2:column>
+    				<w2:column width="70" id="column27" value="Deathrate"></w2:column>
+    			</w2:row>
+    		</w2:header>
+    		<w2:gBody style="" id="gBody1">
+    			<w2:row style="" id="row2">
+    				<w2:column width="70" id="Depth"></w2:column>
+    				<w2:column width="70" id="Region" inputType="drilldown" showDepth="3" depthColumn="Depth" depthType="line" style="text-align: left;"></w2:column>
+    				<w2:column width="70" id="Population"></w2:column>
+    				<w2:column width="70" id="Area"></w2:column>
+    				<w2:column width="70" id="GDP"></w2:column>
+    				<w2:column width="70" id="Literacy"></w2:column>
+    				<w2:column width="70" id="Phones"></w2:column>
+    				<w2:column width="70" id="Birthrate"></w2:column>
+    				<w2:column width="70" id="Deathrate"></w2:column>
+    			</w2:row>
+    		</w2:gBody>
+    	</w2:gridView>
+    	
+    </body>
+</html>

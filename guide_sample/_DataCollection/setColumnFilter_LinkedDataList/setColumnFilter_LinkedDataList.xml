@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+        	<xf:instance>
+        		<data xmlns="" />
+        	</xf:instance>
+        	<w2:dataCollection baseNode="map">
+        		<w2:linkedDataList bind="dataList1" id="linkedDataList1">
+        			<w2:condition type="filter"><![CDATA[Status=="Single"]]></w2:condition>
+        			<w2:condition type="sort"><![CDATA[]]></w2:condition>
+        		</w2:linkedDataList>
+        		<w2:dataList baseNode="list" ev:oncelldatachange="scwin.dataList1_oncelldatachange" id="dataList1" repeatNode="map"
+        			saveRemovedData="true" style="">
+        			<w2:columnInfo>
+        				<w2:column dataType="text" id="Change" ignoreStatus="true" name="Change"></w2:column>
+        				<w2:column dataType="text" id="Status" name="Status"></w2:column>
+        				<w2:column dataType="text" id="Date" name="Date"></w2:column>
+        				<w2:column dataType="text" id="Expense" name="Expense"></w2:column>
+        				<w2:column dataType="text" id="Income" name="Income"></w2:column>
+        				<w2:column dataType="text" id="Hobby" name="Hobby"></w2:column>
+        				<w2:column dataType="text" id="Region" name="Region"></w2:column>
+        				<w2:column dataType="text" id="Frequency" name="Frequency"></w2:column>
+        				<w2:column dataType="text" id="ID" name="ID"></w2:column>
+        				<w2:column dataType="text" id="Age" name="Age"></w2:column>
+        			</w2:columnInfo>
+        		</w2:dataList>
+        	</w2:dataCollection>
+        	<w2:workflowCollection></w2:workflowCollection>
+        	<xf:submission id="submission1" ref="" target="data:json,dataList1" action="data.json" method="post"
+        		mediatype="application/json" encoding="UTF-8" instance="" replace="" errorHandler="" customHandler="" mode="asynchronous"
+        		processMsg="" ev:submit="" ev:submitdone="" ev:submiterror="" abortTrigger="">
+        	</xf:submission>
+        </xf:model>
+        <script type="text/javascript" lazy="false"><![CDATA[
+        
+	scwin.onpageload = function() {
+    	$p.executeSubmission("submission1");    	
+    };
+	
+	scwin.onpageunload = function() {
+		
+	};
+	
+	
+	scwin.trigger1_onclick = function(e) {
+		linkedDataList1.setColumnFilter({
+			type: 'row',
+			colIndex: 'Hobby',
+			key: 'Movie',
+			condition: 'and'
+		});		
+	};
+	]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    	<xf:trigger type="button"
+    		style="width:188px;height:44px;margin-left:100px;margin-top: 20px;margin-bottom: 20px;font-family:sans-serif;font-style:italic;font-weight:bolder;font-size:20px;"
+    		id="trigger1" ev:onclick="scwin.trigger1_onclick" rightOnImageClass="">
+    		<xf:label><![CDATA[setColumnFilter()]]></xf:label>
+    	</xf:trigger>
+
+    	<xf:group tagname="table" style="margin-left:100px;width: 400px;border-style:hidden;" id="" class="w2tb">
+    		<w2:attributes>
+    			<w2:summary></w2:summary>
+    		</w2:attributes>
+    		<xf:group tagname="caption"></xf:group>
+    		<xf:group tagname="colgroup">
+    			<xf:group tagname="col" style="width:25.00%;"></xf:group>
+    			<xf:group tagname="col" style="width:25.00%;"></xf:group>
+    		</xf:group>
+    		<xf:group tagname="tr" style=""><xf:group tagname="td" class="w2tb_td" style=";text-align:;border-style:hidden;font-size:20px;font-weight:bolder;">DataList<w2:attributes></w2:attributes></xf:group><xf:group tagname="td" class="w2tb_td" style=";text-align:;font-size:20px;font-weight:bolder;">LinkedDataList&amp;nbsp;(Status==&quot;Single&quot;)<w2:attributes></w2:attributes></xf:group></xf:group><xf:group tagname="tr">
+    			<xf:group tagname="td" style=";text-align:;" class="w2tb_td">
+    				<xf:select1 appearance="full" cols="" id="" itemTagname="" name="" nameScope="" nextTabID="" ref="" renderType=""
+    					rows="" selectedIndex="-1"
+    					style="width: 200px;height:400px;margin-left: 100px;line-height:25px;max-height:20px;display:block;margin-left: 0px" tagname=""
+    					title="" useRadioTitle="">
+    					<xf:choices>
+    						<xf:itemset nodeset="data:dataList1">
+    							<xf:label ref="ID"></xf:label>
+    							<xf:value ref="Age"></xf:value>
+    						</xf:itemset>
+    					</xf:choices>
+    				</xf:select1>
+    			</xf:group>
+    			<xf:group tagname="td" style=";border-style:hidden;" class="w2tb_td">
+    				<xf:select1 id="" selectedIndex="-1" appearance="full"
+    					style="width: 200px;height:400px;margin-left: 100px;line-height:25px;max-height:20px;display:block;margin-left: 0px;" cols=""
+    					rows="" ref="">
+    					<xf:choices>
+    						<xf:itemset nodeset="data:linkedDataList1">
+    							<xf:label ref="ID"></xf:label>
+    							<xf:value ref="Age"></xf:value>
+    						</xf:itemset>
+    					</xf:choices>
+    				</xf:select1>
+    			</xf:group>
+    		</xf:group>
+    	</xf:group>
+    </body>
+</html>

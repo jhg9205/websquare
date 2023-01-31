@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+            <w2:dataCollection baseNode="map">
+            </w2:dataCollection>
+            <w2:workflowCollection>
+            </w2:workflowCollection>
+        </xf:model>
+         <script type="text/javascript" lazy="false"><![CDATA[
+        
+	scwin.onpageload = function() {
+		
+	};
+	
+	scwin.onpageunload = function() {
+		
+	};
+	
+	
+	scwin.trigger1_onclick = function(e) {
+		var winObj = {
+			title: "600x300",
+			src: "window_src.xml",
+			windowTitle: "600x300_Title",
+			windowId: "600x300_Id",
+			frameMode: "wframe",
+			defaultWidth: "600",
+			defaultHeight: "300"
+			}
+		windowContainer1.createWindow(winObj);
+	};
+	
+	scwin.trigger2_onclick = function(e) {
+		var winObj = {
+			title: "200x200",
+			src: "window_src.xml",
+			windowTitle: "200x200_Title",
+			windowId: "200x200_Id",
+			frameMode: "wframe",
+			defaultWidth: "200",
+			defaultHeight: "200"
+			}
+		windowContainer1.createWindow(winObj);		
+	};
+	]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    	<xf:trigger type="button"
+    		style="padding: 10px;line-height:32px;height:45px;width: 250px;background-color:#C0C0C0;font-size:15px;font-family:monospace;font-style:normal;font-weight:bolder;margin: 50px;margin-bottom: 0px;text-align: left;"
+    		id="trigger1" ev:onclick="scwin.trigger1_onclick">
+    		<xf:label><![CDATA[createWindow() - 600x300]]></xf:label>
+    	</xf:trigger>
+    	<xf:trigger type="button" style="padding: 10px;line-height:32px;height:45px;width: 250px;background-color:#C0C0C0;font-size:15px;font-family:monospace;font-style:normal;font-weight:bolder;margin: 50px;margin-bottom: 0px;text-align: left;" id="trigger2" ev:onclick="scwin.trigger2_onclick">
+    		<xf:label><![CDATA[createWindow() - 200X200]]></xf:label>
+    	</xf:trigger>
+    	<w2:windowContainer autoArrange="true" controlIconPosition="allright" fixArrangeFullScreen="false" hideTitleOnMaximize="false"
+    		horizontalArrangeNum="2" id="windowContainer1" sequentialArrangeColNum="2" sequentialArrangeRowNum="2" spaInitCount="0"
+    		stopMinimizeOnNameLayer="false" stopToggleOnLast="false"
+    		style="position: relative;height: 70%;width: 80%;margin: 50px;border: gray solid 1px;" toolbarPosition="top" tooltipDisplay="true"
+    		tooltipGroupClass="false" useCloseButton="false" useControlIconTitle="true" useCustomMsg="false" useFixButton="false"
+    		useNameContainer="true" useStatusMsg="true" useWindowScrollButton="true" verticalArrangeNum="2" windowAutoResize="false"
+    		windowMaxNum="20" windowMaximizeAll="true" windowScrollVisibleRowNum="" windowTooltipDisplay="true" defaultHeight=""
+    		defaultWidth="">
+    		<w2:windowToolbar>
+    			<w2:controlIconLayer>
+    				<w2:controlIcon></w2:controlIcon>
+    				<w2:controlIcon></w2:controlIcon>
+    				<w2:controlIcon></w2:controlIcon>
+    				<w2:controlIcon></w2:controlIcon>
+    				<w2:controlIcon></w2:controlIcon>
+    			</w2:controlIconLayer>
+    			<w2:nameLayer></w2:nameLayer>
+    			<w2:selectedNameLayer></w2:selectedNameLayer>
+    		</w2:windowToolbar>
+    	</w2:windowContainer>
+    </body>
+</html>

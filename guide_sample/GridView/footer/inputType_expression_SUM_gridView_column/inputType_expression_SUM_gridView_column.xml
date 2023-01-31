@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+            <w2:dataCollection baseNode="map">
+            	<w2:dataList baseNode="list" repeatNode="map" id="dataList1" saveRemovedData="true">
+            		<w2:columnInfo>
+            			<w2:column id="value" name="value" dataType="text"></w2:column>
+            			<w2:column id="col2" name="name2" dataType="text"></w2:column>
+            		</w2:columnInfo>
+            		<w2:data use="true">
+            			<w2:row>
+            				<value><![CDATA[1856.2]]></value>
+
+            				<col2><![CDATA[]]></col2>
+            			</w2:row>
+            			<w2:row>
+            				<value><![CDATA[1036546.25]]></value>
+
+            				<col2><![CDATA[]]></col2>
+            			</w2:row>
+            			<w2:row>
+            				<value><![CDATA[-1095872]]></value>
+
+            				<col2><![CDATA[]]></col2>
+            			</w2:row>
+            			<w2:row>
+            				<value><![CDATA[57469.55]]></value>
+            				<col2><![CDATA[]]></col2>
+            			</w2:row>
+            			<w2:row>
+            				<value><![CDATA[0]]></value>
+            				<col2><![CDATA[]]></col2>
+            			</w2:row>
+            			<w2:row>
+            				<value><![CDATA[50912.6]]></value>
+            				<col2><![CDATA[]]></col2>
+            			</w2:row>
+            			<w2:row>
+            				<value><![CDATA[201.2]]></value>
+            				<col2><![CDATA[]]></col2>
+            			</w2:row>
+            			<w2:row>
+            				<value><![CDATA[440]]></value>
+            				<col2><![CDATA[]]></col2>
+            			</w2:row>
+            			<w2:row>
+            				<value><![CDATA[5.9]]></value>
+            				<col2><![CDATA[]]></col2>
+            			</w2:row>
+            			<w2:row>
+            				<value><![CDATA[10]]></value>
+            				<col2><![CDATA[]]></col2>
+            			</w2:row>
+            			<w2:row>
+            				<value><![CDATA[2025.71]]></value>
+            				<col2><![CDATA[]]></col2>
+            			</w2:row>
+            			<w2:row>
+            				<value><![CDATA[5249.5]]></value>
+            				<col2><![CDATA[]]></col2>
+            			</w2:row>
+            			<w2:row>
+            				<value><![CDATA[547.9]]></value>
+            				<col2><![CDATA[]]></col2>
+            			</w2:row>
+            			<w2:row>
+            				<value><![CDATA[45.5]]></value>
+            				<col2><![CDATA[]]></col2>
+            			</w2:row>
+            			<w2:row>
+            				<value><![CDATA[660.59]]></value>
+            				<col2><![CDATA[]]></col2>
+            			</w2:row>
+            			<w2:row>
+            				<value><![CDATA[-2629.35]]></value>
+            				<col2><![CDATA[]]></col2>
+            			</w2:row>
+            			<w2:row>
+            				<value><![CDATA[-57469.55]]></value>
+            				<col2><![CDATA[]]></col2>
+            			</w2:row>
+            			<w2:row>
+            				<value><![CDATA[0]]></value>
+            				<col2><![CDATA[]]></col2>
+            			</w2:row>
+            		</w2:data>
+            	</w2:dataList>
+            	<w2:dataList baseNode="list" repeatNode="map" id="dataList2" saveRemovedData="true">
+            		<w2:columnInfo>
+            			<w2:column id="target" name="target" dataType="text"></w2:column>
+            		</w2:columnInfo>
+            		<w2:data use="true">
+            			<w2:row>
+            				<target><![CDATA[]]></target>
+            			</w2:row>
+            			<w2:row>
+            				<target><![CDATA[]]></target>
+            			</w2:row>
+            			<w2:row>
+            				<target><![CDATA[]]></target>
+            			</w2:row>
+            			<w2:row>
+            				<target><![CDATA[]]></target>
+            			</w2:row>
+            			<w2:row>
+            				<target><![CDATA[]]></target>
+            			</w2:row>
+            			<w2:row>
+            				<target><![CDATA[]]></target>
+            			</w2:row>
+            			<w2:row>
+            				<target><![CDATA[]]></target>
+            			</w2:row>
+            			<w2:row>
+            				<target><![CDATA[]]></target>
+            			</w2:row>
+            			<w2:row>
+            				<target><![CDATA[]]></target>
+            			</w2:row>
+            			<w2:row>
+            				<target><![CDATA[]]></target>
+            			</w2:row>
+            			<w2:row>
+            				<target><![CDATA[]]></target>
+            			</w2:row>
+            			<w2:row>
+            				<target><![CDATA[]]></target>
+            			</w2:row>
+            			<w2:row>
+            				<target><![CDATA[]]></target>
+            			</w2:row>
+            			<w2:row>
+            				<target><![CDATA[]]></target>
+            			</w2:row>
+            			<w2:row>
+            				<target><![CDATA[]]></target>
+            			</w2:row>
+            			<w2:row>
+            				<target><![CDATA[]]></target>
+            			</w2:row>
+            			<w2:row>
+            				<target><![CDATA[]]></target>
+            			</w2:row>
+            			<w2:row>
+            				<target><![CDATA[]]></target>
+            			</w2:row>
+            		</w2:data>
+            	</w2:dataList>
+            </w2:dataCollection>
+            <w2:workflowCollection>
+            </w2:workflowCollection>
+        </xf:model>
+         <script type="text/javascript" lazy="false"><![CDATA[
+        
+	scwin.onpageload = function() {
+		
+	};
+	
+	scwin.onpageunload = function() {
+		
+	};
+	
+	
+	scwin.trigger1_onclick = function(e) {
+		var count = dataList1.getRowCount();
+		var arr =[];
+        	for(var i=0;i<count;i++) {
+	        	floating = dataList1.getCellData(i, "value");
+	        	target = (floating * 100);
+	        	arr[i] = target;
+        	}
+        dataList2.setData(arr, false, ["target"]);
+	};
+	]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    	<xf:group tagname="table" style="width:80%;margin: 50px;margin-top: 20px;" id="" class="w2tb">
+    		<w2:attributes>
+    			<w2:summary></w2:summary>
+    		</w2:attributes>
+    		<xf:group tagname="caption"></xf:group>
+    		<xf:group tagname="colgroup">
+    			<xf:group tagname="col" style="width:40%;"></xf:group>
+    			<xf:group tagname="col" style="width:20%;"></xf:group>
+    			<xf:group tagname="col" style="width:40%;"></xf:group>
+    		</xf:group>
+    		<xf:group tagname="tr" style="">
+    			<xf:group tagname="th" style=";font-size:20px;font-size-adjust:0;font-weight:bolder;background-color:#C0C0C0;" class="w2tb_th">Floating&amp;nbsp;Point&amp;nbsp;Numbers<w2:attributes>
+    					<w2:scope>row</w2:scope>
+    				</w2:attributes></xf:group>
+    			<xf:group tagname="td" style=";font-weight:bolder;font-family:cursive;background-color:#C0C0C0;" class="w2tb_td"></xf:group>
+    			<xf:group tagname="th" style="font-size:20px;font-size-adjust:0;font-weight:bolder;background-color:#C0C0C0;" class="w2tb_th">Integers<w2:attributes>
+    					<w2:scope>col</w2:scope>
+    				</w2:attributes></xf:group>
+    		</xf:group>
+    		<xf:group tagname="tr">
+    			<xf:group tagname="th" style="text-align: center;background-color:#FFFFFF;border-right-color:;" class="w2tb_th">
+    				<w2:attributes>
+    					<w2:scope>row</w2:scope>
+    				</w2:attributes>
+    				<w2:gridView autoFit="allColumn" dataList="data:dataList1" defaultCellHeight="20" filterBoxvisibleRowNum="" id=""
+    					scrollByColumn="false" scrollByColumnAdaptive="false" style="width: 80%;height: 220px;margin: 30px;" visibleRowNum="25">
+    					<w2:caption id="caption1" style="" value="this is a grid caption."></w2:caption>
+    					<w2:header id="header1" style="">
+    						<w2:row id="row1" style="">
+    							<w2:column blockSelect="false" displayMode="label" id="column1" inputType="text" removeBorderStyle="false"
+    								style="height:30px;font-size:20px;font-weight:bolder;font-family:monospace;color:blue;" value="value" width="70">
+    							</w2:column>
+    						</w2:row>
+    					</w2:header>
+    					<w2:gBody id="gBody1" style="">
+    						<w2:row id="row2" style="">
+    							<w2:column blockSelect="false" dataType="" displayMode="label" id="value" inputType=""
+    								removeBorderStyle="false" style="height:20px;text-align: right;" value="" width="70">
+    							</w2:column>
+    						</w2:row>
+    					</w2:gBody>
+    					<w2:footer id="footer1" style="">
+    						<w2:row id="row3" style="">
+    							<w2:column blockSelect="false" dataType="" displayMode="label" expression='SUM("value")' id="column3"
+    								inputType="expression" removeBorderStyle="false" style="height:40px;font-size:40px;font-style:italic;color:red;font-weight:bolder;" value="" width="70">
+    							</w2:column>
+    						</w2:row>
+    					</w2:footer>
+    				</w2:gridView>
+    			</xf:group>
+    			<xf:group tagname="td" style="text-align: center;border-right-color:;border-left-color:;" class="w2tb_td">
+    				<xf:trigger type="button" style="width:140px;height:45px;font-size:20px;font-style:italic;font-weight:bolder;" id="trigger1" ev:onclick="scwin.trigger1_onclick">
+    					<xf:label><![CDATA[X 10 >>>]]></xf:label>
+    				</xf:trigger>
+    			</xf:group>
+    			<xf:group tagname="th" style="text-align: center;background-color:#FFFFFF;" class="w2tb_th">
+    				<w2:attributes>
+    					<w2:scope>col</w2:scope>
+    				</w2:attributes>
+    				<w2:gridView autoFit="allColumn" dataList="data:dataList2" defaultCellHeight="20" filterBoxvisibleRowNum="" id=""
+    					scrollByColumn="false" scrollByColumnAdaptive="false" style="width: 80%;height: 220px;margin: 30px;" visibleRowNum="25">
+    					<w2:caption id="caption1" style="" value="this is a grid caption."></w2:caption>
+    					<w2:header id="header1" style="">
+    						<w2:row id="row1" style="">
+    							<w2:column blockSelect="false" displayMode="label" id="column1" inputType="text" removeBorderStyle="false"
+    								style="height:30px;font-size:20px;font-weight:bolder;font-family:monospace;color:blue;" value="value X 100" width="70">
+    							</w2:column>
+    						</w2:row>
+    					</w2:header>
+    					<w2:gBody id="gBody1" style="">
+    						<w2:row id="row2" style="">
+    							<w2:column blockSelect="false" dataType="" displayMode="label" id="target" inputType="text"
+    								removeBorderStyle="false" style="height:20px;text-align: right;" value="" width="70">
+    							</w2:column>
+    						</w2:row>
+    					</w2:gBody>
+    					<w2:footer id="footer1" style="">
+    						<w2:row id="row3" style="">
+    							<w2:column blockSelect="false" dataType="" displayMode="label" expression='SUM("target")' id="column3"
+    								inputType="expression" removeBorderStyle="false" style="height:40px;font-size:40px;font-style:italic;color:red;font-weight:bolder;" value="" width="70">
+    							</w2:column>
+    						</w2:row>
+    					</w2:footer>
+    				</w2:gridView>
+    			</xf:group>
+    		</xf:group>
+    	</xf:group>
+    </body>
+</html>

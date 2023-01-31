@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+            <w2:dataCollection baseNode="map">
+            	<w2:dataList baseNode="list" repeatNode="map" id="dataList1_test" saveRemovedData="true">
+            		<w2:columnInfo>
+            			<w2:column id="CNT" name="Country" dataType="text"></w2:column>
+            			<w2:column id="CAP" name="Capital" dataType="text"></w2:column>
+            			<w2:column id="CONT" name="Continent" dataType="text"></w2:column>
+            		</w2:columnInfo>
+            		<w2:data use="true">
+            			<w2:row>
+            				<CNT><![CDATA[Korea]]></CNT>
+            				<CAP><![CDATA[Seoul]]></CAP>
+            				<CONT><![CDATA[Asia]]></CONT>
+            			</w2:row>
+            			<w2:row>
+            				<CNT><![CDATA[Japan]]></CNT>
+            				<CAP><![CDATA[Tokyo]]></CAP>
+            				<CONT><![CDATA[Asia]]></CONT>
+            			</w2:row>
+            			<w2:row>
+            				<CNT><![CDATA[China]]></CNT>
+            				<CAP><![CDATA[Beijing]]></CAP>
+            				<CONT><![CDATA[Asia]]></CONT>
+            			</w2:row>
+            			<w2:row>
+            				<CNT><![CDATA[France]]></CNT>
+            				<CAP><![CDATA[Bangkok]]></CAP>
+            				<CONT><![CDATA[Europe]]></CONT>
+            			</w2:row>
+            			<w2:row>
+            				<CNT><![CDATA[Norway]]></CNT>
+            				<CAP><![CDATA[Oslo]]></CAP>
+            				<CONT><![CDATA[Europe]]></CONT>
+            			</w2:row>
+            			<w2:row>
+            				<CNT><![CDATA[Spain]]></CNT>
+            				<CAP><![CDATA[Madrid]]></CAP>
+            				<CONT><![CDATA[Europe]]></CONT>
+            			</w2:row>
+            			<w2:row>
+            				<CNT><![CDATA[Canada]]></CNT>
+            				<CAP><![CDATA[Ottawa]]></CAP>
+            				<CONT><![CDATA[America]]></CONT>
+            			</w2:row>
+            			<w2:row>
+            				<CNT><![CDATA[Egypt]]></CNT>
+            				<CAP><![CDATA[Cairo]]></CAP>
+            				<CONT><![CDATA[Africa]]></CONT>
+            			</w2:row>
+            			<w2:row>
+            				<CNT><![CDATA[Kenya]]></CNT>
+            				<CAP><![CDATA[Nairobi]]></CAP>
+            				<CONT><![CDATA[Africa]]></CONT>
+            			</w2:row>
+            			<w2:row>
+            				<CNT><![CDATA[Thailand]]></CNT>
+            				<CAP><![CDATA[Bangkok]]></CAP>
+            				<CONT><![CDATA[Asia]]></CONT>
+            			</w2:row>
+            		</w2:data>
+            	</w2:dataList>
+            	<w2:dataMap baseNode="map" id="dataMap1">
+            		<w2:keyInfo>
+            			<w2:key id="CNT" name="Country" dataType="text"></w2:key>
+            			<w2:key id="CAP" name="Capital" dataType="text"></w2:key>
+            			<w2:key id="CONT" name="Continent" dataType="text"></w2:key>
+            		</w2:keyInfo>
+            		<w2:data use="true">
+            			<Canada><![CDATA[ ]]></Canada>
+            			<Canada><![CDATA[ ]]></Canada>
+            			<CNT><![CDATA[Canada]]></CNT>
+            			<CAP><![CDATA[Ottawa]]></CAP>
+            			<CONT><![CDATA[America]]></CONT>
+            		</w2:data>
+            	</w2:dataMap>
+            	<w2:linkedDataList bind="dataList1_test" id="linkedDataList1_test">
+            		<w2:condition type="filter"><![CDATA[CONT=="Asia"]]></w2:condition>
+            		<w2:condition type="sort"><![CDATA[]]></w2:condition>
+            	</w2:linkedDataList>
+            </w2:dataCollection>
+            <w2:workflowCollection>
+            </w2:workflowCollection>
+        </xf:model>
+         <script type="text/javascript" lazy="false"><![CDATA[
+        
+	scwin.onpageload = function() {
+		
+	};
+	
+	scwin.onpageunload = function() {
+		
+	};
+	
+	]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload"></body>
+</html>
