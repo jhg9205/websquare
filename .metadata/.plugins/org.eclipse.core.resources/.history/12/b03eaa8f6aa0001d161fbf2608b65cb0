@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+        	<xf:instance>
+        		<data xmlns="" />
+        	</xf:instance>
+        	<w2:dataCollection baseNode="map">
+        		<w2:dataList baseNode="list" repeatNode="map" id="dc_saupList" saveRemovedData="true">
+        			<w2:columnInfo>
+        				<w2:column id="chk" name="name5" dataType="text" ignoreStatus="true"></w2:column>
+        				<w2:column id="LWST_GNRL_CODE" name="코드" dataType="number"></w2:column>
+        				<w2:column id="BSNS_NM" name="사업명" dataType="text"></w2:column>
+        				<w2:column id="INCDNT_NM" name="사건명" dataType="text"></w2:column>
+        				<w2:column id="LWST_ISS_SUMRY" name="사건개요" dataType="text"></w2:column>
+
+        			</w2:columnInfo>
+        		</w2:dataList>
+        		<w2:dataMap baseNode="map" id="dc_saupCodeDetail">
+        			<w2:keyInfo>
+        				<w2:key id="LWST_GNRL_CODE" name="코드" dataType="number"></w2:key>
+        			</w2:keyInfo>
+        			<w2:data use="false">
+        				<LWST_GNRL_CODE><![CDATA[42]]></LWST_GNRL_CODE>
+        			</w2:data>
+        		</w2:dataMap>
+        		<w2:dataList baseNode="list" repeatNode="map" id="dc_saupListDetail" saveRemovedData="true">
+        			<w2:columnInfo>
+        				<w2:column id="chk-detail" name="name4" dataType="text" ignoreStatus="true"></w2:column>
+        				<w2:column id="ACUSR_NAME" name="이름" dataType="text"></w2:column>
+        				<w2:column id="GNRL_ADRES" name="주소" dataType="text"></w2:column>
+        				<w2:column id="EMAIL" name="이메일" dataType="text"></w2:column>
+
+        				<w2:column id="LWST_ACUSR_CODE" name="소송원고코드" dataType="number"></w2:column>
+        			</w2:columnInfo>
+        		</w2:dataList>
+        		<w2:dataMap baseNode="map" id="dc_saupSearch">
+        			<w2:keyInfo>
+        				<w2:key id="BSNS_NM" name="name1" dataType="text"></w2:key>
+        				<w2:key id="RGSDE" name="name2" dataType="date"></w2:key>
+        				<w2:key id="FALW_FLW_TY" name="name3" dataType="text"></w2:key>
+        				<w2:key id="DFFLY_TY" name="name4" dataType="text"></w2:key>
+        			</w2:keyInfo>
+        			<w2:data></w2:data>
+        		</w2:dataMap>
+        		<w2:dataMap baseNode="map" id="dc_result">
+        			<w2:keyInfo>
+        				<w2:key id="statusMsg" name="name1" dataType="text"></w2:key>
+        			</w2:keyInfo>
+        		</w2:dataMap>
+        		<w2:dataMap baseNode="map" id="dc_deleteCode">
+        			<w2:keyInfo>
+        				<w2:key id="LWST_ACUSR_CODE" name="name1" dataType="number"></w2:key>
+        			</w2:keyInfo>
+        		</w2:dataMap>
+        	</w2:dataCollection>
+        	<w2:workflowCollection></w2:workflowCollection>
+        	<xf:submission id="sbm_selectDetail" ref="data:json,dc_saupCodeDetail" target="data:json,dc_saupListDetail"
+        		action="/edu/subMainDetail" method="post" mediatype="application/json" encoding="UTF-8" instance="" replace="" errorHandler=""
+        		customHandler="" mode="asynchronous" processMsg="" ev:submit="" ev:submitdone="scwin.sbm_selectDetail_submitdone"
+        		ev:submiterror="" abortTrigger="">
+        	</xf:submission>
+        	<xf:submission id="sbm_selectMain" ref="data:json,dc_saupSearch" target="data:json,dc_saupList" action="/edu/subMainSearch"
+        		method="post" mediatype="application/json" encoding="UTF-8" instance="" replace="" errorHandler="" customHandler=""
+        		mode="asynchronous" processMsg="" ev:submit="" ev:submitdone="scwin.sbm_selectMain_submitdone" ev:submiterror=""
+        		abortTrigger="">
+        	</xf:submission>
+        	<xf:submission id="sbm_updateDetail" ref='data:json,{"action":"updated","id":"dc_saupListDetail"}' target="data:json,dc_result"
+        		action="/edu/subDetailUpdate" method="post" mediatype="application/json" encoding="UTF-8" instance="" replace="" errorHandler=""
+        		customHandler="" mode="asynchronous" processMsg="" ev:submit="" ev:submitdone="scwin.sbm_updateDetail_submitdone"
+        		ev:submiterror="" abortTrigger="">
+        	</xf:submission>
+        	<xf:submission id="sbm_deleteDetail" ref="data:json,dc_deleteCode" target="data:json,dc_result" action="/edu/subDetailDelete" method="post"
+        		mediatype="application/json" encoding="UTF-8" instance="" replace="" errorHandler="" customHandler="" mode="asynchronous"
+        		processMsg="" ev:submit="" ev:submitdone="" ev:submiterror="" abortTrigger="">
+        	</xf:submission>
+        </xf:model>
+        <script type="text/javascript" lazy="false"><![CDATA[
+        
+	scwin.onpageload = function() {
+		console.log("호출!!");
+		$p.executeSubmission("sbm_selectMain");
+		//컬럼 숨기기
+		/*
+		subGrid.setColumnVisible("LWST_ACUSR_CODE", false);
+		testGrid.setColumnVisible("LWST_GNRL_CODE", false);
+		*/
+	};
+	
+	scwin.onpageunload = function() {
+		
+	};
+	
+	//row클릭시 해당 인덱스로 데이터 호출
+	/*
+	scwin.testGrid_oncellclick = function(row,col,colId) {
+		dc_saupCodeDetail.set("LWST_GNRL_CODE", testGrid.getCellDisplayData(row, 1))
+		com.sbm.execute(sbm_selectDetail);
+	};
+	*/
+
+	
+	//목록list 가져온 직후 grid의 포커스를 첫번째 row로 맞추고, 첫번째 row의 인덱스로 데이터를 호출
+	scwin.sbm_submission2_submitdone = function(e) {
+		testGrid.setFocusedCell(0, 0);
+		dc_saupCodeDetail.set("LWST_GNRL_CODE",testGrid.getCellDisplayData(0, 1));
+		$p.executeSubmission("sbm_selectDetail");
+	};
+	
+	//row focus+click이 변경될 경우 해당 인덱스로 데이터 호출
+	scwin.testGrid_oncellindexchange = function(row,col,oldRow,oldCol) {
+		dc_saupCodeDetail.set("LWST_GNRL_CODE", testGrid.getCellDisplayData(row, 1))
+		$p.executeSubmission("sbm_selectDetail");
+	};
+	
+	//디테일list 가져온 직후 grid의 포커스를 첫번째 row로 맞춘다.
+	scwin.sbm_selectDetail_submitdone = function(e) {
+		subGrid.setFocusedCell(0, 0);
+	};
+	
+	//검색버튼 클릭시 sbm_selectMain 실행
+	scwin.btn_select_onclick = function(e) {
+		$p.executeSubmission("sbm_selectMain");
+	};
+	
+	//수정버튼 클릭시 sbm_updateDetail 실행
+	scwin.btn_update_onclick = function(e) {
+		$p.executeSubmission("sbm_updateDetail");
+	};
+	
+	// sbm_submission3 실행 후 결과메시지 alert창 출력
+	scwin.sbm_updateDetail_submitdone = function(e) {
+		alert(dc_result.get("statusMsg"));
+	};
+	
+	//삭제버튼 클릭시 focus된 Row로 sbm_submission실행
+	scwin.btn_delete_onclick = function(e) {
+		//focus된 Row의 Column을 찾는다.
+		const param = subGrid.getCellDisplayData(subGrid.getFocusedRowIndex(), 4);
+		if(param == "" || param == undefined){
+			alert("삭제할 데이터가 없습니다.");
+		}else {
+		//삭제할 데이터가 있는 경우 DataCollection에 데이터 넣고 Submission 실행
+			dc_deleteCode.set("LWST_ACUSR_CODE",param);
+			$p.executeSubmission("sbm_deleteDetail");
+			alert(dc_result.get("statusMsg"));
+		}
+	};
+	
+	//엑셀다운 클릭시 testGrid를 엑셀형태로 출력
+	scwin.btn_down_onclick = function(e) {
+	//단순 다운로드
+		/*
+		option = {};
+		option.fileName ="data.xlsx";
+		option.removeColumns = "0, 1";
+		testGrid.advancedExcelDownload( option  );
+		*/
+		option = {};
+		option.removeColumns = "0, 1, 2";
+		option.fileName ="data.xlsx";
+		// 기존 Service 호출방식
+		option.dataProvider="com.inswave.wrm.provider.ExcelDownTest";
+		// SQL ID를 이용한 직접 db 호출 방식 
+		//option.dataProvider="com.inswave.edu.provider.ExcelDown_directDBCall";
+		option.showProcess = "true";
+		option.providerRequestXml = scwin.setProviderData();
+	
+		testGrid.advancedExcelDownload(option);		
+				
+	};
+	
+	
+	scwin.setProviderData = function() {
+	
+		let dataStr = "<jsonData>"+JSON.stringify(dc_saupSearch.getJSON())+"</jsonData>";
+		console.log(dataStr);
+		return "<data>"+dataStr+"</data>";
+	}]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload" style="">
+    	<xf:group style="background-color:#f8f8f8;min-height:100%;box-sizing:border-box;display:relative;padding:30px;" id="">
+    		<xf:group id="">
+
+    			<xf:group tagname="table" style="width:100%;" id="" class="w2tb">
+    				<w2:attributes>
+    					<w2:summary></w2:summary>
+    				</w2:attributes>
+    				<xf:group tagname="caption"></xf:group>
+    				<xf:group tagname="colgroup">
+    					<xf:group tagname="col" style="width:16.67%;"></xf:group>
+    					<xf:group tagname="col" style="width:16.67%"></xf:group>
+    					<xf:group tagname="col" style="width:16.67%;"></xf:group>
+    					<xf:group tagname="col" style="width:16.67%"></xf:group>
+    					<xf:group tagname="col" style="width:16.67%;"></xf:group>
+    					<xf:group tagname="col" style="width:16.67%"></xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">
+    						사업명
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    					</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						<xf:input adjustMaxLength="false" id="" style="width: 100%;height: 100%;" placeholder="사업명(최대 20자) 입력"
+    							ref="data:dc_saupSearch.BSNS_NM">
+    						</xf:input>
+    					</xf:group>
+    					<xf:group tagname="th" style="" class="w2tb_th">
+    						소제기일
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    					</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						<w2:inputCalendar footerDiv="false" id="" style="width: 150px;height: 23px;" renderDiv="true"
+    							focusOnDateSelect="false" calendarValueType="yearMonthDate" rightAlign="false" renderType="component"
+    							ref="data:dc_saupSearch.RGSDE" placeholder="YYYY-MM-DD">
+    						</w2:inputCalendar>
+    					</xf:group>
+    					<xf:group tagname="th" style="" class="w2tb_th">
+    						피소/제소&amp;nbsp;타입
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    					</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						<xf:select1 id="" chooseOption="true" style="width: 148px;height: 21px;" submenuSize="auto" allOption=""
+    							disabled="false" direction="auto" appearance="minimal" disabledClass="w2selectbox_disabled" chooseOptionLabel="선택해주세요"
+    							ref="data:dc_saupSearch.FALW_FLW_TY">
+    							<xf:choices>
+    								<xf:item>
+    									<xf:label><![CDATA[피소]]></xf:label>
+    									<xf:value><![CDATA[1]]></xf:value>
+    								</xf:item>
+    								<xf:item>
+    									<xf:label><![CDATA[제소]]></xf:label>
+    									<xf:value><![CDATA[2]]></xf:value>
+    								</xf:item>
+    							</xf:choices>
+    						</xf:select1>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">
+    						난이도
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    					</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						<w2:attributes>
+    							<w2:colspan>5</w2:colspan>
+    							<w2:rowspan>1</w2:rowspan>
+    						</w2:attributes>
+    						<xf:select1 appearance="full" cols="" disabled="" id="" ref="data:dc_saupSearch.DFFLY_TY"
+    							renderType="radiogroup" rows="" selectedIndex="3" style="">
+    							<xf:choices>
+    								<xf:item>
+    									<xf:label><![CDATA[상]]></xf:label>
+    									<xf:value><![CDATA[3]]></xf:value>
+    								</xf:item>
+    								<xf:item>
+    									<xf:label><![CDATA[중]]></xf:label>
+    									<xf:value><![CDATA[2]]></xf:value>
+    								</xf:item>
+    								<xf:item>
+    									<xf:label><![CDATA[하]]></xf:label>
+    									<xf:value><![CDATA[1]]></xf:value>
+    								</xf:item>
+    							</xf:choices>
+    						</xf:select1>
+    					</xf:group>
+    				</xf:group>
+    			</xf:group>
+    			<xf:trigger type="button"
+    				style="width: 100px;height: 40px;text-align: center;color:white;background-color: blue;display: block;margin: 20px auto;"
+    				id="btn_select" ev:onclick="scwin.btn_select_onclick">
+    				<xf:label><![CDATA[검색]]></xf:label>
+    			</xf:trigger>
+    		</xf:group>
+    		<xf:group id="" style="">
+    			<w2:textbox style="width: 150px;height: 23px;font-size: 20px;font-weight: bold;" id="" label="소송목록"></w2:textbox>
+    			<w2:gridView scrollByColumnAdaptive="false" dataList="data:dc_saupList" style="height:300px;margin-top:20px;"
+    				scrollByColumn="false" id="testGrid" defaultCellHeight="20" rowNumVisible="true" rowStatusVisible="true" sortEvent="onclick"
+    				sortable="true" fixedColumn="0" fixedRow="0" focusDefaultColumn="false" autoFit="allColumn" columnMove="true"
+    				selectedRowColor="#80FFFF" ev:oncellclick="scwin.testGrid_oncellclick" rowStatusHeaderValue="상태" checkAllType="include" focusMode="row" ev:oncellindexchange="scwin.testGrid_oncellindexchange" checkDisabledOnCut="true" visibleRowNumFix="true" visibleRowNum="10">
+    				<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
+    				<w2:header style="" id="header1">
+    					<w2:row style="" id="row1">
+    						<w2:column width="70" inputType="checkbox" style="height:40px" id="column13" value="" displayMode="label" disabled="false"></w2:column>
+    						<w2:column width="400" inputType="text" style="height:40px;" id="column1" value="코드" displayMode="label" hidden="true"></w2:column>
+    						<w2:column width="400" inputType="text" style="height:40px;" id="column2" value="사업명" displayMode="label"></w2:column>
+    						<w2:column width="400" inputType="text" style="height:40px;" id="column3" value="사건명" displayMode="label"></w2:column>
+    						<w2:column width="300" style="height:40px;" id="column9" value="사건개요"></w2:column>
+    					</w2:row>
+    				</w2:header>
+    				<w2:gBody style="" id="gBody1">
+    					<w2:row style="" id="row2">
+    						<w2:column width="70" inputType="checkbox" style="height:30px" id="chk" value="" displayMode="label" checkAlways="false" falseValue="null" trueValue="null" valueType="binary"></w2:column>
+    						<w2:column width="400" inputType="text" style="height:30px;" id="LWST_GNRL_CODE" displayMode="label" value=""></w2:column>
+    						<w2:column width="400" inputType="text" style="height:30px;" id="BSNS_NM" displayMode="label"></w2:column>
+    						<w2:column width="400" inputType="text" style="height:30px;" id="INCDNT_NM" displayMode="label"></w2:column>
+    						<w2:column width="300" id="LWST_ISS_SUMRY" style="height:30px;"></w2:column>
+    					</w2:row>
+    				</w2:gBody>
+    			</w2:gridView>
+    		</xf:group>
+    		<xf:group id="" style="margin-top:20px;">
+    			<w2:textbox style="width: 150px;height: 23px;font-size: 20px;display: inline;font-weight: bold;" id="" label="소송 원고"></w2:textbox>
+    			<xf:trigger type="button"
+    				style="width: 100px;height: 40px;float: right;background-color: orange;color: white;margin-bottom: 20px;margin-right: 20px;"
+    				id="btn_delete" ev:onclick="scwin.btn_delete_onclick">
+    				<xf:label><![CDATA[삭제]]></xf:label>
+    			</xf:trigger>
+    			<xf:trigger type="button"
+    				style="width: 100px;height: 40px;float: right;background-color: green;color: white;margin-bottom: 20px;margin-right: 20px;"
+    				id="btn_update" ev:onclick="scwin.btn_update_onclick">
+    				<xf:label><![CDATA[수정]]></xf:label>
+    			</xf:trigger>
+    			<xf:trigger type="button" style="width: 100px;height: 40px;float: right;background-color: black;color: white;margin-bottom: 20px;margin-right: 20px;" id="btn_down" ev:onclick="scwin.btn_down_onclick">
+    				<xf:label><![CDATA[엑셀다운]]></xf:label>
+    			</xf:trigger>
+
+    			<w2:gridView scrollByColumnAdaptive="false" checkAllType="false" dataList="data:dc_saupListDetail"
+    				style="width: 100%;height: 150px;" scrollByColumn="false" id="subGrid" defaultCellHeight="20" autoFit="allColumn" columnMove="true"
+    				focusMode="row" rowStatusVisible="true" rowStatusHeaderValue="상태" rowNumVisible="true">
+    				<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
+    				<w2:header style="" id="header1">
+    					<w2:row style="" id="row1">
+    						<w2:column width="70" inputType="checkbox" style="height:40px" id="column6" value="name4" displayMode="label"></w2:column>
+    						<w2:column width="150" inputType="text" style="height:40px;" id="column5" value="이름" displayMode="label"></w2:column>
+    						<w2:column width="300" inputType="text" style="height:20px" id="column4" value="주소" displayMode="label"></w2:column>
+    						<w2:column width="300" inputType="text" style="height:20px" id="column3" value="이메일" displayMode="label"></w2:column>
+    						<w2:column width="70" id="column7" value="소송원고코드" hidden="true"></w2:column>
+    					</w2:row>
+    				</w2:header>
+    				<w2:gBody style="" id="gBody1">
+    					<w2:row style="" id="row2">
+    						<w2:column width="70" inputType="checkbox" style="height:30px" id="chk-detail" value="" displayMode="label"></w2:column>
+    						<w2:column width="150" inputType="text" style="height:30px;" readOnly="true" id="ACUSR_NAME" value=""
+    							displayMode="label">
+    						</w2:column>
+    						<w2:column width="300" inputType="text" style="height:20px" id="GNRL_ADRES" value="" displayMode="label"></w2:column>
+    						<w2:column width="300" inputType="text" style="height:20px" id="EMAIL" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" id="LWST_ACUSR_CODE" style=""></w2:column>
+    					</w2:row>
+    				</w2:gBody>
+    			</w2:gridView>
+    		</xf:group></xf:group>
+    </body>
+</html>

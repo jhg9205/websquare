@@ -1,0 +1,9 @@
+{
+   "charset": "UTF-8",
+   "reqMethod": "POST",
+   "serviceURL": "http://localhost:8080/edu/subMainInit",
+   "contentType": "application/json",
+   "requestContent": "{\"dc_saupCode\": {\"saupCode\": \"SGA2021-002-1\"}}",
+   "responseContent": "{\"rsMsg\":{},\"dc_saupList\":[{\"BSNS_NM\":\"(협의계약-재결)수도권광역철도 GTX-A구간\",\"LWST_ISS_SUMRY\":\"소송쟁점\",\"LWST_GNRL_CODE\":101,\"INCDNT_NM\":\"사건명\"},{\"BSNS_NM\":\"(협의계약-재결)수도권광역철도 GTX-A구간\",\"LWST_ISS_SUMRY\":\"ㅇㅇㅇㅇㅇㅇ\",\"LWST_GNRL_CODE\":21,\"INCDNT_NM\":\"ㅇㅇㅇㅇㅇ\"},{\"BSNS_NM\":\"(협의계약-재결)수도권광역철도 GTX-A구간\",\"LWST_ISS_SUMRY\":\"ㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹ\",\"LWST_GNRL_CODE\":22,\"INCDNT_NM\":\"ㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹ\"},{\"BSNS_NM\":\"(협의계약-재결)수도권광역철도 GTX-A구간\",\"LWST_ISS_SUMRY\":\"123\",\"LWST_GNRL_CODE\":23,\"INCDNT_NM\":\"123\"},{\"BSNS_NM\":\"(협의계약-재결)수도권광역철도 GTX-A구간\",\"LWST_ISS_SUMRY\":\"aaaaaaaaaaaaaa\",\"LWST_GNRL_CODE\":24,\"INCDNT_NM\":\"aaaaaaaaaaaaaaa\"},{\"BSNS_NM\":\"(협의계약-재결)수도권광역철도 GTX-A구간\",\"LWST_ISS_SUMRY\":\"돈을 더 주어야 한다.\",\"LWST_GNRL_CODE\":42,\"INCDNT_NM\":\"손실보상금 저렴에 따른 증액요청\"},{\"BSNS_NM\":\"(협의계약-재결)수도권광역철도 GTX-A구간\",\"LWST_ISS_SUMRY\":\"ㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎ\",\"LWST_GNRL_CODE\":25,\"INCDNT_NM\":\"ㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎ\"},{\"BSNS_NM\":\"(협의계약-재결)수도권광역철도 GTX-A구간\",\"LWST_ISS_SUMRY\":\"테스트 소송입니다\",\"LWST_GNRL_CODE\":41,\"INCDNT_NM\":\"테스트 소송입니다\"}]}",
+   "sendTime": "2023-01-25 16:57:07"
+}

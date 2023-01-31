@@ -1,0 +1,9 @@
+{
+   "charset": "UTF-8",
+   "reqMethod": "POST",
+   "serviceURL": "http://localhost:8080/main/selectReleaseForMain",
+   "contentType": "application/json",
+   "requestContent": "{\"dma_search\": {\n   \"END_NUM\": \"SampleValue_1\",\n   \"SORT_METHOD\": \"SampleValue_4\",\n   \"START_NUM\": \"SampleValue_0\",\n   \"SORT_COLUMN\": \"SampleValue_3\",\n   \"TOTAL_YN\": \"SampleValue_2\"\n}}",
+   "responseContent": "{\"rsMsg\":{\"statusCode\":\"E\", \"errorCode\" : \"E0001\", \"message\":\"Session이 종료 되었습니다.\",\"status\":\"Error\"}}",
+   "sendTime": "2023-01-25 16:36:29"
+}

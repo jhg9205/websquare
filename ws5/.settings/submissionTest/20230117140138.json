@@ -1,0 +1,9 @@
+{
+   "charset": "UTF-8",
+   "reqMethod": "POST",
+   "serviceURL": "http://localhost:9090/ws5/training/getUserInfo.do",
+   "contentType": "application/json",
+   "requestContent": "{\"dc_reqUserInfo\": {\"EMP_CD\": \"10000001\"}}",
+   "responseContent": "{\"msg\":\"조회가 완료되었습니다.\",\"dc_userInfo\":{\"ZIP_CD\":\"601802\",\"JOIN_DATE\":\"20151106\",\"CREATED_DATE\":\"2016-12-07\",\"EMAIL\":\"gevo206@inswave02.com\",\"GENDER_CD\":\"M\",\"ASSIGNED_TASK\":null,\"POSITION_CD\":\"02\",\"EMP_NM\":\"비길동\",\"DUTY_CD\":\"06\",\"ROLE_CD\":\"04\",\"UPDATED_DATE\":\"2016-12-07\",\"EMP_CD\":10000001,\"ADDRESS1\":\"부산 동구 범일1동\",\"ADDRESS2\":\" 54∼61\"},\"msgCode\":\"S\"}",
+   "sendTime": "2023-01-17 14:01:38"
+}

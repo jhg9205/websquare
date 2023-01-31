@@ -1,0 +1,340 @@
+@charset "utf-8";
+/*************** BASE *****************/
+/* :focus{outline:none}focus outline:-webkit-focus-ring-color auto 1px;outline-offset:0 라인 없음 */
+.w2textarea{display:block;margin:0}/* 브라우저 margin */
+.w2trigger{display:-moz-inline-stack;overflow:visible}/* firefox padding 버그 및 ie padding 버그 */
+.w2input_disabled,.w2input_readonly,.w2selectbox_disabled{border: 1px solid #d3dbe3;background:#ebeced !important;color:#b4bbc2;cursor:default}
+
+/* form */
+.w2input,.w2textarea,.w2inputCalendar_divInput{font-family:"맑은 고딕", dotum, Verdana, Sans-serif;font-size:12px;color:#60656f;border:1px solid #d3dbe3;background:#fff}
+.w2input,.w2textarea,.w2selectbox{height:23px;-moz-box-sizing:border-box;box-sizing:border-box}
+.w2grid .w2input,.w2grid .w2textarea,.w2grid .w2inputCalendar_divInput{-moz-box-sizing:content-box;box-sizing:content-box}
+.w2selectbox,.w2checkcombobox,.w2autoComplete,
+.w2upload .w2upload_input,
+.w2multiselect_table .w2multiselect_td{border:1px solid #d3dbe3}
+.w2checkbox .w2checkbox_item,
+.w2radio .w2radio_item{display:inline-block;margin-right:3px}
+.w2checkbox .w2checkbox_item input[type="checkbox"]{margin:2px 3px 0 0}
+.w2checkbox .w2checkbox_item input[type="checkbox"],
+.w2checkbox .w2checkbox_item label{vertical-align:middle}
+.w2radio .w2radio_item input[type="radio"]{margin:0 3px 0 0}
+.w2radio .w2radio_item input[type="radio"], .w2radio .w2radio_item label{vertical-align:middle}
+
+/* inputCalendar 이미지 변경 */
+.w2inputCalendar_div{height:23px}
+.w2inputCalendar_div .w2inputCalendar_div_input{padding-right:3px;height:19px;-moz-box-sizing:border-box;box-sizing:border-box}
+.w2inputCalendar_div .w2inputCalendar_div_img{width:22px;height:19px}
+.w2inputCalendar_div .w2inputCalendar_button{width:22px;height:19px;background:url(/images/contents/bg_btn_calendar_ico.png) no-repeat 100% 0 !important}
+
+/* selectbox */
+.w2selectbox .w2selectbox_label{padding:0}
+
+/* AutoComplete */
+.w2gridViewItemTable_main{background-color:transparent}
+.w2gridViewItemTable_main div{z-index:999 !important}
+.w2gridViewItemTable_main th{background:#edeef3 !important;border:1px solid #e3e3e3 !important}
+.w2gridViewItemTable_main .gridHeaderTableDefault .gridBodyDefault.focusedTr{border:1px solid #dbadbb !important;background:#fff6fb !important;color:#b61c21;font-weight:bold}
+.w2gridViewItemTable_main .gridHeaderTableDefault{border-top:3px solid #757984}
+
+/* 필수입력 표시 */
+.ast.w2input,
+.ast.w2selectbox,
+.ast.w2checkcombobox,
+.ast.w2textarea,
+.ast.w2upload .w2upload_input,
+.ast.w2autoComplete,
+.ast.w2multiselect_div .w2multiselect_tr{background-color:#ffffe1}
+.ast.w2inputCalendar_div .w2inputCalendar_divInput{background:#ffffe1}
+.tbbox .tb .w2tb_th span.ast{background:url(/images/contents/icon_ast.png) no-repeat right 50% !important;padding-right:8px}
+.astp.w2input,.astp.w2checkcombobox,.astp.w2radio{background-color:#fff6fb}
+
+/* focus */
+.w2input.w2input_focus,.w2inputCalendar_div .w2inputCalendar_focus{border:1px solid #d3dbe3}
+
+.ipt_cal{min-width:215px}
+
+/* FontColor */
+.font_red{color:#c83d67}
+
+/************ LAYOUT ************/
+.sub_contents{position:relative;padding:20px 12px;margin:0}
+.pop_contents{position:relative;padding:10px;margin:0}
+
+/* layout */
+.lybox{display:table;width:100%;position:relative}
+.ly_column{display:table-cell;padding:0 10px;margin:0;-moz-box-sizing:border-box;box-sizing:border-box;}
+.ly_column:first-child{padding-left:0 !important}
+.ly_column:last-child{padding-right:0 !important}
+.lybox.col2 .ly_column{width:50%;}
+.lybox.col3 .ly_column{width:33.333%;}
+.lybox.col4 .ly_column{width:25%;}
+.col_2{width:20%}
+.col_3{width:30%}
+.col_4{width:40%}
+.col_5{width:50%}
+.col_6{width:60%}
+.col_7{width:70%}
+.col_8{width:80%}
+
+/* column fix - 좌측화면 고정 */
+.lybox.left_fix2 .ly_columnfix_left{position:relative;float:left;width:200px;padding:0;margin-right:-200px;min-height:14px}
+.lybox.left_fix2 .ly_columnfix_right{position:relative;padding:0;margin-left:200px;overflow:hidden;min-height:14px}
+.lybox.left_fix3 .ly_columnfix_left{position:relative;float:left;width:300px;padding:0;margin-right:-300px;min-height:14px}
+.lybox.left_fix3 .ly_columnfix_right{position:relative;padding:0;margin-left:300px;overflow:hidden;min-height:14px}
+
+/* lybox Button Type */
+.lybox.horizontal{width:100%;}
+.lybox.horizontal .ly_column{}
+.lybox.horizontal .ly_column.btn{width:20px;padding-left:0;padding-right:0;vertical-align:middle}
+.lybox.horizontal .ly_column.btn input[type="button"]{margin:2px 0}
+.lybox.vertical{display:block;}
+.lybox.vertical .ly_column{display:block;padding:0}
+.lybox.vertical .ly_column.btn{width:100%;padding:10px 0;text-align:center;vertical-align:middle}
+.lybox.vertical .ly_column.btn input[type="button"]{margin:0 2px}
+
+/* 화면상단 공통영역 */
+.pgtbox{position:relative;width:100%;min-height:14px;padding:0;margin:0}
+.pgtbox:after{display:block;visibility:hidden;clear:both;height:0;font-size:0;line-height:0;content:'.'}
+.pgtbox .pgt_tit{display:block;float:left;padding:3px 0 6px;margin:0;line-height:19px;font-size:16px;font-weight:bold}/* 맑은 고딕일때 line-height 값은 font-size보다 1높게 사용 */
+
+.pgt_icobox{display:block;float:right;padding:0;margin:4px 0 0 8px}
+.pgt_icobox:after{display:block;visibility:hidden;clear:both;height:0;font-size:0;line-height:0;content:'.'}
+
+/* 화면상단 조회버튼 */
+.btn_search{display:inline-block;width:23px;height:23px;line-height:23px;color:#36aeea;font-weight:bold;border:1px solid #36aeea;background:#fff url(/images/contents/btn_tbsearch02.png) no-repeat;border-radius:2px;vertical-align:middle;text-indent:-9999px}
+.btn_search.w2anchor_disabled,.btn_search[readonly]{cursor:default}
+.btn_search.type02{background-image:url(/images/contents/btn_tbsearch02.png) !important}
+
+/* 모듈제어버튼 */
+.btn_cm{display:inline-block;height:23px;line-height:21px;padding:0 5px;margin:4px 0 2px 3px;font-size:12px;font-weight:bold;color:#60656f;border:1px solid #60656f;background:#fff;border-radius:2px;vertical-align:middle;-moz-box-sizing:border-box;box-sizing:border-box;}
+.btn_cm:hover{border:1px solid #757984;background:#757984;color:#fff}
+.btn_cm.w2anchor_disabled ,.btn_cm[readonly]{cursor:default;border:1px solid #d2d4d9 !important;background:#edeef3;color:#d2d4d9 !important}
+
+/* 모듈제어버튼 - 엑셀업로드,다운로드 */
+.btn_cm.upper{position:relative;padding-right:21px;background:url(/images/contents/ico_upper.png) no-repeat right center}
+.btn_cm.upper:hover{background:#757984 url(/images/contents/ico_upper_on.png) no-repeat right center}
+.btn_cm.lower{position:relative;padding-right:21px;background:url(/images/contents/ico_lower.png) no-repeat right center}
+.btn_cm.lower:hover{background:#757984 url(/images/contents/ico_lower_on.png) no-repeat right center}
+
+/* 모듈제어버튼 - 행추가,행삭제 */
+.btn_cm.add_row{width:23px;padding-left:0;padding-right:0;background:url(/images/contents/ico_btnAdd.png) no-repeat center center !important;text-indent:-9999px}
+.btn_cm.del_row{width:23px;padding-left:0;padding-right:0;background:url(/images/contents/ico_btnDel.png) no-repeat center center !important;text-indent:-9999px}
+
+/* 전체제어버튼 영역 */
+.btnbox{position:relative;width:100%;min-height:14px;padding:7px 0 3px;margin:0}
+.btnbox:after{display:block;visibility:hidden;clear:both;height:0;font-size:0;line-height:0;content:'.'}
+.btnbox .fl .btn_cm:first-child{margin-left:0}
+
+/* 전체제어버튼 색상 */
+.btn_cm.ty1{color:#3eaae8;border:1px solid #3eaae8}
+.btn_cm.ty2{color:#58ba3d;border:1px solid #58ba3d}
+.btn_cm.ty3{color:#c67400;border:1px solid #c67400}
+.btn_cm.ty1:hover{color:#fff;border:1px solid #3eaae8;background:#3eaae8}
+.btn_cm.ty2:hover{color:#fff;border:1px solid #58ba3d;background:#58ba3d}
+.btn_cm.ty3:hover{color:#fff;border:1px solid #c67400;background:#c67400}
+
+.btn_cm.btn_cm_blue{color:#fff;border-color:#3eaae8;background-color:#3eaae8}
+.btn_cm.btn_cm_blue02{color:#3eaae8;border-color:#3eaae8}
+.btn_cm.btn_cm_blue02:hover{background-color:#3eaae8; color:#fff}
+
+/* 아이콘버튼 */
+.btn_cm.ic_sch,
+.btn_cm.ic_prt,
+.btn_cm.ic_hel,
+.btn_cm.ic_bmk{padding-left:20px}
+.btn_cm.ic_sch{background:#fff url(/images/contents/ico_cm_search.png) no-repeat 5px center}
+.btn_cm.ic_prt{background:#fff url(/images/contents/ico_cm_print.png) no-repeat 5px center}
+.btn_cm.ic_hel{background:#fff url(/images/contents/ico_cm_help.png) no-repeat 5px center}
+.btn_cm.ic_bmk{background:#fff url(/images/contents/ico_cm_keep.png) no-repeat 5px center}
+.btn_cm.ic_sch:hover{border:1px solid #757984;color:#fff;background:#757984 url(/images/contents/ico_cm_search_on.png) no-repeat 5px center}
+.btn_cm.ic_prt:hover{border:1px solid #757984;color:#fff;background:#757984 url(/images/contents/ico_cm_print_on.png) no-repeat 5px center}
+.btn_cm.ic_hel:hover{border:1px solid #757984;color:#fff;background:#757984 url(/images/contents/ico_cm_help_on.png) no-repeat 5px center}
+.btn_cm.ic_bmk:hover{border:1px solid #757984;color:#fff;background:#757984 url(/images/contents/ico_cm_keep_on.png) no-repeat 5px center}
+.btn_cm.mv_left,
+.btn_cm.mv_right,
+.btn_cm.mv_up,
+.btn_cm.mv_down{width:20px;height:20px;text-indent:-9999px;border:none}
+.btn_cm.mv_left{background:url(/images/contents/btn_file_left.png) no-repeat}
+.btn_cm.mv_right{background:url(/images/contents/btn_file_right.png) no-repeat}
+.btn_cm.mv_up{background:url(/images/contents/btn_file_up.png) no-repeat}
+.btn_cm.mv_down{background:url(/images/contents/btn_file_down.png) no-repeat}
+
+/* 공통 버튼 큰것 - table, gridview 상단 */
+.btn_cm.md{height:23px;padding:0 25px}
+/* 공통 버튼 가장큰것 - 업무화면 하단 버튼 */
+.btn_cm.lg{height:31px;padding:0 30px;font-size:14px}
+
+/* defaultBox Title */
+.dfbox{position:relative;width:100%;min-height:14px;margin:10px 0 0}/* 타이틀 박스 */
+.dfbox:after{display:block;visibility:hidden;clear:both;height:0;font-size:0;line-height:0;content:'.'}
+.dfbox .df_tit{padding:0 0 0 15px;font-size:12px;line-height:24px;font-weight:bold;background:url(/images/contents/bg_df_tit_ico.png) no-repeat 0 7px}
+.dfbox .noti{background:url(/images/contents/icon_noti.png) no-repeat 0 7px;padding-left:14px;margin-left:10px;letter-spacing:-1px;color:#3eaae8;line-height:24px}
+.dfbox .txt_sys{display:inline-block}
+.dfbox .txt_sys > *{display:inline-block;margin:0 3px;line-height:19px;vertical-align:middle}
+
+/* search table */
+.shbox{position:relative;padding:8px;margin:10px 0 0;background:#e5e5e5;border:1px solid #d2d2d2}
+.shbox .tb{border:0}
+.shbox .tb .w2tb_th,
+.shbox .tb .w2tb_td{border:0;background:transparent;height:24px}
+.shbox .tb .w2tb_th{color:#60656f;padding:0 3px;font-weight:bold;background:transparent;text-align:right}
+.shbox .tb .w2tb_th .w2input,
+.shbox .tb .w2tb_td .w2input,
+.shbox .tb .w2tb_th .w2selectbox,
+.shbox .tb .w2tb_td .w2selectbox{}
+.shbox .shbox_inner{position:relative;padding:0;margin:0 61px 0 0}
+.shbox .btn_shbox{position:absolute;top:50%;right:8px;width:51px;height:23px;margin:-12px 0 0;text-align:right}
+.shbox .btn_shbox .btn_cm{margin:0}
+.shbox .tb .w2tb_td .w2span{margin:0 3px}
+.shbox .tb .w2checkcombobox{height:17px}
+.w2table_ccb_col{padding:0}
+.w2checkcombobox_label{padding-top:0}
+.shbox .btn_search {color:#fff; border:none; background: url(/images/contents/btn_tbsearch02.png) no-repeat; margin-left:3px; width:23px; height:23px; padding:0}
+.shbox .btn_icon2{display:inline-block;padding: 1px 5px 0 20px;height:15px;line-height:15px;font-size:12px;font-weight:bold;color:#66717f;border:1px solid #757984;background:#fff;border-radius:2px;vertical-align:middle}
+.shbox .btn_icon2.w2anchor_disabled, .btn_icon[readonly]{cursor:default;border: 1px solid #d2d4d9 !important; background:#edeef3; color:#d2d4d9 !important;}
+.shbox .btn_isearch {background:url(/images/contents/bg_btn_search.png) no-repeat 5px 0 #fff;float:right}
+
+/* table */
+.tbbox{position:relative;padding:0;margin:0}
+.tb{width:100%;border-spacing:0;border-top:1px solid #e3e3e3;border-right:1px solid #e3e3e3}
+.tb .w2tb_th,.tb .w2tb_td{height:26px;color:#66717f;padding:3px;border:0;border-left:/*1px solid #d8dfe6*/ 1px solid #e3e3e3;border-bottom:1px solid #e3e3e3;background:#fff}
+.tb thead .w2tb_th{background:#edeef3;text-align:center;font-weight:normal}
+.tb .w2tb_th{font-weight:normal;padding:4px;text-align:center;background:#f6f6f6}
+.tb .w2tb_th.ast{color:#3eaae8;background-image:url(/images/contents/bg_point_ico.png);background-position:0 0;background-repeat:no-repeat}
+.tbbox .tb .w2tb_th,
+.tbbox .tb .w2tb_td{height:17px}
+.tbbox .tb .w2tb_th{text-align:left;font-weight:bold;letter-spacing:-1px}
+.tbbox .tb .w2tb_th .w2input,
+.tbbox .tb .w2tb_td .w2input,
+.tbbox .tb .w2tb_td .w2textarea,
+.tbbox .tb .w2tb_th .w2selectbox,
+.tbbox .tb .w2tb_td .w2selectbox{}
+.tbbox .tb .w2tb_td .w2span {margin-right:3px}
+.tbbox .btn_cm{color:#fff;border:1px solid #9da1a9;background:#9da1a9;margin:0;margin-top:1px}
+.tbbox .tb .w2tb_td .w2input,
+.tbbox .tb .w2tb_td .w2selectbox,
+.tbbox .tb .w2tb_td .w2selectbox,
+.tbbox .tb .w2tb_td .w2trigger,
+.tbbox .tb .w2tb_td a{margin-right:3px}
+.tbbox .btn_search{color:#fff;border:none;background:url(/images/contents/btn_tbsearch02.png) no-repeat;margin:0;width:23px;height:23px;padding:0}
+
+/* Gridview */
+.gvwbox{position:relative;margin:15px 0 0}
+.wq_gvw{border:none;border-top:1px solid #60656f}
+.wq_gvw .gridHeaderTableDefault{border:0;border-right:1px solid #e3e3e3;border-bottom:1px solid #e3e3e3}
+.wq_gvw thead.gridHeaderTableDefault{border:0}
+.wq_gvw nobr{display:inline-block}
+.wq_gvw th.gridHeaderTDDefault{border: 1px solid #60656f; background: #f6f6f6; font-size:12px;height:29px;color:#60656f}
+.wq_gvw th.gridHeaderTDDefault.ast{color:#3eaae8;background-image:url(/images/contents/bg_point_ico.png);background-position:0 0;background-repeat:no-repeat}
+.wq_gvw tr:first-child th.gridHeaderTDDefault{border-top:0;height:22px}
+.wq_gvw .gridBodyDefault{border:1px solid #dddddd;border-width:1px 0 0 1px;color:#66717f}
+.wq_gvw.gridFooterTDDefault{background:#d6eaff;border-width:0 1px 1px 1px}
+.wq_gvw .gridBodyDefault_rowNumber{background: #edeef3 !important}
+.wq_gvw .gridBodyDefault button{width:auto !important;height:calc(100% - 4px) !important;position:relative;display:inline-block;margin:2px;padding:2px 5px;cursor:pointer;overflow:hidden;border:1px solid #60656f;color:#60656f;background:#fff;border-radius:2px;}
+.wq_gvw .w2grid_embedded_input{padding:0 4px; font-family: Malgun Gothic, 맑은 고딕, arial}
+.wq_gvw .focusedTr{border:1px solid #dbadbb;background:#fff6fb !important;color:#b61c21;font-weight:bold}
+.wq_gvw .w2checkbox_label{vertical-align:top}
+.wq_gvw .gridBodyDefault.col_cr1{background-color:#e5f3f8}
+.wq_gvw .gridBodyDefault.col_cr2{background-color:#ffeeef}
+.wq_gvw .gridBodyDefault.col_cr3{background-color:#f4f6e3}
+.wq_gvw .gridBodyDefault.col_cr4{background-color:#fef3e2}
+.wq_gvw .gridBodyDefault.x_header{background-color:#ffeeef}
+.wq_gvw .gridBodyDefault.y_header{background-color:#ffeeef}
+.wq_gvw .btn_cm a{display:inline-block;padding:2px 5px 2px;margin:4px 0 2px 3px;height:13px;line-height:13px;font-size:12px;font-weight:bold;color:#140f30;border:1px solid #140f30;background:#fff;border-radius:2px;vertical-align:middle}
+.wq_gvw .btn_cm.w2anchor_disabled a,
+.wq_gvw .btn_cm[readonly] a{cursor:default;border:1px solid #d2d4d9 !important;background:#edeef3;color:#d2d4d9 !important}
+.wq_gvw .gridBodyDefault_calendar{background-image:url(/images/contents/bg_btn_calendar_ico.png)}
+.wq_gvw .w2inputCalendar_div .w2inputCalendar_div_input{-moz-box-sizing:border-box;box-sizing:border-box}
+.wq_gvw .w2inputCalendar_div .w2inputCalendar_button{top:2px !important}
+
+/* Treeview */
+.tw_sub.w2treeview{position:relative;padding:20px;background:transparent;border:1px solid #b6bfcc;-moz-box-sizing:border-box;box-sizing:border-box}
+.tw_sub.w2treeview .w2treeview_open_child .w2treeview_icon_navi{background:url(../../images/contents/tvw_minus.png) no-repeat 50% 50%}
+.tw_sub.w2treeview .w2treeview_close_child .w2treeview_icon_navi{background:url(../../images/contents/tvw_plus.png) no-repeat 50% 50%}
+.tw_sub.w2treeview .w2treeview_open_child.w2treeview_leaf .w2treeview_row_parent.w2treeview_row_depth1 .w2treeview_col_icon_navi,
+.tw_sub.w2treeview .w2treeview_open_child.w2treeview_leaf .w2treeview_row_parent.w2treeview_row_depth1 .w2treeview_icon_navi,
+.tw_sub.w2treeview .w2treeview_open_child.w2treeview_leaf .w2treeview_row_parent.w2treeview_row_depth2 .w2treeview_col_icon_navi,
+.tw_sub.w2treeview .w2treeview_open_child.w2treeview_leaf .w2treeview_row_parent.w2treeview_row_depth2 .w2treeview_icon_navi{width:16px}
+.tw_sub.w2treeview .w2treeview_open_child.w2treeview_leaf .w2treeview_row_parent .w2treeview_col_icon_navi{width:8px}
+.tw_sub.w2treeview .w2treeview_open_child.w2treeview_leaf .w2treeview_row_parent .w2treeview_icon_navi{width:8px;background:url(../../images/contents/tvw_middle.png) no-repeat 50% 50%}
+
+/* pagelist */
+.wq_pglist{position:relative;width:100%;height:19px;margin-top:10px}
+.wq_pglist .w2pageList_col_label{}
+.wq_pglist .w2pageList_control_label{}
+.wq_pglist .w2pageList_control_label.w2pageList_label_over{}
+.wq_pglist .w2pageList_control_label.w2pageList_label_selected{color:#3eaae8}
+.wq_pglist .w2pageList_col_prevPage{width:21px;height:19px;background:url(/images/contents/pg_list_first.png) no-repeat left center}
+.wq_pglist .w2pageList_col_prev{width:21px;height:19px;background:url(/images/contents/pg_list_prev.png) no-repeat left center}
+.wq_pglist .w2pageList_col_next{width:21px;height:19px;background:url(/images/contents/pg_list_next.png) no-repeat right center}
+.wq_pglist .w2pageList_col_nextPage{width:21px;height:19px;background:url(/images/contents/pg_list_last.png) no-repeat right center}
+
+/* Tabcontrol */
+.wq_tbc_box{position:relative}
+.wq_tbc{position:relative;margin-top:15px}
+.wq_tbc .w2tabcontrol_tabhost{height:26px;border-bottom:none}
+.wq_tbc .w2tabcontrol_tabhost li{top:1px;height:27px;margin-right:-1px;border:1px solid #757984;-moz-box-sizing:border-box;box-sizing:border-box}
+.wq_tbc .w2tabcontrol_li.w2tabcontrol_over,.wq_tbc .w2tabcontrol_li.w2tabcontrol_active {border:1px solid #757984;background:#757984}
+.wq_tbc .w2tabcontrol_tabhost .w2tabcontrol_tab_center,
+.wq_tbc .w2tabcontrol_tabhost .w2tabcontrol_tab_left,
+.wq_tbc .w2tabcontrol_tabhost .w2tabcontrol_tab_right{height:25px;background-image:none}
+.wq_tbc .w2tabcontrol_tabhost .w2tabcontrol_tab_center,
+.wq_tbc .w2tabcontrol_tabhost .w2tabcontrol_tab_left,
+.wq_tbc .w2tabcontrol_tabhost .w2tabcontrol_tab_right,
+.wq_tbc .w2tabcontrol_tabhost .w2tabcontrol_active .w2tabcontrol_tab_right,
+.wq_tbc .w2tabcontrol_tabhost .w2tabcontrol_active .w2tabcontrol_tab_left,
+.wq_tbc .w2tabcontrol_tabhost .w2tabcontrol_active .w2tabcontrol_tab_center,
+.wq_tbc .w2tabcontrol_tabhost .w2tabcontrol_over .w2tabcontrol_tab_right,
+.wq_tbc .w2tabcontrol_tabhost .w2tabcontrol_over .w2tabcontrol_tab_left,
+.wq_tbc .w2tabcontrol_tabhost .w2tabcontrol_over .w2tabcontrol_tab_center{height:25px;background-image:none}
+.wq_tbc .w2tabcontrol_tabhost li a{top:0;line-height:25px;font-size:12px;color:#66717f}
+.wq_tbc .w2tabcontrol_tabhost .w2tabcontrol_active .w2tabcontrol_tab_center a, 
+.wq_tbc .w2tabcontrol_tabhost .w2tabcontrol_over .w2tabcontrol_tab_center a{color:#fff}
+.wq_tbc .w2tabcontrol_tabhost li.w2tabcontrol_disabled a{cursor:default}
+.wq_tbc .w2tabcontrol_container{position:relative;top:0;left:0;right:0;bottom:0;float:none;height:auto !important;padding:0;border-left:0;border-right:0;border-bottom:0;border-top:1px solid #757984}
+.wq_tbc .w2tabcontrol_contents_wrapper{position:relative;top:0;left:0;right:0;bottom:0;height:auto;padding-top:5px}
+.wq_tbc .w2tabcontrol_tab_close, .wq_tbc .w2tabcontrol_tab_close2{background-image: url(/images/contents/close.png)}
+
+/* 팝업 */
+.w2window_header{height:30px;background:#626a7e}
+.w2window_header .w2window_header_icon{display:none}
+.w2window_header .w2window_header_title{left:0;padding:5px 0 0 10px;font-size:14px;color:#fff}
+.w2window_header .w2window_header_control{}
+.w2window_header .w2window_header_control .w2window_close{top:9px;width:12px;height:12px;background-image:url(/images/contents/btn_popclose.png)}
+.w2window_body{top:30px;padding:0;background-color:transparent;border:2px solid #626a7e;border-top:none}
+.w2window_body .w2window_content{top:10px;right:18px;bottom:18px;left:18px;border:none}
+
+/* 시스템메시지 팝업 */
+.ly_popup{position:absolute;left:50%;top:50%;margin:-250px 0 0 -140px;width:500px;height:280px;background:#575f74;z-index:201;}
+.ly_popup .ly_head{position:relative;height:30px;padding:15px;}
+.ly_popup .ly_head .tit{line-height:33px;font-size:24px;color:#fff;}
+.ly_popup .ly_head .btn_pop_close{position:absolute;top:15px;right:15px;width:30px;height:30px;background:url(/images/contents/btn_popclose.png) no-repeat center center;text-indent:-9999px;}
+.ly_popup .ly_cont{padding:30px 15px 0;text-align:center;}
+.ly_popup .ly_cont .txt1{line-height:32px;font-size:20px;color:#fff;}
+.ly_popup .ly_cont .txt2{line-height:23px;font-size:14px;color:#fff;}
+.ly_popup .ly_cont .btn_pop{display:inline-block;padding:0 15px;height:36px;margin-top:30px;line-height:32px;color:#fff;font-size:16px;border:1px solid #fff;background:#626a7e;border-radius:2px;box-sizing:border-box;}
+.ly_popup .ly_cont .btn_pop:hover{background:#575f74;}
+.dimd{position:absolute;top:0;left:0;right:0;bottom:0;background:#ccc;opacity:0.3;filter:alpha(opacity="30");z-index:200;}
+
+/* component etc */
+.w2span{display:inline-block}/* span text부분 */
+.ett{display:inline-block;min-height:15px;padding:0 2px;margin:0;vertical-align:middle}/* min-width:2px; */
+
+/* exe_box */
+.exe_box{padding:10px;background:#f6f6f6;border:1px solid #ccc;border-radius:3px;margin-top:5px}
+
+/* box gap */
+.pgtbox + .shbox,
+.dfbox + .shbox{margin-top:5px}
+.dfbox + .gvwbox{margin-top:0}
+
+/* adaptive */
+.shbox .tb.w2tb.w2tb_adaptive_layout .w2tb_td{border-top:none !important}
+.shbox .tb.w2tb.w2tb_adaptive_layout .w2tb_td:before{border-right:none;background-color:transparent}
+.shbox .tb.w2tb.w2tb_adaptive_layout .w2tb_tr:last-child .w2tb_td:last-child{border-bottom:none}
+
+.tb.w2tb_adaptive_layout{border-top:none;border-left:1px solid #e3e3e3;border-right:1px solid #e3e3e3;-moz-box-sizing:border-box;box-sizing:border-box}
+.tb.w2tb_adaptive_layout .w2tb_td{min-height:17px;height:auto;border-top:1px solid #e3e3e3 !important}
+.tb.w2tb_adaptive_layout .w2tb_td:before{white-space:normal;border-right:1px solid #e3e3e3;background:#f6f6f6}
+.tb.w2tb_adaptive_layout .w2tb_th.ast + .w2tb_td:before{color:#3eaae8;background-image:url(/images/contents/bg_point_ico.png);background-position:0 0;background-repeat:no-repeat}
+.tb.w2tb.w2tb_adaptive_layout .w2tb_tr:last-child .w2tb_td:last-child{border-bottom:1px solid #e3e3e3}

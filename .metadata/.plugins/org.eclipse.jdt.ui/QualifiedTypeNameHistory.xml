@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.inswave.wrm.util.Result"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.sql.Array"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="websquare.http.controller.datalist.excel.write.IExternalGridDataProvider"/>
+<fullyQualifiedTypeName name="websquare.http.controller.grid.excel.write.IExternalGridDataProvider"/>
+<fullyQualifiedTypeName name="com.inswave.wrm.sample.service.impl.EduServiceImpl"/>
+</qualifiedTypeNameHistroy>

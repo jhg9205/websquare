@@ -1,0 +1,9 @@
+{
+   "charset": "UTF-8",
+   "reqMethod": "POST",
+   "serviceURL": "http://localhost:8080/edu/subDetailUpdate",
+   "contentType": "application/json",
+   "requestContent": "{\"dc_saupListDetail\": [\n   {\n      \"chk-detail\": \"data_0_0\",\n      \"ACUSR_NAME\": \"data_0_1\",\n      \"EMAIL\": \"data_0_3\",\n      \"GNRL_ADRES\": \"data_0_2\"\n   },\n   {\n      \"chk-detail\": \"data_1_0\",\n      \"ACUSR_NAME\": \"data_1_1\",\n      \"EMAIL\": \"data_1_3\",\n      \"GNRL_ADRES\": \"data_1_2\"\n   }\n]}",
+   "responseContent": "{\"rsMsg\":{},\"resultMsg\":\"수정이 완료되었습니다.\"}",
+   "sendTime": "2023-01-27 10:27:04"
+}

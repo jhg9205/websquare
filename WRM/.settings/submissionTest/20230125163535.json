@@ -1,0 +1,9 @@
+{
+   "charset": "UTF-8",
+   "reqMethod": "POST",
+   "serviceURL": "http://localhost:8080/edu/subMainInit",
+   "contentType": "application/json",
+   "requestContent": "{\"dc_saupCode\": {\"saupCode\": \"SampleValue_0\"}}",
+   "responseContent": "{\"rsMsg\":{\"statusCode\":\"E\", \"errorCode\" : \"E0001\", \"message\":\"Session이 종료 되었습니다.\",\"status\":\"Error\"}}",
+   "sendTime": "2023-01-25 16:35:35"
+}

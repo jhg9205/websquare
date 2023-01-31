@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/cm/css/all.css" type="text/css"?>
+<?xml-stylesheet href="/cm/css/contents.css" type="text/css"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+    	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=2.0,minimum-scale=1.0,user-scalable=yes"/> 
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+            <w2:dataCollection baseNode="map">
+            </w2:dataCollection>
+            <w2:workflowCollection>
+            </w2:workflowCollection>
+        </xf:model>
+         <script type="text/javascript" lazy="false"><![CDATA[
+        
+	scwin.onpageload = function() {
+		
+	};
+	
+	scwin.onpageunload = function() {
+		
+	};
+	
+	
+	scwin.sideToggle_onclick = function(e) {
+		$(".wrap").toggleClass("closeSide");
+	};
+	
+	scwin.menuClose_onclick = function() {
+		$(".header").removeClass( "show" );
+		$(".header").addClass( "hide" );
+	};
+
+	scwin.menuOpen_onclick = function() {
+		$(".header").removeClass( "hide" );
+		$(".header").addClass( "show" );
+		$(".wrap").addClass("closeSide");
+	};
+	
+	
+	]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    	<xf:group class="wrap" id="" style="">
+    		<xf:group id="" class="header"><w2:anchor outerDiv="false" style="" id="" class="logo">
+    			<xf:label><![CDATA[BC카드]]></xf:label>
+    		</w2:anchor><xf:trigger ev:onclick="scwin.sideToggle_onclick" style="" id="sideToggle" type="button" class="btn_slide">
+    			<xf:label><![CDATA[서브메뉴 열기]]></xf:label>
+    		</xf:trigger><xf:group style="" id="" class="gnb_area">
+    			<xf:group tagname="" style="" id="" class="navi">
+    				<xf:group tagname="" style="" id="" class="navi_item">
+    					<w2:anchor outerDiv="false" style="" id="">
+    						<xf:label><![CDATA[MENU01]]></xf:label>
+    					</w2:anchor>
+    				</xf:group>
+    				<xf:group tagname="" style="" id="" class="navi_item">
+    					<w2:anchor outerDiv="false" style="" id="">
+    						<xf:label><![CDATA[MENU01]]></xf:label>
+    					</w2:anchor>
+    				</xf:group>
+    				<xf:group tagname="" style="" id="" class="navi_item">
+    					<w2:anchor outerDiv="false" style="" id="">
+    						<xf:label><![CDATA[MENU01]]></xf:label>
+    					</w2:anchor>
+    				</xf:group>
+    				<xf:group tagname="" style="" id="" class="navi_item">
+    					<w2:anchor outerDiv="false" style="" id="">
+    						<xf:label><![CDATA[MENU01]]></xf:label>
+    					</w2:anchor>
+    				</xf:group>
+    			</xf:group>
+    		</xf:group><xf:group style="" id="" class="infobox">
+    			<w2:textbox style="" id="" label="Welcome!" class="info_tit"></w2:textbox>
+    			<w2:textbox style="" id="" label="Jake LEE" class="info_tit name_tit"></w2:textbox>
+    			<xf:trigger style="" id="" type="button" class="btn_logout">
+    				<xf:label><![CDATA[Logout]]></xf:label>
+    			</xf:trigger>
+    			<xf:group style="" id="" class="opt_box">
+    				<xf:group tagname="a" style="" id="" class="ico_alarm">
+    					<w2:attributes>
+    						<w2:href>javascript:void(null);</w2:href>
+    					</w2:attributes>
+    					<w2:span style="" id="" label="3"></w2:span>
+    				</xf:group>
+    				<w2:anchor outerDiv="false" style="" id="" class="ico_info">
+    					<xf:label><![CDATA[Insert Text]]></xf:label>
+    				</w2:anchor>
+    				<w2:anchor outerDiv="false" style="" id="" class="ico_phone">
+    					<xf:label><![CDATA[Insert Text]]></xf:label>
+    				</w2:anchor>
+    				<w2:anchor outerDiv="false" style="" id="" class="ico_group">
+    					<xf:label><![CDATA[Insert Text]]></xf:label>
+    				</w2:anchor>
+    				<w2:anchor outerDiv="false" style="" id="" class="ico_setting">
+    					<xf:label><![CDATA[Insert Text]]></xf:label>
+    				</w2:anchor>
+    			</xf:group>
+    		</xf:group><w2:anchor ev:onclick="scwin.menuClose_onclick" outerDiv="false" style="" id="menuClose" class="mob_close">
+    			<xf:label><![CDATA[CLOSE]]></xf:label>
+    		</w2:anchor><w2:anchor ev:onclick="scwin.menuOpen_onclick" outerDiv="false" style="" id="menuOpen" class="mob_menu">
+    			<xf:label><![CDATA[MENU]]></xf:label>
+    		</w2:anchor></xf:group>
+    		<xf:group class="container" id="" style="">
+    			<xf:group id="" class="sidebox"><xf:group style="" id="" class="all_shbox">
+    				<xf:input adjustMaxLength="false" style="" id=""></xf:input>
+    				<w2:anchor outerDiv="false" style="" id="">
+    					<xf:label><![CDATA[검색]]></xf:label>
+    				</w2:anchor>
+    			</xf:group><w2:tabControl confirmTrueAction="exist" confirmFalseAction="new" useTabKeyOnly="true" useMoveNextTabFocus="false" useConfirmMessage="false" alwaysDraw="false" style="" id="" class="side_tbc">
+    				<w2:tabs disabled="false" style="height:40px;" id="tabs1" label="Menu"></w2:tabs>
+    				<w2:tabs disabled="false" style="height:40px;" id="tabs2" label="My Menu"></w2:tabs>
+    				<w2:content alwaysDraw="false" style="" id="content1">
+    					<w2:treeview showTreeDepth="" dataType="listed" lineShow="false" showCheckbox="true" tooltipDisplay="true"
+    						tooltipGroupClass="false" style="" id="" renderType="virtual" class="mn_tvw" useDrag="" toggleEvent="" rowHeight="34">
+    						<w2:node>
+    							<w2:label><![CDATA[Sub menu]]></w2:label>
+    							<w2:value><![CDATA[]]></w2:value>
+    							<w2:folder><![CDATA[]]></w2:folder>
+    							<w2:checkbox><![CDATA[]]></w2:checkbox>
+    							<w2:checkboxDisabled><![CDATA[]]></w2:checkboxDisabled>
+    							<w2:image><![CDATA[]]></w2:image>
+    							<w2:iconImage><![CDATA[]]></w2:iconImage>
+    							<w2:selectedImage><![CDATA[]]></w2:selectedImage>
+    							<w2:expandedImage><![CDATA[]]></w2:expandedImage>
+    							<w2:leafImage><![CDATA[]]></w2:leafImage>
+    							<w2:node>
+    								<w2:label><![CDATA[Sub menu]]></w2:label>
+    								<w2:value><![CDATA[]]></w2:value>
+    								<w2:folder><![CDATA[]]></w2:folder>
+    								<w2:checkbox><![CDATA[]]></w2:checkbox>
+    								<w2:checkboxDisabled><![CDATA[]]></w2:checkboxDisabled>
+    								<w2:image><![CDATA[]]></w2:image>
+    								<w2:iconImage><![CDATA[]]></w2:iconImage>
+    								<w2:selectedImage><![CDATA[]]></w2:selectedImage>
+    								<w2:expandedImage><![CDATA[]]></w2:expandedImage>
+    								<w2:leafImage><![CDATA[]]></w2:leafImage>
+    								<w2:node>
+    									<w2:label><![CDATA[Sub menu]]></w2:label>
+    									<w2:value><![CDATA[]]></w2:value>
+    									<w2:folder><![CDATA[]]></w2:folder>
+    									<w2:checkbox><![CDATA[]]></w2:checkbox>
+    									<w2:checkboxDisabled><![CDATA[]]></w2:checkboxDisabled>
+    									<w2:image><![CDATA[]]></w2:image>
+    									<w2:iconImage><![CDATA[]]></w2:iconImage>
+    									<w2:selectedImage><![CDATA[]]></w2:selectedImage>
+    									<w2:expandedImage><![CDATA[]]></w2:expandedImage>
+    									<w2:leafImage><![CDATA[]]></w2:leafImage>
+    								</w2:node>
+    							</w2:node>
+    						</w2:node>
+    						<w2:node>
+    							<w2:label><![CDATA[Sub menu]]></w2:label>
+    							<w2:value><![CDATA[]]></w2:value>
+    							<w2:folder><![CDATA[]]></w2:folder>
+    							<w2:checkbox><![CDATA[]]></w2:checkbox>
+    							<w2:checkboxDisabled><![CDATA[]]></w2:checkboxDisabled>
+    							<w2:image><![CDATA[]]></w2:image>
+    							<w2:iconImage><![CDATA[]]></w2:iconImage>
+    							<w2:selectedImage><![CDATA[]]></w2:selectedImage>
+    							<w2:expandedImage><![CDATA[]]></w2:expandedImage>
+    							<w2:leafImage><![CDATA[]]></w2:leafImage>
+    						</w2:node>
+    						<w2:node>
+    							<w2:label><![CDATA[Sub menu]]></w2:label>
+    							<w2:value><![CDATA[]]></w2:value>
+    							<w2:folder><![CDATA[]]></w2:folder>
+    							<w2:checkbox><![CDATA[]]></w2:checkbox>
+    							<w2:checkboxDisabled><![CDATA[]]></w2:checkboxDisabled>
+    							<w2:image><![CDATA[]]></w2:image>
+    							<w2:iconImage><![CDATA[]]></w2:iconImage>
+    							<w2:selectedImage><![CDATA[]]></w2:selectedImage>
+    							<w2:expandedImage><![CDATA[]]></w2:expandedImage>
+    							<w2:leafImage><![CDATA[]]></w2:leafImage>
+    							<w2:node>
+    								<w2:label><![CDATA[Sub menu]]></w2:label>
+    								<w2:value><![CDATA[]]></w2:value>
+    								<w2:folder><![CDATA[]]></w2:folder>
+    								<w2:checkbox><![CDATA[]]></w2:checkbox>
+    								<w2:checkboxDisabled><![CDATA[]]></w2:checkboxDisabled>
+    								<w2:image><![CDATA[]]></w2:image>
+    								<w2:iconImage><![CDATA[]]></w2:iconImage>
+    								<w2:selectedImage><![CDATA[]]></w2:selectedImage>
+    								<w2:expandedImage><![CDATA[]]></w2:expandedImage>
+    								<w2:leafImage><![CDATA[]]></w2:leafImage>
+    								<w2:node>
+    									<w2:label><![CDATA[Sub menu]]></w2:label>
+    									<w2:value><![CDATA[]]></w2:value>
+    									<w2:folder><![CDATA[]]></w2:folder>
+    									<w2:checkbox><![CDATA[]]></w2:checkbox>
+    									<w2:checkboxDisabled><![CDATA[]]></w2:checkboxDisabled>
+    									<w2:image><![CDATA[]]></w2:image>
+    									<w2:iconImage><![CDATA[]]></w2:iconImage>
+    									<w2:selectedImage><![CDATA[]]></w2:selectedImage>
+    									<w2:expandedImage><![CDATA[]]></w2:expandedImage>
+    									<w2:leafImage><![CDATA[]]></w2:leafImage>
+    								</w2:node>
+    							</w2:node>
+    						</w2:node>
+    					</w2:treeview>
+    				</w2:content>
+    				<w2:content alwaysDraw="false" style="" id="content2">
+    					<w2:treeview class="mn_tvw" dataType="listed" id="" lineShow="false" renderType="virtual" rowHeight="34"
+    						showCheckbox="true" showTreeDepth="" style="" toggleEvent="" tooltipDisplay="true" tooltipGroupClass="false" useDrag="">
+    						<w2:node>
+    							<w2:label><![CDATA[Sub menu]]></w2:label>
+    							<w2:value></w2:value>
+    							<w2:folder></w2:folder>
+    							<w2:checkbox></w2:checkbox>
+    							<w2:checkboxDisabled></w2:checkboxDisabled>
+    							<w2:image></w2:image>
+    							<w2:iconImage></w2:iconImage>
+    							<w2:selectedImage></w2:selectedImage>
+    							<w2:expandedImage></w2:expandedImage>
+    							<w2:leafImage></w2:leafImage>
+    							<w2:node>
+    								<w2:label><![CDATA[Sub menu]]></w2:label>
+    								<w2:value></w2:value>
+    								<w2:folder></w2:folder>
+    								<w2:checkbox></w2:checkbox>
+    								<w2:checkboxDisabled></w2:checkboxDisabled>
+    								<w2:image></w2:image>
+    								<w2:iconImage></w2:iconImage>
+    								<w2:selectedImage></w2:selectedImage>
+    								<w2:expandedImage></w2:expandedImage>
+    								<w2:leafImage></w2:leafImage>
+    								<w2:node>
+    									<w2:label><![CDATA[Sub menu]]></w2:label>
+    									<w2:value></w2:value>
+    									<w2:folder></w2:folder>
+    									<w2:checkbox></w2:checkbox>
+    									<w2:checkboxDisabled></w2:checkboxDisabled>
+    									<w2:image></w2:image>
+    									<w2:iconImage></w2:iconImage>
+    									<w2:selectedImage></w2:selectedImage>
+    									<w2:expandedImage></w2:expandedImage>
+    									<w2:leafImage></w2:leafImage>
+    								</w2:node>
+    							</w2:node>
+    						</w2:node>
+    						<w2:node>
+    							<w2:label><![CDATA[Sub menu]]></w2:label>
+    							<w2:value></w2:value>
+    							<w2:folder></w2:folder>
+    							<w2:checkbox></w2:checkbox>
+    							<w2:checkboxDisabled></w2:checkboxDisabled>
+    							<w2:image></w2:image>
+    							<w2:iconImage></w2:iconImage>
+    							<w2:selectedImage></w2:selectedImage>
+    							<w2:expandedImage></w2:expandedImage>
+    							<w2:leafImage></w2:leafImage>
+    						</w2:node>
+    						<w2:node>
+    							<w2:label><![CDATA[Sub menu]]></w2:label>
+    							<w2:value></w2:value>
+    							<w2:folder></w2:folder>
+    							<w2:checkbox></w2:checkbox>
+    							<w2:checkboxDisabled></w2:checkboxDisabled>
+    							<w2:image></w2:image>
+    							<w2:iconImage></w2:iconImage>
+    							<w2:selectedImage></w2:selectedImage>
+    							<w2:expandedImage></w2:expandedImage>
+    							<w2:leafImage></w2:leafImage>
+    							<w2:node>
+    								<w2:label><![CDATA[Sub menu]]></w2:label>
+    								<w2:value></w2:value>
+    								<w2:folder></w2:folder>
+    								<w2:checkbox></w2:checkbox>
+    								<w2:checkboxDisabled></w2:checkboxDisabled>
+    								<w2:image></w2:image>
+    								<w2:iconImage></w2:iconImage>
+    								<w2:selectedImage></w2:selectedImage>
+    								<w2:expandedImage></w2:expandedImage>
+    								<w2:leafImage></w2:leafImage>
+    								<w2:node>
+    									<w2:label><![CDATA[Sub menu]]></w2:label>
+    									<w2:value></w2:value>
+    									<w2:folder></w2:folder>
+    									<w2:checkbox></w2:checkbox>
+    									<w2:checkboxDisabled></w2:checkboxDisabled>
+    									<w2:image></w2:image>
+    									<w2:iconImage></w2:iconImage>
+    									<w2:selectedImage></w2:selectedImage>
+    									<w2:expandedImage></w2:expandedImage>
+    									<w2:leafImage></w2:leafImage>
+    								</w2:node>
+    							</w2:node>
+    						</w2:node>
+    					</w2:treeview>
+    				</w2:content>
+</w2:tabControl></xf:group>
+    			<xf:group class="contents" id="" style="">
+    				<w2:tabControl alwaysDraw="false" class="tabc_layout" closable="true" confirmFalseAction="new" confirmTrueAction="exist"
+    					id="tabc_layout" style="" tabScroll="true" useConfirmMessage="false" useMoveNextTabFocus="" useTabKeyOnly="true" adaptive="layout"
+    					adaptiveThreshold="768" focusOnStart="false">
+    					<w2:tabs disabled="false" id="tabs1" label="화면샘플" style=""></w2:tabs>
+    					<w2:content alwaysDraw="false" frameMode="wframe" id="content1" src="/xml/template1.xml" style=""></w2:content>
+    				</w2:tabControl>
+    			</xf:group>
+    		</xf:group>
+    	</xf:group>
+    </body>
+</html>

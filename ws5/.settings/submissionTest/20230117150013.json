@@ -1,0 +1,9 @@
+{
+   "charset": "UTF-8",
+   "reqMethod": "POST",
+   "serviceURL": "http://localhost:9090/ws5/training/getCodeList.do",
+   "contentType": "application/json",
+   "requestContent": "{\"dc_reqCode\": {\"GRP_CD\": \"101\"}}",
+   "responseContent": "{\"msg\":\"공통코드 조회가 완료되었습니다.\",\"dc_code101\":[{\"GRP_CD\":\"101\",\"CODE_CD\":\"M\",\"CODE_NM\":\"남\"},{\"GRP_CD\":\"101\",\"CODE_CD\":\"F\",\"CODE_NM\":\"여\"}],\"msgCode\":\"S\"}",
+   "sendTime": "2023-01-17 15:00:13"
+}

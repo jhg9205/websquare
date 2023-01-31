@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:w2="http://www.inswave.com/websquare"
+	xmlns:xf="http://www.w3.org/2002/xforms">
+	<head meta_screenName="WebSquare5 jquery 사용 예제">
+		<w2:type>DEFAULT</w2:type>
+		<w2:buildDate />
+		<xf:model>
+			<xf:instance>
+				<data xmlns="" />
+			</xf:instance>
+			<w2:dataCollection></w2:dataCollection>
+		</xf:model>
+		<script type="text/javascript" lazy="false"><![CDATA[
+	
+	scwin.onpageload = function() {
+		
+	};
+	
+	// jquery id를 이용하여 set
+	scwin.btnJSet_onclick = function(e) {
+		$("#mf_ipt1").val("abc");
+	};
+	
+	// jquery id를 이용하여 get
+	scwin.btnJGet_onclick = function(e) {
+		alert( $("#mf_ipt1").val()  );
+	};
+	
+	// jquery className를 이용하여 set
+	scwin.btnJcSet_onclick = function(e) {
+		$(".aa").val("def");
+	};
+	
+	// jquery className를 이용하여 get
+	scwin.btnJcGet_onclick = function(e) {
+		alert( $(".aa").val());
+	};
+	
+	// WebSquare5 에서 jquery id 사용 문법을 이용한  set
+	scwin.btnSet1_onclick = function(e) {
+		$p.$("#ipt2").val("123");
+	};
+	
+	// WebSquare5 에서 jquery id 사용 문법을 이용한  get
+	scwin.btnGet1_onclick = function(e) {
+		alert( $p.$("#ipt2").val());
+	};
+	
+	// WebSquare5 에서 jquery className 사용 문법을 이용한  set
+	scwin.btnSet2_onclick = function(e) {
+		$p.$(".bb").val("567");	
+	};
+	
+	// WebSquare5 에서 jquery className 사용 문법을 이용한  get
+	scwin.btnGet2_onclick = function(e) {
+		alert( $p.$(".bb").val() );
+	};
+	]]></script>
+		<style type="text/css"><![CDATA[
+			.aa {background-color: #FAD796;}
+			.bb {background-color: #C9F7FE;}
+		 ]]></style>
+	</head>
+	<body ev:onpageload="scwin.onpageload">
+		<xf:group id="" style="" class="wrapper">
+			<xf:group id="" style="" class="section_desc pd10">
+				<w2:textbox id="" style=""
+					label="WebSquare5에서 jQuery 사용하는 샘플을 소개 합니다.&lt;br/&gt;( source : fn_jQuery.xml )"
+					tagname="">
+				</w2:textbox>
+			</xf:group>
+			<xf:group class="dl_code" id="" style="" tagname="dl">
+				<w2:textbox class="" id=""
+					label="일반적인 jQuery 사용 " style=""
+					tagname="dt">
+				</w2:textbox>
+				<xf:group id="" style="" tagname="dd">
+					<w2:textbox id=""
+						label="id 기준의 $(&quot;#id&quot;), 혹은 class명 기준의 $(&quot;.className&quot;) 모두 사용이 가능합니다.&lt;br/&gt;(jsp등에서 사용하셨던 문법과 동일합니다.)&lt;br/&gt;다만, websquare5에서는 component가 웹 브라우저에 rendering 될 때 &lt;br/&gt;자체적으로 'mf' 라는 prefix를 사용하므로 이를 붙여서 표현해야 합니다." style="">
+					</w2:textbox>
+					<w2:textbox class="dp" id=""
+						label="1) id가 'ipt1' 인 component에 대한 접근 $(&quot;#mf_ipt1&quot;)&lt;br/&gt;(websquare5 컴포넌트는 웹 브라우저에 rendering 될 때 'mf_' 라는 prefix 가 사용됩니다.)"
+						style="" tagname="samp">
+					</w2:textbox>
+					<xf:group class="" id="" style="padding: 5px">
+						<xf:input adjustMaxLength="false" id="ipt1" style="width: 144px;height: 21px;margin-right: 5px;"></xf:input>
+						<xf:trigger type="button" style="width: 80px;height: 23px;margin-right: 5px;" id="btnJSet" ev:onclick="scwin.btnJSet_onclick">
+							<xf:label><![CDATA[set]]></xf:label>
+						</xf:trigger>
+						<xf:trigger id="btnJGet" style="width: 80px;height: 23px;margin-right: 5px;" type="button" ev:onclick="scwin.btnJGet_onclick">
+							<xf:label><![CDATA[get]]></xf:label>
+						</xf:trigger>
+					</xf:group>
+					<w2:textbox class="dp" id="" label="2) className 이 'aa' 인 component에 대한 접근 $(&quot;.aa&quot;)" style="" tagname="samp">
+					</w2:textbox><xf:group class="" id="" style="padding: 5px">
+						<xf:input adjustMaxLength="false" id="" style="width: 144px;height: 21px;margin-right: 5px;" class="aa"></xf:input>
+						<xf:trigger id="btnJcSet" style="width: 80px;height: 23px;margin-right: 5px;" type="button" ev:onclick="scwin.btnJcSet_onclick">
+							<xf:label><![CDATA[set]]></xf:label>
+						</xf:trigger>
+						<xf:trigger id="btnJcGet" style="width: 80px;height: 23px;margin-right: 5px;" type="button" ev:onclick="scwin.btnJcGet_onclick">
+							<xf:label><![CDATA[get]]></xf:label>
+						</xf:trigger>
+					</xf:group>
+					
+				</xf:group>
+				<w2:textbox class="" id=""
+					label="WebSquare5 에서 jQuery 사용" style=""
+					tagname="dt">
+				</w2:textbox>
+				<xf:group id="" style="" tagname="dd">
+					<w2:textbox id="" label='WebSquare5에서는 $p.$("#id") 를 통해 jQuery 문법처럼 이용하실 수 있습니다.' style=""></w2:textbox>
+					<w2:textbox class="dp" id="" label="1) id가 'ipt2' 인 component에 대한 접근 $p.$(&quot;#ipt2&quot;)" style="" tagname="samp">
+					</w2:textbox>
+					<xf:group class="" id="" style="padding: 5px">
+						<xf:input adjustMaxLength="false" id="ipt2" style="width: 144px;height: 21px;margin-right: 5px;"></xf:input>
+						<xf:trigger ev:onclick="scwin.btnSet1_onclick" id="btnSet1" style="width: 80px;height: 23px;margin-right: 5px;" type="button">
+							<xf:label><![CDATA[set]]></xf:label>
+						</xf:trigger>
+						<xf:trigger ev:onclick="scwin.btnGet1_onclick" id="btnGet1" style="width: 80px;height: 23px;margin-right: 5px;" type="button">
+							<xf:label><![CDATA[get]]></xf:label>
+						</xf:trigger>
+					</xf:group>
+					<w2:textbox class="dp" id="" label="2) className 이 'bb' 인 component에 대한 접근 $p.$(&quot;.bb&quot;)" style=""
+						tagname="samp">
+					</w2:textbox>
+					<xf:group class="" id="" style="padding: 5px">
+						<xf:input adjustMaxLength="false" id="" style="width: 144px;height: 21px;margin-right: 5px;background-color:;" class="bb"></xf:input>
+						<xf:trigger ev:onclick="scwin.btnSet2_onclick" id="btnSet2" style="width: 80px;height: 23px;margin-right: 5px;" type="button">
+							<xf:label><![CDATA[set]]></xf:label>
+						</xf:trigger>
+						<xf:trigger ev:onclick="scwin.btnGet2_onclick" id="btnGet2" style="width: 80px;height: 23px;margin-right: 5px;" type="button">
+							<xf:label><![CDATA[get]]></xf:label>
+						</xf:trigger>
+					</xf:group>
+				</xf:group>
+			</xf:group>
+		</xf:group>
+	</body>
+</html>

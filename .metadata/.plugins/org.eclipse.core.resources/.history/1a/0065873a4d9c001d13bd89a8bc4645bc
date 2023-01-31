@@ -1,0 +1,8 @@
+#driver=org.mariadb.jdbc.Driver
+#url=jdbc:mariadb://127.0.0.1:3306/WRM
+#username=APP
+#password=APP
+driver=oracle.jdbc.driver.OracleDriver
+url=jdbc:oracle:thin@211.59.68.82:58821:ncms
+username=GBOSANG_DEV
+password=ncms2021

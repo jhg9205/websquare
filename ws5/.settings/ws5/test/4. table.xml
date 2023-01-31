@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+        <w2:buildDate/>
+        <w2:userPalette defaultIcon="mix.png" desc=""/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+        </xf:model>
+        <script type="text/javascript"><![CDATA[ ]]></script>
+    </head>
+    <body><xf:group adaptive="layout" tagname="table" adaptiveThreshold="700" style="width:100%;" id="" class="w2tb">
+	<w2:attributes>
+		<w2:summary>
+</w2:summary>
+</w2:attributes>
+	<xf:group tagname="caption">
+</xf:group>
+	<xf:group tagname="colgroup">
+		<xf:group tagname="col" style="width:100px;">
+		</xf:group>
+		<xf:group tagname="col" style="">
+		</xf:group>
+		<xf:group tagname="col" style="width:100px;">
+		</xf:group>
+		<xf:group tagname="col" style="">
+		</xf:group>
+</xf:group>
+	<xf:group tagname="tr" style="">
+		<xf:group tagname="th" style="" class="w2tb_th">이름			<w2:attributes>
+				<w2:scope>row</w2:scope>
+</w2:attributes>
+		</xf:group>
+		<xf:group tagname="td" style="" class="w2tb_td">
+			<xf:input adjustMaxLength="false" style="width: 144px;height: 21px;" id="">
+			</xf:input>
+</xf:group>
+		<xf:group tagname="th" style="" class="w2tb_th">성별			<w2:attributes>
+				<w2:scope>row</w2:scope>
+</w2:attributes>
+		</xf:group>
+		<xf:group tagname="td" style="" class="w2tb_td">
+			<xf:select1 submenuSize="auto" appearance="minimal" disabledClass="w2selectbox_disabled" chooseOption="false" style="width: 148px;height: 21px;" disabled="false" id="" allOption="false" direction="auto">
+</xf:select1>
+</xf:group>
+</xf:group>
+	<xf:group tagname="tr" style="">
+		<xf:group tagname="th" style="" class="w2tb_th">입사일			<w2:attributes>
+				<w2:scope>row</w2:scope>
+</w2:attributes>
+		</xf:group>
+		<xf:group tagname="td" style="" class="w2tb_td">
+			<w2:inputCalendar footerDiv="false" rightAlign="false" focusOnDateSelect="false" style="width: 150px;height: 23px;" id="" renderType="component" renderDiv="true" calendarValueType="yearMonthDate">
+</w2:inputCalendar>
+</xf:group>
+		<xf:group tagname="th" style="" class="w2tb_th">직급			<w2:attributes>
+				<w2:scope>row</w2:scope>
+</w2:attributes>
+		</xf:group>
+		<xf:group tagname="td" style="" class="w2tb_td">
+			<xf:select1 submenuSize="auto" appearance="minimal" disabledClass="w2selectbox_disabled" chooseOption="false" disabled="false" style="width: 148px;height: 21px;" allOption="false" id="" direction="auto">
+</xf:select1>
+</xf:group>
+</xf:group>
+</xf:group>
+</body>
+</html>

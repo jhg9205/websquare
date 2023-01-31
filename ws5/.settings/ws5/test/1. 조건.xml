@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+        <w2:buildDate/>
+        <w2:userPalette defaultIcon="mix.png" desc=""/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+        </xf:model>
+        <script type="text/javascript"><![CDATA[ ]]></script>
+    </head>
+    <body><xf:group style="padding:10px;overflow: hidden;border:1px solid gray;margin-bottom:10px" id="">
+	<xf:group style="width: 220px;float:left;margin-right:10px;" id="">
+		<w2:span style="" label="성별" id="">
+		</w2:span>
+		<xf:select1 submenuSize="auto" appearance="minimal" disabledClass="w2selectbox_disabled" chooseOption="false" style="width: 148px;height: 21px;" disabled="false" id="" allOption="false" direction="auto">
+</xf:select1>
+</xf:group>
+	<xf:group style="width: 220px;float:left;margin-right:10px;" id="">
+		<w2:span style="" id="" label="직급">
+		</w2:span>
+		<xf:select1 submenuSize="auto" appearance="minimal" disabledClass="w2selectbox_disabled" chooseOption="false" disabled="false" style="width: 148px;height: 21px;" allOption="false" id="" direction="auto">
+</xf:select1>
+</xf:group>
+	<xf:group style="width: 200px;float: right;overflow: hidden;" id="">
+		<xf:trigger style="width: 80px;height: 23px;float:right;" id="" type="button">
+			<xf:label>
+<![CDATA[조회]]></xf:label>
+</xf:trigger>
+</xf:group>
+</xf:group>
+</body>
+</html>

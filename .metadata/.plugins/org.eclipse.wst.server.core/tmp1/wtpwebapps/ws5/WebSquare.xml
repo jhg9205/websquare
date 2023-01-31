@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+            <w2:dataCollection baseNode="map">
+            </w2:dataCollection>
+            <w2:workflowCollection>
+            </w2:workflowCollection>
+        </xf:model>
+         <script type="text/javascript" lazy="false"><![CDATA[
+        
+	scwin.onpageload = function() {
+		
+	};
+	
+	scwin.onpageunload = function() {
+		
+	};
+	
+	]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    <xf:group id="" style="padding:10px"><xf:group style="border:1px solid black;padding:10px;margin-bottom:10px;" id="">
+    		<w2:span style="margin-right:100px" label="Insert Text" id=""></w2:span>
+    		<xf:input adjustMaxLength="false" style="width: 144px;height: 21px;" id=""></xf:input>
+    		<xf:trigger style="width: 80px;height: 23px;float: right;" id="" type="button">
+    			<xf:label><![CDATA[]]></xf:label>
+    		</xf:trigger>
+    	</xf:group><xf:group style="border:1px solid black;padding:10px;margin-bottom:10px;" id="">
+    		<w2:span style="margin-right:100px" id="" label="Insert Text"></w2:span>
+    		<xf:input adjustMaxLength="false" style="width: 144px;height: 21px;" id=""></xf:input>
+    		<xf:trigger style="width: 80px;height: 23px;float: right;" id="" type="button">
+    			<xf:label></xf:label>
+    		</xf:trigger>
+    	</xf:group><xf:group style="border:1px solid black;padding:10px;margin-bottom:10px;" id="">
+    		<w2:span style="margin-right:100px" id="" label="Insert Text"></w2:span>
+    		<xf:input adjustMaxLength="false" style="width: 144px;height: 21px;" id=""></xf:input>
+    		<xf:trigger style="width: 80px;height: 23px;float: right;" id="" type="button">
+    			<xf:label></xf:label>
+    		</xf:trigger>
+    	</xf:group></xf:group></body>
+</html>

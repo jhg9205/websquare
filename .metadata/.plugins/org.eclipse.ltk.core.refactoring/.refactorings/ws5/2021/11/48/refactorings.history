@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;fn_gridView_crud.xml&apos; to &apos;compFunc&apos;&#x0D;&#x0A;- Original project: &apos;ws5&apos;&#x0D;&#x0A;- Destination element: &apos;compFunc&apos;&#x0D;&#x0A;- Original element: &apos;fn_gridView_crud.xml&apos;" description="Copy file" element1="WebContent/sample/compFunc/fn_gridView_crud.xml" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1637714519854" target="/ws5/WebContent/sample/compFunc" units="0" version="1.0"/>
+</session>

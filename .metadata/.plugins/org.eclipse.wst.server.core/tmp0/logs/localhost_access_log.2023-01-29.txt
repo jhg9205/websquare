@@ -1,0 +1,2 @@
+0:0:0:0:0:0:0:1 - - [29/Jan/2023:10:34:03 +0900] "POST /websquare/serverTime.wq?pattern=yyyyMMddHHmmssSSS&idx=16749560439599743.496646719404 HTTP/1.1" 200 28
+0:0:0:0:0:0:0:1 - - [29/Jan/2023:14:34:03 +0900] "POST /websquare/serverTime.wq?pattern=yyyyMMddHHmmssSSS&idx=16749704439592951.9905192075503 HTTP/1.1" 200 28

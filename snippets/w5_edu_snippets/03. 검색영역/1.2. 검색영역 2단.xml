@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+        <w2:buildDate/>
+        <w2:userPalette defaultIcon="mix.png" desc=""/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+        </xf:model>
+        <script type="text/javascript"><![CDATA[ ]]></script>
+    </head>
+    <body><xf:group class="shbox" id="" style="">
+	<xf:group class="shbox_inner" id="" style="">
+		<xf:group class="w2tb tb" id="" style="" tagname="table">
+			<w2:attributes>
+				<w2:summary>
+				</w2:summary>
+</w2:attributes>
+			<xf:group tagname="colgroup">
+				<xf:group style="width:100px;" tagname="col">
+				</xf:group>
+				<xf:group style="" tagname="col">
+				</xf:group>
+				<xf:group style="width:100px;" tagname="col">
+				</xf:group>
+				<xf:group style="" tagname="col">
+				</xf:group>
+				<xf:group style="width:100px;" tagname="col">
+				</xf:group>
+				<xf:group style="" tagname="col">
+				</xf:group>
+</xf:group>
+			<xf:group style="" tagname="tr">
+				<xf:group class="w2tb_th" style="" tagname="th">*&amp;nbsp;조회조건1</xf:group>
+				<xf:group class="w2tb_td" style="" tagname="td">
+					<xf:input id="" style="">
+					</xf:input>
+</xf:group>
+				<xf:group class="w2tb_th" style="" tagname="th">조회조건2</xf:group>
+				<xf:group class="w2tb_td" style="" tagname="td">
+					<w2:inputCalendar calendarValueType="yearMonthDate" focusOnDateSelect="false" footerDiv="false" id="" renderDiv="true" renderType="component" rightAlign="false" style="width:100px;" weekStartsOn="0">
+</w2:inputCalendar>
+					<w2:span class=" " id="" label="~" style="position: relative ;">
+					</w2:span>
+					<w2:inputCalendar calendarValueType="yearMonthDate" focusOnDateSelect="false" footerDiv="false" id="" renderDiv="true" renderType="component" rightAlign="false" style="width:100px;" weekStartsOn="0">
+</w2:inputCalendar>
+</xf:group>
+				<xf:group class="w2tb_th" style="" tagname="th">*&amp;nbsp;조회조건3</xf:group>
+				<xf:group class="w2tb_td" style="" tagname="td">
+					<xf:input disabled="true" id="" style="">
+					</xf:input>
+					<w2:anchor class="btn_search" id="" outerDiv="false" style="">
+						<xf:label>
+<![CDATA[검색]]></xf:label>
+</w2:anchor>
+</xf:group>
+</xf:group>
+			<xf:group style="" tagname="tr">
+				<xf:group class="w2tb_th" tagname="th">&#13;
+    							*&amp;nbsp;조회조건4&#13;
+    												<w2:attributes>
+						<w2:scope>row</w2:scope>
+</w2:attributes>
+</xf:group>
+				<xf:group class="w2tb_td" tagname="td">
+					<w2:attributes>
+					</w2:attributes>
+					<xf:input id="" style="">
+					</xf:input>
+</xf:group>
+				<xf:group class="w2tb_th" tagname="th">&#13;
+    							*&amp;nbsp;조회조건5&#13;
+    												<w2:attributes>
+						<w2:scope>row</w2:scope>
+</w2:attributes>
+</xf:group>
+				<xf:group class="w2tb_td" tagname="td">
+					<w2:attributes>
+						<w2:colspan>3</w2:colspan>
+						<w2:rowspan>1</w2:rowspan>
+</w2:attributes>
+					<xf:select1 allOption="" appearance="minimal" chooseOption="" direction="auto" disabled="false" disabledClass="w2selectbox_disabled" displayMode="label" id="" optionOrder="false" selectedData="true" style="width: 124px;" submenuSize="auto">
+						<xf:choices>
+							<xf:item>
+								<xf:label>
+<![CDATA[선택아이템1]]></xf:label>
+								<xf:value>
+								</xf:value>
+</xf:item>
+							<xf:item>
+								<xf:label>
+<![CDATA[선택아이템2]]></xf:label>
+								<xf:value>
+								</xf:value>
+</xf:item>
+</xf:choices>
+</xf:select1>
+</xf:group>
+</xf:group>
+</xf:group>
+</xf:group>
+	<xf:group class="btn_shbox" id="">
+		<xf:trigger type="button" id="" style="" class="btn_cm ic_sch">
+			<xf:label>
+<![CDATA[조회]]></xf:label>
+</xf:trigger>
+</xf:group>
+</xf:group>
+</body>
+</html>

@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<websquare>
+	<upload>
+		<baseDir value="C:\WEBSQUARE_DEV_PACK\workspace\ws5\websquare_home\upload">
+			<subImg value="C:\WEBSQUARE_DEV_PACK\workspace\ws5\websquare_home\upload\subImg"/>
+		</baseDir>
+		<encoding value="UTF-8" />
+		<maxUploadSize value="200000000" />
+		<uploadMode value="session" />
+		<folderName value="up"/>
+		<duplicatedFilePostFix value="yyyyMMddHHmmss"></duplicatedFilePostFix>
+		<allowedExtension>
+			gif, jpg, jpeg, doc, xls, ppt, pdf, txt, xlsx, png, pptx, xml, docx
+		</allowedExtension>
+		<deniedExtension>
+			exe
+		</deniedExtension>
+	</upload>
+	<dispatcher>
+		<post>
+			<encoding value="ISO8859-1"></encoding>
+		</post>
+	</dispatcher>
+	<excel>
+		<!-- 엑셀 다운로드/업로드시 dataConvert 기능을 활용하여 다운로드 및 업로드시의 excel Data를 변경하려면 아래 옵션을 이용한다. 
+		<download>
+			<dataConvertor value="com.inswave.edu.provider.DataConvertDown"/>
+		</download>-->
+		<download>
+			<baseDir value="C:\WEBSQUARE_DEV_PACK\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps" />
+		</download>
+		<upload>
+			<dataConvertor value="com.inswave.edu.provider.DataConvertUp"/>
+		</upload>
+		<read>
+			<displayType value="number" />
+		</read>
+		<download>
+            <maxRowCount value="500000" /><!--splitProvider 사용시 엑셀파일 최대row 수 설정, 미설정시 기본값 10만 -->
+        </download>
+	</excel>
+	<!--
+		라이센스 정보를 볼 수 있는 IP 대역 설정
+	-->
+	<licenseInfoView>
+		<allowedIP value="192.168.* *" />
+	</licenseInfoView>
+	<!--
+	1 : 기존 엔진 - 기본값
+	2 : 기존 엔진(debug정보 제거)
+	3 : 신규 엔진
+	4 : 신규 엔진(debug정보 제거)
+	직접 지정하는 경우 : w2xType
+
+  etag
+    support : etag값을 비교하여 일치하면 상태코드를 304로 반환 (기본값)
+    notsupport : etag값 비교 지원 안함
+	deprecated
+		1이상의 정수, ALL, NONE를 입력할 수 있다.
+		ALL이 입력된 경우 deprecated가 설정된 모든 함수를 사용할 수 없다.
+		정수가 입력된 경우 정수보다 작거나 같은 버전으로 deprecated된 함수는 사용할 수 없다.
+		소스에 있는 deprecated 버전보다 큰 값이 입력되어도 오류가 발생하지는 않는다.
+		NONE가 입력된 경우 deprecated된 함수를 포함한 모든 함수를 사용할 수 있다.
+		설정이 없는 경우 NONE와 동일하다.
+		설정에 다른 값이 들어간 경우 NONE와 동일하다.
+
+	 -->
+	<engineType value="5" etag="support" coverage="notsupport" deprecated="NONE"/>
+</websquare>

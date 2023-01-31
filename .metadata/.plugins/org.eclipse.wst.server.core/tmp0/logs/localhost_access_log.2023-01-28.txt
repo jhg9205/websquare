@@ -1,0 +1,9 @@
+0:0:0:0:0:0:0:1 - - [28/Jan/2023:10:34:03 +0900] "POST /websquare/serverTime.wq?pattern=yyyyMMddHHmmssSSS&idx=16748696439718572.196296911949 HTTP/1.1" 200 28
+0:0:0:0:0:0:0:1 - - [28/Jan/2023:10:39:03 +0900] "POST /websquare/serverTime.wq?pattern=yyyyMMddHHmmssSSS&idx=16748699439656254.039239242502 HTTP/1.1" 200 28
+0:0:0:0:0:0:0:1 - - [28/Jan/2023:10:43:03 +0900] "POST /websquare/serverTime.wq?pattern=yyyyMMddHHmmssSSS&idx=16748701839656266.343421373253 HTTP/1.1" 200 28
+0:0:0:0:0:0:0:1 - - [28/Jan/2023:10:49:03 +0900] "POST /websquare/serverTime.wq?pattern=yyyyMMddHHmmssSSS&idx=1674870543960880.4882642878331 HTTP/1.1" 200 28
+0:0:0:0:0:0:0:1 - - [28/Jan/2023:10:53:03 +0900] "POST /websquare/serverTime.wq?pattern=yyyyMMddHHmmssSSS&idx=16748707839623507.3398759537035 HTTP/1.1" 200 28
+0:0:0:0:0:0:0:1 - - [28/Jan/2023:10:55:03 +0900] "POST /websquare/serverTime.wq?pattern=yyyyMMddHHmmssSSS&idx=16748709039578412.702791951535 HTTP/1.1" 200 28
+0:0:0:0:0:0:0:1 - - [28/Jan/2023:10:59:03 +0900] "POST /websquare/serverTime.wq?pattern=yyyyMMddHHmmssSSS&idx=16748711439595346.1981112253625 HTTP/1.1" 200 28
+0:0:0:0:0:0:0:1 - - [28/Jan/2023:11:01:03 +0900] "POST /websquare/serverTime.wq?pattern=yyyyMMddHHmmssSSS&idx=1674871263964591.5454805161224 HTTP/1.1" 200 28
+0:0:0:0:0:0:0:1 - - [28/Jan/2023:11:05:03 +0900] "POST /websquare/serverTime.wq?pattern=yyyyMMddHHmmssSSS&idx=16748715039665707.290274496548 HTTP/1.1" 200 28

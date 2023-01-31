@@ -1,0 +1,90 @@
+2021-04-02 14:47:36,388 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2021-04-02 14:48:03,467 [Worker-21: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.inswave:WRM:5.0.4.RELEASE @ C:\WEBSQUARE_DEV_PACK\workspace\WRM\pom.xml.
+2021-04-02 14:48:06,714 [Worker-21: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache:batik-all:jar:1.7.1-20150510 is missing, no dependency information available
+2021-04-02 14:48:06,747 [Worker-21: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for batik:pdf-transcoder:jar:1.0beta2 is missing, no dependency information available
+2021-04-02 14:48:06,778 [Worker-21: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for websquare:websquare:jar:5.0_4.4371B.20210326.192143_1.5 is missing, no dependency information available
+2021-04-02 14:48:10,789 [Worker-21: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-04-02 14:48:10,804 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\WEBSQUARE_DEV_PACK\workspace\WRM\src\main\resources
+2021-04-02 14:48:10,809 [Worker-21: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-04-02 14:48:10,824 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\WEBSQUARE_DEV_PACK\workspace\WRM\src\test\resources
+2021-04-02 14:48:11,030 [Worker-27: Download sources and javadoc] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache:batik-all:jar:1.7.1-20150510 is missing, no dependency information available
+2021-04-02 14:48:11,046 [Worker-27: Download sources and javadoc] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for batik:pdf-transcoder:jar:1.0beta2 is missing, no dependency information available
+2021-04-02 14:48:11,062 [Worker-27: Download sources and javadoc] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for websquare:websquare:jar:5.0_4.4371B.20210326.192143_1.5 is missing, no dependency information available
+2021-04-02 14:48:12,505 [Worker-27: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/websquare/websquare/5.0_4.4371B.20210326.192143_1.5/websquare-5.0_4.4371B.20210326.192143_1.5-javadoc.jar
+2021-04-02 14:48:12,540 [Worker-27: Download sources and javadoc] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download javadoc for websquare:websquare:5.0_4.4371B.20210326.192143_1.5
+org.eclipse.core.runtime.CoreException: Could not resolve artifact websquare:websquare:jar:javadoc:5.0_4.4371B.20210326.192143_1.5
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:803) ~[org.eclipse.m2e.core_1.15.0.20200305-1308.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:179) ~[org.eclipse.m2e.core_1.15.0.20200305-1308.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:114) ~[org.eclipse.m2e.core_1.15.0.20200305-1308.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:101) ~[org.eclipse.m2e.core_1.15.0.20200305-1308.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:771) ~[org.eclipse.m2e.core_1.15.0.20200305-1308.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:748) ~[org.eclipse.m2e.core_1.15.0.20200305-1308.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:330) [org.eclipse.m2e.jdt_1.15.0.20200226-1722.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:316) [org.eclipse.m2e.jdt_1.15.0.20200226-1722.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:269) [org.eclipse.m2e.jdt_1.15.0.20200226-1722.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:233) [org.eclipse.m2e.jdt_1.15.0.20200226-1722.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:161) [org.eclipse.m2e.jdt_1.15.0.20200226-1722.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:179) ~[org.eclipse.m2e.core_1.15.0.20200305-1308.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:153) ~[org.eclipse.m2e.core_1.15.0.20200305-1308.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:101) ~[org.eclipse.m2e.core_1.15.0.20200305-1308.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1373) ~[org.eclipse.m2e.core_1.15.0.20200305-1308.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:161) [org.eclipse.m2e.jdt_1.15.0.20200226-1722.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) ~[org.eclipse.core.jobs_3.10.700.v20200106-1020.jar:na]
+2021-04-02 14:49:22,070 [Worker-7: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-04-02 14:49:22,086 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\WEBSQUARE_DEV_PACK\workspace\WRM\src\main\resources
+2021-04-02 14:49:22,088 [Worker-7: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-04-02 14:49:22,104 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\WEBSQUARE_DEV_PACK\workspace\WRM\src\test\resources
+2021-04-27 09:17:09,537 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2021-04-27 09:17:13,763 [Worker-4: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache:batik-all:jar:1.7.1-20150510 is missing, no dependency information available
+2021-04-27 09:17:13,767 [Worker-4: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for batik:pdf-transcoder:jar:1.0beta2 is missing, no dependency information available
+2021-04-27 09:17:13,769 [Worker-4: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for websquare:websquare:jar:5.0_4.4371B.20210326.192143_1.5 is missing, no dependency information available
+2021-04-27 09:17:14,417 [Worker-4: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-04-27 09:17:14,418 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\WEBSQUARE_DEV_PACK\workspace\WRM\src\main\resources
+2021-04-27 09:17:14,422 [Worker-4: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-04-27 09:17:14,424 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\WEBSQUARE_DEV_PACK\workspace\WRM\src\test\resources
+2021-12-20 01:30:18,670 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2021-12-20 01:30:39,949 [Worker-7: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.inswave:WRM:5.0.4.RELEASE @ C:\WEBSQUARE_DEV_PACK\workspace\WRM\pom.xml.
+2021-12-20 01:30:41,230 [Worker-7: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache:batik-all:jar:1.7.1-20150510 is missing, no dependency information available
+2021-12-20 01:30:41,242 [Worker-7: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for batik:pdf-transcoder:jar:1.0beta2 is missing, no dependency information available
+2021-12-20 01:30:42,513 [Worker-7: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/websquare/websquare/5.0_4.4500B.20210927.150048_1.5/websquare-5.0_4.4500B.20210927.150048_1.5.pom
+2021-12-20 01:30:42,517 [Worker-7: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for websquare:websquare:jar:5.0_4.4500B.20210927.150048_1.5 is missing, no dependency information available
+2021-12-20 01:30:42,840 [Worker-7: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/websquare/websquare/5.0_4.4500B.20210927.150048_1.5/websquare-5.0_4.4500B.20210927.150048_1.5.jar
+2021-12-20 01:30:44,708 [Worker-7: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-12-20 01:30:44,710 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\WEBSQUARE_DEV_PACK\workspace\WRM\src\main\resources
+2021-12-20 01:30:44,714 [Worker-7: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-12-20 01:30:44,716 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\WEBSQUARE_DEV_PACK\workspace\WRM\src\test\resources
+2021-12-20 01:30:45,508 [Worker-1: Download sources and javadoc] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache:batik-all:jar:1.7.1-20150510 is missing, no dependency information available
+2021-12-20 01:30:45,513 [Worker-1: Download sources and javadoc] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for batik:pdf-transcoder:jar:1.0beta2 is missing, no dependency information available
+2021-12-20 01:30:45,527 [Worker-1: Download sources and javadoc] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for websquare:websquare:jar:5.0_4.4500B.20210927.150048_1.5 is missing, no dependency information available
+2021-12-20 01:30:46,359 [Worker-1: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/websquare/websquare/5.0_4.4500B.20210927.150048_1.5/websquare-5.0_4.4500B.20210927.150048_1.5-sources.jar
+2021-12-20 01:30:46,377 [Worker-1: Download sources and javadoc] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download sources for websquare:websquare:5.0_4.4500B.20210927.150048_1.5
+org.eclipse.core.runtime.CoreException: Could not resolve artifact websquare:websquare:jar:sources:5.0_4.4500B.20210927.150048_1.5
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:803) ~[org.eclipse.m2e.core_1.15.0.20200305-1308.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:179) ~[org.eclipse.m2e.core_1.15.0.20200305-1308.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:114) ~[org.eclipse.m2e.core_1.15.0.20200305-1308.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:101) ~[org.eclipse.m2e.core_1.15.0.20200305-1308.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:771) ~[org.eclipse.m2e.core_1.15.0.20200305-1308.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:748) ~[org.eclipse.m2e.core_1.15.0.20200305-1308.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:330) [org.eclipse.m2e.jdt_1.15.0.20200226-1722.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:304) [org.eclipse.m2e.jdt_1.15.0.20200226-1722.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:269) [org.eclipse.m2e.jdt_1.15.0.20200226-1722.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:233) [org.eclipse.m2e.jdt_1.15.0.20200226-1722.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:161) [org.eclipse.m2e.jdt_1.15.0.20200226-1722.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:179) ~[org.eclipse.m2e.core_1.15.0.20200305-1308.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:153) ~[org.eclipse.m2e.core_1.15.0.20200305-1308.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:101) ~[org.eclipse.m2e.core_1.15.0.20200305-1308.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1373) ~[org.eclipse.m2e.core_1.15.0.20200305-1308.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:161) [org.eclipse.m2e.jdt_1.15.0.20200226-1722.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) ~[org.eclipse.core.jobs_3.10.700.v20200106-1020.jar:na]
+2021-12-20 01:31:15,672 [Worker-11: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-12-20 01:31:15,674 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\WEBSQUARE_DEV_PACK\workspace\WRM\src\main\resources
+2021-12-20 01:31:15,676 [Worker-11: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-12-20 01:31:15,678 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\WEBSQUARE_DEV_PACK\workspace\WRM\src\test\resources
+2021-12-22 17:49:46,832 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2021-12-22 17:49:51,814 [Worker-0: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache:batik-all:jar:1.7.1-20150510 is missing, no dependency information available
+2021-12-22 17:49:51,818 [Worker-0: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for batik:pdf-transcoder:jar:1.0beta2 is missing, no dependency information available
+2021-12-22 17:49:51,821 [Worker-0: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for websquare:websquare:jar:5.0_4.4547B.20211124.201933_1.5 is missing, no dependency information available
+2021-12-22 17:49:52,714 [Worker-0: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-12-22 17:49:52,715 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\WEBSQUARE_DEV_PACK\workspace\WRM\src\main\resources
+2021-12-22 17:49:52,717 [Worker-0: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-12-22 17:49:52,718 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\WEBSQUARE_DEV_PACK\workspace\WRM\src\test\resources

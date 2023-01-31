@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.inswave.wrm.sample.dao.EduDao">
+	
+	<select id="selectSearchList" parameterType="Map" resultType="Map">
+		SELECT LWST_GNRL_CODE, BSNS_NM, INCDNT_NM, LWST_ISS_SUMRY FROM TB_LWST_GNRL WHERE 1=1
+		<if test="BSNS_NM != null and BSNS_NM != ''">
+			AND BSNS_NM = #{BSNS_NM}
+		</if>
+		<if test="RGSDE != null and RGSDE != ''">
+			AND RGSDE LIKE CONCAT(TO_DATE(#{RGSDE}, 'YYYY-MM-DD'),'%')
+		</if>
+		<if test="FALW_FLW_TY != null and FALW_FLW_TY != ''">
+			AND FALW_FLW_TY = #{FALW_FLW_TY}
+		</if>
+		<if test="DFFLY_TY != null and DFFLY_TY != ''">
+			AND DFFLY_TY = #{DFFLY_TY}
+		</if>
+	</select>
+	
+	
+	<select id="selectListLWSTDetail" parameterType="int" resultType="Map">
+		SELECT ACUSR_NAME, GNRL_ADRES, EMAIL FROM TB_LWST_ACUSR WHERE LWST_GNRL_CODE = #{SAUP_CODE_DETAIL}
+	</select>
+	
+	<update id="updateDetail" parameterType="java.util.List">
+		<foreach collection="list">
+			UPDATE TB_LWST_ACUSR SET GNRL_ADRES = #{GNRL_ADRES}, EMAIL = #{EMAIL} WHERE ACUSR_NAME = #{ACUSR_NAME}
+		</foreach>
+	</update>
+</mapper>

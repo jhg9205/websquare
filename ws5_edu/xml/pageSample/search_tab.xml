@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/cm/css/all.css" type="text/css"?>
+<?xml-stylesheet href="/cm/css/contents.css" type="text/css"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:w2="http://www.inswave.com/websquare"
+	xmlns:xf="http://www.w3.org/2002/xforms">
+	<head>
+		<w2:type>DEFAULT</w2:type>
+		<w2:buildDate />
+		<xf:model>
+			<xf:instance>
+				<data xmlns="" />
+			</xf:instance>
+			<w2:dataCollection baseNode="map">
+			</w2:dataCollection>
+			<w2:workflowCollection></w2:workflowCollection>
+		</xf:model>
+		<script type="text/javascript"><![CDATA[        
+]]></script>
+
+	</head>
+	<body>
+		<xf:group id="" style="" class="sub_contents">
+			<xf:group class="pgtbox" id="" style="">
+				<w2:textbox class="pgt_tit" id="" label="화면타이틀"></w2:textbox>
+				<xf:group class="pgt_icobox " id="">
+					<xf:trigger class="btn_cm ic_prt" id="" style="" type="button">
+						<xf:label><![CDATA[인쇄]]></xf:label>
+					</xf:trigger>
+					<xf:trigger class="btn_cm ic_hel" id="" style="" type="button">
+						<xf:label><![CDATA[도움말]]></xf:label>
+					</xf:trigger>
+					<xf:trigger class="btn_cm ic_bmk" id="" style="" type="button">
+						<xf:label><![CDATA[즐겨찾기]]></xf:label>
+					</xf:trigger>
+				</xf:group>
+			</xf:group>
+			<xf:group class="shbox" id="" style="">
+				<xf:group class="shbox_inner" id="" style="">
+					<xf:group adaptive="layout" adaptiveThreshold="768" class="w2tb tb" id="" style="width:100%;" tagname="table">
+						<w2:attributes>
+							<w2:summary></w2:summary>
+						</w2:attributes>
+						<xf:group tagname="colgroup">
+							<xf:group style="width:100px;" tagname="col"></xf:group>
+							<xf:group style="" tagname="col"></xf:group>
+							<xf:group style="width:100px;" tagname="col"></xf:group>
+							<xf:group style="" tagname="col"></xf:group>
+						</xf:group>
+						<xf:group style="" tagname="tr">
+							<xf:group class="w2tb_th" style="" tagname="th">조회조건1</xf:group>
+							<xf:group class="w2tb_td" style="" tagname="td">
+								<xf:input id="" style="width: 120px;"></xf:input>
+							</xf:group>
+							<xf:group class="w2tb_th" style="" tagname="th">조건2</xf:group>
+							<xf:group class="w2tb_td" style="" tagname="td">
+								<w2:inputCalendar calendarValueType="yearMonthDate" focusOnDateSelect="false" footerDiv="false" id="" renderDiv="true"
+									renderType="component" rightAlign="false" style="width: 150px;">
+								</w2:inputCalendar>
+							</xf:group>
+						</xf:group>
+						<xf:group style="" tagname="tr" class="" id="sh_tr_hide">
+							<xf:group class="w2tb_th" style="" tagname="th">조회조건1</xf:group>
+							<xf:group class="w2tb_td" style="" tagname="td">
+								<xf:input id="" style="width: 120px;"></xf:input>
+							</xf:group>
+							<xf:group class="w2tb_th" style="" tagname="th">조건2</xf:group>
+							<xf:group class="w2tb_td" style="" tagname="td">
+								<w2:inputCalendar calendarValueType="yearMonthDate" focusOnDateSelect="false" footerDiv="false" id="" renderDiv="true"
+									renderType="component" rightAlign="false" style="width: 150px;">
+								</w2:inputCalendar>
+							</xf:group>
+						</xf:group>
+					</xf:group>
+				</xf:group>
+				<xf:group class="btn_shbox" id="">
+					<xf:trigger class="btn_cm ic_sch" id="" style="" type="button">
+						<xf:label><![CDATA[조회]]></xf:label>
+					</xf:trigger>
+				</xf:group>
+			</xf:group>
+			<w2:tabControl alwaysDraw="false" class="wq_tbc" confirmFalseAction="new" confirmTrueAction="exist" id="" style=""
+				tabScroll="" useConfirmMessage="false" useMoveNextTabFocus="false" useTabKeyOnly="true" adaptive="layout" adaptiveThreshold="768">
+				<w2:tabs disabled="false" id="tabs1" label="탭1" style="height:26px;"></w2:tabs>
+				<w2:tabs disabled="false" id="tabs2" label="탭2" style="height:26px;"></w2:tabs>
+				<w2:content alwaysDraw="false" id="content1" style="">
+					<xf:group class="tbbox" id="" style="">
+						<xf:group adaptive="" adaptiveThreshold="" class="w2tb tb" id="" style="" tagname="table">
+							<w2:attributes>
+								<w2:summary></w2:summary>
+							</w2:attributes>
+							<xf:group tagname="colgroup">
+								<xf:group style="width:100.00px;" tagname="col"></xf:group>
+								<xf:group style="" tagname="col"></xf:group>
+							</xf:group>
+							<xf:group style="" tagname="tr">
+								<xf:group class="w2tb_th" style="" tagname="th">Table&amp;nbsp;Th</xf:group>
+								<xf:group class="w2tb_td" style="" tagname="td">
+									<xf:trigger class="btn_cm" id="" style="" type="button">
+										<xf:label><![CDATA[버튼]]></xf:label>
+									</xf:trigger>
+									<xf:trigger class="btn_cm ico_search" id="" style="" type="button">
+										<xf:label><![CDATA[조회]]></xf:label>
+									</xf:trigger>
+									<xf:trigger class="btn_cm ico_search ico_only" id="" style="" type="button">
+										<xf:label><![CDATA[조회]]></xf:label>
+									</xf:trigger>
+								</xf:group>
+							</xf:group>
+							<xf:group style="" tagname="tr">
+								<xf:group class="w2tb_th" style="" tagname="th">Table&amp;nbsp;Th</xf:group>
+								<xf:group class="w2tb_td" style="" tagname="td">
+									<xf:group class="wq_w2selectbox_100" id="" style="">
+										<xf:select1 allOption="" appearance="minimal" chooseOption="" direction="auto" disabled="false" disabledClass="w2selectbox_disabled"
+											displayMode="label" id="" optionOrder="false" selectedData="true" style="width: 100%;" submenuSize="auto">
+											<xf:choices>
+												<xf:item>
+													<xf:label><![CDATA[선택아이템1]]></xf:label>
+													<xf:value></xf:value>
+												</xf:item>
+												<xf:item>
+													<xf:label><![CDATA[선택아이템2]]></xf:label>
+													<xf:value></xf:value>
+												</xf:item>
+											</xf:choices>
+										</xf:select1>
+									</xf:group>
+								</xf:group>
+							</xf:group>
+							<xf:group style="" tagname="tr">
+								<xf:group class="w2tb_th" style="" tagname="th">Table&amp;nbsp;Th</xf:group>
+								<xf:group class="w2tb_td" style="" tagname="td">
+									<w2:span class="ett" id="" label="기본 텍스트" style=""></w2:span>
+								</xf:group>
+							</xf:group>
+							<xf:group style="" tagname="tr">
+								<xf:group class="w2tb_th" style="" tagname="th">Table&amp;nbsp;Th</xf:group>
+								<xf:group class="w2tb_td" style="" tagname="td"></xf:group>
+							</xf:group>
+						</xf:group>
+					</xf:group>
+				</w2:content>
+				<w2:content alwaysDraw="false" id="content2" style=""></w2:content>
+			</w2:tabControl>
+			<xf:group class="btnbox" id="" style="">
+				<xf:group class="fr" id="" style="">
+					<xf:trigger class="btn_cm ty2" id="" style="" type="button">
+						<xf:label><![CDATA[업무버튼]]></xf:label>
+					</xf:trigger>
+					<xf:trigger class="btn_cm ty3" id="" style="" type="button">
+						<xf:label><![CDATA[CRUD]]></xf:label>
+					</xf:trigger>
+					<xf:trigger class="btn_cm ty3" id="" style="" type="button">
+						<xf:label><![CDATA[CRUD]]></xf:label>
+					</xf:trigger>
+					<xf:trigger class="btn_cm ty3" id="" style="" type="button">
+						<xf:label><![CDATA[CRUD]]></xf:label>
+					</xf:trigger>
+					<xf:trigger class="btn_cm ty1" id="" style="" type="button">
+						<xf:label><![CDATA[전체제어버튼]]></xf:label>
+					</xf:trigger>
+				</xf:group>
+			</xf:group>
+		</xf:group>
+	</body>
+</html>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/cm/css/all.css" type="text/css"?>
+<?xml-stylesheet href="/cm/css/contents.css" type="text/css"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+            <w2:dataCollection baseNode="map">
+            </w2:dataCollection>
+            <w2:workflowCollection>
+            </w2:workflowCollection>
+        </xf:model>
+         <script type="text/javascript" lazy="false"><![CDATA[
+        
+	scwin.onpageload = function() {
+		$("body").append('<div class="dimd"></div>');
+		$(".btn_pop, .btn_pop_close").click(function(){
+			$(".ly_popup").hide("fast");
+			$(".dimd").remove();
+		});
+		
+		$("#btnOpenLayer").click(function(){
+			$(".ly_popup").show("fast");
+			$("body").append('<div class="dimd"></div>');
+		});
+	};
+	
+	scwin.onpageunload = function() {
+		
+	};]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    	
+    <xf:group id="" style="" class="sub_contents">
+    	<xf:group id="" style="" class="dfbox">
+    		<w2:textbox id="" style="" class="df_tit fl" label="레이어 팝업샘플"></w2:textbox>
+    		<xf:trigger type="button" id="btnOpenLayer" style="" class="btn_cm">
+    			<xf:label><![CDATA[레이어 팝업호출]]></xf:label>
+    		</xf:trigger>
+    	</xf:group></xf:group><xf:group id="" style="" class="ly_popup">
+    		<xf:group id="" style="" class="ly_head">
+    			<w2:textbox id="" style="" class="tit" label="Alert" tagname="p"></w2:textbox>
+    			<w2:anchor id="" style="" ev:onclick="" class="btn_pop_close" outerDiv="false">
+    				<xf:label><![CDATA[닫기]]></xf:label>
+    			</w2:anchor>
+    		</xf:group>
+    		<xf:group id="" style="" class="ly_cont">
+    			<w2:textbox id="" style="" class="txt1" label="장애가 발생하였습니다." tagname="p"></w2:textbox>
+    			<w2:textbox id="" style="" class="txt2" label="장애문의 : admin@admin.com" tagname="p"></w2:textbox>
+    			<w2:anchor id="" style="" class="btn_pop" outerDiv="false">
+    				<xf:label><![CDATA[닫기]]></xf:label>
+    			</w2:anchor>
+    		</xf:group>
+
+    	</xf:group></body>
+</html>

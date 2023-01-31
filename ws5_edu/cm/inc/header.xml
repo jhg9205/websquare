@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+            <w2:dataCollection baseNode="map">
+            </w2:dataCollection>
+            <w2:workflowCollection>
+            </w2:workflowCollection>
+        </xf:model>
+         <script type="text/javascript" lazy="false"><![CDATA[
+        
+	scwin.onpageload = function() {
+		
+	};
+	
+	scwin.onpageunload = function() {
+		
+	};
+	
+	]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    <w2:anchor class="logo" id="" outerDiv="false" style="">
+    			<xf:label><![CDATA[BC카드]]></xf:label>
+    		</w2:anchor><xf:trigger class="btn_slide" ev:onclick="scwin.sideToggle_onclick" id="sideToggle" style="" type="button">
+    			<xf:label><![CDATA[서브메뉴 열기]]></xf:label>
+    		</xf:trigger><xf:group class="gnb_area" id="" style="">
+    			<xf:group class="navi" id="" style="" tagname="">
+    				<xf:group class="navi_item" id="" style="" tagname="">
+    					<w2:anchor id="" outerDiv="false" style="">
+    						<xf:label><![CDATA[MENU01]]></xf:label>
+    					</w2:anchor>
+    				</xf:group>
+    				<xf:group class="navi_item" id="" style="" tagname="">
+    					<w2:anchor id="" outerDiv="false" style="">
+    						<xf:label><![CDATA[MENU01]]></xf:label>
+    					</w2:anchor>
+    				</xf:group>
+    				<xf:group class="navi_item" id="" style="" tagname="">
+    					<w2:anchor id="" outerDiv="false" style="">
+    						<xf:label><![CDATA[MENU01]]></xf:label>
+    					</w2:anchor>
+    				</xf:group>
+    				<xf:group class="navi_item" id="" style="" tagname="">
+    					<w2:anchor id="" outerDiv="false" style="">
+    						<xf:label><![CDATA[MENU01]]></xf:label>
+    					</w2:anchor>
+    				</xf:group>
+    			</xf:group>
+    		</xf:group><xf:group class="infobox" id="" style="">
+    			<w2:textbox class="info_tit" id="" label="Welcome!" style=""></w2:textbox>
+    			<w2:textbox class="info_tit name_tit" id="" label="Jake LEE" style=""></w2:textbox>
+    			<xf:trigger class="btn_logout" id="" style="" type="button">
+    				<xf:label><![CDATA[Logout]]></xf:label>
+    			</xf:trigger>
+    			<xf:group class="opt_box" id="" style="">
+    				<xf:group class="ico_aram" id="" style="" tagname="a">
+    					<w2:attributes>
+    						<w2:href>javascript:void(null);</w2:href>
+    					</w2:attributes>
+    					<w2:span id="" label="3" style=""></w2:span>
+    				</xf:group>
+    				<w2:anchor class="ico_info" id="" outerDiv="false" style="">
+    					<xf:label><![CDATA[Insert Text]]></xf:label>
+    				</w2:anchor>
+    				<w2:anchor class="ico_phone" id="" outerDiv="false" style="">
+    					<xf:label><![CDATA[Insert Text]]></xf:label>
+    				</w2:anchor>
+    				<w2:anchor class="ico_group" id="" outerDiv="false" style="">
+    					<xf:label><![CDATA[Insert Text]]></xf:label>
+    				</w2:anchor>
+    				<w2:anchor class="ico_setting" id="" outerDiv="false" style="">
+    					<xf:label><![CDATA[Insert Text]]></xf:label>
+    				</w2:anchor>
+    			</xf:group>
+    		</xf:group><w2:anchor class="mob_close" ev:onclick="scwin.menuClose_onclick" id="menuClose" outerDiv="false" style="">
+    			<xf:label><![CDATA[CLOSE]]></xf:label>
+    		</w2:anchor><w2:anchor class="mob_menu" ev:onclick="scwin.menuOpen_onclick" id="menuOpen" outerDiv="false" style="">
+    			<xf:label><![CDATA[MENU]]></xf:label>
+    		</w2:anchor></body>
+</html>

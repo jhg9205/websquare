@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head meta_screenName="gridView의 footer function 샘플">
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+            <w2:dataCollection baseNode="map">
+            	<w2:dataList baseNode="list" repeatNode="map" id="dataList1" saveRemovedData="true">
+            		<w2:columnInfo>
+            			<w2:column id="no" name="번호" dataType="text"></w2:column>
+            			<w2:column id="addVal" name="sum값" dataType="text"></w2:column>
+            			<w2:column id="avgVal1" name="avg값(올림)" dataType="text"></w2:column>
+            			<w2:column id="avgVal2" name="avg값(버림)" dataType="text"></w2:column>
+            			<w2:column id="avgVal3" name="avg값(반올림)" dataType="text"></w2:column>
+            		</w2:columnInfo>
+            	</w2:dataList>
+            </w2:dataCollection>
+            <w2:workflowCollection>
+            </w2:workflowCollection>
+        </xf:model>
+         <script type="text/javascript" lazy="false"><![CDATA[
+        
+	scwin.onpageload = function() {
+		var jsonData = [{"no":"1","addVal":"1.3478","avgVal1":"2.357","avgVal2":"7.352","avgVal3":"3.353"}
+					   ,{"no":"2","addVal":"2.345","avgVal1":"1.53","avgVal2":"5.353","avgVal3":"7.357"}
+					   ,{"no":"3","addVal":"3.57","avgVal1":"3.0271","avgVal2":"4.354","avgVal3":"3.357"}
+					   ,{"no":"4","addVal":"4.7891","avgVal1":"2.0254","avgVal2":"1.375","avgVal3":"3.351"}
+					   ,{"no":"5","addVal":"5.02","avgVal1":"7.237","avgVal2":"9.357","avgVal3":"3.352"}
+					   ];
+		dataList1.setJSON(jsonData);			   
+	};
+	
+	scwin.onpageunload = function() {
+		
+	};
+	
+	]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    <xf:group id="" style="padding: 10px;" class="wrapper">
+    	<xf:group class="section_desc" id="" style="padding: 10px;">
+    		<w2:textbox id="" label="GridView를 통해 표현되는 값이 숫자인 경우 SUM,AVG,COUNT,MIN,MAX 등의 함수를 이용하여&lt;br/&gt;Footer기능을 이용할 수 있습니다. SUM,AVG,COUNT,MIN,MAX 등의 함수를 이용할 때,&lt;br/&gt;javascript 에서 이용하는 toFixed, Math.ceil, Math.floor, Math.round 등의 함수를 혼용할 수 있습니다.&lt;br/&gt;GridView의 footer의 각 컬럼별 속성에서 expression 부분을 참조 합니다. &lt;br/&gt;ex) sum('addVal').toFixed(2), Math.ceil(avg('avgVal1'))&lt;br/&gt;( source : fn_expression.xml )" style="" tagname="">
+    		</w2:textbox>
+    	</xf:group><xf:group id="" class="">
+    		<w2:gridView scrollByColumnAdaptive="false" dataList="data:dataList1" style="height: 150px;" scrollByColumn="false" id=""
+    			defaultCellHeight="20" autoFit="allColumn" autoFitMinWidth="800">
+    			<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
+    			<w2:header style="" id="header1">
+    				<w2:row style="" id="row1">
+    					<w2:column removeBorderStyle="false" width="70" inputType="text" style="height:20px" id="column3" value="번호"
+    						blockSelect="false" displayMode="label">
+    					</w2:column>
+    					<w2:column removeBorderStyle="false" width="150" inputType="text" style="height:20px" id="column2" value="sum값"
+    						blockSelect="false" displayMode="label">
+    					</w2:column>
+    					<w2:column removeBorderStyle="false" width="150" inputType="text" style="height:20px" id="column1" value="avg값(올림)"
+    						blockSelect="false" displayMode="label">
+    					</w2:column>
+    					<w2:column removeBorderStyle="false" width="150" inputType="text" style="height:20px" id="column13" value="avg값(버림)"
+    						blockSelect="false" displayMode="label">
+    					</w2:column>
+    					<w2:column removeBorderStyle="false" width="150" inputType="text" style="height:20px" id="column10"
+    						value="avg값(반올림)" blockSelect="false" displayMode="label">
+    					</w2:column>
+    				</w2:row>
+    			</w2:header>
+    			<w2:gBody style="" id="gBody1">
+    				<w2:row style="" id="row2">
+    					<w2:column removeBorderStyle="false" width="70" inputType="text" style="height:20px" id="no" blockSelect="false"
+    						displayMode="label">
+    					</w2:column>
+    					<w2:column textAlign="right" removeBorderStyle="false" dataType="number" width="70" inputType="text"
+    						style="height:20px" id="addVal" blockSelect="false" displayMode="label">
+    					</w2:column>
+    					<w2:column textAlign="right" removeBorderStyle="false" dataType="number" width="150" inputType="text"
+    						style="height:20px" id="avgVal1" blockSelect="false" displayMode="label">
+    					</w2:column>
+    					<w2:column textAlign="right" removeBorderStyle="false" dataType="number" width="150" inputType="text"
+    						style="height:20px" id="avgVal2" blockSelect="false" displayMode="label">
+    					</w2:column>
+    					<w2:column textAlign="right" removeBorderStyle="false" dataType="number" width="70" inputType="text"
+    						style="height:20px" id="avgVal3" blockSelect="false" displayMode="label">
+    					</w2:column>
+    				</w2:row>
+    			</w2:gBody>
+    			<w2:footer style="" id="footer1">
+    				<w2:row style="" id="row3">
+    					<w2:column removeBorderStyle="false" width="70" inputType="text" style="height:20px" id="column9"
+    						blockSelect="false" displayMode="label">
+    					</w2:column>
+    					<w2:column expression="sum('addVal').toFixed(2)" textAlign="right" removeBorderStyle="false" dataType="number"
+    						width="150" inputType="expression" style="height:20px" id="column8" blockSelect="false" displayMode="label">
+    					</w2:column>
+    					<w2:column expression="Math.ceil(avg('avgVal1'))" textAlign="right" removeBorderStyle="false" width="150"
+    						inputType="expression" style="height:20px" id="column7" blockSelect="false" displayMode="label">
+    					</w2:column>
+    					<w2:column expression="Math.floor(avg('avgVal2'))" textAlign="right" removeBorderStyle="false" dataType="number"
+    						width="150" inputType="expression" style="height:20px" id="column15" blockSelect="false" displayMode="label">
+    					</w2:column>
+    					<w2:column expression="Math.round(avg('avgVal3'))" textAlign="right" removeBorderStyle="false" width="70"
+    						inputType="expression" style="height:20px" id="column12" blockSelect="false" displayMode="label">
+    					</w2:column>
+    				</w2:row>
+    			</w2:footer>
+    		</w2:gridView>
+    	</xf:group>
+    	
+    </xf:group></body>
+</html>

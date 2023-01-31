@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/cm/css/all.css" type="text/css"?>
+<?xml-stylesheet href="/cm/css/contents.css" type="text/css"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+            <w2:dataCollection baseNode="map">
+            </w2:dataCollection>
+            <w2:workflowCollection>
+            </w2:workflowCollection>
+        </xf:model>
+         <script type="text/javascript" lazy="false"><![CDATA[
+        
+	scwin.onpageload = function() {
+		imports("uiplugin.popup");
+		
+		scwin.btnPopup_onclick();
+	};
+	
+	scwin.onpageunload = function() {
+		
+	};
+	
+	scwin.btnPopup_onclick = function() {
+		scwin.openPopup("/xml/pageSample/popup_contents.xml");
+	};
+	
+	// 팝업 함수
+	scwin.openPopup = function(url) { 
+		var width = 650;
+		var height = 498;
+		var brWidth = window.innerWidth ? window.innerWidth : document.documentElement.clientWidth ? document.documentElement.clientWidth : screen.width;
+		var brHeight = window.innerHeight ? window.innerHeight : document.documentElement.clientHeight ? document.documentElement.clientHeight : screen.height;
+		var left = (brWidth - width) / 2 + (window.pageXOffset || document.body.scrollLeft);
+		var top = (brHeight - height) / 2 + (window.pageYOffset || document.body.scrollTop);
+		if (left < 0) left = 0;
+		if (top < 0) top = 0;	
+		var options = { 
+			id: "popup1",
+			type: "window",
+			width: width+"px",
+			height: height+"px",
+			left : left+"px",
+			top : top+"px",
+			popupName: "팝업",
+			modal: true,
+			useIFrame: true,
+			resizable: false
+		};
+		WebSquare.util.openPopup(url, options);
+	};
+ ]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    	<xf:group class="sub_contents" id="" style="">
+    		<xf:group class="dfbox" id="" style="">
+    			<w2:textbox class="df_tit fl" id="" label="팝업샘플" style=""></w2:textbox>
+    			<xf:trigger type="button" id="btnPopup" style="" class="btn_cm" ev:onclick="scwin.btnPopup_onclick">
+    				<xf:label><![CDATA[Open PopUp]]></xf:label>
+    			</xf:trigger>
+    		</xf:group>
+    	</xf:group>
+    </body>
+</html>

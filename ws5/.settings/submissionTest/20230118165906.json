@@ -1,0 +1,9 @@
+{
+   "charset": "UTF-8",
+   "reqMethod": "POST",
+   "serviceURL": "http://localhost:9090/ws5/sample/sampleData/sampleData_json_dc_combination2.json",
+   "contentType": "application/json",
+   "requestContent": "{\n   \"dc_reqCode\": {\"userID\": \"\"},\n   \"dc_reqInfo\": {\"pageNm\": \"\"}\n}",
+   "responseContent": "{ \n\t\"dc_resMessage\" : {\n\t\t\"code\":\"002\"\n\t\t, \"msg\":\"정상처리되었습니다\"\n\t\t, \"rsCount\":\"1\"\n\t}\n\t, \"dc_resUserListData\":\n\t\t[{\n\t\t\t\"name\":\"황정민\"\n\t\t\t, \"birthday\" : \"19700901\"\n\t\t\t, \"height\" : \"180\"\n\t\t\t, \"weight\" : \"75\"\n\t\t\t, \"gender\" : \"M\"\n\t\t}]\n}",
+   "sendTime": "2023-01-18 16:59:06"
+}

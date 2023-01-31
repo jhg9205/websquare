@@ -1,0 +1,7 @@
+package com.inswave.wrm.main.controller;
+
+
+@Controller
+public class MainController {
+	
+}

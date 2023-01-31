@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.inswave.wrm.sample.dao.EduDao">
+	<select id="selectListLwst" parameterType="String" resultType="Map">
+		SELECT LWST_GNRL_CODE, BSNS_NM, INCDNT_NM, LWST_ISS_SUMRY FROM TB_LWST_GNRL WHERE SAUP_CODE = #{SAUP_CODE}
+	</select>
+	
+	<select id="selectListLWSTDetail" parameterType="String" resultType="Map">
+		SELECT ACUSR_NAME, GNRL_ADRES, EMAIL FROM TB_LWST_ACUSR WHERE LWST_GNRL_CODE = #{SAUP_CODE_DETAIL}
+	</select>
+</mapper>

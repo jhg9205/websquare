@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.inswave.wrm.sample.dao.EduDao">
+	<select id="selectListLwst" parameterType="String" resultType="Map">
+		SELECT ZIP_CD, ZIP_NM, BUILDING, FROM_NO FROM BM_ZIP_CODE WHERE town = #{town}
+	</select>
+</mapper>

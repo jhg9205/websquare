@@ -1,0 +1,9 @@
+{
+   "charset": "UTF-8",
+   "reqMethod": "POST",
+   "serviceURL": "http://localhost:9090/ws5/training/getUserInfo.do",
+   "contentType": "application/json",
+   "requestContent": "{\"dc_req\": {\"EMP_CD\": \"SampleValue_0\"}}",
+   "responseContent": "{\"msg\":\"처리 도중 오류가 발생하였습니다.\",\"msgDetail\":\"WAS LOG를 확인하시기 바랍니다.\",\"msgCode\":\"E\"}",
+   "sendTime": "2023-01-17 13:37:43"
+}
