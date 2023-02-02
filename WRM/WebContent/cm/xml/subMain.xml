@@ -100,7 +100,7 @@
 	};
 	
 	scwin.onpageunload = function() {
-		
+		console.log("생명주기 테스트");
 	};
 	
 	//row클릭시 해당 인덱스로 데이터 호출
@@ -184,6 +184,7 @@
 	// sbm_submission3 실행 후 결과메시지 alert창 출력
 	scwin.sbm_updateDetail_submitdone = function(e) {
 		alert(dc_result.get("statusMsg"));
+		$p.executeSubmission("sbm_selectDetail");
 	};
 	
 	//삭제버튼 클릭시 focus된 Row로 sbm_submission실행
@@ -324,7 +325,11 @@
 		WebSquare.util.openPopup(url, options);
 	};
 	
-/******************************************** 팝업 관련 **********************************************/]]></script>
+/******************************************** 팝업 관련 **********************************************/
+	scwin.btn_refresh_onclick = function(e) {
+		dc_saupListDetail.reform();
+	};
+	]]></script>
     </head>
     <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload" style="">
     	<xf:group style="background-color:#f8f8f8;min-height:100%;box-sizing:border-box;display:relative;padding:30px;" id="">
@@ -422,12 +427,11 @@
     					</xf:group>
     				</xf:group>
     			</xf:group>
-    			<xf:trigger type="button"
-    				style="width: 100px;height: 40px;text-align: center;color:white;background-color: blue;display: block;margin: 20px auto;"
-    				id="btn_select" ev:onclick="scwin.btn_select_onclick">
+    		<xf:group id="" style="display: flex;"><xf:trigger ev:onclick="scwin.btn_select_onclick" style="width: 100px;height: 40px;text-align: center;color:white;background-color: blue;display: inline-block;margin: 20px auto;" id="btn_select" type="button">
     				<xf:label><![CDATA[검색]]></xf:label>
-    			</xf:trigger>
-    		</xf:group>
+    			</xf:trigger><xf:trigger style="width: 100px;height: 40px;text-align: center;color:white;background-color: skyblue;display: inline-block;margin: 20px auto;" id="btn_refresh" type="button" ev:onclick="scwin.btn_refresh_onclick">
+    				<xf:label><![CDATA[새로고침]]></xf:label>
+    			</xf:trigger></xf:group></xf:group>
     		<xf:group id="" style="">
     			<w2:textbox style="width: 150px;height: 23px;font-size: 20px;font-weight: bold;" id="" label="소송목록"></w2:textbox>
     			<w2:gridView scrollByColumnAdaptive="false" dataList="data:dc_saupListCopy" style="height:100px;margin-top:20px;"
@@ -435,7 +439,7 @@
     				fixedRow="0" focusDefaultColumn="false" autoFit="allColumn" columnMove="true" selectedRowColor="#80FFFF"
     				ev:oncellclick="scwin.testGrid_oncellclick" rowStatusHeaderValue="상태" checkAllType="include" focusMode="row"
     				ev:oncellindexchange="scwin.testGrid_oncellindexchange" checkDisabledOnCut="true" visibleRowNumFix="true" visibleRowNum="all"
-    				rowStatusVisible="false">
+    				rowStatusVisible="false" contextMenu="true">
     				<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
     				<w2:header style="" id="header1">
     					<w2:row style="" id="row1">
@@ -495,7 +499,7 @@
 
     			<w2:gridView scrollByColumnAdaptive="false" checkAllType="false" dataList="data:dc_saupListDetail"
     				style="width: 100%;height: 150px;" scrollByColumn="false" id="subGrid" defaultCellHeight="20" autoFit="allColumn" columnMove="true"
-    				focusMode="row" rowStatusVisible="true" rowStatusHeaderValue="상태" rowNumVisible="true">
+    				focusMode="row" rowStatusVisible="true" rowStatusHeaderValue="상태" rowNumVisible="true" contextMenu="true">
     				<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
     				<w2:header style="" id="header1">
     					<w2:row style="" id="row1">

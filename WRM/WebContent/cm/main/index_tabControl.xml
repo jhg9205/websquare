@@ -66,7 +66,27 @@
 		    src : "/cm/xml/subMain.xml",
 		    scope : "true"
 		};
-		tac_layout.addTab("subTab", tabOptions, contentsOptions)
+		let pivotOptions = {
+			label : "피벗",
+			closable : true
+		};
+		let pivotContents = {
+			frameMode : "wframe",
+			src : "/cm/xml/pivotExcelDownload_Pivot.xml",
+			scope : "true"
+		};
+		let formOptions = {
+			label : "입력폼",
+			closable : true
+		};
+		let formContents = {
+			frameMode : "wframe",
+			src : "/cm/xml/page_saveForm.xml",
+			scrope : "true"
+		};
+		tac_layout.addTab("subTab", tabOptions, contentsOptions);
+		tac_layout.addTab("pivotTestTab", pivotOptions, pivotContents);
+		tac_layout.addTab("formTab", formOptions, formContents);
 		scwin.initMainLoad();
 	};
 
