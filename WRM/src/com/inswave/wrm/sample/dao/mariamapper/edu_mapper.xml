@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.inswave.wrm.sample.dao.EduDao">
 	
-	<select id="selectSearchList" parameterType="Map" resultType="Map">
+	<select id="selectSearchList" parameterType="Map" resultType="java.util.LinkedHashMap">
 		SELECT LWST_GNRL_CODE, BSNS_NM, INCDNT_NM, LWST_ISS_SUMRY FROM TB_LWST_GNRL WHERE 1=1
 		<if test="BSNS_NM != null and BSNS_NM != ''">
 			AND BSNS_NM = #{BSNS_NM}
