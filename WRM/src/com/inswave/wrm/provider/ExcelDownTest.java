@@ -44,8 +44,8 @@ public class ExcelDownTest implements IExternalGridDataProvider {
 		String[] returnData = null;
 		try {
 			// Loading Parameter
-			Map req = new HashMap();
-			Map res = new HashMap();
+//			Map req = new HashMap();
+			Map<String,Object> res = new HashMap<>();
 			// data 조회 
 			List dataList = eduService.selectListLWST(data);
 			System.out.println("가져온 데이터!!" + dataList);
@@ -53,17 +53,14 @@ public class ExcelDownTest implements IExternalGridDataProvider {
 			
 			for(int i=0; i<_size; i++) {
 				res = (Map) dataList.get(i);
-				
-				Set keySet = res.keySet();
-				Iterator<String> keys = keySet.iterator();
-				while (keys.hasNext()) {
-					String key = (String)keys.next();
-					if ( res.get(key) == null ){
+				res.forEach((key,value) -> {
+					if(value == null) {
 						dataArr.add("");
 					} else {
-						dataArr.add(String.valueOf(res.get(key)));
+						dataArr.add(String.valueOf(value));
 					}
-				}
+				});
+			System.out.println(dataArr.get(i));
 			}
 			returnData = new String[dataArr.size()];
 			dataArr.toArray(returnData);
