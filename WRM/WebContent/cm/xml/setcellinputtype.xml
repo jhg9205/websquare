@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+            <w2:dataCollection baseNode="map">
+            	<w2:dataList baseNode="list" ev:ondataload="scwin.dataList1_ondataload" id="dataList1" repeatNode="map"
+            		saveRemovedData="true" style="">
+            		<w2:columnInfo>
+            			<w2:column dataType="text" id="col1" name="name1"></w2:column>
+            			<w2:column dataType="text" id="col2" name="name2"></w2:column>
+            			<w2:column dataType="text" id="col3" name="name3"></w2:column>
+            		</w2:columnInfo>
+            		<w2:data use="true">
+            			<w2:row>
+            				<col1><![CDATA[input]]></col1>
+            				<col2><![CDATA[1]]></col2>
+            			</w2:row>
+            			<w2:row>
+            				<col1><![CDATA[calendar]]></col1>
+            				<col2><![CDATA[2]]></col2>
+            			</w2:row>
+            			<w2:row>
+            				<col1><![CDATA[checkbox]]></col1>
+            			</w2:row>
+            			<w2:row>
+            				<col1><![CDATA[select]]></col1>
+            			</w2:row>
+            			<w2:row></w2:row>
+            			<w2:row></w2:row>
+            			<w2:row></w2:row>
+            			<w2:row></w2:row>
+            			<w2:row></w2:row>
+            			<w2:row></w2:row>
+            			<w2:row></w2:row>
+            			<w2:row></w2:row>
+            			<w2:row></w2:row>
+            			<w2:row></w2:row>
+            			<w2:row></w2:row>
+            			<w2:row></w2:row>
+            			<w2:row></w2:row>
+            			<w2:row></w2:row>
+            			<w2:row></w2:row>
+            			<w2:row></w2:row>
+            			<w2:row></w2:row>
+            			<w2:row></w2:row>
+            			<w2:row></w2:row>
+            			<w2:row></w2:row>
+            			<w2:row></w2:row>
+            			<w2:row></w2:row>
+            			<w2:row></w2:row>
+            			<w2:row></w2:row>
+            		</w2:data>
+            	</w2:dataList>
+            	<w2:dataList baseNode="list" id="dlt_select" repeatNode="map" saveRemovedData="true" style="">
+            		<w2:columnInfo>
+            			<w2:column dataType="text" id="label" name="name1"></w2:column>
+            			<w2:column dataType="text" id="code" name="name2"></w2:column>
+            		</w2:columnInfo>
+            		<w2:data use="true">
+            			<w2:row>
+            				<label><![CDATA[input]]></label>
+            				<code><![CDATA[input]]></code>
+            			</w2:row>
+            			<w2:row>
+            				<label><![CDATA[calendar]]></label>
+            				<code><![CDATA[calendar]]></code>
+            			</w2:row>
+            			<w2:row>
+            				<label><![CDATA[checkbox]]></label>
+            				<code><![CDATA[checkbox]]></code>
+            			</w2:row>
+            			<w2:row>
+            				<label><![CDATA[select]]></label>
+            				<code><![CDATA[select]]></code>
+            			</w2:row>
+            			<w2:row>
+            				<label><![CDATA[radio]]></label>
+            				<code><![CDATA[radio]]></code>
+            			</w2:row>
+            		</w2:data>
+            	</w2:dataList>
+            	<w2:dataList baseNode="list" id="sel_sample" repeatNode="map" saveRemovedData="true" style="">
+            		<w2:columnInfo>
+            			<w2:column dataType="text" id="col1" name="name1"></w2:column>
+            			<w2:column dataType="text" id="col2" name="name2"></w2:column>
+            		</w2:columnInfo>
+            		<w2:data use="true">
+            			<w2:row>
+            				<col2><![CDATA[1]]></col2>
+            				<col1><![CDATA[축구]]></col1>
+            			</w2:row>
+            			<w2:row>
+            				<col2><![CDATA[2]]></col2>
+            				<col1><![CDATA[농구]]></col1>
+            			</w2:row>
+            			<w2:row>
+            				<col2><![CDATA[3]]></col2>
+            				<col1><![CDATA[야구]]></col1>
+            			</w2:row>
+            			<w2:row>
+            				<col2><![CDATA[4]]></col2>
+            				<col1><![CDATA[배구]]></col1>
+            			</w2:row>
+            		</w2:data>
+            	</w2:dataList>
+            	<w2:linkedDataList bind="dataList1" id="dataList1_link">
+            		<w2:condition type="filter"><![CDATA[]]></w2:condition>
+            		<w2:condition type="sort"><![CDATA[]]></w2:condition>
+            	</w2:linkedDataList>
+            </w2:dataCollection>
+            <w2:workflowCollection>
+            </w2:workflowCollection>
+        </xf:model>
+         <script type="text/javascript" lazy="false"><![CDATA[
+        
+	scwin.onpageload = function() {
+		
+	};
+	
+	scwin.onpageunload = function() {
+		
+	};
+	
+
+	scwin.fn_CellCustomFormatter = function(data, formattedData, rowIndex, colIndex) {
+		 var returnInfo = {};
+		 returnInfo.options = {};
+		 returnInfo.inputType = "link";
+		
+		 grd.setCellInputType(1 , "col2", returnInfo);
+       	return formattedData + " test";
+   };
+   
+   
+
+	]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    	<w2:textbox id="" label="gridView.setCellInputType();" style="width: 500px;height: 30px;font-size:200%;padding:5px;"></w2:textbox>
+    	<w2:gridView applyAllColumnStyle="false" dataList="data:dataList1_link" defaultCellHeight="20"
+    		ev:onviewchange="scwin.grd_onviewchange" id="grd" ignoreCellClick="false" ignoreToggleOnDisabled="false" scrollByColumn="false"
+    		scrollByColumnAdaptive="false" setCellInputTypeCustom="true" style="width: 500px;height: 150px;" summaryAuto="false"
+    		summaryOnlyAuto="false" syncScroll="false" useShiftKey="true" editModeEvent="onclick" rowNumVisible="true">
+    		<w2:caption id="caption1" style="" value="this is a grid caption."></w2:caption>
+    		<w2:header id="header1" style="">
+    			<w2:row id="row1" style="">
+    				<w2:column blockSelect="false" displayMode="label" id="column5" inputType="text" style="" value="name1" width="100"></w2:column>
+    				<w2:column blockSelect="false" displayMode="label" id="column3" inputType="text" style="" value="name2" width="100"></w2:column>
+    				<w2:column blockSelect="false" displayMode="label" id="column1" inputType="text" style="" value="name3" width="100"></w2:column>
+    			</w2:row>
+    		</w2:header>
+    		<w2:gBody id="gBody1" style="">
+    			<w2:row id="row2" style="">
+    				<w2:column allOption="" blockSelect="false" chooseOption="" displayMode="label" id="col1" inputType="select" ref=""
+    					style="" value="" viewType="icon" width="100" dataType="number" editModeEvent="onclick">
+    					<w2:choices>
+    						<w2:itemset nodeset="data:dlt_select">
+    							<w2:label ref="label"></w2:label>
+    							<w2:value ref="code"></w2:value>
+    						</w2:itemset>
+    					</w2:choices>
+    				</w2:column>
+    				<w2:column blockSelect="false" displayMode="label" id="col2" inputType="custom" style="" value="" width="100"
+    					viewType="" customFormatter="scwin.fn_CellCustomFormatter">
+    				</w2:column>
+    				<w2:column blockSelect="false" displayMode="label" id="col3" inputType="custom" style="" value="" width="100"></w2:column>
+    			</w2:row>
+    		</w2:gBody>
+    	</w2:gridView>
+    	<xf:trigger type="button" style="width: 80px;height: 23px;" id="trigger1" ev:onclick="scwin.trigger1_onclick">
+    		<xf:label><![CDATA[link 로변경]]></xf:label>
+    	</xf:trigger>
+    </body>
+</html>

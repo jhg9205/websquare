@@ -109,11 +109,11 @@
 			<w2:wframe style="" id="wfm_header" class="header" scope="true" src="../../cm/xml/header.xml"></w2:wframe>
 			<xf:group class="container" id="" style="">
 				<xf:group style="" id="" class="contents">
-					<w2:tabControl useTabKeyOnly="true" id="tac_layout" useMoveNextTabFocus="false" useConfirmMessage="false"
+					<w2:tabControl useTabKeyOnly="true" id="tac_layout" useConfirmMessage="false"
 						confirmTrueAction="exist" confirmFalseAction="new" alwaysDraw="false" style="" class="tabc_layout" hiddenTab="" tabPosition=""
 						closable="true" useAccessibilityMenu="false" tableRender="" tabScroll="true" adaptive="layout" adaptiveThreshold="1024"
 						focusOnStart="" preventTabClickEvent="" selectedIndex="" spaAuto="" confirmMessage=""
-						ev:onbeforetabclose="scwin.tac_layout_onbeforetabclose" tabMove="true">
+						ev:onbeforetabclose="scwin.tac_layout_onbeforetabclose" tabMove="true" changeActiveTab="false" tabScrollAuto="true" useMoveNextTabFocus="false">
 					</w2:tabControl>
 					<w2:anchor outerDiv="false" style="" id="btn_tab_allclose" class="tab_allclose"
 						ev:onclick="scwin.btn_tab_allclose_onclick">
